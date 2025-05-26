@@ -1,2 +1,2 @@
-# YUNGlab-eDNA2023
-Codes& Data for HK coastal eDNA analysis including Linux bash and R
+Code & Data for HK coastal eDNA project 2023
+# By XWQ from Prof. Charmaine YUNG lab in HKUST
