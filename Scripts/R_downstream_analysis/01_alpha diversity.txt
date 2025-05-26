@@ -1,0 +1,265 @@
+#01 alpha diversity 
+
+##input otutab: 0.01%rela filt → rarefied; noPC2Feb
+
+# 00 prepare env
+	rm(list = ls()) # 清空环境变量
+
+	setwd("01_alpha")
+
+library(vegan)
+library(ggplot2)
+library(ggprism)
+library(ggpubr)
+
+# 01 input 
+
+ls <- readLines("name.txt") # name.txt: each line is sample name
+
+df_rareified <- list()
+
+for (i in ls) {
+  df_rareified[[i]] <- read.delim(paste0(i, ".tsv"), row.names = 1, sep = '\t', header = TRUE, check.names = FALSE)
+}
+
+group <- read.delim("allGroup_noPC2Feb.tsv", header = TRUE, row.names = 1)
+
+results <- list()
+
+# 02 calculate alpha diversity index 
+
+for (i in ls) {
+  otu_table <- df_rareified[[i]]
+  Shannon <- diversity(otu_table, index = "shannon", MARGIN = 2, base = exp(1))
+  Simpson <- diversity(otu_table, index = "simpson", MARGIN = 2, base = exp(1))
+  Richness <- specnumber(otu_table, MARGIN = 2)  # Sobs
+  result1 <- data.frame(Shannon = Shannon, Simpson = Simpson, Richness = Richness)
+  tdf <- ceiling(as.data.frame(t(otu_table)))
+  result2 <- t(estimateR(tdf))
+  result1$Chao1 <- result2[,2]
+  result1$Ace <- result2[,4]
+  result1$pielou <- Shannon/log(Richness, 2)
+  result1$Goods_coverage <- 1 - colSums(otu_table == 1) / colSums(otu_table)
+  group = group[rownames(result1),] 
+
+  result1$Region <- group$Region
+  result1$Site <- group$Site
+  result1$Season <- group$Season
+  result1$Site2 <- group$Site2
+  result1$Month <- group$Month
+
+  result1$Category <- i
+  results[[i]] <- result1
+
+}
+
+results_df <- do.call(rbind, results)
+write.table(results_df, "diversity_indices.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+
+#03 Plot
+	a1 = read.delim("alpha_for_plot.tsv", row.names=1,header = T, sep = "\t")
+
+	ordered.Category <- c("01prok_corrected","01prok_nocorrect","02protist_aftercorrection","02protist_nocorrection","03ben","04fish")
+	ordered.Category <- factor(1:length(ordered.Category),labels = ordered.Category)
+	a1$Category<-factor(a1$Category,levels = levels(ordered.Category))
+
+	ordered.region <- c("LT","HK","SK")
+	ordered.region <- factor(1:length(ordered.region),labels = ordered.region)
+	a1$Region<-factor(a1$Region,levels = levels(ordered.region))
+
+	ordered.season <- c("Feb","May","Aug","Nov")
+	ordered.season <- factor(1:length(ordered.season),labels = ordered.season)
+	a1$Season<-factor(a1$Season,levels = levels(ordered.season))
+
+	ordered.site2 <- c("CMW","CC","PC","SW","Sta","Bea","Sha","Blu","LKW")
+	ordered.site2 <- factor(1:length(ordered.site2),labels = ordered.site2)
+	a1$Site2<-factor(a1$Site2,levels = levels(ordered.site2))
+
+
+	ordered.site <- c("CMW1","CMW2","CMW3","SW1","CC1","CC2","CC3","PC1","PC2","PC3","SW1","SW2","SW3","Sta1","Sta2","Sta3","Bea1","Bea2","Bea3","Sha1","Sha2","Sha3","Blu1","Blu2","Blu3","LKW1","LKW2","LKW3")
+	ordered.site <- factor(1:length(ordered.site),labels = ordered.site)
+
+	a1$Site<-factor(a1$Site,levels = levels(ordered.site))
+
+	colors= c("LT" = rgb(255, 190, 85,max=255), "HK" = rgb(133, 214, 51,max=255), "SK" = rgb(92, 173, 214,max=255))
+
+	View(a1)
+##3.1 Richness
+    p1 <- ggboxplot(a1,x="Site2",y="Richness",
+         color = "Region", 
+         fill="NA",
+         palette = colors,
+         alpha=0.7, 
+         linetype=1,
+         size=0.8,
+         bxp.errorbar=T,
+         width = 0.8,
+         font.label = list(size = 25),
+         error.plot = "errorbar",
+         add = "mean",
+         add.params = list(shape="Region",color="Region",alpha=0.8),
+         xlab="",
+         ylab="Richness",
+         title="",
+         ggtheme=theme_bw())+
+     facet_wrap(~Category + Season, nrow =6, ncol = 4)+
+     theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+ 
+     theme(text = element_text(family = "Arial", size = 25))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank()) + 
+     scale_y_continuous(limits = c(0, 400), breaks = seq(0,400, by= 200))
+
+   f1 <- ggboxplot(a1,x="Site2",y="Richness",
+         color = "Region", 
+         fill="NA",
+         palette = colors,
+         alpha=0.7,
+         linetype=1,
+         size=0.8,
+         bxp.errorbar=T,
+         width = 0.8,
+         font.label = list(size = 25),
+         error.plot = "errorbar",
+         add = "mean",
+         add.params = list(shape="Region",color="Region",alpha=0.8),
+         xlab="",
+         ylab="Richness",
+         title="",
+         ggtheme=theme_bw())+
+     facet_wrap(~Category + Season, nrow =5, ncol = 4)+
+     theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+ 
+     theme(text = element_text(family = "Arial", size = 25))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank()) + 
+     scale_y_continuous(limits = c(0, 80), breaks = seq(0,80, by= 40))
+
+##3.2 Shannon 
+    p4 <- ggboxplot(a1,x="Site2",y="Shannon",
+         color = "Region", 
+         fill="NA",
+         palette = colors,
+         alpha=0.7, #透明度
+         linetype=1,
+         size=0.8,
+         bxp.errorbar=T,
+         width = 0.8,#箱体的宽度
+         font.label = list(size = 25),
+         error.plot = "errorbar",
+         add = "mean",
+         add.params = list(shape="Region",color="Region",alpha=0.8),
+         xlab="",
+         ylab="Shannon diversity index",
+         title="",
+         ggtheme=theme_bw())+
+     facet_wrap(~Category + Season, nrow =5, ncol = 4)+
+     theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+ 
+     theme(text = element_text(family = "Arial", size = 25))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank()) + # 去掉x轴刻度线
+     scale_y_continuous(limits = c(0, 5), breaks = seq(0,5, by= 2))
+
+#4 Richness as Region add ANOVA
+
+my_comparisons <- list(c("LT","HK"), c("HK", "SK"),
+                       c("LT", "SK"))
+
+    p2 <- ggboxplot(a1,x="Region",y="Richness",
+         color = "Region", 
+         fill="NA",
+         palette = colors,
+         alpha=0.7, #透明度
+         linetype=1,
+         size=0.8,
+         bxp.errorbar=T,
+         width = 0.8,#箱体的宽度
+         font.label = list(size = 25),
+         error.plot = "errorbar",
+         add = "mean",
+         add.params = list(shape="Region",color="Region",alpha=0.8),
+         xlab="",
+         ylab="Richness",
+         title="",
+         ggtheme=theme_bw())+
+     facet_wrap(~Category + Season, nrow =5, ncol = 4)+ 
+     stat_compare_means(method = "anova", label.y = 30)+  # Add global p-value
+     stat_compare_means(label = "p.signif", method = "t.test",
+                     ref.group = ".all.")+   # Pairwise comparison against all
+    theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+
+     theme(text = element_text(family = "Arial", size = 25))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank()) + # 去掉x轴刻度线
+     scale_y_continuous(limits = c(0, 400), breaks = seq(0,400, by= 100))
+
+##Shannon as Region add ANOVA
+
+my_comparisons <- list(c("LT","HK"), c("HK", "SK"),
+                       c("LT", "SK"))
+
+    p3 <- ggboxplot(a1,x="Region",y="Shannon",
+         color = "Region", 
+         fill="NA",
+         palette = colors,
+         alpha=0.7, #透明度
+         linetype=1,
+         size=0.8,
+         bxp.errorbar=T,
+         width = 0.8,#箱体的宽度
+         font.label = list(size = 25),
+         error.plot = "errorbar",
+         add = "mean",
+         add.params = list(shape="Region",color="Region",alpha=0.8),
+         xlab="",
+         ylab="Shannnon diversity index",
+         title="",
+         ggtheme=theme_bw())+
+     facet_wrap(~Category + Season, nrow =5, ncol = 4)+ 
+     stat_compare_means(method = "anova", label.y = 30)+  # Add global p-value
+     stat_compare_means(label = "p.signif", method = "t.test",
+                     ref.group = ".all.")+   # Pairwise comparison against all
+    theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+
+     theme(text = element_text(family = "Arial", size = 25))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank()) + # 去掉x轴刻度线
+     scale_y_continuous(limits = c(0, 5), breaks = seq(0,5, by= 2))
+
+##save pdf 12x15

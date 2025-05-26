@@ -1,0 +1,102 @@
+# 06 fastSparcc co-ccurence network Season x Region 12 groups
+
+## https://github.com/scwatts/fastspar
+## input: relative abundance > 0.01% then rarefied&curated otutable
+## FastSpar requires read counts
+
+#00 input
+	conda activate fastspar
+
+#01 Upload Season x Region count tables (12)
+
+#2 Calculate correlations 
+	# names.txt are Season x Region name, e.g. HK_Aug
+	dos2unix *.tsv
+
+	for i in `cat names.txt`
+	do
+	  time fastspar --otu_table $i'_allGefishSpe_tab.tsv' --correlation $i'_median_correlation.tsv' --covariance $i'_median_covariance.tsv' --threads 64;
+	done
+	#
+	for i in `cat names.txt`
+	do
+	   fastspar --iterations 50 --exclude_iterations 20 --otu_table $i'_allGefishSpe_tab.tsv' --correlation $i'_median_correlation.tsv' --covariance $i'_median_covariance.tsv' --threads 64;
+	done
+	
+#2 Calculate p
+	mkdir -p bootstrap_counts
+
+	for i in `cat names.txt`
+	do
+	  fastspar_bootstrap --otu_table $i'_allGefishSpe_tab.tsv' --number 1000 --prefix bootstrap_counts/$i --threads 64;
+	done
+
+	mkdir -p bootstrap_correlation
+
+	for i in `cat names.txt`
+	do
+	  parallel -j 50 fastspar --otu_table {} --correlation bootstrap_correlation/cor_$i{/} --covariance bootstrap_correlation/cov_$i{/} -i 5 ::: bootstrap_counts/$i*;
+	done
+
+	for i in `cat names.txt`
+	do
+	  fastspar_pvalues --otu_table $i'_allGefishSpe_tab.tsv' --correlation $i'_median_correlation.tsv' --prefix bootstrap_correlation/cor_$i --permutations 1000 --outfile $i'_pvalues.tsv' --threads 64;
+	done
+
+#3 Download all pvalues.tsv & median_correlation.tsv 
+
+#4 Use R script for donwstream analysis (e.g. construct network)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#------------------12 SXR 分开算
+##1.1 计算相关性
+	dos2unix *.tsv
+
+	for i in `cat names.txt`
+	do
+	  time fastspar --otu_table $i'_allGefishSpe_tab.tsv' --correlation $i'_median_correlation.tsv' --covariance $i'_median_covariance.tsv' --threads 64;
+	done
+
+
+	#
+	for i in `cat names.txt`
+	do
+	   fastspar --iterations 50 --exclude_iterations 20 --otu_table $i'_allGefishSpe_tab.tsv' --correlation $i'_median_correlation.tsv' --covariance $i'_median_covariance.tsv' --threads 64;
+	done
+##1.2 计算p
+	mkdir -p bootstrap_counts
+
+	for i in `cat names.txt`
+	do
+	  fastspar_bootstrap --otu_table $i'_allGefishSpe_tab.tsv' --number 1000 --prefix bootstrap_counts/$i --threads 64;
+	done
+
+	mkdir -p bootstrap_correlation
+
+	for i in `cat names.txt`
+	do
+	  parallel -j 50 fastspar --otu_table {} --correlation bootstrap_correlation/cor_$i{/} --covariance bootstrap_correlation/cov_$i{/} -i 5 ::: bootstrap_counts/$i*;
+	done
+	# cor_{/}，cov_{/} 表示输出文件名是cor_,cov_加输入文件名
+	# 不输入Y也行 可以自动跳过
+	for i in `cat names.txt`
+	do
+	  fastspar_pvalues --otu_table $i'_allGefishSpe_tab.tsv' --correlation $i'_median_correlation.tsv' --prefix bootstrap_correlation/cor_$i --permutations 1000 --outfile $i'_pvalues.tsv' --threads 64;
+	done
+
+##下载 pvalues.tsv 和 median_correlation.tsv 在R处理+作图
+
+## 2 用R处理结果

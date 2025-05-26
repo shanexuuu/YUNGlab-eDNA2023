@@ -1,0 +1,30 @@
+#03 Make 12 tables by combination of Season x Region then input for fastSparCC
+
+	rm(list = ls()) # 清空环境变量
+
+	setwd("03_seperate_tables_by_SeasonxRegion")  #laptop 设置工作目录
+
+	library(dplyr)
+#--------  for FastSpar input ------
+	group <-read.delim("allGroup_noPC2Feb.tsv", row.names = 1, header = TRUE, sep = "\t")
+	otu <-read.delim("allGenus_fishSpecies_tab.tsv", row.names = 1, header = TRUE, sep = "\t")
+
+	t_otu <- t(otu)
+t_otu_df <- as.data.frame(t_otu)
+t_otu_df <- t_otu_df[rownames(group), ]
+
+group <- group %>% arrange(rownames(group)) %>% ungroup()
+
+t_otu_df <- t_otu_df %>% arrange(rownames(t_otu)) %>% ungroup()
+
+unique_groups <- unique(group[c("Region", "Season")])
+for (i in seq_len(nrow(unique_groups))) {
+  region_season <- unique_groups[i, ]
+  region <- region_season[, "Region"]
+  season <- region_season[, "Season"]
+  otu_subset <- t_otu_df[rownames(group[group$Region == region & group$Season == season, ]), ]
+  filename <- paste0(region, "_", season, "_allGenus_fishSpecies.tsv")
+  write.table(t(otu_subset), file = filename, sep = "\t", row.names = TRUE, col.names = TRUE, quote = FALSE)
+}
+
+## input results for fastSparCC

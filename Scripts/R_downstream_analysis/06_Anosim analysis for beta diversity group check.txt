@@ -1,0 +1,92 @@
+#06 Anosim analysis for beta diversity group check
+
+##input otutab: 0.01%rela filt → rarefied; noPC2Feb
+
+# 00 prepare env
+	rm(list = ls()) 
+
+	setwd("06_Anosim") 
+
+library(vegan)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(vegan)
+library(ggplot2)
+library(ggprism)
+library(ggpubr)
+
+# 02 input 
+ls <- readLines("name.txt")
+
+df_rareified <- list()
+
+for (i in ls) {
+  df_rareified[[i]] <- read.delim(paste0(i, ".tsv"), row.names = 1, sep = '\t', header = TRUE, check.names = FALSE)
+}
+
+
+group <- read.delim("allGroup_noPC2Feb.tsv", header = TRUE, row.names = 1)
+
+
+results <- list()
+
+
+for (i in ls) {
+  otu_table <- df_rareified[[i]]
+  distance_matrix <- vegdist(otu_table, method = "bray")
+  group_info <- group[rownames(otu_table), ]
+  grouping_factors <- c("Region", "Site2", "Season", "SxR")
+  anosim_results <- list()
+
+  for (factor in grouping_factors) {
+    if (factor %in% colnames(group_info)) {
+      unique_levels <- unique(group_info[[factor]])
+      if (length(unique_levels) > 1) {
+        level_counts <- table(group_info[[factor]])
+        if (all(level_counts >= 2)) {
+          anosim_result <- anosim(distance_matrix, group_info[[factor]], permutations = 9999)
+          anosim_results[[factor]] <- list(
+            R = anosim_result$statistic,
+            p = anosim_result$signif
+          )
+        } else {
+          warning(paste("Factor", factor, "has levels with less than 2 samples:", unique_levels))
+          anosim_results[[factor]] <- list(
+            R = NA,
+            p = NA
+          )
+        }
+      } else {
+        warning(paste("Factor", factor, "has only one level:", unique_levels))
+        anosim_results[[factor]] <- list(
+          R = NA,
+          p = NA
+        )
+      }
+    } else {
+      warning(paste("Column", factor, "not found in group_info"))
+      anosim_results[[factor]] <- list(
+        R = NA,
+        p = NA
+      )
+    }
+  }
+  results[[i]] <- anosim_results
+}
+
+results_df <- do.call(rbind, lapply(names(results), function(sample) {
+  data.frame(
+    Sample = sample,
+    Region_R = results[[sample]]$Region$R,
+    Region_p = results[[sample]]$Region$p,
+    Site2_R = results[[sample]]$Site2$R,
+    Site2_p = results[[sample]]$Site2$p,
+    Season_R = results[[sample]]$Season$R,
+    Season_p = results[[sample]]$Season$p,
+    SxR_R = results[[sample]]$SxR$R,
+    SxR_p = results[[sample]]$SxR$p
+  )
+}))
+
+write.table(results_df, "anosim_results.tsv", sep = "\t", row.names = FALSE, quote = FALSE)

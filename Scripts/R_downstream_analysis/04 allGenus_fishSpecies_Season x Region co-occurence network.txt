@@ -1,0 +1,308 @@
+#06 allGenus_fishSpecies_407 noPC2Feb Season x Region 12 co-occurence networks
+
+## Network Cutoff: r≥0.7 & p<0.01
+## Season x Region, total 12groups, calculate fastSparCC correlations →R igraph subgraph
+## Calculate Zi Pi: library(brainGraph)  # https://search.r-project.org/CRAN/refmans/brainGraph/html/vertex_roles.html
+
+# 00 prepare env
+	rm(list = ls()) 
+	setwd("04_fastSpar_co-occurence_network") 
+
+	library(psych)
+	library(rstatix)
+	library(car)
+	library(reshape2)
+	library(ggpubr)
+	library(agricolae)
+	library(ggthemes)
+	library(ggsci)
+	library(ggbreak)
+	library(ggsignif)
+	library(readxl)
+	library(RColorBrewer)
+	library(vegan)
+	library(picante)
+	library(ggplot2)
+	library(doBy) 	
+	library(ggalt)	
+	library(Hmisc) 
+	library(dplyr) 
+	library(igraph)
+	library(brainGraph) 
+
+# 01 make lists to store cor_sparcc, p,matrix, and igraph
+
+	set.seed(1111) 
+	
+	cor_sparcc_list <- list()
+	pvals_list <- list()
+	adj_list <- list()
+	g_list <- list()
+	memb_list <- list() #store modularity
+	pi_list <- list()  # store Pi
+	zi_list <- list()  # store Zi
+
+#2 input & process
+
+    # ls.txt: each line is sample name, e.g. "HK_Aug"
+	
+    ls <- readLines("ls.txt")
+
+for (i in ls) {
+  cor_sparcc_list[[i]] <- read.delim(paste0(i, "_median_correlation.tsv"), row.names = 1, sep = '\t', check.names = FALSE)
+
+  pvals_list[[i]] <- read.delim(paste0(i, "_pvalues.tsv"), row.names = 1, sep = '\t', check.names = FALSE)
+
+  cor_sparcc_list[[i]][abs(cor_sparcc_list[[i]]) < 0.7] <- 0
+  
+  pvals_list[[i]][pvals_list[[i]] >= 0.01] <- -1
+  pvals_list[[i]][pvals_list[[i]] < 0.01 & pvals_list[[i]] >= 0] <- 1
+  pvals_list[[i]][pvals_list[[i]] == -1] <- 0
+
+  adj_list[[i]] <- as.matrix(cor_sparcc_list[[i]]) * as.matrix(pvals_list[[i]])
+  diag(adj_list[[i]]) <- 0
+
+  write.table(data.frame(adj_list[[i]]), paste0(i, "_network_fastsparcc_cor0.7_p0.01.tsv"), col.names = NA, sep = '\t', quote = FALSE)
+}
+
+
+for (i in ls) {
+  g <- graph_from_adjacency_matrix(adj_list[[i]], mode = 'undirected', weighted = TRUE, diag = FALSE)
+  g <- simplify(g)
+  g <- delete_vertices(g, names(degree(g)[degree(g) == 0]))
+  E(g)$sparcc <- E(g)$weight
+  E(g)$weight <- abs(E(g)$weight)
+  g_list[[i]] <- g
+}
+
+
+for (i in ls) {
+  g <- g_list[[i]] 
+  memb <- membership(cluster_fast_greedy(g))
+  memb_list[[i]] <- memb
+
+  pi <- part_coeff(g, memb, A = NULL, weighted = FALSE)
+  pi_list[[i]] <- pi
+
+  zi <- within_module_deg_z_score(g, memb, A = NULL, weighted = FALSE)
+  zi_list[[i]] <- zi
+  pi[is.na(pi)] <- 0
+  zi[is.na(zi)] <- 0
+  memb[is.na(memb)] <- 0 
+  V(g)$pi <- pi
+  V(g)$zi <- zi
+  V(g)$modularity <- memb
+  g_list[[i]] <- g
+}
+
+
+for (i in ls) {
+  g <- g_list[[i]] 
+  node_list <- data.frame(
+    nodes_id = V(g)$name,  
+    degree = degree(g),   
+    modularity = V(g)$modularity,
+    Zi = V(g)$zi,
+    Pi = V(g)$pi
+  )
+
+  write.table(node_list, paste0(i, "_network_cor0.7_p0.01_node_list.tsv"), sep = '\t', row.names = FALSE, quote = FALSE)
+}
+
+
+for (i in ls) {
+  g <- g_list[[i]]
+  adj_matrix <- as.matrix(as_adjacency_matrix(g, attr = 'sparcc'))
+  write.table(data.frame(adj_matrix, check.names = FALSE), paste0(i, "_network_cor0.7_p0.1_matrix.tsv"), col.names = NA, sep = '\t', quote = FALSE)
+  write_graph(g, paste0(i, "_network_cor0.7_p0.1.gml"), format = 'gml')
+  write_graph(g, paste0(i, "_network_cor0.7_p0.1.graphml"), format = 'graphml')
+  edge <- data.frame(as_edgelist(g))
+  edge_list <- data.frame(
+    source = edge[[1]],
+    target = edge[[2]],
+    weight = E(g)$weight,
+    sparcc = E(g)$sparcc
+  )
+  write.table(edge_list, paste0(i, "_network_cor0.7_p0.01_edge_list.tsv"), sep = '\t', row.names = FALSE, quote = FALSE)
+}
+
+
+for (i in ls) {
+  g <- g_list[[i]]
+  E(g)$color <- ifelse(E(g)$sparcc > 0, "lightpink", "lightblue")
+  E(g)$width <- abs(E(g)$weight)
+}
+
+for (i in ls) {
+  plot(g,
+       layout = layout_with_fr(g, niter = 1000),  
+       vertex.size = 3,  
+       vertex.color = V(g)$modularity,  
+       edge.color = E(g)$color, 
+       edge.width = E(g)$width,  
+       vertex.label.cex = 0.5 
+  )
+}
+
+# 03 Calculate network properties
+network_properties_list <- list()
+
+for (i in ls) {
+  g <- g_list[[i]]
+  connectance <- edge_density(g, loops=FALSE)
+  average_degree <- mean(degree(g))
+  average_path_length <- average.path.length(g)
+  diameter <- diameter(g, directed = FALSE, unconnected = TRUE, weights = NULL)
+  edge_connectivity <- edge_connectivity(g)
+  clustering_coefficient <- transitivity(g)
+  no_clusters <- no.clusters(g)
+  centralization_betweenness <- centralization.betweenness(g)$centralization
+  centralization_degree <- centralization.degree(g)$centralization
+  network_properties <- data.frame(
+    Network = i,
+    Connectance = connectance,
+    Average_Degree = average_degree,
+    Average_Path_Length = average_path_length,
+    Diameter = diameter,
+    Edge_Connectivity = edge_connectivity,
+    Clustering_Coefficient = clustering_coefficient,
+    Number_of_Clusters = no_clusters,
+    Betweenness_Centralization = centralization_betweenness,
+    Degree_Centralization = centralization_degree,
+    stringsAsFactors = FALSE
+  )
+  network_properties_list[[i]] <- network_properties
+}
+
+network_properties_df <- do.call(rbind, network_properties_list)
+
+write.table(network_properties_df, "network_properties_SxR_R0.7_p0.01.tsv", sep = '\t', row.names = FALSE, quote = FALSE)
+
+
+# 04 Construct subgraphs of each smaple, inside each  Season x Region networks
+## 4.1 transform to long data
+	library(tidyr)
+	library(dplyr)
+	data <- read.delim("allGfishS_tab.tsv")
+
+long_data <- data %>%
+  pivot_longer(
+    cols = -allGfishSid, 
+    names_to = "Sample",
+    values_to = "Value"  
+  )
+
+print(long_data)
+
+write.table(long_data, "allGfishS_tab_long.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+
+## 4.2 Each allGfishSid is considered as node
+	# Read the sample_names.tsv file
+sample_names <- read.delim("sample_names.tsv", header = FALSE, sep = "\t", stringsAsFactors = FALSE)
+
+	# Read the sample_group.tsv file
+sample_group <- read.delim("sample_group.tsv", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+	# Read the ls.txt file
+ls <- readLines("ls.txt")
+
+	# Initialize a list to store nodes for each SxR
+nodes_list <- list()
+subgraph_list <- list()
+
+# Loop through each SxR in ls
+for (i in ls) {
+    # Get all Samples for the current SxR
+    samples <- sample_group %>%
+        filter(SxR == i) %>%
+        pull(Sample)
+    
+    # Initialize a list to store nodes for the current SxR
+    nodes_list[[i]] <- list()
+    subgraph_list[[i]] <- list()
+    
+    # Loop through each Sample
+    for (sample in samples) {
+        # Get all allGfishSid for the current Sample
+        nodes <- sample_group %>%
+            filter(Sample == sample) %>%
+            pull(allGfishSid)
+        
+        # Store the nodes in the list
+        nodes_list[[i]][[sample]] <- nodes
+        
+        # Check if the nodes exist in the graph
+        valid_nodes <- nodes[nodes %in% V(g_list[[i]])$name]
+        
+        if (length(valid_nodes) == 0) {
+            message("No valid nodes found for sample ", sample, " in graph ", i, ". Skipping.")
+            next
+        }
+        
+        # Create the subgraph
+        subgraph_list[[i]][[sample]] <- induced_subgraph(g_list[[i]], valid_nodes)
+    }
+}
+
+# Now nodes_list contains a list of nodes for each SxR and Sample
+# Example: nodes_list[["HK_Aug"]][["HKBea1Aug"]] will give you the nodes for HKBea1Aug in HK_Aug
+
+# Print the nodes_list to verify
+print(nodes_list)
+
+# Print the subgraph_list to verify
+print(subgraph_list)
+
+#05  Calculate properties of subgraphs
+
+network_properties_list <- list()
+
+# Loop through each SxR in ls
+for (i in ls) {
+    # Loop through each Sample in the current SxR
+    for (sample in names(subgraph_list[[i]])) {
+        # Get the current subgraph
+        subgraph <- subgraph_list[[i]][[sample]]
+        
+        # Calculate network properties
+        connectance <- edge_density(subgraph, loops = FALSE)
+        average_degree <- mean(degree(subgraph))
+        average_path_length <- average.path.length(subgraph)
+        diameter <- diameter(subgraph, directed = FALSE, unconnected = TRUE, weights = NULL)
+        edge_connectivity <- edge.connectivity(subgraph)
+        clustering_coefficient <- transitivity(subgraph)
+        no_clusters <- no.clusters(subgraph)
+        centralization_betweenness <- centralization.betweenness(subgraph)$centralization
+        centralization_degree <- centralization.degree(subgraph)$centralization
+        
+        # Get the number of nodes and edges
+        num_nodes <- vcount(subgraph)
+        num_edges <- ecount(subgraph)
+        
+        # Create a data frame to store the network properties
+        network_properties <- data.frame(
+            Network = paste(i, sample, sep = "_"),
+            Connectance = connectance,
+            Average_Degree = average_degree,
+            Average_Path_Length = average_path_length,
+            Diameter = diameter,
+            Edge_Connectivity = edge_connectivity,
+            Clustering_Coefficient = clustering_coefficient,
+            Number_of_Clusters = no_clusters,
+            Betweenness_Centralization = centralization_betweenness,
+            Degree_Centralization = centralization_degree,
+            Number_of_Nodes = num_nodes,
+            Number_of_Edges = num_edges,
+            stringsAsFactors = FALSE
+        )
+        
+        # Add the network properties to the list
+        network_properties_list[[paste(i, sample, sep = "_")]] <- network_properties
+    }
+}
+
+# Combine all network properties into a single data frame
+network_properties_df <- do.call(rbind, network_properties_list)
+
+# Write the network properties to a file
+write.table(network_properties_df, "network_properties_everysample_R0.7_p0.01.tsv", sep = "\t", row.names = FALSE, quote = FALSE)

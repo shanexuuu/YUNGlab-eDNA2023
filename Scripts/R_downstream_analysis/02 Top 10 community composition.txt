@@ -1,0 +1,317 @@
+#02 Top 10 community composition
+
+##input prok & protist corrected data
+##compare corrected vs nocorrect
+
+# 00 prepare env
+rm(list = ls())
+
+	setwd("02_composition_top10") 
+
+## library(colortools)
+library(rstatix)
+library(car)
+library(reshape2)
+library(ggplot2)
+library(ggpubr)
+library(agricolae)
+library(ggthemes)
+library(ggsci)
+library(ggbreak)
+library(ggsignif)
+library(readxl)
+library(RColorBrewer)
+library(vegan) 
+library(picante)  
+library(doBy)  
+library(ggalt)  
+
+ls <- readLines("allname.txt")
+## ls <- readLines("name.txt")
+
+df_rareified <- list()
+
+
+for (i in ls) {
+  df_rareified[[i]] <- read.table(paste0(i, ".txt"), sep="\t", header=T, row.names=1)
+  
+  a1 <- df_rareified[[i]]
+
+  phylum_per <- as.data.frame(lapply(a1, function(x) x / sum(x)))
+  row.names(phylum_per) <- row.names(a1) 
+
+  phylum.ave <- apply(phylum_per, 1, FUN=mean)
+  phylum.2 <- cbind(phylum_per, phylum.ave)[order(-phylum.ave),]  
+
+  phylum.2 <- subset(phylum.2[1:10,], select=-phylum.ave)
+
+  phylum.2 <- rbind(phylum.2, others=apply(phylum.2, 2, function(x){1-sum(x)}))
+
+  phylum.2 <- cbind(PhylumID=row.names(phylum.2), phylum.2)
+
+  phylum.2$PhylumID <- factor(phylum.2$PhylumID, levels = rev(phylum.2$PhylumID))
+
+  phylum.gg <- melt(phylum.2, id.vars="PhylumID", variable.name="SampleID", value.name="Abundance")
+
+  a <- data.frame(id=rownames(phylum.gg), phylum.gg)
+  write.table(a, paste0(i, "_rela.tsv"), sep = "\t", row.names = FALSE, quote = FALSE, col.names = TRUE)
+}
+
+# 02 Use Microsoft Excel to add Group information and average relative abundance
+
+# 03 Plot
+	library(wesanderson)
+	library(ggpubr)
+
+	a1 = read.delim("01prok_correct_relaabun.tsv", row.names=1,header = T, sep = "\t")
+	a2 = read.delim("01prok_nocorre_relaabun.tsv", row.names=1,header = T, sep = "\t")
+	a3 = read.delim("02protist_correct_relaabun.tsv", row.names=1,header = T, sep = "\t")
+	a4 = read.delim("02protist_nocorre_relaabun.tsv", row.names=1,header = T, sep = "\t")
+	a5 = read.delim("03ben_relaabun.tsv", row.names=1,header = T, sep = "\t")	
+	a6 = read.delim("04fish_relaabun.tsv", row.names=1,header = T, sep = "\t")
+
+	ordered.region <- c("LT","HK","SK")
+	ordered.region <- factor(1:length(ordered.region),labels = ordered.region)
+	a1$Region<-factor(a1$Region,levels = levels(ordered.region))
+	a2$Region<-factor(a2$Region,levels = levels(ordered.region))
+	a3$Region<-factor(a3$Region,levels = levels(ordered.region))
+	a4$Region<-factor(a4$Region,levels = levels(ordered.region))
+	a5$Region<-factor(a5$Region,levels = levels(ordered.region))
+	a6$Region<-factor(a6$Region,levels = levels(ordered.region))
+
+	ordered.season <- c("Feb","May","Aug","Nov")
+	ordered.season <- factor(1:length(ordered.season),labels = ordered.season)
+	a1$Season<-factor(a1$Season,levels = levels(ordered.season))
+	a2$Season<-factor(a2$Season,levels = levels(ordered.season))
+	a3$Season<-factor(a3$Season,levels = levels(ordered.season))
+	a4$Season<-factor(a4$Season,levels = levels(ordered.season))
+	a5$Season<-factor(a5$Season,levels = levels(ordered.season))
+	a6$Season<-factor(a6$Season,levels = levels(ordered.season))
+
+	ordered.site2 <- c("CMW","CC","PC","SW","Sta","Bea","Sha","Blu","LKW")
+	ordered.site2 <- factor(1:length(ordered.site2),labels = ordered.site2)
+	a1$Site2<-factor(a1$Site2,levels = levels(ordered.site2))
+	a2$Site2<-factor(a2$Site2,levels = levels(ordered.site2))
+	a3$Site2<-factor(a3$Site2,levels = levels(ordered.site2))
+	a4$Site2<-factor(a4$Site2,levels = levels(ordered.site2))
+	a5$Site2<-factor(a5$Site2,levels = levels(ordered.site2))
+	a6$Site2<-factor(a6$Site2,levels = levels(ordered.site2))
+
+	ordered.site <- c("CMW1","CMW2","CMW3","SW1","CC1","CC2","CC3","PC1","PC2","PC3","SW1","SW2","SW3","Sta1","Sta2","Sta3","Bea1","Bea2","Bea3","Sha1","Sha2","Sha3","Blu1","Blu2","Blu3","LKW1","LKW2","LKW3")
+	ordered.site <- factor(1:length(ordered.site),labels = ordered.site)
+
+	a1$Site<-factor(a1$Site,levels = levels(ordered.site))
+	a2$Site<-factor(a2$Site,levels = levels(ordered.site))
+	a3$Site<-factor(a3$Site,levels = levels(ordered.site))
+	a4$Site<-factor(a4$Site,levels = levels(ordered.site))
+	a5$Site<-factor(a5$Site,levels = levels(ordered.site))
+	a6$Site<-factor(a6$Site,levels = levels(ordered.site))
+
+	a1$PhylumID <- factor(a1$PhylumID)
+	levels <- levels(a1$PhylumID)
+	levels <- c(levels[!levels %in% "others"], "others")
+	a1$PhylumID <- factor(a1$PhylumID, levels = levels)
+
+	#Colour  https://cloud.tencent.com/developer/article/2116014
+	colors= c("LT" = rgb(255, 190, 85,max=255), "HK" = rgb(133, 214, 51,max=255), "SK" = rgb(92, 173, 214,max=255))
+	library(RColorBrewer)
+	prok_names <- c("Bacteroidota", "Actinobacteriota", "Crenarchaeota", "Firmicutes", "Marinimicrobia_(SAR406_clade)",
+                  "Proteobacteria", "Cyanobacteria", "SAR324_clade(Marine_group_B)", "Planctomycetota",
+                  "Thermoplasmatota","Verrucomicrobiota","others")
+				  
+	phylum_names <- c("Cercozoa", "Gyrista", "Ciliophora", "Cryptophyta_X", "Cryptophyta_X:nucl",
+                   "Dinoflagellata", "Chlorophyta_X", "Haptophyta_X", "Picozoa_X", "Radiolaria","Rhodophyta_X" ,"others")
+
+	colors <- brewer.pal(12, "Set3")
+
+	prok_names <- setNames(colors, prok_names)
+	phylum_colors <- setNames(colors, phylum_names)
+
+	p1 <- ggbarplot(a1, x = "Site2", y="Site2avgrela", color= "gray", alpha = 0.9, fill="PhylumID",
+          legend="right", 
+          legend.title="Top 10 Phylum") +
+           scale_fill_manual(values = prok_names) + # 应用颜色向量
+            theme_bw() +
+            rotate_x_text() + 
+         facet_wrap(~ Season, ncol=4) + 
+         labs(y = "Relative abundance") + theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+ 
+     theme(text = element_text(family = "Arial", size = 20))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank())+
+     theme(axis.title.x = element_blank())
+
+##保存为 pdf 12x4
+
+
+    #others总是在最后
+    a2$PhylumID <- factor(a2$PhylumID)
+    # 获取当前的因子水平并排除"others"
+    levels <- levels(a2$PhylumID)
+    # 将"others"添加到水平的最后
+    levels <- c(levels[!levels %in% "others"], "others")
+    # 重新定义因子水平
+    a2$PhylumID <- factor(a2$PhylumID, levels = levels)
+
+
+    p2 <- ggbarplot(a2, x = "Site2", y="Site2avgrela", color= "gray", alpha = 0.9, fill="PhylumID",
+          legend="right", 
+          legend.title="Top 10 Phylum") +
+           scale_fill_manual(values = prok_names) + # 应用颜色向量
+            theme_bw() +
+            rotate_x_text() + 
+         facet_wrap(~ Season, ncol=4) + 
+         labs(y = "Relative abundance") + theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+ 
+     theme(text = element_text(family = "Arial", size = 20))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank())+
+     theme(axis.title.x = element_blank())
+
+
+##
+
+    #others总是在最后
+    a3$PhylumID <- factor(a3$PhylumID)
+    # 获取当前的因子水平并排除"others"
+    levels <- levels(a3$PhylumID)
+    # 将"others"添加到水平的最后
+    levels <- c(levels[!levels %in% "others"], "others")
+    # 重新定义因子水平
+    a3$PhylumID <- factor(a3$PhylumID, levels = levels)
+
+    p3 <- ggbarplot(a3, x = "Site2", y="Site2avgrela", color= "gray", alpha = 0.9, fill="PhylumID",
+          legend="right", 
+          legend.title="Top 10 Phylum") +
+           scale_fill_manual(values = phylum_colors) + # 应用颜色向量
+            theme_bw() +
+            rotate_x_text() + 
+         facet_wrap(~ Season, ncol=4) + 
+         labs(y = "Relative abundance") + theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+ 
+     theme(text = element_text(family = "Arial", size = 20))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank())+
+     theme(axis.title.x = element_blank())
+
+
+##p4
+
+    #others总是在最后
+    a4$PhylumID <- factor(a4$PhylumID)
+    # 获取当前的因子水平并排除"others"
+    levels <- levels(a4$PhylumID)
+    # 将"others"添加到水平的最后
+    levels <- c(levels[!levels %in% "others"], "others")
+    # 重新定义因子水平
+    a4$PhylumID <- factor(a4$PhylumID, levels = levels)
+
+    p4 <- ggbarplot(a4, x = "Site2", y="Site2avgrela", color= "gray", alpha = 0.9, fill="PhylumID",
+          legend="right", 
+          legend.title="Top 10 Phylum") +
+           scale_fill_manual(values = phylum_colors) + # 应用颜色向量
+            theme_bw() +
+            rotate_x_text() + 
+         facet_wrap(~ Season, ncol=4) + 
+         labs(y = "Relative abundance") + theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+ 
+     theme(text = element_text(family = "Arial", size = 20))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank())+
+     theme(axis.title.x = element_blank())
+
+##p5 ben new无变化！
+    #others总是在最后
+    a5$PhylumID <- factor(a5$PhylumID)
+    # 获取当前的因子水平并排除"others"
+    levels <- levels(a5$PhylumID)
+    # 将"others"添加到水平的最后
+    levels <- c(levels[!levels %in% "others"], "others")
+    # 重新定义因子水平
+    a5$PhylumID <- factor(a5$PhylumID, levels = levels)
+
+    p5 <- ggbarplot(a5, x = "Site2", y="Site2avgrela", color= "gray", alpha = 0.9, fill="PhylumID",
+          legend="right", 
+          legend.title="Top 10 Order") +
+           scale_fill_manual(values = brewer.pal(11,"Set3")) + # 应用颜色向量
+            theme_bw() +
+            rotate_x_text() + 
+         facet_wrap(~ Season, ncol=4) + 
+         labs(y = "Relative abundance") + theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+ 
+     theme(text = element_text(family = "Arial", size = 20))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank())+
+     theme(axis.title.x = element_blank())
+
+##p6
+   #others总是在最后
+    a6$PhylumID <- factor(a6$PhylumID)
+    # 获取当前的因子水平并排除"others"
+    levels <- levels(a6$PhylumID)
+    # 将"others"添加到水平的最后
+    levels <- c(levels[!levels %in% "others"], "others")
+    # 重新定义因子水平
+    a6$PhylumID <- factor(a6$PhylumID, levels = levels)
+
+    p6 <- ggbarplot(a6, x = "Site2", y="Site2avgrela", color= "gray", alpha = 0.9, fill="PhylumID",
+          legend="right", 
+          legend.title="Top 10 Order") +
+           scale_fill_manual(values = brewer.pal(11,"Set3")) + # 应用颜色向量
+            theme_bw() +
+            rotate_x_text() + 
+         facet_wrap(~ Season, ncol=4) + 
+         labs(y = "Relative abundance") + theme(
+     axis.ticks.length.y = unit(-.05, "cm"),
+     axis.ticks.length.x = unit(0, "cm"),
+     axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+     axis.text.y = element_text(margin = margin(r = .2, unit = "cm")))+ theme_classic()+
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))+ 
+     theme(panel.background = element_rect(fill = "transparent", color = "transparent"))+ 
+     theme(text = element_text(family = "Arial", size = 20))+
+     theme(axis.text.x = element_text(size = 15))+
+     theme(axis.text.y = element_text(size = 15))+
+     theme(panel.grid=element_blank())+
+     theme(axis.ticks.x = element_blank())+
+     theme(axis.title.x = element_blank())
+------------------------------------------
+## Corrected data
+	ggarrange(p1, p2, p3, p4, ncol =1, nrow = 4, widths = c(1,1,1,1), heights = c(1,1,1,1), font.label = list(size = 10, familiy = "Arial"), common.legend = FALSE, legend = "bottom")+ theme(axis.text.y = element_text(size = 10))
+
+## Compare Correct
+	ggarrange(p1, p3, p5, p6, ncol =1, nrow = 4, widths = c(1,1,1,1), heights = c(1,1,1,1), font.label = list(size = 10, familiy = "Arial"), common.legend = FALSE, legend = "bottom")+ theme(axis.text.y = element_text(size = 10))

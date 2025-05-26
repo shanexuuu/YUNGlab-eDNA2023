@@ -1,0 +1,398 @@
+# Process Mifish-U sequence data  for eDNA samples Oct2024
+# Prof. Charmaine YUNG lab, HKUST
+
+- 01 Qiime2 demultiplex
+- 02 R dada2 cut primer
+- 03 Usearch QC & merge min 160bp
+- 04 Usearch ZOTU →0.985OTU 
+- 05 BLAST to custom Database
+- 06 eDNAFlow LCA methods for final taxonomic annotation.  https://github.com/mahsa-mousavi/eDNAFlow?tab=readme-ov-file#lca-lowest-common-ancestor-script-for-assigning-taxonomy
+- 07 Script “summarizeAbundance.py” was documented in EasyMicrobiome https://github.com/YongxinLiu/EasyMicrobiome/blob/master/script/summarizeAbundance.py
+
+# 00 Demultiplex 
+## input file directory，content rename as follows:
+- forward.fastq.gz
+- reverse.fastq.gz
+- names.txt (library_name list)
+
+	while read p; 
+	do
+	mkdir -p multiplexed/"$p";
+	done < names.txt
+
+##cp raw data
+
+	while read p; 
+	do
+	cp 01.RawData/"$p"/*_1.fq.gz multiplexed/"$p"/forward.fastq.gz;
+	done < names.txt
+
+	while read p; 
+	do
+	cp 01.RawData/"$p"/*_2.fq.gz multiplexed/"$p"/reverse.fastq.gz;
+	done < names.txt
+	
+##import
+	conda activate qiime2-amplicon-2024.2
+
+	while read p; 
+	do
+	qiime tools import \
+	  --type MultiplexedPairedEndBarcodeInSequence \
+	  --input-path multiplexed/"$p" \
+	  --output-path multiplexed/"$p"'.qza';
+	done < names.txt
+
+## demultiplex
+- double check barcode sequence for each sample. And untrimmed_sequences should be very little
+	mkdir -p 01_demultiplex/
+
+	while read p; 
+	do
+	qiime cutadapt demux-paired \
+	     --i-seqs multiplexed/"$p"'.qza' \
+	    --m-forward-barcodes-file "$p"'_barcode.txt' \
+	    --m-forward-barcodes-column forward-barcodes \
+	    --m-reverse-barcodes-file "$p"'_barcode.txt' \
+	    --m-reverse-barcodes-column reverse-barcodes \
+	    --o-per-sample-sequences 01_demultiplex/"$p"'_per_sample_sequences.qza' \
+	    --o-untrimmed-sequences 01_demultiplex/"$p"'untrimmed_sequences.qza';
+	done < names.txt
+
+- per_sample_sequences.qza:  demultiplexed sequence excluding  barcode sequence
+
+## export 
+	while read p; 
+	do
+	qiime tools export \
+          --input-path 01_demultiplex/"$p"'_per_sample_sequences.qza' \
+          --output-path 01_demultiplex/"$p";
+	done < names.txt
+
+## stat
+
+	while read p; 
+	do
+	seqkit stat 01_demultiplex/"$p"/*R1_001.fastq.gz > "$p"'_R1_stat.txt';
+	done < names.txt
+
+#01 Cut primer
+
+## MiFish
+	mkdir -p 02_MiFish_noprimer
+	
+	cp 01_demultiplex/*/*.gz 02_MiFish_noprimer/
+
+	# R remove primer
+	R
+	#### DADA2 analysis of fastq files
+	#### Paired-end 
+	####--------------- DADA2 processing ---------------#
+	#### Load library and functions
+	library(dada2); packageVersion("dada2") #1.31.0
+	library(ShortRead); packageVersion("ShortRead") #1.60.0
+	library(tidyverse); packageVersion("tidyverse") #2.0.0
+	library(Biostrings); packageVersion("Biostrings") # 2.70.3
+	
+	#### Load sequence reads
+
+	output_folder <- "02_MiFish_noprimer"
+
+	path <- "02_MiFish_noprimer"
+
+	fnFs <- sort(list.files(path, pattern="_R1_001.fastq.gz", full.names = T)) # Forward read files
+	fnRs <- sort(list.files(path, pattern="_R2_001.fastq.gz", full.names = T)) # Reverse read files
+	#### Get sample names, assuming files named as so: SAMPLENAME_XXX.fastq
+	sample_names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
+	View(sample_names) 
+	#### Visualize quality
+	plotQualityProfile(fnFs[1])
+	plotQualityProfile(fnRs[1])
+	#### ------------------------ Primer removal check ---------------------------- #
+	#### Identify primers
+	FWD <- "GTCGGTAAAACTCGTGCCAGC" # MiFish-F
+	REV <- "CATAGTGGGGTATCTAATCCCAGTTTG" # MiFish-R
+	allOrients <- function(primer) {
+	#### Create all orientations of the input sequence
+    require(Biostrings)
+    dna <- DNAString(primer)  # The Biostrings works w/ DNAString objects rather than character vectors
+    orients <- c(Forward = dna, Complement = Biostrings::complement(dna), Reverse = Biostrings::reverse(dna),
+        RevComp = Biostrings::reverseComplement(dna))
+    return(sapply(orients, toString))  # Convert back to character vector
+}
+
+FWD_orients <- allOrients(FWD)
+REV_orients <- allOrients(REV)
+
+	#### Identify primers
+primerHits <- function(primer, fn) {
+    # Counts number of reads in which the primer is found
+    nhits <- vcountPattern(primer, sread(readFastq(fn)), fixed = FALSE)
+    return(sum(nhits > 0))
+}
+
+seq_id <- 1
+rbind(FWD.ForwardReads = sapply(FWD_orients, primerHits, fn = fnFs[[seq_id]]),
+      FWD.ReverseReads = sapply(FWD_orients, primerHits, fn = fnRs[[seq_id]]), 
+      REV.ForwardReads = sapply(REV_orients, primerHits, fn = fnFs[[seq_id]]), 
+      REV.ReverseReads = sapply(REV_orients, primerHits, fn = fnRs[[seq_id]]))
+
+	#### Remove Primer
+fnFs.filtN <- file.path(path, "filtN", basename(fnFs)) # Put N-filtered files in filtN/ subdirectory
+fnRs.filtN <- file.path(path, "filtN", basename(fnRs))
+filterAndTrim(fnFs, fnFs.filtN, fnRs, fnRs.filtN, maxN = 0, multithread = TRUE)
+
+	cutadapt <- "/usr/bin/cutadapt" # CHANGE ME to the cutadapt path on your machine
+	system2(cutadapt, args = "--version") # Run shell commands from R
+
+path.cut <- file.path(path, "cutadapt")
+if(!dir.exists(path.cut)) dir.create(path.cut)
+fnFs.cut <- file.path(path.cut, basename(fnFs))
+fnRs.cut <- file.path(path.cut, basename(fnRs))
+
+FWD.RC <- dada2:::rc(FWD)
+REV.RC <- dada2:::rc(REV)
+# Trim FWD and the reverse-complement of REV off of R1 (forward reads)
+R1.flags <- paste("-g", FWD, "-a", REV.RC) 
+# Trim REV and the reverse-complement of FWD off of R2 (reverse reads)
+R2.flags <- paste("-G", REV, "-A", FWD.RC) 
+# Run Cutadapt
+for(i in seq_along(fnFs)) {
+  system2(cutadapt, args = c(R1.flags, R2.flags, "-n", 2, # -n 2 required to remove FWD and REV from reads
+                             "-o", fnFs.cut[i], "-p", fnRs.cut[i], # output files
+                             fnFs.filtN[i], fnRs.filtN[i])) # input files
+}
+
+	#### check after primer cut
+rbind(FWD.ForwardReads = sapply(FWD_orients, primerHits, fn = fnFs.cut[[1]]), FWD.ReverseReads = sapply(FWD_orients,
+    primerHits, fn = fnRs.cut[[1]]), REV.ForwardReads = sapply(REV_orients, primerHits,
+    fn = fnFs.cut[[1]]), REV.ReverseReads = sapply(REV_orients, primerHits, fn = fnRs.cut[[1]]))
+
+	#### Success! Primers are no longer detected in the cutadapted reads.
+
+	#### Save no primer seq
+
+	#### Forward and reverse fastq filenames have the format:
+cutFs <- sort(list.files(path.cut, pattern = "_R1_001.fastq.gz", full.names = TRUE))
+cutRs <- sort(list.files(path.cut, pattern = "_R2_001.fastq.gz", full.names = TRUE))
+
+	#### Extract sample names, assuming filenames have format:
+get.sample.name <- function(fname) strsplit(basename(fname), "_")[[1]][1]
+
+sample.names <- unname(sapply(cutFs, get.sample.name))
+
+View(sample.names)
+
+
+	#### Performing filtering and trimming after primer removed!
+filt_path <- file.path(path, "filtered_after_cut_primer") # Place filtered_after_cut_primer files in filtered/ subdirectory
+filtFs <- file.path(filt_path, paste0(sample_names, "_F_no_primer_filt.fastq.gz"))
+filtRs <- file.path(filt_path, paste0(sample_names, "_R_no_primer_filt.fastq.gz"))
+
+
+	#### Check quality after primer cut
+	plotQualityProfile(cutFs[1:2])
+	plotQualityProfile(cutRs[1:2])
+
+	#### truncLen=c(forward,reverse) is based on quality result
+	#### Why trunc at 110bp? Because 150 bp (PE150) - primer_length(48bp) ~ 110 bp, or trim set as 0
+out <- filterAndTrim(cutFs, filtFs, cutRs, filtRs,
+                     truncLen=c(110, 110), # Truncate the end of reads
+                     minLen = 100, # Remove unexpectedly short reads
+                     maxN = 0, maxEE = c(2,2), truncQ = 2, rm.phix = T,
+                     compress=TRUE, multithread=TRUE)
+View(out)
+
+	#### no trunc
+out <- filterAndTrim(cutFs, filtFs, cutRs, filtRs,
+                     truncLen=c(0, 0), # Truncate the end of reads
+                     minLen = 100, # Remove unexpectedly short reads
+                     maxN = 0, maxEE = c(2,2), truncQ = 2, rm.phix = T,
+                     compress=TRUE, multithread=TRUE)
+View(out)
+
+	plotQualityProfile(filtFs[1])
+	plotQualityProfile(filtRs[1])
+
+	#### Exclude 0 seq samples, rename filtFs and filtRs
+if(length(sample_names[out[,2]<1 | out[,1]<1]) > 0){
+  filtFs <- file.path(filt_path, paste0(sample_names[out[,2]>0 & out[,1]>0], "_F_filt.fastq.gz"))
+  filtRs <- file.path(filt_path, paste0(sample_names[out[,2]>0 & out[,1]>0], "_R_filt.fastq.gz"))
+}
+
+write.csv(out, paste0(output_folder, "/out_track.csv"))
+
+# Save workspace _skip
+# Save session info_skip
+	q()
+	n
+####···················R cut primer finishe····················································#
+
+#2 Run sequence read file through quality trimming: running window of Q25, 10-nt wide, mean Q25
+ - Prepare sample_name.txt
+ 
+	mkdir -p 02_trimmed
+
+	while read p; 
+	do
+	 sickle pe  -f 00_noprimer/''"$p"'_R1.fastq'  -r 00_noprimer/''"$p"'_R2.fastq'  -t sanger  -o 02_trimmed/''"$p"'_R1_paired.fastq'  -p 02_trimmed/''"$p"'_R2_paired.fastq' -s 02_trimmed/''"$p"'_nonparied.fastq' -q 25;
+	done < sample_name.txt
+
+	seqkit stat 02_trimmed/*R1_paired.fastq > 02_trimmed_stat.txt
+
+#3 usearch merge Mifish min 160 bp minovlen20 bp 
+##   -fastq_pctid  Minimum %id of alignment. Default 90. Consider decreasing if you have long overlaps.
+
+	mkdir -p 03_usearch_merge
+
+	while read p; 
+	do
+	 usearch -fastq_mergepairs 02_trimmed/''"$p"'_R1_paired.fastq'  -reverse 02_trimmed/''"$p"'_R2_paired.fastq'  -fastq_pctid 95  -fastqout 03_usearch_merge/''"$p"'_merge.fastq'  -fastq_minovlen 20 -fastq_minmergelen 160;
+	done < sample_name.txt
+
+	seqkit stat 03_usearch_merge/*fastq > 03_usearch_merge_stat.txt
+
+#4 Quality-filtering merged reads * 0 mismatches, fastq_maxee_rate 0.005
+	mkdir -p 04_quality_filt
+
+	while read p; 
+	do
+         usearch -fastq_filter 03_usearch_merge/''"$p"'_merge.fastq'  -fastq_maxee_rate 0.005  -fastaout 04_quality_filt/''"$p"'_merge.filt.fasta';
+	done < sample_name.txt
+
+	seqkit stat 04_quality_filt/*_merge.filt.fasta > 04_quality_filt_stat.txt
+
+#5 Add labels onto sequence read identifiers
+## fasta_number2.py: a python script to add labels onto sequence read identifiers
+	mkdir -p 05_final_label
+
+	while read p; 
+	do
+        python fasta_number2.py 04_quality_filt/''"$p"'_merge.filt.fasta' "$p" > 05_final_label/''"$p"'_label.fasta'
+	done < sample_name.txt
+
+#6 Concatenate seq
+	cat 05_final_label/*_label.fasta > cat_labeled.fa
+
+#7 Dereplicate the sequences using usearch (64 bit), min= 2 reads  
+
+	usearch -fastx_uniques cat_labeled.fa -fastaout cat_label_derep.fasta -sizeout 
+
+	#or use vsearch
+	vsearch-2.29.0/bin/vsearch -fastx_uniques cat_labeled.fa -fastaout cat_label_derep.fasta -sizeout 
+
+#8 ZOTU (Unoise3 Denoising)  
+	usearch  -unoise3 cat_label_derep.fasta -zotus cat_label_derep_zotus.fasta 
+
+#9 Assign reads to ZOTUs
+	usearch -otutab cat_labeled.fa -zotus cat_label_derep_zotus.fasta -otutabout cat_label_derep_zotus_otutab.txt -threads 180
+	#or use vsearch -otutab cat_labeled.fa -zotus cat_label_derep_zotus.fasta -otutabout cat_label_derep_zotus_otutab.txt -threads 180
+
+#10 vsearch  Map reads back to centriods make ZOTU
+##use identity at 0.985 
+## Make 0.985 OTU 
+	#sort
+	usearch -sortbylength cat_label_derep_zotus.fasta  -fastaout cat_label_derep_zotus_sorted.fasta 
+
+	usearch -cluster_smallmem cat_label_derep_zotus_sorted.fasta -id 0.985 -centroids 0.985otu.fa
+
+#11 0.985OTU table vsearch make
+## map id=0.985 
+	vsearch-2.29.0/bin/vsearch --usearch_global cat_labeled.fa --db 0.985otu.fa --id 0.985 --otutabout 0.985otus_otutab.txt --biomout 0.985otus_id0.985_otutab.biom  --threads 180 --log 0.985otutab_id0.985_log.txt
+
+#12  BLAST & LCA for taxa annotation
+- use custom_made_blast_database_22Oct24 
+- LCA input format:  -outfmt "6 qseqid sseqid staxids scomnames sscinames sskingdom pident length qlen slen mismatch gapopen gaps qstart qend sstart send stitle evalue bitscore qcovs" 
+- LCA was done by eDNAFlow https://github.com/mahsa-mousavi/eDNAFlow?tab=readme-ov-file#lca-lowest-common-ancestor-script-for-assigning-taxonomy
+	FASTA_FILE="0.985otu.fa"
+
+	mkdir -p 06_Blast
+
+	conda activate blast
+
+	for i in 98.5 97 95 90 0.85 0.80
+	do
+	blastn -evalue 1e-5 -db all_fish_mito_22Oct24_addtaxa -query $FASTA_FILE -perc_identity $i -max_target_seqs 10 -outfmt "6 qseqid sseqid staxids scomnames sscinames sskingdom pident length qlen slen mismatch gapopen gaps qstart qend sstart send stitle evalue bitscore qcovs" -out 06_Blast/blast_$i.txt;
+	done
+
+	## cp
+	
+	for i in 98.5 97 95 90 0.85 0.80
+	do
+	mkdir -p for_LCA_filt_DB_22Oct24/$i && cp 06_Blast/blast_$i.txt for_LCA_filt_DB_22Oct24/$i/;
+	done
+
+	## add table head
+
+	for i in 98.5 97 95 90 0.85 0.80
+	do
+	awk 'BEGIN {print "qseqid\tsseqid\tstaxids\tscomnames\tsscinames\tsskingdom\tpident\tlength\tqlen\tslen\tmismatch\tgapopen\tgaps\tqstart\tqend\tsstart\tsend\tstitle\tevalue\tbitscore\tqcovs"} {print $0}' for_LCA_filt_DB_22Oct24/$i/blast_$i.txt > for_LCA_filt_DB_22Oct24/$i/'addhead_blast_'$i'.txt';
+	done
+
+###----blast at id=0.80, qcov80 to filter out non-fish MOTUs------------##
+
+	for i in 0.80
+	do
+	blastn -task megablast -evalue 1e-5 -db all_fish_mito_22Oct24_addtaxa -query $FASTA_FILE -perc_identity $i -max_target_seqs 1 -outfmt "6 qseqid sseqid staxids scomnames sscinames sskingdom pident length qlen slen mismatch gapopen gaps qstart qend sstart send stitle evalue bitscore qcovs" -best_hit_score_edge 0.1 -best_hit_overhang 0.1 -out 06_Blast/blast_besthit_$i.txt;
+	done
+
+	## cp
+	
+	for i in 0.80
+	do
+	mkdir -p for_LCA_filt_DB_22Oct24/besthit_$i && cp 06_Blast/blast_besthit_$i.txt for_LCA_filt_DB_22Oct24/besthit_$i/;
+	done
+
+	# add table head
+	for i in 0.80
+	do
+	awk 'BEGIN {print "qseqid\tsseqid\tstaxids\tscomnames\tsscinames\tsskingdom\tpident\tlength\tqlen\tslen\tmismatch\tgapopen\tgaps\tqstart\tqend\tsstart\tsend\tstitle\tevalue\tbitscore\tqcovs"} {print $0}' for_LCA_filt_DB_22Oct24/besthit_$i/blast_besthit_$i.txt > for_LCA_filt_DB_22Oct24/besthit_$i/'addhead_blast_besthit_'$i'.txt';
+	done
+
+	#summarize fish read MOTU
+## summarizeAbundance.py: a python script from 
+	cut -f 1 for_LCA_filt_DB_22Oct24/besthit_0.80/addhead_blast_besthit_0.80.txt > blast_besthit_0.80_0.985MOTU_ID.txt
+
+	paste blast_besthit_0.80_0.985MOTU_ID.txt blast_besthit_0.80_0.985MOTU_ID.txt > for_sum_blast_besthit_0.80_0.985MOTU_ID.txt
+
+	python3 summarizeAbundance.py \
+      -i 0.985otus_otutab.txt \
+      -m for_sum_blast_besthit_0.80_0.985MOTU_ID.txt \
+      -c '2' -s '\t' -n raw \
+      -o Blast0.80_annotated_fish_0.985MOTUtab
+
+###----blast id=0.90 qcov=100 for fish Order------------##
+- Use "wq_amplicon_filtered.sh" to filter  blast results for LCA
+- Change file path inside "wq_amplicon_filtered.sh"
+
+	nano forfilt_blast0.90_DB_22Oct24.txt #deleted "stile" col inside "addhead_blast_0.80"  & check qcov value should be all numbers
+
+	bash wq_amplicon_filtered.sh
+
+	nano forLCA_order.txt 
+- Add back "stitle" in blast filtered result
+- Delete table head of blast filtered result 
+- OTU tab must use "#ID" as first column name
+
+	cd eDNAFlow/
+
+	mkdir -p work/eDNA_01Mifish_0.90order
+
+- Upload blast filtered result & otutab in eDNAFlow/work/eDNA_01Mifish_0.90order/
+
+	#0.90 lca for order level
+	nextflow run eDNAFlow.nf --taxonomyAssignment --zotuTable "work/eDNA_01Mifish_0.90order/Fish_MOTUtab.tsv" --blastFile "work/eDNA_01Mifish_0.90order/forLCA_order.txt" --lca_output "lca_90_eDNA0.985MOTU_DB_22Oct24" --lca_qcov 100 --lca_pid 90
+	nano order_MOTU.txt # LCA results
+	nano order_MOTUtab.txt # MOTU table
+
+	python3 summarizeAbundance.py \
+      -i order_MOTUtab.txt \
+      -m order_MOTU.txt \
+      -c '2' -s '\t' -n raw \
+      -o 07_TaxaAssignmentOut/Blast0.90_LCA_order_tab
+
+#Change Blast identity to assigning fish taxonomy at different level
+- blast 0.90, qcov100 & LCA lca_qcov 100 --lca_pid 90  for fish Order
+- blast 0.95, qcov100 & LCA lca_qcov 100 --lca_pid 95  for fish family
+- blast 0.97, qcov100 & LCA lca_qcov 100 --lca_pid 97  for fish genus
+- blast 0.985, qcov100 & LCA lca_qcov 100 --lca_pid 985  for fish species

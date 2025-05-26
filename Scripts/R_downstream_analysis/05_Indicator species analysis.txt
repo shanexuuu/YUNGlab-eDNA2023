@@ -1,0 +1,81 @@
+#05 Indicator species analysis
+
+# 00 
+	rm(list = ls())
+	setwd("05_Indicator_species")
+	
+	library(indicspecies)
+	library(dplyr)
+	library(tidyr)
+	
+# 01 input
+otu_data <- read.delim('allGfishS_tab.tsv', header = TRUE, row.names = 1)
+
+group_design <- read.delim("sample_anno.tsv", header = TRUE, row.names = 1)
+
+otu_transposed <- as.data.frame(t(otu_data))
+
+group_labels <- group_design$SxR
+
+# 02 Calculate indicators
+
+set.seed(123)
+indicator_results <- multipatt(otu_transposed, 
+                               group_labels, 
+                               func = "r.g", 
+                               control = how(nperm = 9999)) 
+
+summary(indicator_results, 
+        alpha = 1, 
+        indvalcBBp = TRUE) 
+
+significant_indicators <- indicator_results$sign
+significant_matrix <- as.matrix(significant_indicators[which(significant_indicators$p.value < 0.05), ])
+
+write.csv(significant_matrix, file = "significant_indicators.csv")
+
+# 03 Extract results
+significant_indicators <- read.csv("significant_indicators.csv", row.names = 1)
+
+network_data <- list()
+	# 12 combinations of Season x Region
+	treatments <- c("s.HK_Aug","s.HK_Feb","s.HK_May","s.HK_Nov","s.LT_Aug","s.LT_Feb","s.LT_May","s.LT_Nov","s.SK_Aug","s.SK_Feb","s.SK_May","s.SK_Nov")  
+
+for(treatment in treatments) {
+  species <- rownames(significant_indicators)[significant_indicators[[treatment]] == 1]
+  if(length(species) > 0) {
+    for(specie in species) {
+      network_data[[length(network_data) + 1]] <- data.frame(
+        Source = treatment,
+        Target = specie,
+        Weight = significant_indicators[specie, "stat"]
+      )
+    }
+  }
+}
+
+
+network_df <- do.call(rbind, network_data)
+
+if(length(network_data) == 0) {
+  network_df <- data.frame(Source = character(), Target = character(), Weight = numeric())
+}
+
+write.csv(network_df, file = "all407_SxR_bipartite_network.csv", row.names = FALSE)
+
+# 04 Calculate relative abundance & standard variation
+	 data <- read.delim("allGfishS_rela_SxR.tsv")
+	View(data)
+
+results <- data %>%
+  pivot_longer(cols = starts_with("id"), names_to = "id", values_to = "value") %>%
+  group_by(Season.Region, id) %>%
+  summarise(
+    mean_value = mean(value, na.rm = TRUE),
+    sd_value = sd(value, na.rm = TRUE),
+    .groups = 'drop'
+  )
+
+	print(results)
+
+	write.csv(results, file = "allGfishS_rela_SxR_mean_std.csv", row.names = FALSE)

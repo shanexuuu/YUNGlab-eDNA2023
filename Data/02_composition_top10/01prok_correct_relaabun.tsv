@@ -1,0 +1,1178 @@
+id	PhylumID	SampleID	Abundance	Region	Site	Season	Site2	Month	Site2avgrela
+16	Actinobacteriota	HKBea1Feb	0.012755364	HK	Bea1	Feb	Bea	2	0.015009833
+60	Actinobacteriota	HKBea2Feb	0.017446538	HK	Bea2	Feb	Bea	2	
+104	Actinobacteriota	HKBea3Feb	0.014827596	HK	Bea3	Feb	Bea	2	
+12	Bacteroidota	HKBea1Feb	0.535533657	HK	Bea1	Feb	Bea	2	0.589973525
+56	Bacteroidota	HKBea2Feb	0.747953284	HK	Bea2	Feb	Bea	2	
+100	Bacteroidota	HKBea3Feb	0.486433632	HK	Bea3	Feb	Bea	2	
+20	Crenarchaeota	HKBea1Feb	0.004565521	HK	Bea1	Feb	Bea	2	0.003904631
+64	Crenarchaeota	HKBea2Feb	0.002648359	HK	Bea2	Feb	Bea	2	
+108	Crenarchaeota	HKBea3Feb	0.004500014	HK	Bea3	Feb	Bea	2	
+13	Cyanobacteria	HKBea1Feb	0.013311778	HK	Bea1	Feb	Bea	2	0.007735864
+57	Cyanobacteria	HKBea2Feb	0.005503609	HK	Bea2	Feb	Bea	2	
+101	Cyanobacteria	HKBea3Feb	0.004392205	HK	Bea3	Feb	Bea	2	
+21	Marinimicrobia_(SAR406_clade)	HKBea1Feb	0.003469796	HK	Bea1	Feb	Bea	2	0.003863625
+65	Marinimicrobia_(SAR406_clade)	HKBea2Feb	0.002059835	HK	Bea2	Feb	Bea	2	
+109	Marinimicrobia_(SAR406_clade)	HKBea3Feb	0.006061243	HK	Bea3	Feb	Bea	2	
+22	others	HKBea1Feb	0.00254479	HK	Bea1	Feb	Bea	2	0.003953291
+66	others	HKBea2Feb	0.007454264	HK	Bea2	Feb	Bea	2	
+110	others	HKBea3Feb	0.001860818	HK	Bea3	Feb	Bea	2	
+17	Planctomycetota	HKBea1Feb	0.006323419	HK	Bea1	Feb	Bea	2	0.016186178
+61	Planctomycetota	HKBea2Feb	0.031992828	HK	Bea2	Feb	Bea	2	
+105	Planctomycetota	HKBea3Feb	0.010242288	HK	Bea3	Feb	Bea	2	
+14	Proteobacteria	HKBea1Feb	0.134555403	HK	Bea1	Feb	Bea	2	0.124096957
+58	Proteobacteria	HKBea2Feb	0.095500112	HK	Bea2	Feb	Bea	2	
+102	Proteobacteria	HKBea3Feb	0.142235356	HK	Bea3	Feb	Bea	2	
+19	SAR324_clade(Marine_group_B)	HKBea1Feb	0.001095725	HK	Bea1	Feb	Bea	2	0.001234888
+63	SAR324_clade(Marine_group_B)	HKBea2Feb	0.000588524	HK	Bea2	Feb	Bea	2	
+107	SAR324_clade(Marine_group_B)	HKBea3Feb	0.002020414	HK	Bea3	Feb	Bea	2	
+15	Thermoplasmatota	HKBea1Feb	0.279473317	HK	Bea1	Feb	Bea	2	0.226713912
+59	Thermoplasmatota	HKBea2Feb	0.082450601	HK	Bea2	Feb	Bea	2	
+103	Thermoplasmatota	HKBea3Feb	0.318217819	HK	Bea3	Feb	Bea	2	
+18	Verrucomicrobiota	HKBea1Feb	0.006371229	HK	Bea1	Feb	Bea	2	0.007327297
+62	Verrucomicrobiota	HKBea2Feb	0.006402048	HK	Bea2	Feb	Bea	2	
+106	Verrucomicrobiota	HKBea3Feb	0.009208614	HK	Bea3	Feb	Bea	2	
+808	Actinobacteriota	SKBlu1Feb	0.061135047	SK	Blu1	Feb	Blu	2	0.05133272
+852	Actinobacteriota	SKBlu2Feb	0.050868925	SK	Blu2	Feb	Blu	2	
+896	Actinobacteriota	SKBlu3Feb	0.041994189	SK	Blu3	Feb	Blu	2	
+804	Bacteroidota	SKBlu1Feb	0.451435483	SK	Blu1	Feb	Blu	2	0.391122601
+848	Bacteroidota	SKBlu2Feb	0.373651983	SK	Blu2	Feb	Blu	2	
+892	Bacteroidota	SKBlu3Feb	0.348280338	SK	Blu3	Feb	Blu	2	
+812	Crenarchaeota	SKBlu1Feb	0.001951109	SK	Blu1	Feb	Blu	2	0.006016964
+856	Crenarchaeota	SKBlu2Feb	0.008242444	SK	Blu2	Feb	Blu	2	
+900	Crenarchaeota	SKBlu3Feb	0.007857339	SK	Blu3	Feb	Blu	2	
+805	Cyanobacteria	SKBlu1Feb	0.040483154	SK	Blu1	Feb	Blu	2	0.020116178
+849	Cyanobacteria	SKBlu2Feb	0.00866538	SK	Blu2	Feb	Blu	2	
+893	Cyanobacteria	SKBlu3Feb	0.0112	SK	Blu3	Feb	Blu	2	
+813	Marinimicrobia_(SAR406_clade)	SKBlu1Feb	0.007511769	SK	Blu1	Feb	Blu	2	0.008828488
+857	Marinimicrobia_(SAR406_clade)	SKBlu2Feb	0.009758296	SK	Blu2	Feb	Blu	2	
+901	Marinimicrobia_(SAR406_clade)	SKBlu3Feb	0.009215398	SK	Blu3	Feb	Blu	2	
+814	others	SKBlu1Feb	0.005270678	SK	Blu1	Feb	Blu	2	0.005632293
+858	others	SKBlu2Feb	0.006532276	SK	Blu2	Feb	Blu	2	
+902	others	SKBlu3Feb	0.005093924	SK	Blu3	Feb	Blu	2	
+809	Planctomycetota	SKBlu1Feb	0.044780135	SK	Blu1	Feb	Blu	2	0.047169094
+853	Planctomycetota	SKBlu2Feb	0.049664261	SK	Blu2	Feb	Blu	2	
+897	Planctomycetota	SKBlu3Feb	0.047062885	SK	Blu3	Feb	Blu	2	
+806	Proteobacteria	SKBlu1Feb	0.305677061	SK	Blu1	Feb	Blu	2	0.257736891
+850	Proteobacteria	SKBlu2Feb	0.237140535	SK	Blu2	Feb	Blu	2	
+894	Proteobacteria	SKBlu3Feb	0.230393078	SK	Blu3	Feb	Blu	2	
+811	SAR324_clade(Marine_group_B)	SKBlu1Feb	0.003999773	SK	Blu1	Feb	Blu	2	0.002453656
+855	SAR324_clade(Marine_group_B)	SKBlu2Feb	0.001421111	SK	Blu2	Feb	Blu	2	
+899	SAR324_clade(Marine_group_B)	SKBlu3Feb	0.001940084	SK	Blu3	Feb	Blu	2	
+807	Thermoplasmatota	SKBlu1Feb	0.066180532	SK	Blu1	Feb	Blu	2	0.199222403
+851	Thermoplasmatota	SKBlu2Feb	0.244262674	SK	Blu2	Feb	Blu	2	
+895	Thermoplasmatota	SKBlu3Feb	0.287224004	SK	Blu3	Feb	Blu	2	
+810	Verrucomicrobiota	SKBlu1Feb	0.011575259	SK	Blu1	Feb	Blu	2	0.010368712
+854	Verrucomicrobiota	SKBlu2Feb	0.009792115	SK	Blu2	Feb	Blu	2	
+898	Verrucomicrobiota	SKBlu3Feb	0.009738762	SK	Blu3	Feb	Blu	2	
+390	Actinobacteriota	LTCC1Feb	0.000143578	LT	CC1	Feb	CC	2	0.000846661
+434	Actinobacteriota	LTCC2Feb	0.001171878	LT	CC2	Feb	CC	2	
+478	Actinobacteriota	LTCC3Feb	0.001224526	LT	CC3	Feb	CC	2	
+386	Bacteroidota	LTCC1Feb	0.521690024	LT	CC1	Feb	CC	2	0.579717549
+430	Bacteroidota	LTCC2Feb	0.518965955	LT	CC2	Feb	CC	2	
+474	Bacteroidota	LTCC3Feb	0.698496668	LT	CC3	Feb	CC	2	
+394	Crenarchaeota	LTCC1Feb	0.000466628	LT	CC1	Feb	CC	2	0.000218043
+438	Crenarchaeota	LTCC2Feb	0.0001875	LT	CC2	Feb	CC	2	
+482	Crenarchaeota	LTCC3Feb	0	LT	CC3	Feb	CC	2	
+387	Cyanobacteria	LTCC1Feb	0	LT	CC1	Feb	CC	2	0.002151018
+431	Cyanobacteria	LTCC2Feb	0.001811599	LT	CC2	Feb	CC	2	
+475	Cyanobacteria	LTCC3Feb	0.004641454	LT	CC3	Feb	CC	2	
+395	Marinimicrobia_(SAR406_clade)	LTCC1Feb	0	LT	CC1	Feb	CC	2	0
+439	Marinimicrobia_(SAR406_clade)	LTCC2Feb	0	LT	CC2	Feb	CC	2	
+483	Marinimicrobia_(SAR406_clade)	LTCC3Feb	0	LT	CC3	Feb	CC	2	
+396	others	LTCC1Feb	0.00051075	LT	CC1	Feb	CC	2	0.000736191
+440	others	LTCC2Feb	0.000734465	LT	CC2	Feb	CC	2	
+484	others	LTCC3Feb	0.000963358	LT	CC3	Feb	CC	2	
+391	Planctomycetota	LTCC1Feb	0.000744383	LT	CC1	Feb	CC	2	0.001072099
+435	Planctomycetota	LTCC2Feb	0.000952311	LT	CC2	Feb	CC	2	
+479	Planctomycetota	LTCC3Feb	0.001519603	LT	CC3	Feb	CC	2	
+388	Proteobacteria	LTCC1Feb	0.424599136	LT	CC1	Feb	CC	2	0.367365004
+432	Proteobacteria	LTCC2Feb	0.416947245	LT	CC2	Feb	CC	2	
+476	Proteobacteria	LTCC3Feb	0.260548629	LT	CC3	Feb	CC	2	
+393	SAR324_clade(Marine_group_B)	LTCC1Feb	0	LT	CC1	Feb	CC	2	5.98448E-05
+437	SAR324_clade(Marine_group_B)	LTCC2Feb	9.38E-05	LT	CC2	Feb	CC	2	
+481	SAR324_clade(Marine_group_B)	LTCC3Feb	8.58E-05	LT	CC3	Feb	CC	2	
+389	Thermoplasmatota	LTCC1Feb	0.010952797	LT	CC1	Feb	CC	2	0.015220908
+433	Thermoplasmatota	LTCC2Feb	0.027799549	LT	CC2	Feb	CC	2	
+477	Thermoplasmatota	LTCC3Feb	0.006910379	LT	CC3	Feb	CC	2	
+392	Verrucomicrobiota	LTCC1Feb	0.040892705	LT	CC1	Feb	CC	2	0.032612683
+436	Verrucomicrobiota	LTCC2Feb	0.031335747	LT	CC2	Feb	CC	2	
+480	Verrucomicrobiota	LTCC3Feb	0.025609598	LT	CC3	Feb	CC	2	
+522	Actinobacteriota	LTCMW1Feb	0.002322054	LT	CMW1	Feb	CMW	2	0.002474569
+566	Actinobacteriota	LTCMW2Feb	0.00366253	LT	CMW2	Feb	CMW	2	
+610	Actinobacteriota	LTCMW3Feb	0.001439124	LT	CMW3	Feb	CMW	2	
+518	Bacteroidota	LTCMW1Feb	0.487678909	LT	CMW1	Feb	CMW	2	0.492923655
+562	Bacteroidota	LTCMW2Feb	0.510403221	LT	CMW2	Feb	CMW	2	
+606	Bacteroidota	LTCMW3Feb	0.480688835	LT	CMW3	Feb	CMW	2	
+526	Crenarchaeota	LTCMW1Feb	0.000566001	LT	CMW1	Feb	CMW	2	0.000660308
+570	Crenarchaeota	LTCMW2Feb	0.00066658	LT	CMW2	Feb	CMW	2	
+614	Crenarchaeota	LTCMW3Feb	0.000748344	LT	CMW3	Feb	CMW	2	
+519	Cyanobacteria	LTCMW1Feb	0.001276008	LT	CMW1	Feb	CMW	2	0.002205354
+563	Cyanobacteria	LTCMW2Feb	0.002990181	LT	CMW2	Feb	CMW	2	
+607	Cyanobacteria	LTCMW3Feb	0.002349873	LT	CMW3	Feb	CMW	2	
+527	Marinimicrobia_(SAR406_clade)	LTCMW1Feb	0	LT	CMW1	Feb	CMW	2	0
+571	Marinimicrobia_(SAR406_clade)	LTCMW2Feb	0	LT	CMW2	Feb	CMW	2	
+615	Marinimicrobia_(SAR406_clade)	LTCMW3Feb	0	LT	CMW3	Feb	CMW	2	
+528	others	LTCMW1Feb	0.003226925	LT	CMW1	Feb	CMW	2	0.003099655
+572	others	LTCMW2Feb	0.002719673	LT	CMW2	Feb	CMW	2	
+616	others	LTCMW3Feb	0.003352366	LT	CMW3	Feb	CMW	2	
+523	Planctomycetota	LTCMW1Feb	0.00026861	LT	CMW1	Feb	CMW	2	0.001112472
+567	Planctomycetota	LTCMW2Feb	0.001856903	LT	CMW2	Feb	CMW	2	
+611	Planctomycetota	LTCMW3Feb	0.001211903	LT	CMW3	Feb	CMW	2	
+520	Proteobacteria	LTCMW1Feb	0.456177334	LT	CMW1	Feb	CMW	2	0.44067928
+564	Proteobacteria	LTCMW2Feb	0.414973414	LT	CMW2	Feb	CMW	2	
+608	Proteobacteria	LTCMW3Feb	0.450887093	LT	CMW3	Feb	CMW	2	
+525	SAR324_clade(Marine_group_B)	LTCMW1Feb	0	LT	CMW1	Feb	CMW	2	0.00018933
+569	SAR324_clade(Marine_group_B)	LTCMW2Feb	0.000380903	LT	CMW2	Feb	CMW	2	
+613	SAR324_clade(Marine_group_B)	LTCMW3Feb	0.000187086	LT	CMW3	Feb	CMW	2	
+521	Thermoplasmatota	LTCMW1Feb	0.028693088	LT	CMW1	Feb	CMW	2	0.033883048
+565	Thermoplasmatota	LTCMW2Feb	0.03339515	LT	CMW2	Feb	CMW	2	
+609	Thermoplasmatota	LTCMW3Feb	0.039560906	LT	CMW3	Feb	CMW	2	
+524	Verrucomicrobiota	LTCMW1Feb	0.019791071	LT	CMW1	Feb	CMW	2	0.022772329
+568	Verrucomicrobiota	LTCMW2Feb	0.028951445	LT	CMW2	Feb	CMW	2	
+612	Verrucomicrobiota	LTCMW3Feb	0.01957447	LT	CMW3	Feb	CMW	2	
+940	Actinobacteriota	SKLKW1Feb	0.03259027	SK	LKW1	Feb	LKW	2	0.057592769
+984	Actinobacteriota	SKLKW2Feb	0.057505981	SK	LKW2	Feb	LKW	2	
+1028	Actinobacteriota	SKLKW3Feb	0.082682057	SK	LKW3	Feb	LKW	2	
+936	Bacteroidota	SKLKW1Feb	0.524570661	SK	LKW1	Feb	LKW	2	0.52591023
+980	Bacteroidota	SKLKW2Feb	0.512192835	SK	LKW2	Feb	LKW	2	
+1024	Bacteroidota	SKLKW3Feb	0.540967193	SK	LKW3	Feb	LKW	2	
+944	Crenarchaeota	SKLKW1Feb	0.003468124	SK	LKW1	Feb	LKW	2	0.004000606
+988	Crenarchaeota	SKLKW2Feb	0.003747028	SK	LKW2	Feb	LKW	2	
+1032	Crenarchaeota	SKLKW3Feb	0.004786665	SK	LKW3	Feb	LKW	2	
+937	Cyanobacteria	SKLKW1Feb	0.022188023	SK	LKW1	Feb	LKW	2	0.017794141
+981	Cyanobacteria	SKLKW2Feb	0.027461427	SK	LKW2	Feb	LKW	2	
+1025	Cyanobacteria	SKLKW3Feb	0.003732971	SK	LKW3	Feb	LKW	2	
+945	Marinimicrobia_(SAR406_clade)	SKLKW1Feb	0.007404913	SK	LKW1	Feb	LKW	2	0.011463882
+989	Marinimicrobia_(SAR406_clade)	SKLKW2Feb	0.012063602	SK	LKW2	Feb	LKW	2	
+1033	Marinimicrobia_(SAR406_clade)	SKLKW3Feb	0.014923131	SK	LKW3	Feb	LKW	2	
+946	others	SKLKW1Feb	0.010155119	SK	LKW1	Feb	LKW	2	0.01391319
+990	others	SKLKW2Feb	0.011406365	SK	LKW2	Feb	LKW	2	
+1034	others	SKLKW3Feb	0.020178087	SK	LKW3	Feb	LKW	2	
+941	Planctomycetota	SKLKW1Feb	0.02475832	SK	LKW1	Feb	LKW	2	0.044670733
+985	Planctomycetota	SKLKW2Feb	0.054679354	SK	LKW2	Feb	LKW	2	
+1029	Planctomycetota	SKLKW3Feb	0.054574526	SK	LKW3	Feb	LKW	2	
+938	Proteobacteria	SKLKW1Feb	0.295883348	SK	LKW1	Feb	LKW	2	0.236186732
+982	Proteobacteria	SKLKW2Feb	0.2195291	SK	LKW2	Feb	LKW	2	
+1026	Proteobacteria	SKLKW3Feb	0.19314775	SK	LKW3	Feb	LKW	2	
+943	SAR324_clade(Marine_group_B)	SKLKW1Feb	0.000562398	SK	LKW1	Feb	LKW	2	0.000995134
+987	SAR324_clade(Marine_group_B)	SKLKW2Feb	0.000639736	SK	LKW2	Feb	LKW	2	
+1031	SAR324_clade(Marine_group_B)	SKLKW3Feb	0.001783267	SK	LKW3	Feb	LKW	2	
+939	Thermoplasmatota	SKLKW1Feb	0.069453607	SK	LKW1	Feb	LKW	2	0.080316552
+983	Thermoplasmatota	SKLKW2Feb	0.095008481	SK	LKW2	Feb	LKW	2	
+1027	Thermoplasmatota	SKLKW3Feb	0.076487566	SK	LKW3	Feb	LKW	2	
+942	Verrucomicrobiota	SKLKW1Feb	0.008965216	SK	LKW1	Feb	LKW	2	0.007156031
+986	Verrucomicrobiota	SKLKW2Feb	0.00576609	SK	LKW2	Feb	LKW	2	
+1030	Verrucomicrobiota	SKLKW3Feb	0.006736787	SK	LKW3	Feb	LKW	2	
+654	Actinobacteriota	LTPC1Feb	0.003918456	LT	PC1	Feb	PC	2	0.002634019
+731	Actinobacteriota	LTPC3Feb	0.001349582	LT	PC3	Feb	PC	2	
+650	Bacteroidota	LTPC1Feb	0.406405945	LT	PC1	Feb	PC	2	0.463976425
+727	Bacteroidota	LTPC3Feb	0.521546904	LT	PC3	Feb	PC	2	
+658	Crenarchaeota	LTPC1Feb	0.00046309	LT	PC1	Feb	PC	2	0.000902367
+735	Crenarchaeota	LTPC3Feb	0.001341643	LT	PC3	Feb	PC	2	
+651	Cyanobacteria	LTPC1Feb	0.002145944	LT	PC1	Feb	PC	2	0.001072972
+728	Cyanobacteria	LTPC3Feb	0	LT	PC3	Feb	PC	2	
+659	Marinimicrobia_(SAR406_clade)	LTPC1Feb	9.26E-05	LT	PC1	Feb	PC	2	4.6309E-05
+736	Marinimicrobia_(SAR406_clade)	LTPC3Feb	0	LT	PC3	Feb	PC	2	
+660	others	LTPC1Feb	0.001060898	LT	PC1	Feb	PC	2	0.000530449
+737	others	LTPC3Feb	0	LT	PC3	Feb	PC	2	
+655	Planctomycetota	LTPC1Feb	0.000780638	LT	PC1	Feb	PC	2	0.000441921
+732	Planctomycetota	LTPC3Feb	0.000103203	LT	PC3	Feb	PC	2	
+652	Proteobacteria	LTPC1Feb	0.499507969	LT	PC1	Feb	PC	2	0.438503318
+729	Proteobacteria	LTPC3Feb	0.377498667	LT	PC3	Feb	PC	2	
+657	SAR324_clade(Marine_group_B)	LTPC1Feb	0	LT	PC1	Feb	PC	2	0
+734	SAR324_clade(Marine_group_B)	LTPC3Feb	0	LT	PC3	Feb	PC	2	
+653	Thermoplasmatota	LTPC1Feb	0.043093121	LT	PC1	Feb	PC	2	0.058133564
+730	Thermoplasmatota	LTPC3Feb	0.073174007	LT	PC3	Feb	PC	2	
+656	Verrucomicrobiota	LTPC1Feb	0.042531321	LT	PC1	Feb	PC	2	0.033758657
+733	Verrucomicrobiota	LTPC3Feb	0.024985994	LT	PC3	Feb	PC	2	
+764	Actinobacteriota	SKSha1Feb	0.005953588	SK	Sha1	Feb	Sha	2	0.006021448
+775	Actinobacteriota	SKSha2Feb	0.003579229	SK	Sha2	Feb	Sha	2	
+786	Actinobacteriota	SKSha3Feb	0.008531528	SK	Sha3	Feb	Sha	2	
+760	Bacteroidota	SKSha1Feb	0.478505911	SK	Sha1	Feb	Sha	2	0.383061544
+771	Bacteroidota	SKSha2Feb	0.357030478	SK	Sha2	Feb	Sha	2	
+782	Bacteroidota	SKSha3Feb	0.313648242	SK	Sha3	Feb	Sha	2	
+768	Crenarchaeota	SKSha1Feb	0.000562885	SK	Sha1	Feb	Sha	2	0.000187628
+779	Crenarchaeota	SKSha2Feb	0	SK	Sha2	Feb	Sha	2	
+790	Crenarchaeota	SKSha3Feb	0	SK	Sha3	Feb	Sha	2	
+761	Cyanobacteria	SKSha1Feb	0	SK	Sha1	Feb	Sha	2	0
+772	Cyanobacteria	SKSha2Feb	0	SK	Sha2	Feb	Sha	2	
+783	Cyanobacteria	SKSha3Feb	0	SK	Sha3	Feb	Sha	2	
+769	Marinimicrobia_(SAR406_clade)	SKSha1Feb	0.000281442	SK	Sha1	Feb	Sha	2	0.000542462
+780	Marinimicrobia_(SAR406_clade)	SKSha2Feb	0.000410559	SK	Sha2	Feb	Sha	2	
+791	Marinimicrobia_(SAR406_clade)	SKSha3Feb	0.000935384	SK	Sha3	Feb	Sha	2	
+770	others	SKSha1Feb	0.001856425	SK	Sha1	Feb	Sha	2	0.001294287
+781	others	SKSha2Feb	0.00065168	SK	Sha2	Feb	Sha	2	
+792	others	SKSha3Feb	0.001374757	SK	Sha3	Feb	Sha	2	
+765	Planctomycetota	SKSha1Feb	0.021066115	SK	Sha1	Feb	Sha	2	0.011954461
+776	Planctomycetota	SKSha2Feb	0.007476454	SK	Sha2	Feb	Sha	2	
+787	Planctomycetota	SKSha3Feb	0.007320815	SK	Sha3	Feb	Sha	2	
+762	Proteobacteria	SKSha1Feb	0.450223367	SK	Sha1	Feb	Sha	2	0.538644552
+773	Proteobacteria	SKSha2Feb	0.568844077	SK	Sha2	Feb	Sha	2	
+784	Proteobacteria	SKSha3Feb	0.596866213	SK	Sha3	Feb	Sha	2	
+767	SAR324_clade(Marine_group_B)	SKSha1Feb	0.001829375	SK	Sha1	Feb	Sha	2	0.001199594
+778	SAR324_clade(Marine_group_B)	SKSha2Feb	0.001368529	SK	Sha2	Feb	Sha	2	
+789	SAR324_clade(Marine_group_B)	SKSha3Feb	0.000400879	SK	Sha3	Feb	Sha	2	
+763	Thermoplasmatota	SKSha1Feb	0.025212541	SK	Sha1	Feb	Sha	2	0.018917024
+774	Thermoplasmatota	SKSha2Feb	0.003421322	SK	Sha2	Feb	Sha	2	
+785	Thermoplasmatota	SKSha3Feb	0.02811721	SK	Sha3	Feb	Sha	2	
+766	Verrucomicrobiota	SKSha1Feb	0.014508352	SK	Sha1	Feb	Sha	2	0.038176999
+777	Verrucomicrobiota	SKSha2Feb	0.057217674	SK	Sha2	Feb	Sha	2	
+788	Verrucomicrobiota	SKSha3Feb	0.042804972	SK	Sha3	Feb	Sha	2	
+137	Actinobacteriota	HKSta1Feb	0.012291162	HK	Sta1	Feb	Sta	2	0.009242009
+170	Actinobacteriota	HKSta2Feb	0.009313796	HK	Sta2	Feb	Sta	2	
+214	Actinobacteriota	HKSta3Feb	0.006121069	HK	Sta3	Feb	Sta	2	
+133	Bacteroidota	HKSta1Feb	0.599801215	HK	Sta1	Feb	Sta	2	0.666165295
+166	Bacteroidota	HKSta2Feb	0.624480644	HK	Sta2	Feb	Sta	2	
+210	Bacteroidota	HKSta3Feb	0.774214027	HK	Sta3	Feb	Sta	2	
+141	Crenarchaeota	HKSta1Feb	0.002478959	HK	Sta1	Feb	Sta	2	0.001268816
+174	Crenarchaeota	HKSta2Feb	0.000665609	HK	Sta2	Feb	Sta	2	
+218	Crenarchaeota	HKSta3Feb	0.00066188	HK	Sta3	Feb	Sta	2	
+134	Cyanobacteria	HKSta1Feb	0.022387255	HK	Sta1	Feb	Sta	2	0.008863409
+167	Cyanobacteria	HKSta2Feb	0.001919054	HK	Sta2	Feb	Sta	2	
+211	Cyanobacteria	HKSta3Feb	0.002283919	HK	Sta3	Feb	Sta	2	
+142	Marinimicrobia_(SAR406_clade)	HKSta1Feb	0.001832274	HK	Sta1	Feb	Sta	2	0.001465298
+175	Marinimicrobia_(SAR406_clade)	HKSta2Feb	0.00190174	HK	Sta2	Feb	Sta	2	
+219	Marinimicrobia_(SAR406_clade)	HKSta3Feb	0.00066188	HK	Sta3	Feb	Sta	2	
+143	others	HKSta1Feb	0.001745255	HK	Sta1	Feb	Sta	2	0.001391921
+176	others	HKSta2Feb	0.000965782	HK	Sta2	Feb	Sta	2	
+220	others	HKSta3Feb	0.001464725	HK	Sta3	Feb	Sta	2	
+138	Planctomycetota	HKSta1Feb	0.011609606	HK	Sta1	Feb	Sta	2	0.00901211
+171	Planctomycetota	HKSta2Feb	0.006615049	HK	Sta2	Feb	Sta	2	
+215	Planctomycetota	HKSta3Feb	0.008811676	HK	Sta3	Feb	Sta	2	
+135	Proteobacteria	HKSta1Feb	0.185810069	HK	Sta1	Feb	Sta	2	0.177831795
+168	Proteobacteria	HKSta2Feb	0.216017587	HK	Sta2	Feb	Sta	2	
+212	Proteobacteria	HKSta3Feb	0.131667729	HK	Sta3	Feb	Sta	2	
+140	SAR324_clade(Marine_group_B)	HKSta1Feb	0.000323343	HK	Sta1	Feb	Sta	2	0.0002976
+173	SAR324_clade(Marine_group_B)	HKSta2Feb	0.000380348	HK	Sta2	Feb	Sta	2	
+217	SAR324_clade(Marine_group_B)	HKSta3Feb	0.000189108	HK	Sta3	Feb	Sta	2	
+136	Thermoplasmatota	HKSta1Feb	0.154593658	HK	Sta1	Feb	Sta	2	0.115476453
+169	Thermoplasmatota	HKSta2Feb	0.127670144	HK	Sta2	Feb	Sta	2	
+213	Thermoplasmatota	HKSta3Feb	0.064165556	HK	Sta3	Feb	Sta	2	
+139	Verrucomicrobiota	HKSta1Feb	0.007127204	HK	Sta1	Feb	Sta	2	0.008985295
+172	Verrucomicrobiota	HKSta2Feb	0.010070248	HK	Sta2	Feb	Sta	2	
+216	Verrucomicrobiota	HKSta3Feb	0.009758432	HK	Sta3	Feb	Sta	2	
+258	Actinobacteriota	HKSW1Feb	0.006042061	HK	SW1	Feb	SW	2	0.006947057
+302	Actinobacteriota	HKSW2Feb	0.007178347	HK	SW2	Feb	SW	2	
+346	Actinobacteriota	HKSW3Feb	0.007620761	HK	SW3	Feb	SW	2	
+254	Bacteroidota	HKSW1Feb	0.525686725	HK	SW1	Feb	SW	2	0.563268188
+298	Bacteroidota	HKSW2Feb	0.622919845	HK	SW2	Feb	SW	2	
+342	Bacteroidota	HKSW3Feb	0.541197993	HK	SW3	Feb	SW	2	
+262	Crenarchaeota	HKSW1Feb	0.001791584	HK	SW1	Feb	SW	2	0.001201212
+306	Crenarchaeota	HKSW2Feb	0.001312274	HK	SW2	Feb	SW	2	
+350	Crenarchaeota	HKSW3Feb	0.000499779	HK	SW3	Feb	SW	2	
+255	Cyanobacteria	HKSW1Feb	0.000546631	HK	SW1	Feb	SW	2	0.001355275
+299	Cyanobacteria	HKSW2Feb	0.000815077	HK	SW2	Feb	SW	2	
+343	Cyanobacteria	HKSW3Feb	0.002704116	HK	SW3	Feb	SW	2	
+263	Marinimicrobia_(SAR406_clade)	HKSW1Feb	0.000754351	HK	SW1	Feb	SW	2	0.001201097
+307	Marinimicrobia_(SAR406_clade)	HKSW2Feb	0.000749871	HK	SW2	Feb	SW	2	
+351	Marinimicrobia_(SAR406_clade)	HKSW3Feb	0.00209907	HK	SW3	Feb	SW	2	
+264	others	HKSW1Feb	0.001177388	HK	SW1	Feb	SW	2	0.000783862
+308	others	HKSW2Feb	0.000671895	HK	SW2	Feb	SW	2	
+352	others	HKSW3Feb	0.000502303	HK	SW3	Feb	SW	2	
+259	Planctomycetota	HKSW1Feb	0.006508947	HK	SW1	Feb	SW	2	0.007241189
+303	Planctomycetota	HKSW2Feb	0.009014857	HK	SW2	Feb	SW	2	
+347	Planctomycetota	HKSW3Feb	0.006199764	HK	SW3	Feb	SW	2	
+256	Proteobacteria	HKSW1Feb	0.26596588	HK	SW1	Feb	SW	2	0.271922024
+300	Proteobacteria	HKSW2Feb	0.209804325	HK	SW2	Feb	SW	2	
+344	Proteobacteria	HKSW3Feb	0.339995868	HK	SW3	Feb	SW	2	
+261	SAR324_clade(Marine_group_B)	HKSW1Feb	0.000377175	HK	SW1	Feb	SW	2	0.000188214
+305	SAR324_clade(Marine_group_B)	HKSW2Feb	0.000187468	HK	SW2	Feb	SW	2	
+349	SAR324_clade(Marine_group_B)	HKSW3Feb	0	HK	SW3	Feb	SW	2	
+257	Thermoplasmatota	HKSW1Feb	0.181937408	HK	SW1	Feb	SW	2	0.134241513
+301	Thermoplasmatota	HKSW2Feb	0.13922603	HK	SW2	Feb	SW	2	
+345	Thermoplasmatota	HKSW3Feb	0.081561099	HK	SW3	Feb	SW	2	
+260	Verrucomicrobiota	HKSW1Feb	0.009211849	HK	SW1	Feb	SW	2	0.011650368
+304	Verrucomicrobiota	HKSW2Feb	0.00812001	HK	SW2	Feb	SW	2	
+348	Verrucomicrobiota	HKSW3Feb	0.017619246	HK	SW3	Feb	SW	2	
+27	Actinobacteriota	HKBea1May	0.056452632	HK	Bea1	May	Bea	5	0.045197725
+71	Actinobacteriota	HKBea2May	0.069485939	HK	Bea2	May	Bea	5	
+115	Actinobacteriota	HKBea3May	0.009654604	HK	Bea3	May	Bea	5	
+23	Bacteroidota	HKBea1May	0.130647458	HK	Bea1	May	Bea	5	0.143462651
+67	Bacteroidota	HKBea2May	0.114011792	HK	Bea2	May	Bea	5	
+111	Bacteroidota	HKBea3May	0.185728702	HK	Bea3	May	Bea	5	
+31	Crenarchaeota	HKBea1May	0.000736802	HK	Bea1	May	Bea	5	0.001435167
+75	Crenarchaeota	HKBea2May	0.000524232	HK	Bea2	May	Bea	5	
+119	Crenarchaeota	HKBea3May	0.003044468	HK	Bea3	May	Bea	5	
+24	Cyanobacteria	HKBea1May	0.561767105	HK	Bea1	May	Bea	5	0.491781112
+68	Cyanobacteria	HKBea2May	0.560576012	HK	Bea2	May	Bea	5	
+112	Cyanobacteria	HKBea3May	0.353000218	HK	Bea3	May	Bea	5	
+32	Marinimicrobia_(SAR406_clade)	HKBea1May	0.003578755	HK	Bea1	May	Bea	5	0.004498661
+76	Marinimicrobia_(SAR406_clade)	HKBea2May	0.00545201	HK	Bea2	May	Bea	5	
+120	Marinimicrobia_(SAR406_clade)	HKBea3May	0.004465219	HK	Bea3	May	Bea	5	
+33	others	HKBea1May	0.005344859	HK	Bea1	May	Bea	5	0.005055302
+77	others	HKBea2May	0.004452568	HK	Bea2	May	Bea	5	
+121	others	HKBea3May	0.00536848	HK	Bea3	May	Bea	5	
+28	Planctomycetota	HKBea1May	0.011096782	HK	Bea1	May	Bea	5	0.009636565
+72	Planctomycetota	HKBea2May	0.009713352	HK	Bea2	May	Bea	5	
+116	Planctomycetota	HKBea3May	0.008099561	HK	Bea3	May	Bea	5	
+25	Proteobacteria	HKBea1May	0.14816089	HK	Bea1	May	Bea	5	0.167121408
+69	Proteobacteria	HKBea2May	0.151546698	HK	Bea2	May	Bea	5	
+113	Proteobacteria	HKBea3May	0.201656636	HK	Bea3	May	Bea	5	
+30	SAR324_clade(Marine_group_B)	HKBea1May	0.007312889	HK	Bea1	May	Bea	5	0.011007021
+74	SAR324_clade(Marine_group_B)	HKBea2May	0.009166566	HK	Bea2	May	Bea	5	
+118	SAR324_clade(Marine_group_B)	HKBea3May	0.016541607	HK	Bea3	May	Bea	5	
+26	Thermoplasmatota	HKBea1May	0.07073011	HK	Bea1	May	Bea	5	0.114443288
+70	Thermoplasmatota	HKBea2May	0.069716997	HK	Bea2	May	Bea	5	
+114	Thermoplasmatota	HKBea3May	0.202882756	HK	Bea3	May	Bea	5	
+29	Verrucomicrobiota	HKBea1May	0.004171719	HK	Bea1	May	Bea	5	0.0063611
+73	Verrucomicrobiota	HKBea2May	0.005353832	HK	Bea2	May	Bea	5	
+117	Verrucomicrobiota	HKBea3May	0.009557749	HK	Bea3	May	Bea	5	
+819	Actinobacteriota	SKBlu1May	0.006838752	SK	Blu1	May	Blu	5	0.004815223
+863	Actinobacteriota	SKBlu2May	0.002977423	SK	Blu2	May	Blu	5	
+907	Actinobacteriota	SKBlu3May	0.004629495	SK	Blu3	May	Blu	5	
+815	Bacteroidota	SKBlu1May	0.047761504	SK	Blu1	May	Blu	5	0.073484704
+859	Bacteroidota	SKBlu2May	0.073618644	SK	Blu2	May	Blu	5	
+903	Bacteroidota	SKBlu3May	0.099073963	SK	Blu3	May	Blu	5	
+823	Crenarchaeota	SKBlu1May	0	SK	Blu1	May	Blu	5	7.2337E-05
+867	Crenarchaeota	SKBlu2May	0.000109541	SK	Blu2	May	Blu	5	
+911	Crenarchaeota	SKBlu3May	0.00010747	SK	Blu3	May	Blu	5	
+816	Cyanobacteria	SKBlu1May	0.880909948	SK	Blu1	May	Blu	5	0.824199468
+860	Cyanobacteria	SKBlu2May	0.826883017	SK	Blu2	May	Blu	5	
+904	Cyanobacteria	SKBlu3May	0.764805438	SK	Blu3	May	Blu	5	
+824	Marinimicrobia_(SAR406_clade)	SKBlu1May	0.001207335	SK	Blu1	May	Blu	5	0.001344206
+868	Marinimicrobia_(SAR406_clade)	SKBlu2May	0.001643108	SK	Blu2	May	Blu	5	
+912	Marinimicrobia_(SAR406_clade)	SKBlu3May	0.001182175	SK	Blu3	May	Blu	5	
+825	others	SKBlu1May	0.001131592	SK	Blu1	May	Blu	5	0.001688189
+869	others	SKBlu2May	0.001281049	SK	Blu2	May	Blu	5	
+913	others	SKBlu3May	0.002651925	SK	Blu3	May	Blu	5	
+820	Planctomycetota	SKBlu1May	0.001754575	SK	Blu1	May	Blu	5	0.002396125
+864	Planctomycetota	SKBlu2May	0.002285126	SK	Blu2	May	Blu	5	
+908	Planctomycetota	SKBlu3May	0.003148675	SK	Blu3	May	Blu	5	
+817	Proteobacteria	SKBlu1May	0.049248769	SK	Blu1	May	Blu	5	0.073858823
+861	Proteobacteria	SKBlu2May	0.073778254	SK	Blu2	May	Blu	5	
+905	Proteobacteria	SKBlu3May	0.098549446	SK	Blu3	May	Blu	5	
+822	SAR324_clade(Marine_group_B)	SKBlu1May	0.002743944	SK	Blu1	May	Blu	5	0.002612152
+866	SAR324_clade(Marine_group_B)	SKBlu2May	0.00219081	SK	Blu2	May	Blu	5	
+910	SAR324_clade(Marine_group_B)	SKBlu3May	0.002901701	SK	Blu3	May	Blu	5	
+818	Thermoplasmatota	SKBlu1May	0.007850728	SK	Blu1	May	Blu	5	0.014423214
+862	Thermoplasmatota	SKBlu2May	0.013345685	SK	Blu2	May	Blu	5	
+906	Thermoplasmatota	SKBlu3May	0.02207323	SK	Blu3	May	Blu	5	
+821	Verrucomicrobiota	SKBlu1May	0.000552854	SK	Blu1	May	Blu	5	0.001105559
+865	Verrucomicrobiota	SKBlu2May	0.001887342	SK	Blu2	May	Blu	5	
+909	Verrucomicrobiota	SKBlu3May	0.000876481	SK	Blu3	May	Blu	5	
+401	Actinobacteriota	LTCC1May	0.00614828	LT	CC1	May	CC	5	0.004485648
+445	Actinobacteriota	LTCC2May	0.004353773	LT	CC2	May	CC	5	
+489	Actinobacteriota	LTCC3May	0.00295489	LT	CC3	May	CC	5	
+397	Bacteroidota	LTCC1May	0.338897655	LT	CC1	May	CC	5	0.317953635
+441	Bacteroidota	LTCC2May	0.265452425	LT	CC2	May	CC	5	
+485	Bacteroidota	LTCC3May	0.349510827	LT	CC3	May	CC	5	
+405	Crenarchaeota	LTCC1May	0.000574681	LT	CC1	May	CC	5	0.000415365
+449	Crenarchaeota	LTCC2May	0.000390338	LT	CC2	May	CC	5	
+493	Crenarchaeota	LTCC3May	0.000281075	LT	CC3	May	CC	5	
+398	Cyanobacteria	LTCC1May	0.173628731	LT	CC1	May	CC	5	0.22511523
+442	Cyanobacteria	LTCC2May	0.340264153	LT	CC2	May	CC	5	
+486	Cyanobacteria	LTCC3May	0.161452807	LT	CC3	May	CC	5	
+406	Marinimicrobia_(SAR406_clade)	LTCC1May	0.001149361	LT	CC1	May	CC	5	0.000539273
+450	Marinimicrobia_(SAR406_clade)	LTCC2May	0	LT	CC2	May	CC	5	
+494	Marinimicrobia_(SAR406_clade)	LTCC3May	0.000468458	LT	CC3	May	CC	5	
+407	others	LTCC1May	0.003245494	LT	CC1	May	CC	5	0.001989649
+451	others	LTCC2May	0.001313527	LT	CC2	May	CC	5	
+495	others	LTCC3May	0.001409926	LT	CC3	May	CC	5	
+402	Planctomycetota	LTCC1May	0.002516806	LT	CC1	May	CC	5	0.001543819
+446	Planctomycetota	LTCC2May	0.001146898	LT	CC2	May	CC	5	
+490	Planctomycetota	LTCC3May	0.000967753	LT	CC3	May	CC	5	
+399	Proteobacteria	LTCC1May	0.385335152	LT	CC1	May	CC	5	0.362664889
+443	Proteobacteria	LTCC2May	0.315673006	LT	CC2	May	CC	5	
+487	Proteobacteria	LTCC3May	0.386986509	LT	CC3	May	CC	5	
+404	SAR324_clade(Marine_group_B)	LTCC1May	0.001724042	LT	CC1	May	CC	5	0.001369718
+448	SAR324_clade(Marine_group_B)	LTCC2May	0.00107343	LT	CC2	May	CC	5	
+492	SAR324_clade(Marine_group_B)	LTCC3May	0.001311683	LT	CC3	May	CC	5	
+400	Thermoplasmatota	LTCC1May	0.08423595	LT	CC1	May	CC	5	0.0825979
+444	Thermoplasmatota	LTCC2May	0.069694349	LT	CC2	May	CC	5	
+488	Thermoplasmatota	LTCC3May	0.093863402	LT	CC3	May	CC	5	
+403	Verrucomicrobiota	LTCC1May	0.002543849	LT	CC1	May	CC	5	0.001324873
+447	Verrucomicrobiota	LTCC2May	0.000638101	LT	CC2	May	CC	5	
+491	Verrucomicrobiota	LTCC3May	0.00079267	LT	CC3	May	CC	5	
+533	Actinobacteriota	LTCMW1May	0.00503516	LT	CMW1	May	CMW	5	0.006540764
+577	Actinobacteriota	LTCMW2May	0.002609867	LT	CMW2	May	CMW	5	
+621	Actinobacteriota	LTCMW3May	0.011977267	LT	CMW3	May	CMW	5	
+529	Bacteroidota	LTCMW1May	0.298538395	LT	CMW1	May	CMW	5	0.433914669
+573	Bacteroidota	LTCMW2May	0.54860801	LT	CMW2	May	CMW	5	
+617	Bacteroidota	LTCMW3May	0.454597601	LT	CMW3	May	CMW	5	
+537	Crenarchaeota	LTCMW1May	0	LT	CMW1	May	CMW	5	0.000456904
+581	Crenarchaeota	LTCMW2May	0.000193876	LT	CMW2	May	CMW	5	
+625	Crenarchaeota	LTCMW3May	0.001176836	LT	CMW3	May	CMW	5	
+530	Cyanobacteria	LTCMW1May	0.197882992	LT	CMW1	May	CMW	5	0.078246238
+574	Cyanobacteria	LTCMW2May	0.012939484	LT	CMW2	May	CMW	5	
+618	Cyanobacteria	LTCMW3May	0.023916238	LT	CMW3	May	CMW	5	
+538	Marinimicrobia_(SAR406_clade)	LTCMW1May	0.000577562	LT	CMW1	May	CMW	5	0.000222696
+582	Marinimicrobia_(SAR406_clade)	LTCMW2May	0	LT	CMW2	May	CMW	5	
+626	Marinimicrobia_(SAR406_clade)	LTCMW3May	9.05E-05	LT	CMW3	May	CMW	5	
+539	others	LTCMW1May	0.001030014	LT	CMW1	May	CMW	5	0.003465913
+583	others	LTCMW2May	0.004035741	LT	CMW2	May	CMW	5	
+627	others	LTCMW3May	0.005331984	LT	CMW3	May	CMW	5	
+534	Planctomycetota	LTCMW1May	0.000666481	LT	CMW1	May	CMW	5	0.000950617
+578	Planctomycetota	LTCMW2May	0.001417856	LT	CMW2	May	CMW	5	
+622	Planctomycetota	LTCMW3May	0.000767514	LT	CMW3	May	CMW	5	
+531	Proteobacteria	LTCMW1May	0.379626837	LT	CMW1	May	CMW	5	0.379396428
+575	Proteobacteria	LTCMW2May	0.40913296	LT	CMW2	May	CMW	5	
+619	Proteobacteria	LTCMW3May	0.349429488	LT	CMW3	May	CMW	5	
+536	SAR324_clade(Marine_group_B)	LTCMW1May	0.001540166	LT	CMW1	May	CMW	5	0.001323002
+580	SAR324_clade(Marine_group_B)	LTCMW2May	0.00048469	LT	CMW2	May	CMW	5	
+624	SAR324_clade(Marine_group_B)	LTCMW3May	0.00194415	LT	CMW3	May	CMW	5	
+532	Thermoplasmatota	LTCMW1May	0.113504385	LT	CMW1	May	CMW	5	0.094566307
+576	Thermoplasmatota	LTCMW2May	0.02027618	LT	CMW2	May	CMW	5	
+620	Thermoplasmatota	LTCMW3May	0.149918355	LT	CMW3	May	CMW	5	
+535	Verrucomicrobiota	LTCMW1May	0.001598009	LT	CMW1	May	CMW	5	0.000916462
+579	Verrucomicrobiota	LTCMW2May	0.000301337	LT	CMW2	May	CMW	5	
+623	Verrucomicrobiota	LTCMW3May	0.000850041	LT	CMW3	May	CMW	5	
+951	Actinobacteriota	SKLKW1May	0.012407507	SK	LKW1	May	LKW	5	0.020023402
+995	Actinobacteriota	SKLKW2May	0.016252811	SK	LKW2	May	LKW	5	
+1039	Actinobacteriota	SKLKW3May	0.031409888	SK	LKW3	May	LKW	5	
+947	Bacteroidota	SKLKW1May	0.143683172	SK	LKW1	May	LKW	5	0.16949778
+991	Bacteroidota	SKLKW2May	0.198648785	SK	LKW2	May	LKW	5	
+1035	Bacteroidota	SKLKW3May	0.166161384	SK	LKW3	May	LKW	5	
+955	Crenarchaeota	SKLKW1May	0.000420771	SK	LKW1	May	LKW	5	0.000140257
+999	Crenarchaeota	SKLKW2May	0	SK	LKW2	May	LKW	5	
+1043	Crenarchaeota	SKLKW3May	0	SK	LKW3	May	LKW	5	
+948	Cyanobacteria	SKLKW1May	0.696664207	SK	LKW1	May	LKW	5	0.612082615
+992	Cyanobacteria	SKLKW2May	0.559114679	SK	LKW2	May	LKW	5	
+1036	Cyanobacteria	SKLKW3May	0.58046896	SK	LKW3	May	LKW	5	
+956	Marinimicrobia_(SAR406_clade)	SKLKW1May	0.001683083	SK	LKW1	May	LKW	5	0.003028951
+1000	Marinimicrobia_(SAR406_clade)	SKLKW2May	0.0020524	SK	LKW2	May	LKW	5	
+1044	Marinimicrobia_(SAR406_clade)	SKLKW3May	0.00535137	SK	LKW3	May	LKW	5	
+957	others	SKLKW1May	0.00241411	SK	LKW1	May	LKW	5	0.003107097
+1001	others	SKLKW2May	0.00392324	SK	LKW2	May	LKW	5	
+1045	others	SKLKW3May	0.00298394	SK	LKW3	May	LKW	5	
+952	Planctomycetota	SKLKW1May	0.006949065	SK	LKW1	May	LKW	5	0.007519931
+996	Planctomycetota	SKLKW2May	0.009228155	SK	LKW2	May	LKW	5	
+1040	Planctomycetota	SKLKW3May	0.006382573	SK	LKW3	May	LKW	5	
+949	Proteobacteria	SKLKW1May	0.113091599	SK	LKW1	May	LKW	5	0.150803625
+993	Proteobacteria	SKLKW2May	0.170546249	SK	LKW2	May	LKW	5	
+1037	Proteobacteria	SKLKW3May	0.168773027	SK	LKW3	May	LKW	5	
+954	SAR324_clade(Marine_group_B)	SKLKW1May	0.00273501	SK	LKW1	May	LKW	5	0.004612973
+998	SAR324_clade(Marine_group_B)	SKLKW2May	0.003694319	SK	LKW2	May	LKW	5	
+1042	SAR324_clade(Marine_group_B)	SKLKW3May	0.00740959	SK	LKW3	May	LKW	5	
+950	Thermoplasmatota	SKLKW1May	0.018546059	SK	LKW1	May	LKW	5	0.026845025
+994	Thermoplasmatota	SKLKW2May	0.032453568	SK	LKW2	May	LKW	5	
+1038	Thermoplasmatota	SKLKW3May	0.029535448	SK	LKW3	May	LKW	5	
+953	Verrucomicrobiota	SKLKW1May	0.001405418	SK	LKW1	May	LKW	5	0.002338344
+997	Verrucomicrobiota	SKLKW2May	0.004085795	SK	LKW2	May	LKW	5	
+1041	Verrucomicrobiota	SKLKW3May	0.001523818	SK	LKW3	May	LKW	5	
+665	Actinobacteriota	LTPC1May	0.020688442	LT	PC1	May	PC	5	0.017950236
+698	Actinobacteriota	LTPC2May	0.014197302	LT	PC2	May	PC	5	
+742	Actinobacteriota	LTPC3May	0.018964964	LT	PC3	May	PC	5	
+661	Bacteroidota	LTPC1May	0.301809556	LT	PC1	May	PC	5	0.369454953
+694	Bacteroidota	LTPC2May	0.522772391	LT	PC2	May	PC	5	
+738	Bacteroidota	LTPC3May	0.283782912	LT	PC3	May	PC	5	
+669	Crenarchaeota	LTPC1May	0.000499695	LT	PC1	May	PC	5	0.000413888
+702	Crenarchaeota	LTPC2May	0.00074197	LT	PC2	May	PC	5	
+746	Crenarchaeota	LTPC3May	0	LT	PC3	May	PC	5	
+662	Cyanobacteria	LTPC1May	0.407979749	LT	PC1	May	PC	5	0.304765468
+695	Cyanobacteria	LTPC2May	0.078080683	LT	PC2	May	PC	5	
+739	Cyanobacteria	LTPC3May	0.428235971	LT	PC3	May	PC	5	
+670	Marinimicrobia_(SAR406_clade)	LTPC1May	0.002298598	LT	PC1	May	PC	5	0.001837324
+703	Marinimicrobia_(SAR406_clade)	LTPC2May	0.002318655	LT	PC2	May	PC	5	
+747	Marinimicrobia_(SAR406_clade)	LTPC3May	0.000894718	LT	PC3	May	PC	5	
+671	others	LTPC1May	0.005403995	LT	PC1	May	PC	5	0.003956288
+704	others	LTPC2May	0.005196506	LT	PC2	May	PC	5	
+748	others	LTPC3May	0.001268364	LT	PC3	May	PC	5	
+666	Planctomycetota	LTPC1May	0.003451651	LT	PC1	May	PC	5	0.0022944
+699	Planctomycetota	LTPC2May	0.001999113	LT	PC2	May	PC	5	
+743	Planctomycetota	LTPC3May	0.001432436	LT	PC3	May	PC	5	
+663	Proteobacteria	LTPC1May	0.219243229	LT	PC1	May	PC	5	0.262999954
+696	Proteobacteria	LTPC2May	0.329475628	LT	PC2	May	PC	5	
+740	Proteobacteria	LTPC3May	0.240281005	LT	PC3	May	PC	5	
+668	SAR324_clade(Marine_group_B)	LTPC1May	0.001698964	LT	PC1	May	PC	5	0.001772219
+701	SAR324_clade(Marine_group_B)	LTPC2May	0.002225909	LT	PC2	May	PC	5	
+745	SAR324_clade(Marine_group_B)	LTPC3May	0.001391784	LT	PC3	May	PC	5	
+664	Thermoplasmatota	LTPC1May	0.034753805	LT	PC1	May	PC	5	0.033002293
+697	Thermoplasmatota	LTPC2May	0.041655921	LT	PC2	May	PC	5	
+741	Thermoplasmatota	LTPC3May	0.022597154	LT	PC3	May	PC	5	
+667	Verrucomicrobiota	LTPC1May	0.002172315	LT	PC1	May	PC	5	0.001552977
+700	Verrucomicrobiota	LTPC2May	0.001335924	LT	PC2	May	PC	5	
+744	Verrucomicrobiota	LTPC3May	0.001150691	LT	PC3	May	PC	5	
+1072	Actinobacteriota	SKSha1May	0.001217222	SK	Sha1	May	Sha	5	0.002051735
+1105	Actinobacteriota	SKSha2May	0.002705241	SK	Sha2	May	Sha	5	
+1138	Actinobacteriota	SKSha3May	0.002232742	SK	Sha3	May	Sha	5	
+1068	Bacteroidota	SKSha1May	0.113091129	SK	Sha1	May	Sha	5	0.116949483
+1101	Bacteroidota	SKSha2May	0.137353427	SK	Sha2	May	Sha	5	
+1134	Bacteroidota	SKSha3May	0.100403893	SK	Sha3	May	Sha	5	
+1076	Crenarchaeota	SKSha1May	0	SK	Sha1	May	Sha	5	0
+1109	Crenarchaeota	SKSha2May	0	SK	Sha2	May	Sha	5	
+1142	Crenarchaeota	SKSha3May	0	SK	Sha3	May	Sha	5	
+1069	Cyanobacteria	SKSha1May	0.829447229	SK	Sha1	May	Sha	5	0.774682139
+1102	Cyanobacteria	SKSha2May	0.704308019	SK	Sha2	May	Sha	5	
+1135	Cyanobacteria	SKSha3May	0.79029117	SK	Sha3	May	Sha	5	
+1077	Marinimicrobia_(SAR406_clade)	SKSha1May	0.000321222	SK	Sha1	May	Sha	5	0.000143205
+1110	Marinimicrobia_(SAR406_clade)	SKSha2May	0	SK	Sha2	May	Sha	5	
+1143	Marinimicrobia_(SAR406_clade)	SKSha3May	0.000108392	SK	Sha3	May	Sha	5	
+1078	others	SKSha1May	0	SK	Sha1	May	Sha	5	0.000306787
+1111	others	SKSha2May	0.000301667	SK	Sha2	May	Sha	5	
+1144	others	SKSha3May	0.000618694	SK	Sha3	May	Sha	5	
+1073	Planctomycetota	SKSha1May	0.000249321	SK	Sha1	May	Sha	5	0.001111739
+1106	Planctomycetota	SKSha2May	0.001541697	SK	Sha2	May	Sha	5	
+1139	Planctomycetota	SKSha3May	0.0015442	SK	Sha3	May	Sha	5	
+1070	Proteobacteria	SKSha1May	0.047594502	SK	Sha1	May	Sha	5	0.094488366
+1103	Proteobacteria	SKSha2May	0.140573043	SK	Sha2	May	Sha	5	
+1136	Proteobacteria	SKSha3May	0.095297554	SK	Sha3	May	Sha	5	
+1075	SAR324_clade(Marine_group_B)	SKSha1May	0.000749519	SK	Sha1	May	Sha	5	0.000608109
+1108	SAR324_clade(Marine_group_B)	SKSha2May	0.000532851	SK	Sha2	May	Sha	5	
+1141	SAR324_clade(Marine_group_B)	SKSha3May	0.000541959	SK	Sha3	May	Sha	5	
+1071	Thermoplasmatota	SKSha1May	0.007203706	SK	Sha1	May	Sha	5	0.009482869
+1104	Thermoplasmatota	SKSha2May	0.01232365	SK	Sha2	May	Sha	5	
+1137	Thermoplasmatota	SKSha3May	0.008921251	SK	Sha3	May	Sha	5	
+1074	Verrucomicrobiota	SKSha1May	0.00012615	SK	Sha1	May	Sha	5	0.000175567
+1107	Verrucomicrobiota	SKSha2May	0.000360406	SK	Sha2	May	Sha	5	
+1140	Verrucomicrobiota	SKSha3May	4.01E-05	SK	Sha3	May	Sha	5	
+148	Actinobacteriota	HKSta1May	0.112331139	HK	Sta1	May	Sta	5	0.104761689
+181	Actinobacteriota	HKSta2May	0.114399139	HK	Sta2	May	Sta	5	
+225	Actinobacteriota	HKSta3May	0.08755479	HK	Sta3	May	Sta	5	
+144	Bacteroidota	HKSta1May	0.208031989	HK	Sta1	May	Sta	5	0.162446448
+177	Bacteroidota	HKSta2May	0.15668225	HK	Sta2	May	Sta	5	
+221	Bacteroidota	HKSta3May	0.122625104	HK	Sta3	May	Sta	5	
+152	Crenarchaeota	HKSta1May	0.00039736	HK	Sta1	May	Sta	5	0.000547328
+185	Crenarchaeota	HKSta2May	0.000720267	HK	Sta2	May	Sta	5	
+229	Crenarchaeota	HKSta3May	0.000524357	HK	Sta3	May	Sta	5	
+145	Cyanobacteria	HKSta1May	0.366686717	HK	Sta1	May	Sta	5	0.485156129
+178	Cyanobacteria	HKSta2May	0.483110639	HK	Sta2	May	Sta	5	
+222	Cyanobacteria	HKSta3May	0.60567103	HK	Sta3	May	Sta	5	
+153	Marinimicrobia_(SAR406_clade)	HKSta1May	0.006755124	HK	Sta1	May	Sta	5	0.006569313
+186	Marinimicrobia_(SAR406_clade)	HKSta2May	0.008128732	HK	Sta2	May	Sta	5	
+230	Marinimicrobia_(SAR406_clade)	HKSta3May	0.004824083	HK	Sta3	May	Sta	5	
+154	others	HKSta1May	0.009432719	HK	Sta1	May	Sta	5	0.006203963
+187	others	HKSta2May	0.004897881	HK	Sta2	May	Sta	5	
+231	others	HKSta3May	0.00428129	HK	Sta3	May	Sta	5	
+149	Planctomycetota	HKSta1May	0.014911357	HK	Sta1	May	Sta	5	0.012229935
+182	Planctomycetota	HKSta2May	0.010941716	HK	Sta2	May	Sta	5	
+226	Planctomycetota	HKSta3May	0.010836731	HK	Sta3	May	Sta	5	
+146	Proteobacteria	HKSta1May	0.144299664	HK	Sta1	May	Sta	5	0.128545852
+179	Proteobacteria	HKSta2May	0.138214071	HK	Sta2	May	Sta	5	
+223	Proteobacteria	HKSta3May	0.103123822	HK	Sta3	May	Sta	5	
+151	SAR324_clade(Marine_group_B)	HKSta1May	0.00947988	HK	Sta1	May	Sta	5	0.007807537
+184	SAR324_clade(Marine_group_B)	HKSta2May	0.008069934	HK	Sta2	May	Sta	5	
+228	SAR324_clade(Marine_group_B)	HKSta3May	0.005872796	HK	Sta3	May	Sta	5	
+147	Thermoplasmatota	HKSta1May	0.12458899	HK	Sta1	May	Sta	5	0.082131472
+180	Thermoplasmatota	HKSta2May	0.07082629	HK	Sta2	May	Sta	5	
+224	Thermoplasmatota	HKSta3May	0.050979136	HK	Sta3	May	Sta	5	
+150	Verrucomicrobiota	HKSta1May	0.003085061	HK	Sta1	May	Sta	5	0.003600334
+183	Verrucomicrobiota	HKSta2May	0.004009081	HK	Sta2	May	Sta	5	
+227	Verrucomicrobiota	HKSta3May	0.003706861	HK	Sta3	May	Sta	5	
+269	Actinobacteriota	HKSW1May	0.007827726	HK	SW1	May	SW	5	0.013914731
+313	Actinobacteriota	HKSW2May	0.027696599	HK	SW2	May	SW	5	
+357	Actinobacteriota	HKSW3May	0.006219868	HK	SW3	May	SW	5	
+265	Bacteroidota	HKSW1May	0.222157686	HK	SW1	May	SW	5	0.221511851
+309	Bacteroidota	HKSW2May	0.336027383	HK	SW2	May	SW	5	
+353	Bacteroidota	HKSW3May	0.106350483	HK	SW3	May	SW	5	
+273	Crenarchaeota	HKSW1May	0.001116824	HK	SW1	May	SW	5	0.001087511
+317	Crenarchaeota	HKSW2May	0.00161067	HK	SW2	May	SW	5	
+361	Crenarchaeota	HKSW3May	0.00053504	HK	SW3	May	SW	5	
+266	Cyanobacteria	HKSW1May	0.426125345	HK	SW1	May	SW	5	0.499884243
+310	Cyanobacteria	HKSW2May	0.383320469	HK	SW2	May	SW	5	
+354	Cyanobacteria	HKSW3May	0.690206914	HK	SW3	May	SW	5	
+274	Marinimicrobia_(SAR406_clade)	HKSW1May	0.000710706	HK	SW1	May	SW	5	0.002898628
+318	Marinimicrobia_(SAR406_clade)	HKSW2May	0.005738011	HK	SW2	May	SW	5	
+362	Marinimicrobia_(SAR406_clade)	HKSW3May	0.002247167	HK	SW3	May	SW	5	
+275	others	HKSW1May	0.003425338	HK	SW1	May	SW	5	0.005079937
+319	others	HKSW2May	0.008791913	HK	SW2	May	SW	5	
+363	others	HKSW3May	0.003022559	HK	SW3	May	SW	5	
+270	Planctomycetota	HKSW1May	0.006769935	HK	SW1	May	SW	5	0.008505207
+314	Planctomycetota	HKSW2May	0.013985023	HK	SW2	May	SW	5	
+358	Planctomycetota	HKSW3May	0.004760662	HK	SW3	May	SW	5	
+267	Proteobacteria	HKSW1May	0.23361992	HK	SW1	May	SW	5	0.147458414
+311	Proteobacteria	HKSW2May	0.124941778	HK	SW2	May	SW	5	
+355	Proteobacteria	HKSW3May	0.083813544	HK	SW3	May	SW	5	
+272	SAR324_clade(Marine_group_B)	HKSW1May	0.00400316	HK	SW1	May	SW	5	0.00520185
+316	SAR324_clade(Marine_group_B)	HKSW2May	0.008499158	HK	SW2	May	SW	5	
+360	SAR324_clade(Marine_group_B)	HKSW3May	0.003103231	HK	SW3	May	SW	5	
+268	Thermoplasmatota	HKSW1May	0.08878183	HK	SW1	May	SW	5	0.090196257
+312	Thermoplasmatota	HKSW2May	0.0846021	HK	SW2	May	SW	5	
+356	Thermoplasmatota	HKSW3May	0.09720484	HK	SW3	May	SW	5	
+271	Verrucomicrobiota	HKSW1May	0.00546153	HK	SW1	May	SW	5	0.004261373
+315	Verrucomicrobiota	HKSW2May	0.004786895	HK	SW2	May	SW	5	
+359	Verrucomicrobiota	HKSW3May	0.002535692	HK	SW3	May	SW	5	
+5	Actinobacteriota	HKBea1Aug	0.011271833	HK	Bea1	Aug	Bea	8	0.011027418
+49	Actinobacteriota	HKBea2Aug	0.009157548	HK	Bea2	Aug	Bea	8	
+93	Actinobacteriota	HKBea3Aug	0.012652874	HK	Bea3	Aug	Bea	8	
+1	Bacteroidota	HKBea1Aug	0.462163377	HK	Bea1	Aug	Bea	8	0.435915723
+45	Bacteroidota	HKBea2Aug	0.39920876	HK	Bea2	Aug	Bea	8	
+89	Bacteroidota	HKBea3Aug	0.446375034	HK	Bea3	Aug	Bea	8	
+9	Crenarchaeota	HKBea1Aug	0.013061246	HK	Bea1	Aug	Bea	8	0.013141068
+53	Crenarchaeota	HKBea2Aug	0.017760406	HK	Bea2	Aug	Bea	8	
+97	Crenarchaeota	HKBea3Aug	0.008601551	HK	Bea3	Aug	Bea	8	
+2	Cyanobacteria	HKBea1Aug	0.007037516	HK	Bea1	Aug	Bea	8	0.010820963
+46	Cyanobacteria	HKBea2Aug	0.01994264	HK	Bea2	Aug	Bea	8	
+90	Cyanobacteria	HKBea3Aug	0.005482734	HK	Bea3	Aug	Bea	8	
+10	Marinimicrobia_(SAR406_clade)	HKBea1Aug	0.000762701	HK	Bea1	Aug	Bea	8	0.000575029
+54	Marinimicrobia_(SAR406_clade)	HKBea2Aug	0.000675668	HK	Bea2	Aug	Bea	8	
+98	Marinimicrobia_(SAR406_clade)	HKBea3Aug	0.000286718	HK	Bea3	Aug	Bea	8	
+11	others	HKBea1Aug	0.040684076	HK	Bea1	Aug	Bea	8	0.043318707
+55	others	HKBea2Aug	0.053563438	HK	Bea2	Aug	Bea	8	
+99	others	HKBea3Aug	0.035708607	HK	Bea3	Aug	Bea	8	
+6	Planctomycetota	HKBea1Aug	0.064009868	HK	Bea1	Aug	Bea	8	0.064899463
+50	Planctomycetota	HKBea2Aug	0.084470077	HK	Bea2	Aug	Bea	8	
+94	Planctomycetota	HKBea3Aug	0.046218446	HK	Bea3	Aug	Bea	8	
+3	Proteobacteria	HKBea1Aug	0.305219515	HK	Bea1	Aug	Bea	8	0.319142779
+47	Proteobacteria	HKBea2Aug	0.284969712	HK	Bea2	Aug	Bea	8	
+91	Proteobacteria	HKBea3Aug	0.367239111	HK	Bea3	Aug	Bea	8	
+8	SAR324_clade(Marine_group_B)	HKBea1Aug	0.018590825	HK	Bea1	Aug	Bea	8	0.020644615
+52	SAR324_clade(Marine_group_B)	HKBea2Aug	0.024324034	HK	Bea2	Aug	Bea	8	
+96	SAR324_clade(Marine_group_B)	HKBea3Aug	0.019018986	HK	Bea3	Aug	Bea	8	
+4	Thermoplasmatota	HKBea1Aug	0.046829281	HK	Bea1	Aug	Bea	8	0.05451387
+48	Thermoplasmatota	HKBea2Aug	0.077795618	HK	Bea2	Aug	Bea	8	
+92	Thermoplasmatota	HKBea3Aug	3.89E-02	HK	Bea3	Aug	Bea	8	
+7	Verrucomicrobiota	HKBea1Aug	0.030369762	HK	Bea1	Aug	Bea	8	0.026000364
+51	Verrucomicrobiota	HKBea2Aug	0.028132101	HK	Bea2	Aug	Bea	8	
+95	Verrucomicrobiota	HKBea3Aug	0.019499229	HK	Bea3	Aug	Bea	8	
+797	Actinobacteriota	SKBlu1Aug	0.00641358	SK	Blu1	Aug	Blu	8	0.0066747
+841	Actinobacteriota	SKBlu2Aug	0.004224172	SK	Blu2	Aug	Blu	8	
+885	Actinobacteriota	SKBlu3Aug	0.009386348	SK	Blu3	Aug	Blu	8	
+793	Bacteroidota	SKBlu1Aug	0.113760428	SK	Blu1	Aug	Blu	8	0.160199548
+837	Bacteroidota	SKBlu2Aug	0.179964554	SK	Blu2	Aug	Blu	8	
+881	Bacteroidota	SKBlu3Aug	0.186873662	SK	Blu3	Aug	Blu	8	
+801	Crenarchaeota	SKBlu1Aug	0	SK	Blu1	Aug	Blu	8	0
+845	Crenarchaeota	SKBlu2Aug	0	SK	Blu2	Aug	Blu	8	
+889	Crenarchaeota	SKBlu3Aug	0	SK	Blu3	Aug	Blu	8	
+794	Cyanobacteria	SKBlu1Aug	0.594338233	SK	Blu1	Aug	Blu	8	0.517575964
+838	Cyanobacteria	SKBlu2Aug	0.50170919	SK	Blu2	Aug	Blu	8	
+882	Cyanobacteria	SKBlu3Aug	0.456680468	SK	Blu3	Aug	Blu	8	
+802	Marinimicrobia_(SAR406_clade)	SKBlu1Aug	0.000327702	SK	Blu1	Aug	Blu	8	0.00044925
+846	Marinimicrobia_(SAR406_clade)	SKBlu2Aug	0.000908078	SK	Blu2	Aug	Blu	8	
+890	Marinimicrobia_(SAR406_clade)	SKBlu3Aug	0.000111969	SK	Blu3	Aug	Blu	8	
+803	others	SKBlu1Aug	0.011383348	SK	Blu1	Aug	Blu	8	0.008019912
+847	others	SKBlu2Aug	0.010361465	SK	Blu2	Aug	Blu	8	
+891	others	SKBlu3Aug	0.002314923	SK	Blu3	Aug	Blu	8	
+798	Planctomycetota	SKBlu1Aug	0.010716432	SK	Blu1	Aug	Blu	8	0.01265292
+842	Planctomycetota	SKBlu2Aug	0.020505115	SK	Blu2	Aug	Blu	8	
+886	Planctomycetota	SKBlu3Aug	0.006737214	SK	Blu3	Aug	Blu	8	
+795	Proteobacteria	SKBlu1Aug	0.136918796	SK	Blu1	Aug	Blu	8	0.151034399
+839	Proteobacteria	SKBlu2Aug	0.149269418	SK	Blu2	Aug	Blu	8	
+883	Proteobacteria	SKBlu3Aug	0.166914985	SK	Blu3	Aug	Blu	8	
+800	SAR324_clade(Marine_group_B)	SKBlu1Aug	0.040198076	SK	Blu1	Aug	Blu	8	0.038361624
+844	SAR324_clade(Marine_group_B)	SKBlu2Aug	0.039728401	SK	Blu2	Aug	Blu	8	
+888	SAR324_clade(Marine_group_B)	SKBlu3Aug	0.035158394	SK	Blu3	Aug	Blu	8	
+796	Thermoplasmatota	SKBlu1Aug	0.01431571	SK	Blu1	Aug	Blu	8	0.009255412
+840	Thermoplasmatota	SKBlu2Aug	0.005401171	SK	Blu2	Aug	Blu	8	
+884	Thermoplasmatota	SKBlu3Aug	0.008049356	SK	Blu3	Aug	Blu	8	
+799	Verrucomicrobiota	SKBlu1Aug	0.071627696	SK	Blu1	Aug	Blu	8	0.095776271
+843	Verrucomicrobiota	SKBlu2Aug	0.087928437	SK	Blu2	Aug	Blu	8	
+887	Verrucomicrobiota	SKBlu3Aug	0.127772681	SK	Blu3	Aug	Blu	8	
+379	Actinobacteriota	LTCC1Aug	0.010924436	LT	CC1	Aug	CC	8	0.020163205
+423	Actinobacteriota	LTCC2Aug	0.023199379	LT	CC2	Aug	CC	8	
+467	Actinobacteriota	LTCC3Aug	0.026365799	LT	CC3	Aug	CC	8	
+375	Bacteroidota	LTCC1Aug	0.477170026	LT	CC1	Aug	CC	8	0.377262804
+419	Bacteroidota	LTCC2Aug	0.291025586	LT	CC2	Aug	CC	8	
+463	Bacteroidota	LTCC3Aug	0.363592801	LT	CC3	Aug	CC	8	
+383	Crenarchaeota	LTCC1Aug	0.007337472	LT	CC1	Aug	CC	8	0.006027459
+427	Crenarchaeota	LTCC2Aug	0.008403176	LT	CC2	Aug	CC	8	
+471	Crenarchaeota	LTCC3Aug	0.002341729	LT	CC3	Aug	CC	8	
+376	Cyanobacteria	LTCC1Aug	0.037615583	LT	CC1	Aug	CC	8	0.060695278
+420	Cyanobacteria	LTCC2Aug	0.063727108	LT	CC2	Aug	CC	8	
+464	Cyanobacteria	LTCC3Aug	0.080743145	LT	CC3	Aug	CC	8	
+384	Marinimicrobia_(SAR406_clade)	LTCC1Aug	0.000857627	LT	CC1	Aug	CC	8	0.000709199
+428	Marinimicrobia_(SAR406_clade)	LTCC2Aug	0.001074825	LT	CC2	Aug	CC	8	
+472	Marinimicrobia_(SAR406_clade)	LTCC3Aug	0.000195144	LT	CC3	Aug	CC	8	
+385	others	LTCC1Aug	0.023920239	LT	CC1	Aug	CC	8	0.017976194
+429	others	LTCC2Aug	0.016965917	LT	CC2	Aug	CC	8	
+473	others	LTCC3Aug	0.013042427	LT	CC3	Aug	CC	8	
+380	Planctomycetota	LTCC1Aug	0.132019593	LT	CC1	Aug	CC	8	0.082531103
+424	Planctomycetota	LTCC2Aug	0.065655517	LT	CC2	Aug	CC	8	
+468	Planctomycetota	LTCC3Aug	0.049918199	LT	CC3	Aug	CC	8	
+377	Proteobacteria	LTCC1Aug	0.237875075	LT	CC1	Aug	CC	8	0.378395863
+421	Proteobacteria	LTCC2Aug	0.471931639	LT	CC2	Aug	CC	8	
+465	Proteobacteria	LTCC3Aug	0.425380876	LT	CC3	Aug	CC	8	
+382	SAR324_clade(Marine_group_B)	LTCC1Aug	0.008671558	LT	CC1	Aug	CC	8	0.013890522
+426	SAR324_clade(Marine_group_B)	LTCC2Aug	0.02100794	LT	CC2	Aug	CC	8	
+470	SAR324_clade(Marine_group_B)	LTCC3Aug	0.011992068	LT	CC3	Aug	CC	8	
+378	Thermoplasmatota	LTCC1Aug	0.048111795	LT	CC1	Aug	CC	8	0.027046941
+422	Thermoplasmatota	LTCC2Aug	0.019637267	LT	CC2	Aug	CC	8	
+466	Thermoplasmatota	LTCC3Aug	0.013391763	LT	CC3	Aug	CC	8	
+381	Verrucomicrobiota	LTCC1Aug	0.015496596	LT	CC1	Aug	CC	8	0.015301431
+425	Verrucomicrobiota	LTCC2Aug	0.017371648	LT	CC2	Aug	CC	8	
+469	Verrucomicrobiota	LTCC3Aug	0.013036048	LT	CC3	Aug	CC	8	
+511	Actinobacteriota	LTCMW1Aug	0.009468308	LT	CMW1	Aug	CMW	8	0.018917964
+555	Actinobacteriota	LTCMW2Aug	0.027913088	LT	CMW2	Aug	CMW	8	
+599	Actinobacteriota	LTCMW3Aug	0.019372496	LT	CMW3	Aug	CMW	8	
+507	Bacteroidota	LTCMW1Aug	0.335212505	LT	CMW1	Aug	CMW	8	0.328588496
+551	Bacteroidota	LTCMW2Aug	0.297212801	LT	CMW2	Aug	CMW	8	
+595	Bacteroidota	LTCMW3Aug	0.353340181	LT	CMW3	Aug	CMW	8	
+515	Crenarchaeota	LTCMW1Aug	0.00E+00	LT	CMW1	Aug	CMW	8	0.003006085
+559	Crenarchaeota	LTCMW2Aug	0.004869906	LT	CMW2	Aug	CMW	8	
+603	Crenarchaeota	LTCMW3Aug	0.004148348	LT	CMW3	Aug	CMW	8	
+508	Cyanobacteria	LTCMW1Aug	0.035417363	LT	CMW1	Aug	CMW	8	0.032578014
+552	Cyanobacteria	LTCMW2Aug	0.046737622	LT	CMW2	Aug	CMW	8	
+596	Cyanobacteria	LTCMW3Aug	0.015579057	LT	CMW3	Aug	CMW	8	
+516	Marinimicrobia_(SAR406_clade)	LTCMW1Aug	0	LT	CMW1	Aug	CMW	8	0.000258803
+560	Marinimicrobia_(SAR406_clade)	LTCMW2Aug	0.000486991	LT	CMW2	Aug	CMW	8	
+604	Marinimicrobia_(SAR406_clade)	LTCMW3Aug	0.00028942	LT	CMW3	Aug	CMW	8	
+517	others	LTCMW1Aug	0.019977107	LT	CMW1	Aug	CMW	8	0.01816755
+561	others	LTCMW2Aug	0.021912524	LT	CMW2	Aug	CMW	8	
+605	others	LTCMW3Aug	0.012613018	LT	CMW3	Aug	CMW	8	
+512	Planctomycetota	LTCMW1Aug	0.075380333	LT	CMW1	Aug	CMW	8	0.064701756
+556	Planctomycetota	LTCMW2Aug	0.071145955	LT	CMW2	Aug	CMW	8	
+600	Planctomycetota	LTCMW3Aug	0.047578982	LT	CMW3	Aug	CMW	8	
+509	Proteobacteria	LTCMW1Aug	0.500576552	LT	CMW1	Aug	CMW	8	0.472031662
+553	Proteobacteria	LTCMW2Aug	0.456899785	LT	CMW2	Aug	CMW	8	
+597	Proteobacteria	LTCMW3Aug	0.458618651	LT	CMW3	Aug	CMW	8	
+514	SAR324_clade(Marine_group_B)	LTCMW1Aug	0.00846671	LT	CMW1	Aug	CMW	8	0.020091938
+558	SAR324_clade(Marine_group_B)	LTCMW2Aug	0.025954282	LT	CMW2	Aug	CMW	8	
+602	SAR324_clade(Marine_group_B)	LTCMW3Aug	0.025854821	LT	CMW3	Aug	CMW	8	
+510	Thermoplasmatota	LTCMW1Aug	0.002666357	LT	CMW1	Aug	CMW	8	0.020114518
+554	Thermoplasmatota	LTCMW2Aug	0.026768252	LT	CMW2	Aug	CMW	8	
+598	Thermoplasmatota	LTCMW3Aug	0.030908945	LT	CMW3	Aug	CMW	8	
+513	Verrucomicrobiota	LTCMW1Aug	0.012834765	LT	CMW1	Aug	CMW	8	0.021543214
+557	Verrucomicrobiota	LTCMW2Aug	0.020098794	LT	CMW2	Aug	CMW	8	
+601	Verrucomicrobiota	LTCMW3Aug	0.031696083	LT	CMW3	Aug	CMW	8	
+929	Actinobacteriota	SKLKW1Aug	0.00454607	SK	LKW1	Aug	LKW	8	0.003435429
+973	Actinobacteriota	SKLKW2Aug	0.005760132	SK	LKW2	Aug	LKW	8	
+1017	Actinobacteriota	SKLKW3Aug	8.45E-08	SK	LKW3	Aug	LKW	8	
+925	Bacteroidota	SKLKW1Aug	0.149485154	SK	LKW1	Aug	LKW	8	0.096747363
+969	Bacteroidota	SKLKW2Aug	0.140746469	SK	LKW2	Aug	LKW	8	
+1013	Bacteroidota	SKLKW3Aug	1.05E-05	SK	LKW3	Aug	LKW	8	
+933	Crenarchaeota	SKLKW1Aug	0.000571242	SK	LKW1	Aug	LKW	8	0.00049621
+977	Crenarchaeota	SKLKW2Aug	0.000917387	SK	LKW2	Aug	LKW	8	
+1021	Crenarchaeota	SKLKW3Aug	0	SK	LKW3	Aug	LKW	8	
+926	Cyanobacteria	SKLKW1Aug	0.562475458	SK	LKW1	Aug	LKW	8	0.377213166
+970	Cyanobacteria	SKLKW2Aug	0.569140722	SK	LKW2	Aug	LKW	8	
+1014	Cyanobacteria	SKLKW3Aug	2.33E-05	SK	LKW3	Aug	LKW	8	
+934	Marinimicrobia_(SAR406_clade)	SKLKW1Aug	0.000571242	SK	LKW1	Aug	LKW	8	0.000381549
+978	Marinimicrobia_(SAR406_clade)	SKLKW2Aug	0.000573367	SK	LKW2	Aug	LKW	8	
+1022	Marinimicrobia_(SAR406_clade)	SKLKW3Aug	3.74E-08	SK	LKW3	Aug	LKW	8	
+935	others	SKLKW1Aug	0.004892116	SK	LKW1	Aug	LKW	8	0.002921543
+979	others	SKLKW2Aug	0.003872323	SK	LKW2	Aug	LKW	8	
+1023	others	SKLKW3Aug	1.92E-07	SK	LKW3	Aug	LKW	8	
+930	Planctomycetota	SKLKW1Aug	0.010344458	SK	LKW1	Aug	LKW	8	0.006581052
+974	Planctomycetota	SKLKW2Aug	0.009397746	SK	LKW2	Aug	LKW	8	
+1018	Planctomycetota	SKLKW3Aug	9.51E-07	SK	LKW3	Aug	LKW	8	
+927	Proteobacteria	SKLKW1Aug	0.107913962	SK	LKW1	Aug	LKW	8	0.403245629
+971	Proteobacteria	SKLKW2Aug	0.101862303	SK	LKW2	Aug	LKW	8	
+1015	Proteobacteria	SKLKW3Aug	0.999960623	SK	LKW3	Aug	LKW	8	
+932	SAR324_clade(Marine_group_B)	SKLKW1Aug	0.014509543	SK	LKW1	Aug	LKW	8	0.008122105
+976	SAR324_clade(Marine_group_B)	SKLKW2Aug	0.009856451	SK	LKW2	Aug	LKW	8	
+1020	SAR324_clade(Marine_group_B)	SKLKW3Aug	3.21E-07	SK	LKW3	Aug	LKW	8	
+928	Thermoplasmatota	SKLKW1Aug	0.008079899	SK	LKW1	Aug	LKW	8	0.006041219
+972	Thermoplasmatota	SKLKW2Aug	0.010043478	SK	LKW2	Aug	LKW	8	
+1016	Thermoplasmatota	SKLKW3Aug	2.82E-07	SK	LKW3	Aug	LKW	8	
+931	Verrucomicrobiota	SKLKW1Aug	0.136610857	SK	LKW1	Aug	LKW	8	0.094814736
+975	Verrucomicrobiota	SKLKW2Aug	0.147829623	SK	LKW2	Aug	LKW	8	
+1019	Verrucomicrobiota	SKLKW3Aug	3.73E-06	SK	LKW3	Aug	LKW	8	
+643	Actinobacteriota	LTPC1Aug	0.042509439	LT	PC1	Aug	PC	8	0.031886144
+687	Actinobacteriota	LTPC2Aug	0.003047198	LT	PC2	Aug	PC	8	
+720	Actinobacteriota	LTPC3Aug	0.050101796	LT	PC3	Aug	PC	8	
+639	Bacteroidota	LTPC1Aug	0.340650442	LT	PC1	Aug	PC	8	0.532544539
+683	Bacteroidota	LTPC2Aug	0.957546514	LT	PC2	Aug	PC	8	
+716	Bacteroidota	LTPC3Aug	0.299436662	LT	PC3	Aug	PC	8	
+647	Crenarchaeota	LTPC1Aug	0.013049698	LT	PC1	Aug	PC	8	0.00950591
+691	Crenarchaeota	LTPC2Aug	0.000959261	LT	PC2	Aug	PC	8	
+724	Crenarchaeota	LTPC3Aug	0.014508771	LT	PC3	Aug	PC	8	
+640	Cyanobacteria	LTPC1Aug	0.031038895	LT	PC1	Aug	PC	8	0.026101278
+684	Cyanobacteria	LTPC2Aug	0.002390064	LT	PC2	Aug	PC	8	
+717	Cyanobacteria	LTPC3Aug	0.044874875	LT	PC3	Aug	PC	8	
+648	Marinimicrobia_(SAR406_clade)	LTPC1Aug	0.003550285	LT	PC1	Aug	PC	8	0.003515481
+692	Marinimicrobia_(SAR406_clade)	LTPC2Aug	0.000144794	LT	PC2	Aug	PC	8	
+725	Marinimicrobia_(SAR406_clade)	LTPC3Aug	0.006851364	LT	PC3	Aug	PC	8	
+649	others	LTPC1Aug	0.008176271	LT	PC1	Aug	PC	8	0.005524086
+693	others	LTPC2Aug	0.001103219	LT	PC2	Aug	PC	8	
+726	others	LTPC3Aug	0.007292769	LT	PC3	Aug	PC	8	
+644	Planctomycetota	LTPC1Aug	0.035741876	LT	PC1	Aug	PC	8	0.030012108
+688	Planctomycetota	LTPC2Aug	0.003718264	LT	PC2	Aug	PC	8	
+721	Planctomycetota	LTPC3Aug	0.050576185	LT	PC3	Aug	PC	8	
+641	Proteobacteria	LTPC1Aug	0.448865585	LT	PC1	Aug	PC	8	0.307001101
+685	Proteobacteria	LTPC2Aug	0.027732507	LT	PC2	Aug	PC	8	
+718	Proteobacteria	LTPC3Aug	0.444405211	LT	PC3	Aug	PC	8	
+646	SAR324_clade(Marine_group_B)	LTPC1Aug	0.018423103	LT	PC1	Aug	PC	8	0.016083027
+690	SAR324_clade(Marine_group_B)	LTPC2Aug	0.000808434	LT	PC2	Aug	PC	8	
+723	SAR324_clade(Marine_group_B)	LTPC3Aug	0.029017542	LT	PC3	Aug	PC	8	
+642	Thermoplasmatota	LTPC1Aug	0.040934898	LT	PC1	Aug	PC	8	0.026226214
+686	Thermoplasmatota	LTPC2Aug	0.001709711	LT	PC2	Aug	PC	8	
+719	Thermoplasmatota	LTPC3Aug	0.036034033	LT	PC3	Aug	PC	8	
+645	Verrucomicrobiota	LTPC1Aug	0.017059507	LT	PC1	Aug	PC	8	0.011600111
+689	Verrucomicrobiota	LTPC2Aug	0.000840035	LT	PC2	Aug	PC	8	
+722	Verrucomicrobiota	LTPC3Aug	0.016900791	LT	PC3	Aug	PC	8	
+1061	Actinobacteriota	SKSha1Aug	0.00421817	SK	Sha1	Aug	Sha	8	0.006254285
+1094	Actinobacteriota	SKSha2Aug	0.005362053	SK	Sha2	Aug	Sha	8	
+1127	Actinobacteriota	SKSha3Aug	0.009182631	SK	Sha3	Aug	Sha	8	
+1057	Bacteroidota	SKSha1Aug	0.114046769	SK	Sha1	Aug	Sha	8	0.116293551
+1090	Bacteroidota	SKSha2Aug	0.126575394	SK	Sha2	Aug	Sha	8	
+1123	Bacteroidota	SKSha3Aug	0.108258491	SK	Sha3	Aug	Sha	8	
+1065	Crenarchaeota	SKSha1Aug	0	SK	Sha1	Aug	Sha	8	3.51426E-05
+1098	Crenarchaeota	SKSha2Aug	0	SK	Sha2	Aug	Sha	8	
+1131	Crenarchaeota	SKSha3Aug	0.000105428	SK	Sha3	Aug	Sha	8	
+1058	Cyanobacteria	SKSha1Aug	0.648462656	SK	Sha1	Aug	Sha	8	0.620223394
+1091	Cyanobacteria	SKSha2Aug	0.60493483	SK	Sha2	Aug	Sha	8	
+1124	Cyanobacteria	SKSha3Aug	0.607272697	SK	Sha3	Aug	Sha	8	
+1066	Marinimicrobia_(SAR406_clade)	SKSha1Aug	0.000105339	SK	Sha1	Aug	Sha	8	0.00017345
+1099	Marinimicrobia_(SAR406_clade)	SKSha2Aug	0.000415011	SK	Sha2	Aug	Sha	8	
+1132	Marinimicrobia_(SAR406_clade)	SKSha3Aug	0	SK	Sha3	Aug	Sha	8	
+1067	others	SKSha1Aug	0.003797846	SK	Sha1	Aug	Sha	8	0.010551455
+1100	others	SKSha2Aug	0.004722507	SK	Sha2	Aug	Sha	8	
+1133	others	SKSha3Aug	0.023134012	SK	Sha3	Aug	Sha	8	
+1062	Planctomycetota	SKSha1Aug	0.006298054	SK	Sha1	Aug	Sha	8	0.01063219
+1095	Planctomycetota	SKSha2Aug	0.010772368	SK	Sha2	Aug	Sha	8	
+1128	Planctomycetota	SKSha3Aug	0.014826149	SK	Sha3	Aug	Sha	8	
+1059	Proteobacteria	SKSha1Aug	0.155092505	SK	Sha1	Aug	Sha	8	0.151886835
+1092	Proteobacteria	SKSha2Aug	0.135463794	SK	Sha2	Aug	Sha	8	
+1125	Proteobacteria	SKSha3Aug	0.165104205	SK	Sha3	Aug	Sha	8	
+1064	SAR324_clade(Marine_group_B)	SKSha1Aug	0.035077891	SK	Sha1	Aug	Sha	8	0.048433589
+1097	SAR324_clade(Marine_group_B)	SKSha2Aug	0.071796969	SK	Sha2	Aug	Sha	8	
+1130	SAR324_clade(Marine_group_B)	SKSha3Aug	0.038425906	SK	Sha3	Aug	Sha	8	
+1060	Thermoplasmatota	SKSha1Aug	0.00434816	SK	Sha1	Aug	Sha	8	0.004326396
+1093	Thermoplasmatota	SKSha2Aug	0.003954136	SK	Sha2	Aug	Sha	8	
+1126	Thermoplasmatota	SKSha3Aug	0.004676892	SK	Sha3	Aug	Sha	8	
+1063	Verrucomicrobiota	SKSha1Aug	0.02855261	SK	Sha1	Aug	Sha	8	0.031189712
+1096	Verrucomicrobiota	SKSha2Aug	0.036002937	SK	Sha2	Aug	Sha	8	
+1129	Verrucomicrobiota	SKSha3Aug	0.02901359	SK	Sha3	Aug	Sha	8	
+203	Actinobacteriota	HKSta3Aug	0.011203125	HK	Sta3	Aug	Sta	8	0.00632612
+1160	Actinobacteriota	HKSta1Aug	0.003544842	HK	Sta1	Aug	Sta	8	
+1171	Actinobacteriota	HKSta2Aug	0.004230392	HK	Sta2	Aug	Sta	8	
+199	Bacteroidota	HKSta3Aug	0.416349629	HK	Sta3	Aug	Sta	8	0.375531024
+1156	Bacteroidota	HKSta1Aug	0.403642313	HK	Sta1	Aug	Sta	8	
+1167	Bacteroidota	HKSta2Aug	0.30660113	HK	Sta2	Aug	Sta	8	
+207	Crenarchaeota	HKSta3Aug	0.01136167	HK	Sta3	Aug	Sta	8	0.004778855
+1164	Crenarchaeota	HKSta1Aug	0.002770285	HK	Sta1	Aug	Sta	8	
+1175	Crenarchaeota	HKSta2Aug	0.00020461	HK	Sta2	Aug	Sta	8	
+200	Cyanobacteria	HKSta3Aug	0.006888352	HK	Sta3	Aug	Sta	8	0.003455375
+1157	Cyanobacteria	HKSta1Aug	0.001550779	HK	Sta1	Aug	Sta	8	
+1168	Cyanobacteria	HKSta2Aug	0.001926994	HK	Sta2	Aug	Sta	8	
+208	Marinimicrobia_(SAR406_clade)	HKSta3Aug	0.001165299	HK	Sta3	Aug	Sta	8	0.000935153
+1165	Marinimicrobia_(SAR406_clade)	HKSta1Aug	0.001128635	HK	Sta1	Aug	Sta	8	
+1176	Marinimicrobia_(SAR406_clade)	HKSta2Aug	0.000511525	HK	Sta2	Aug	Sta	8	
+209	others	HKSta3Aug	0.033500054	HK	Sta3	Aug	Sta	8	0.025086581
+1166	others	HKSta1Aug	0.021895795	HK	Sta1	Aug	Sta	8	
+1177	others	HKSta2Aug	0.019863896	HK	Sta2	Aug	Sta	8	
+204	Planctomycetota	HKSta3Aug	0.081412079	HK	Sta3	Aug	Sta	8	0.051541672
+1161	Planctomycetota	HKSta1Aug	0.039196451	HK	Sta1	Aug	Sta	8	
+1172	Planctomycetota	HKSta2Aug	0.034016484	HK	Sta2	Aug	Sta	8	
+201	Proteobacteria	HKSta3Aug	0.321148544	HK	Sta3	Aug	Sta	8	0.441195469
+1158	Proteobacteria	HKSta1Aug	0.471289332	HK	Sta1	Aug	Sta	8	
+1169	Proteobacteria	HKSta2Aug	0.531148532	HK	Sta2	Aug	Sta	8	
+206	SAR324_clade(Marine_group_B)	HKSta3Aug	0.018353467	HK	Sta3	Aug	Sta	8	0.020119884
+1163	SAR324_clade(Marine_group_B)	HKSta1Aug	0.021033646	HK	Sta1	Aug	Sta	8	
+1174	SAR324_clade(Marine_group_B)	HKSta2Aug	0.020972539	HK	Sta2	Aug	Sta	8	
+202	Thermoplasmatota	HKSta3Aug	0.057401788	HK	Sta3	Aug	Sta	8	0.023849621
+1159	Thermoplasmatota	HKSta1Aug	0.012908046	HK	Sta1	Aug	Sta	8	
+1170	Thermoplasmatota	HKSta2Aug	0.001239028	HK	Sta2	Aug	Sta	8	
+205	Verrucomicrobiota	HKSta3Aug	0.041215993	HK	Sta3	Aug	Sta	8	0.047180246
+1162	Verrucomicrobiota	HKSta1Aug	0.021039876	HK	Sta1	Aug	Sta	8	
+1173	Verrucomicrobiota	HKSta2Aug	0.07928487	HK	Sta2	Aug	Sta	8	
+247	Actinobacteriota	HKSW1Aug	1.29E-02	HK	SW1	Aug	SW	8	0.013483537
+291	Actinobacteriota	HKSW2Aug	0.01000798	HK	SW2	Aug	SW	8	
+335	Actinobacteriota	HKSW3Aug	0.017510185	HK	SW3	Aug	SW	8	
+243	Bacteroidota	HKSW1Aug	0.350559097	HK	SW1	Aug	SW	8	0.315583948
+287	Bacteroidota	HKSW2Aug	0.335976455	HK	SW2	Aug	SW	8	
+331	Bacteroidota	HKSW3Aug	0.260216293	HK	SW3	Aug	SW	8	
+251	Crenarchaeota	HKSW1Aug	0.035048837	HK	SW1	Aug	SW	8	0.05117561
+295	Crenarchaeota	HKSW2Aug	0.028426224	HK	SW2	Aug	SW	8	
+339	Crenarchaeota	HKSW3Aug	0.090051769	HK	SW3	Aug	SW	8	
+244	Cyanobacteria	HKSW1Aug	0.002164285	HK	SW1	Aug	SW	8	0.005709442
+288	Cyanobacteria	HKSW2Aug	0.006648956	HK	SW2	Aug	SW	8	
+332	Cyanobacteria	HKSW3Aug	0.008315084	HK	SW3	Aug	SW	8	
+252	Marinimicrobia_(SAR406_clade)	HKSW1Aug	0.001906802	HK	SW1	Aug	SW	8	0.003249191
+296	Marinimicrobia_(SAR406_clade)	HKSW2Aug	0.003381898	HK	SW2	Aug	SW	8	
+340	Marinimicrobia_(SAR406_clade)	HKSW3Aug	0.004458874	HK	SW3	Aug	SW	8	
+253	others	HKSW1Aug	0.025096137	HK	SW1	Aug	SW	8	0.034915895
+297	others	HKSW2Aug	0.044733816	HK	SW2	Aug	SW	8	
+341	others	HKSW3Aug	0.034917733	HK	SW3	Aug	SW	8	
+248	Planctomycetota	HKSW1Aug	0.133418481	HK	SW1	Aug	SW	8	0.152040405
+292	Planctomycetota	HKSW2Aug	0.156811837	HK	SW2	Aug	SW	8	
+336	Planctomycetota	HKSW3Aug	0.165890898	HK	SW3	Aug	SW	8	
+245	Proteobacteria	HKSW1Aug	0.256113628	HK	SW1	Aug	SW	8	0.220747311
+289	Proteobacteria	HKSW2Aug	0.221806069	HK	SW2	Aug	SW	8	
+333	Proteobacteria	HKSW3Aug	0.184322238	HK	SW3	Aug	SW	8	
+250	SAR324_clade(Marine_group_B)	HKSW1Aug	0.036229238	HK	SW1	Aug	SW	8	0.031491972
+294	SAR324_clade(Marine_group_B)	HKSW2Aug	0.02581472	HK	SW2	Aug	SW	8	
+338	SAR324_clade(Marine_group_B)	HKSW3Aug	0.032431959	HK	SW3	Aug	SW	8	
+246	Thermoplasmatota	HKSW1Aug	0.104634499	HK	SW1	Aug	SW	8	0.137389074
+290	Thermoplasmatota	HKSW2Aug	0.133265064	HK	SW2	Aug	SW	8	
+334	Thermoplasmatota	HKSW3Aug	0.174267658	HK	SW3	Aug	SW	8	
+249	Verrucomicrobiota	HKSW1Aug	0.041896549	HK	SW1	Aug	SW	8	0.034213613
+293	Verrucomicrobiota	HKSW2Aug	0.033126981	HK	SW2	Aug	SW	8	
+337	Verrucomicrobiota	HKSW3Aug	0.02761731	HK	SW3	Aug	SW	8	
+38	Actinobacteriota	HKBea1Nov	0.021247553	HK	Bea1	Nov	Bea	11	0.063874377
+82	Actinobacteriota	HKBea2Nov	0.054915475	HK	Bea2	Nov	Bea	11	
+126	Actinobacteriota	HKBea3Nov	0.115460103	HK	Bea3	Nov	Bea	11	
+34	Bacteroidota	HKBea1Nov	0.054881753	HK	Bea1	Nov	Bea	11	0.088699976
+78	Bacteroidota	HKBea2Nov	0.107338259	HK	Bea2	Nov	Bea	11	
+122	Bacteroidota	HKBea3Nov	0.103879918	HK	Bea3	Nov	Bea	11	
+42	Crenarchaeota	HKBea1Nov	0.006553121	HK	Bea1	Nov	Bea	11	0.018199415
+86	Crenarchaeota	HKBea2Nov	0.023079054	HK	Bea2	Nov	Bea	11	
+130	Crenarchaeota	HKBea3Nov	0.024966071	HK	Bea3	Nov	Bea	11	
+35	Cyanobacteria	HKBea1Nov	0.596791043	HK	Bea1	Nov	Bea	11	0.440815723
+79	Cyanobacteria	HKBea2Nov	4.05E-01	HK	Bea2	Nov	Bea	11	
+123	Cyanobacteria	HKBea3Nov	0.320166219	HK	Bea3	Nov	Bea	11	
+43	Marinimicrobia_(SAR406_clade)	HKBea1Nov	0.009131398	HK	Bea1	Nov	Bea	11	0.013897244
+87	Marinimicrobia_(SAR406_clade)	HKBea2Nov	0.019282499	HK	Bea2	Nov	Bea	11	
+131	Marinimicrobia_(SAR406_clade)	HKBea3Nov	0.013277835	HK	Bea3	Nov	Bea	11	
+44	others	HKBea1Nov	0.012796578	HK	Bea1	Nov	Bea	11	0.024661849
+88	others	HKBea2Nov	0.022180721	HK	Bea2	Nov	Bea	11	
+132	others	HKBea3Nov	0.039008249	HK	Bea3	Nov	Bea	11	
+39	Planctomycetota	HKBea1Nov	0.045768785	HK	Bea1	Nov	Bea	11	0.043332798
+83	Planctomycetota	HKBea2Nov	0.021464508	HK	Bea2	Nov	Bea	11	
+127	Planctomycetota	HKBea3Nov	0.062765101	HK	Bea3	Nov	Bea	11	
+36	Proteobacteria	HKBea1Nov	0.136507356	HK	Bea1	Nov	Bea	11	0.145728126
+80	Proteobacteria	HKBea2Nov	0.176500361	HK	Bea2	Nov	Bea	11	
+124	Proteobacteria	HKBea3Nov	0.124176662	HK	Bea3	Nov	Bea	11	
+41	SAR324_clade(Marine_group_B)	HKBea1Nov	0.047667432	HK	Bea1	Nov	Bea	11	0.05187784
+85	SAR324_clade(Marine_group_B)	HKBea2Nov	0.036371751	HK	Bea2	Nov	Bea	11	
+129	SAR324_clade(Marine_group_B)	HKBea3Nov	0.071594337	HK	Bea3	Nov	Bea	11	
+37	Thermoplasmatota	HKBea1Nov	0.055653781	HK	Bea1	Nov	Bea	11	0.093431123
+81	Thermoplasmatota	HKBea2Nov	0.119785728	HK	Bea2	Nov	Bea	11	
+125	Thermoplasmatota	HKBea3Nov	0.10485386	HK	Bea3	Nov	Bea	11	
+40	Verrucomicrobiota	HKBea1Nov	0.013001201	HK	Bea1	Nov	Bea	11	0.015481528
+84	Verrucomicrobiota	HKBea2Nov	0.013591738	HK	Bea2	Nov	Bea	11	
+128	Verrucomicrobiota	HKBea3Nov	0.019851645	HK	Bea3	Nov	Bea	11	
+830	Actinobacteriota	SKBlu1Nov	0.133639236	SK	Blu1	Nov	Blu	11	0.093895953
+874	Actinobacteriota	SKBlu2Nov	0.096588311	SK	Blu2	Nov	Blu	11	
+918	Actinobacteriota	SKBlu3Nov	0.051460313	SK	Blu3	Nov	Blu	11	
+826	Bacteroidota	SKBlu1Nov	0.287337442	SK	Blu1	Nov	Blu	11	0.226375462
+870	Bacteroidota	SKBlu2Nov	0.158384219	SK	Blu2	Nov	Blu	11	
+914	Bacteroidota	SKBlu3Nov	0.233404724	SK	Blu3	Nov	Blu	11	
+834	Crenarchaeota	SKBlu1Nov	0.018325334	SK	Blu1	Nov	Blu	11	0.017339981
+878	Crenarchaeota	SKBlu2Nov	0.016778517	SK	Blu2	Nov	Blu	11	
+922	Crenarchaeota	SKBlu3Nov	0.016916092	SK	Blu3	Nov	Blu	11	
+827	Cyanobacteria	SKBlu1Nov	0.204639258	SK	Blu1	Nov	Blu	11	0.299793079
+871	Cyanobacteria	SKBlu2Nov	0.392726004	SK	Blu2	Nov	Blu	11	
+915	Cyanobacteria	SKBlu3Nov	0.302013974	SK	Blu3	Nov	Blu	11	
+835	Marinimicrobia_(SAR406_clade)	SKBlu1Nov	0.013841476	SK	Blu1	Nov	Blu	11	0.015255067
+879	Marinimicrobia_(SAR406_clade)	SKBlu2Nov	0.014311088	SK	Blu2	Nov	Blu	11	
+923	Marinimicrobia_(SAR406_clade)	SKBlu3Nov	0.017612637	SK	Blu3	Nov	Blu	11	
+836	others	SKBlu1Nov	0.026933508	SK	Blu1	Nov	Blu	11	0.02464216
+880	others	SKBlu2Nov	0.021156689	SK	Blu2	Nov	Blu	11	
+924	others	SKBlu3Nov	0.025836283	SK	Blu3	Nov	Blu	11	
+831	Planctomycetota	SKBlu1Nov	0.059967898	SK	Blu1	Nov	Blu	11	0.068930017
+875	Planctomycetota	SKBlu2Nov	0.05272415	SK	Blu2	Nov	Blu	11	
+919	Planctomycetota	SKBlu3Nov	0.094098004	SK	Blu3	Nov	Blu	11	
+828	Proteobacteria	SKBlu1Nov	0.1617315	SK	Blu1	Nov	Blu	11	0.158327241
+872	Proteobacteria	SKBlu2Nov	0.155659636	SK	Blu2	Nov	Blu	11	
+916	Proteobacteria	SKBlu3Nov	0.157590586	SK	Blu3	Nov	Blu	11	
+833	SAR324_clade(Marine_group_B)	SKBlu1Nov	0.023584352	SK	Blu1	Nov	Blu	11	0.027123604
+877	SAR324_clade(Marine_group_B)	SKBlu2Nov	0.027536508	SK	Blu2	Nov	Blu	11	
+921	SAR324_clade(Marine_group_B)	SKBlu3Nov	0.030249953	SK	Blu3	Nov	Blu	11	
+829	Thermoplasmatota	SKBlu1Nov	0.052595983	SK	Blu1	Nov	Blu	11	0.050094202
+873	Thermoplasmatota	SKBlu2Nov	0.04496204	SK	Blu2	Nov	Blu	11	
+917	Thermoplasmatota	SKBlu3Nov	0.052724584	SK	Blu3	Nov	Blu	11	
+832	Verrucomicrobiota	SKBlu1Nov	0.017404013	SK	Blu1	Nov	Blu	11	0.018223233
+876	Verrucomicrobiota	SKBlu2Nov	0.019172837	SK	Blu2	Nov	Blu	11	
+920	Verrucomicrobiota	SKBlu3Nov	0.018092848	SK	Blu3	Nov	Blu	11	
+412	Actinobacteriota	LTCC1Nov	0.019337657	LT	CC1	Nov	CC	11	0.020375517
+456	Actinobacteriota	LTCC2Nov	0.021609289	LT	CC2	Nov	CC	11	
+500	Actinobacteriota	LTCC3Nov	0.020179606	LT	CC3	Nov	CC	11	
+408	Bacteroidota	LTCC1Nov	0.196421205	LT	CC1	Nov	CC	11	0.184478423
+452	Bacteroidota	LTCC2Nov	0.145793441	LT	CC2	Nov	CC	11	
+496	Bacteroidota	LTCC3Nov	0.211220625	LT	CC3	Nov	CC	11	
+416	Crenarchaeota	LTCC1Nov	0.03718611	LT	CC1	Nov	CC	11	0.032313163
+460	Crenarchaeota	LTCC2Nov	0.028472537	LT	CC2	Nov	CC	11	
+504	Crenarchaeota	LTCC3Nov	0.031280841	LT	CC3	Nov	CC	11	
+409	Cyanobacteria	LTCC1Nov	0.354220923	LT	CC1	Nov	CC	11	0.369771411
+453	Cyanobacteria	LTCC2Nov	0.447160268	LT	CC2	Nov	CC	11	
+497	Cyanobacteria	LTCC3Nov	0.307933041	LT	CC3	Nov	CC	11	
+417	Marinimicrobia_(SAR406_clade)	LTCC1Nov	0.004255631	LT	CC1	Nov	CC	11	0.004788676
+461	Marinimicrobia_(SAR406_clade)	LTCC2Nov	0.005054907	LT	CC2	Nov	CC	11	
+505	Marinimicrobia_(SAR406_clade)	LTCC3Nov	0.005055489	LT	CC3	Nov	CC	11	
+418	others	LTCC1Nov	0.011366013	LT	CC1	Nov	CC	11	0.013131772
+462	others	LTCC2Nov	0.00986212	LT	CC2	Nov	CC	11	
+506	others	LTCC3Nov	0.018167182	LT	CC3	Nov	CC	11	
+413	Planctomycetota	LTCC1Nov	0.020021761	LT	CC1	Nov	CC	11	0.017106366
+457	Planctomycetota	LTCC2Nov	0.011512133	LT	CC2	Nov	CC	11	
+501	Planctomycetota	LTCC3Nov	0.019785205	LT	CC3	Nov	CC	11	
+410	Proteobacteria	LTCC1Nov	0.186195713	LT	CC1	Nov	CC	11	0.197166758
+454	Proteobacteria	LTCC2Nov	0.174664101	LT	CC2	Nov	CC	11	
+498	Proteobacteria	LTCC3Nov	0.230640459	LT	CC3	Nov	CC	11	
+415	SAR324_clade(Marine_group_B)	LTCC1Nov	0.028264724	LT	CC1	Nov	CC	11	0.029478684
+459	SAR324_clade(Marine_group_B)	LTCC2Nov	0.028153228	LT	CC2	Nov	CC	11	
+503	SAR324_clade(Marine_group_B)	LTCC3Nov	0.0320181	LT	CC3	Nov	CC	11	
+411	Thermoplasmatota	LTCC1Nov	0.13319112	LT	CC1	Nov	CC	11	0.12210369
+455	Thermoplasmatota	LTCC2Nov	0.120377853	LT	CC2	Nov	CC	11	
+499	Thermoplasmatota	LTCC3Nov	0.112742096	LT	CC3	Nov	CC	11	
+414	Verrucomicrobiota	LTCC1Nov	0.009539143	LT	CC1	Nov	CC	11	0.00928554
+458	Verrucomicrobiota	LTCC2Nov	0.007340122	LT	CC2	Nov	CC	11	
+502	Verrucomicrobiota	LTCC3Nov	0.010977356	LT	CC3	Nov	CC	11	
+544	Actinobacteriota	LTCMW1Nov	0.027386928	LT	CMW1	Nov	CMW	11	0.026820658
+588	Actinobacteriota	LTCMW2Nov	0.026623164	LT	CMW2	Nov	CMW	11	
+632	Actinobacteriota	LTCMW3Nov	0.026451883	LT	CMW3	Nov	CMW	11	
+540	Bacteroidota	LTCMW1Nov	0.287507336	LT	CMW1	Nov	CMW	11	0.265046879
+584	Bacteroidota	LTCMW2Nov	0.221905132	LT	CMW2	Nov	CMW	11	
+628	Bacteroidota	LTCMW3Nov	0.285728169	LT	CMW3	Nov	CMW	11	
+548	Crenarchaeota	LTCMW1Nov	0.015284646	LT	CMW1	Nov	CMW	11	0.012897737
+592	Crenarchaeota	LTCMW2Nov	0.012562753	LT	CMW2	Nov	CMW	11	
+636	Crenarchaeota	LTCMW3Nov	0.010845812	LT	CMW3	Nov	CMW	11	
+541	Cyanobacteria	LTCMW1Nov	0.256389973	LT	CMW1	Nov	CMW	11	0.322289114
+585	Cyanobacteria	LTCMW2Nov	0.411688506	LT	CMW2	Nov	CMW	11	
+629	Cyanobacteria	LTCMW3Nov	0.298788864	LT	CMW3	Nov	CMW	11	
+549	Marinimicrobia_(SAR406_clade)	LTCMW1Nov	0.007943994	LT	CMW1	Nov	CMW	11	0.00725287
+593	Marinimicrobia_(SAR406_clade)	LTCMW2Nov	0.007163884	LT	CMW2	Nov	CMW	11	
+637	Marinimicrobia_(SAR406_clade)	LTCMW3Nov	0.006650734	LT	CMW3	Nov	CMW	11	
+550	others	LTCMW1Nov	0.007708981	LT	CMW1	Nov	CMW	11	0.00554939
+594	others	LTCMW2Nov	0.003310862	LT	CMW2	Nov	CMW	11	
+638	others	LTCMW3Nov	0.005628326	LT	CMW3	Nov	CMW	11	
+545	Planctomycetota	LTCMW1Nov	0.011968599	LT	CMW1	Nov	CMW	11	0.012323774
+589	Planctomycetota	LTCMW2Nov	0.006218242	LT	CMW2	Nov	CMW	11	
+633	Planctomycetota	LTCMW3Nov	0.018784481	LT	CMW3	Nov	CMW	11	
+542	Proteobacteria	LTCMW1Nov	0.244564181	LT	CMW1	Nov	CMW	11	0.230493991
+586	Proteobacteria	LTCMW2Nov	0.211188269	LT	CMW2	Nov	CMW	11	
+630	Proteobacteria	LTCMW3Nov	0.235729525	LT	CMW3	Nov	CMW	11	
+547	SAR324_clade(Marine_group_B)	LTCMW1Nov	0.010055688	LT	CMW1	Nov	CMW	11	0.011077506
+591	SAR324_clade(Marine_group_B)	LTCMW2Nov	0.010693913	LT	CMW2	Nov	CMW	11	
+635	SAR324_clade(Marine_group_B)	LTCMW3Nov	0.012482915	LT	CMW3	Nov	CMW	11	
+543	Thermoplasmatota	LTCMW1Nov	0.122520181	LT	CMW1	Nov	CMW	11	0.098556571
+587	Thermoplasmatota	LTCMW2Nov	0.081559836	LT	CMW2	Nov	CMW	11	
+631	Thermoplasmatota	LTCMW3Nov	0.091589696	LT	CMW3	Nov	CMW	11	
+546	Verrucomicrobiota	LTCMW1Nov	0.008669493	LT	CMW1	Nov	CMW	11	0.007691509
+590	Verrucomicrobiota	LTCMW2Nov	0.007085439	LT	CMW2	Nov	CMW	11	
+634	Verrucomicrobiota	LTCMW3Nov	0.007319596	LT	CMW3	Nov	CMW	11	
+962	Actinobacteriota	SKLKW1Nov	0.10267812	SK	LKW1	Nov	LKW	11	0.099327343
+1006	Actinobacteriota	SKLKW2Nov	0.08846269	SK	LKW2	Nov	LKW	11	
+1050	Actinobacteriota	SKLKW3Nov	0.106841218	SK	LKW3	Nov	LKW	11	
+958	Bacteroidota	SKLKW1Nov	0.187140469	SK	LKW1	Nov	LKW	11	0.245278953
+1002	Bacteroidota	SKLKW2Nov	0.299638733	SK	LKW2	Nov	LKW	11	
+1046	Bacteroidota	SKLKW3Nov	0.249057658	SK	LKW3	Nov	LKW	11	
+966	Crenarchaeota	SKLKW1Nov	0.010763852	SK	LKW1	Nov	LKW	11	0.010204426
+1010	Crenarchaeota	SKLKW2Nov	0.010416375	SK	LKW2	Nov	LKW	11	
+1054	Crenarchaeota	SKLKW3Nov	0.00943305	SK	LKW3	Nov	LKW	11	
+959	Cyanobacteria	SKLKW1Nov	0.411603422	SK	LKW1	Nov	LKW	11	0.323053808
+1003	Cyanobacteria	SKLKW2Nov	0.242588717	SK	LKW2	Nov	LKW	11	
+1047	Cyanobacteria	SKLKW3Nov	0.314969285	SK	LKW3	Nov	LKW	11	
+967	Marinimicrobia_(SAR406_clade)	SKLKW1Nov	0.011461509	SK	LKW1	Nov	LKW	11	0.011789268
+1011	Marinimicrobia_(SAR406_clade)	SKLKW2Nov	0.010898615	SK	LKW2	Nov	LKW	11	
+1055	Marinimicrobia_(SAR406_clade)	SKLKW3Nov	0.013007679	SK	LKW3	Nov	LKW	11	
+968	others	SKLKW1Nov	0.013805159	SK	LKW1	Nov	LKW	11	0.014944288
+1012	others	SKLKW2Nov	0.016774981	SK	LKW2	Nov	LKW	11	
+1056	others	SKLKW3Nov	0.014252725	SK	LKW3	Nov	LKW	11	
+963	Planctomycetota	SKLKW1Nov	0.030386437	SK	LKW1	Nov	LKW	11	0.036016244
+1007	Planctomycetota	SKLKW2Nov	0.044495486	SK	LKW2	Nov	LKW	11	
+1051	Planctomycetota	SKLKW3Nov	0.033166809	SK	LKW3	Nov	LKW	11	
+960	Proteobacteria	SKLKW1Nov	0.161171577	SK	LKW1	Nov	LKW	11	0.184215995
+1004	Proteobacteria	SKLKW2Nov	0.195984051	SK	LKW2	Nov	LKW	11	
+1048	Proteobacteria	SKLKW3Nov	0.195492356	SK	LKW3	Nov	LKW	11	
+965	SAR324_clade(Marine_group_B)	SKLKW1Nov	0.020929713	SK	LKW1	Nov	LKW	11	0.021525744
+1009	SAR324_clade(Marine_group_B)	SKLKW2Nov	0.024980011	SK	LKW2	Nov	LKW	11	
+1053	SAR324_clade(Marine_group_B)	SKLKW3Nov	0.018667509	SK	LKW3	Nov	LKW	11	
+961	Thermoplasmatota	SKLKW1Nov	0.039550513	SK	LKW1	Nov	LKW	11	0.040286471
+1005	Thermoplasmatota	SKLKW2Nov	0.050455658	SK	LKW2	Nov	LKW	11	
+1049	Thermoplasmatota	SKLKW3Nov	0.030853244	SK	LKW3	Nov	LKW	11	
+964	Verrucomicrobiota	SKLKW1Nov	0.010509228	SK	LKW1	Nov	LKW	11	0.013357461
+1008	Verrucomicrobiota	SKLKW2Nov	0.015304684	SK	LKW2	Nov	LKW	11	
+1052	Verrucomicrobiota	SKLKW3Nov	0.014258469	SK	LKW3	Nov	LKW	11	
+676	Actinobacteriota	LTPC1Nov	0.064293875	LT	PC1	Nov	PC	11	0.106885697
+709	Actinobacteriota	LTPC2Nov	0.096757951	LT	PC2	Nov	PC	11	
+753	Actinobacteriota	LTPC3Nov	0.159605265	LT	PC3	Nov	PC	11	
+672	Bacteroidota	LTPC1Nov	0.180632706	LT	PC1	Nov	PC	11	0.207820398
+705	Bacteroidota	LTPC2Nov	0.165076168	LT	PC2	Nov	PC	11	
+749	Bacteroidota	LTPC3Nov	0.277752319	LT	PC3	Nov	PC	11	
+680	Crenarchaeota	LTPC1Nov	0.009596338	LT	PC1	Nov	PC	11	0.011266734
+713	Crenarchaeota	LTPC2Nov	0.01123194	LT	PC2	Nov	PC	11	
+757	Crenarchaeota	LTPC3Nov	0.012971924	LT	PC3	Nov	PC	11	
+673	Cyanobacteria	LTPC1Nov	0.463807152	LT	PC1	Nov	PC	11	0.366092513
+706	Cyanobacteria	LTPC2Nov	0.47178995	LT	PC2	Nov	PC	11	
+750	Cyanobacteria	LTPC3Nov	0.162680436	LT	PC3	Nov	PC	11	
+681	Marinimicrobia_(SAR406_clade)	LTPC1Nov	0.004491903	LT	PC1	Nov	PC	11	0.005481152
+714	Marinimicrobia_(SAR406_clade)	LTPC2Nov	0.005565376	LT	PC2	Nov	PC	11	
+758	Marinimicrobia_(SAR406_clade)	LTPC3Nov	0.006386178	LT	PC3	Nov	PC	11	
+682	others	LTPC1Nov	0.009309418	LT	PC1	Nov	PC	11	0.009316823
+715	others	LTPC2Nov	0.007528061	LT	PC2	Nov	PC	11	
+759	others	LTPC3Nov	0.011112991	LT	PC3	Nov	PC	11	
+677	Planctomycetota	LTPC1Nov	0.013162294	LT	PC1	Nov	PC	11	0.019097327
+710	Planctomycetota	LTPC2Nov	0.020883415	LT	PC2	Nov	PC	11	
+754	Planctomycetota	LTPC3Nov	0.023246273	LT	PC3	Nov	PC	11	
+674	Proteobacteria	LTPC1Nov	0.186508793	LT	PC1	Nov	PC	11	0.208442733
+707	Proteobacteria	LTPC2Nov	0.164281627	LT	PC2	Nov	PC	11	
+751	Proteobacteria	LTPC3Nov	0.274537779	LT	PC3	Nov	PC	11	
+679	SAR324_clade(Marine_group_B)	LTPC1Nov	0.030014078	LT	PC1	Nov	PC	11	0.029122092
+712	SAR324_clade(Marine_group_B)	LTPC2Nov	0.016440746	LT	PC2	Nov	PC	11	
+756	SAR324_clade(Marine_group_B)	LTPC3Nov	0.040911451	LT	PC3	Nov	PC	11	
+675	Thermoplasmatota	LTPC1Nov	0.03105198	LT	PC1	Nov	PC	11	0.032146987
+708	Thermoplasmatota	LTPC2Nov	0.035938835	LT	PC2	Nov	PC	11	
+752	Thermoplasmatota	LTPC3Nov	0.029450147	LT	PC3	Nov	PC	11	
+678	Verrucomicrobiota	LTPC1Nov	0.007131463	LT	PC1	Nov	PC	11	0.004327544
+711	Verrucomicrobiota	LTPC2Nov	0.004505932	LT	PC2	Nov	PC	11	
+755	Verrucomicrobiota	LTPC3Nov	0.001345237	LT	PC3	Nov	PC	11	
+1083	Actinobacteriota	SKSha1Nov	0.008856995	SK	Sha1	Nov	Sha	11	0.0184059
+1116	Actinobacteriota	SKSha2Nov	0.028233056	SK	Sha2	Nov	Sha	11	
+1149	Actinobacteriota	SKSha3Nov	0.018127649	SK	Sha3	Nov	Sha	11	
+1079	Bacteroidota	SKSha1Nov	0.098230214	SK	Sha1	Nov	Sha	11	0.122538211
+1112	Bacteroidota	SKSha2Nov	0.146962407	SK	Sha2	Nov	Sha	11	
+1145	Bacteroidota	SKSha3Nov	0.122422013	SK	Sha3	Nov	Sha	11	
+1087	Crenarchaeota	SKSha1Nov	0.001575128	SK	Sha1	Nov	Sha	11	0.001666456
+1120	Crenarchaeota	SKSha2Nov	0.002382476	SK	Sha2	Nov	Sha	11	
+1153	Crenarchaeota	SKSha3Nov	0.001041764	SK	Sha3	Nov	Sha	11	
+1080	Cyanobacteria	SKSha1Nov	0.67033391	SK	Sha1	Nov	Sha	11	0.571633636
+1113	Cyanobacteria	SKSha2Nov	0.464966821	SK	Sha2	Nov	Sha	11	
+1146	Cyanobacteria	SKSha3Nov	0.579600177	SK	Sha3	Nov	Sha	11	
+1088	Marinimicrobia_(SAR406_clade)	SKSha1Nov	0.003990325	SK	Sha1	Nov	Sha	11	0.007351279
+1121	Marinimicrobia_(SAR406_clade)	SKSha2Nov	0.011083694	SK	Sha2	Nov	Sha	11	
+1154	Marinimicrobia_(SAR406_clade)	SKSha3Nov	0.006979817	SK	Sha3	Nov	Sha	11	
+1089	others	SKSha1Nov	0.007792609	SK	Sha1	Nov	Sha	11	0.010582735
+1122	others	SKSha2Nov	0.012593355	SK	Sha2	Nov	Sha	11	
+1155	others	SKSha3Nov	0.011362241	SK	Sha3	Nov	Sha	11	
+1084	Planctomycetota	SKSha1Nov	0.070747017	SK	Sha1	Nov	Sha	11	0.077210351
+1117	Planctomycetota	SKSha2Nov	0.101757629	SK	Sha2	Nov	Sha	11	
+1150	Planctomycetota	SKSha3Nov	0.059126408	SK	Sha3	Nov	Sha	11	
+1081	Proteobacteria	SKSha1Nov	0.108202751	SK	Sha1	Nov	Sha	11	0.153007488
+1114	Proteobacteria	SKSha2Nov	0.189274066	SK	Sha2	Nov	Sha	11	
+1147	Proteobacteria	SKSha3Nov	0.161545647	SK	Sha3	Nov	Sha	11	
+1086	SAR324_clade(Marine_group_B)	SKSha1Nov	0.011235915	SK	Sha1	Nov	Sha	11	0.016021785
+1119	SAR324_clade(Marine_group_B)	SKSha2Nov	0.017298849	SK	Sha2	Nov	Sha	11	
+1152	SAR324_clade(Marine_group_B)	SKSha3Nov	0.01953059	SK	Sha3	Nov	Sha	11	
+1082	Thermoplasmatota	SKSha1Nov	0.006886811	SK	Sha1	Nov	Sha	11	0.008497286
+1115	Thermoplasmatota	SKSha2Nov	0.008983201	SK	Sha2	Nov	Sha	11	
+1148	Thermoplasmatota	SKSha3Nov	0.009621846	SK	Sha3	Nov	Sha	11	
+1085	Verrucomicrobiota	SKSha1Nov	0.012148323	SK	Sha1	Nov	Sha	11	0.013084873
+1118	Verrucomicrobiota	SKSha2Nov	0.016464446	SK	Sha2	Nov	Sha	11	
+1151	Verrucomicrobiota	SKSha3Nov	0.010641849	SK	Sha3	Nov	Sha	11	
+159	Actinobacteriota	HKSta1Nov	0.054550066	HK	Sta1	Nov	Sta	11	0.050705698
+192	Actinobacteriota	HKSta2Nov	0.051653022	HK	Sta2	Nov	Sta	11	
+236	Actinobacteriota	HKSta3Nov	0.045914006	HK	Sta3	Nov	Sta	11	
+155	Bacteroidota	HKSta1Nov	0.144570259	HK	Sta1	Nov	Sta	11	0.13725191
+188	Bacteroidota	HKSta2Nov	0.138679016	HK	Sta2	Nov	Sta	11	
+232	Bacteroidota	HKSta3Nov	0.128506454	HK	Sta3	Nov	Sta	11	
+163	Crenarchaeota	HKSta1Nov	0.010140167	HK	Sta1	Nov	Sta	11	0.007305419
+196	Crenarchaeota	HKSta2Nov	0.006448212	HK	Sta2	Nov	Sta	11	
+240	Crenarchaeota	HKSta3Nov	0.005327877	HK	Sta3	Nov	Sta	11	
+156	Cyanobacteria	HKSta1Nov	0.351262007	HK	Sta1	Nov	Sta	11	0.511209279
+189	Cyanobacteria	HKSta2Nov	0.574688657	HK	Sta2	Nov	Sta	11	
+233	Cyanobacteria	HKSta3Nov	0.607677174	HK	Sta3	Nov	Sta	11	
+164	Marinimicrobia_(SAR406_clade)	HKSta1Nov	0.000353727	HK	Sta1	Nov	Sta	11	0.00138079
+197	Marinimicrobia_(SAR406_clade)	HKSta2Nov	0.002251757	HK	Sta2	Nov	Sta	11	
+241	Marinimicrobia_(SAR406_clade)	HKSta3Nov	0.001536888	HK	Sta3	Nov	Sta	11	
+165	others	HKSta1Nov	0.017294459	HK	Sta1	Nov	Sta	11	0.015216749
+198	others	HKSta2Nov	0.014398915	HK	Sta2	Nov	Sta	11	
+242	others	HKSta3Nov	0.013956872	HK	Sta3	Nov	Sta	11	
+160	Planctomycetota	HKSta1Nov	0.034465136	HK	Sta1	Nov	Sta	11	0.026818373
+193	Planctomycetota	HKSta2Nov	0.027945248	HK	Sta2	Nov	Sta	11	
+237	Planctomycetota	HKSta3Nov	0.018044737	HK	Sta3	Nov	Sta	11	
+157	Proteobacteria	HKSta1Nov	0.284596449	HK	Sta1	Nov	Sta	11	0.16849487
+190	Proteobacteria	HKSta2Nov	0.103588184	HK	Sta2	Nov	Sta	11	
+234	Proteobacteria	HKSta3Nov	0.117299979	HK	Sta3	Nov	Sta	11	
+162	SAR324_clade(Marine_group_B)	HKSta1Nov	0.010959915	HK	Sta1	Nov	Sta	11	0.020712116
+195	SAR324_clade(Marine_group_B)	HKSta2Nov	0.0276157	HK	Sta2	Nov	Sta	11	
+239	SAR324_clade(Marine_group_B)	HKSta3Nov	0.023560732	HK	Sta3	Nov	Sta	11	
+158	Thermoplasmatota	HKSta1Nov	0.072055452	HK	Sta1	Nov	Sta	11	0.047197466
+191	Thermoplasmatota	HKSta2Nov	0.039724172	HK	Sta2	Nov	Sta	11	
+235	Thermoplasmatota	HKSta3Nov	0.029812775	HK	Sta3	Nov	Sta	11	
+161	Verrucomicrobiota	HKSta1Nov	0.019752365	HK	Sta1	Nov	Sta	11	0.01370733
+194	Verrucomicrobiota	HKSta2Nov	0.013007117	HK	Sta2	Nov	Sta	11	
+238	Verrucomicrobiota	HKSta3Nov	0.008362507	HK	Sta3	Nov	Sta	11	
+280	Actinobacteriota	HKSW1Nov	0.079070987	HK	SW1	Nov	SW	11	0.029646237
+324	Actinobacteriota	HKSW2Nov	0	HK	SW2	Nov	SW	11	
+368	Actinobacteriota	HKSW3Nov	0.009867725	HK	SW3	Nov	SW	11	
+276	Bacteroidota	HKSW1Nov	0.153249064	HK	SW1	Nov	SW	11	0.10428358
+320	Bacteroidota	HKSW2Nov	0.027930125	HK	SW2	Nov	SW	11	
+364	Bacteroidota	HKSW3Nov	0.131671549	HK	SW3	Nov	SW	11	
+284	Crenarchaeota	HKSW1Nov	0.005194061	HK	SW1	Nov	SW	11	0.006153767
+328	Crenarchaeota	HKSW2Nov	0.00175319	HK	SW2	Nov	SW	11	
+372	Crenarchaeota	HKSW3Nov	0.011514049	HK	SW3	Nov	SW	11	
+277	Cyanobacteria	HKSW1Nov	0.553882579	HK	SW1	Nov	SW	11	0.401530773
+321	Cyanobacteria	HKSW2Nov	0.053569693	HK	SW2	Nov	SW	11	
+365	Cyanobacteria	HKSW3Nov	0.597140048	HK	SW3	Nov	SW	11	
+285	Marinimicrobia_(SAR406_clade)	HKSW1Nov	0.001797944	HK	SW1	Nov	SW	11	0.003031772
+329	Marinimicrobia_(SAR406_clade)	HKSW2Nov	0.006355314	HK	SW2	Nov	SW	11	
+373	Marinimicrobia_(SAR406_clade)	HKSW3Nov	0.000942059	HK	SW3	Nov	SW	11	
+286	others	HKSW1Nov	0.018217448	HK	SW1	Nov	SW	11	0.008575565
+330	others	HKSW2Nov	0.002295844	HK	SW2	Nov	SW	11	
+374	others	HKSW3Nov	0.005213404	HK	SW3	Nov	SW	11	
+281	Planctomycetota	HKSW1Nov	0.035104602	HK	SW1	Nov	SW	11	0.023235381
+325	Planctomycetota	HKSW2Nov	0.018141116	HK	SW2	Nov	SW	11	
+369	Planctomycetota	HKSW3Nov	0.016460425	HK	SW3	Nov	SW	11	
+278	Proteobacteria	HKSW1Nov	0.092839008	HK	SW1	Nov	SW	11	0.355547703
+322	Proteobacteria	HKSW2Nov	0.841587372	HK	SW2	Nov	SW	11	
+366	Proteobacteria	HKSW3Nov	0.132216728	HK	SW3	Nov	SW	11	
+283	SAR324_clade(Marine_group_B)	HKSW1Nov	0.019316008	HK	SW1	Nov	SW	11	0.015292632
+327	SAR324_clade(Marine_group_B)	HKSW2Nov	0.006793611	HK	SW2	Nov	SW	11	
+371	SAR324_clade(Marine_group_B)	HKSW3Nov	0.019768277	HK	SW3	Nov	SW	11	
+279	Thermoplasmatota	HKSW1Nov	0.034127644	HK	SW1	Nov	SW	11	0.040043574
+323	Thermoplasmatota	HKSW2Nov	0.022675808	HK	SW2	Nov	SW	11	
+367	Thermoplasmatota	HKSW3Nov	0.06332727	HK	SW3	Nov	SW	11	
+282	Verrucomicrobiota	HKSW1Nov	0.007200655	HK	SW1	Nov	SW	11	0.012659016
+326	Verrucomicrobiota	HKSW2Nov	0.018897927	HK	SW2	Nov	SW	11	
+370	Verrucomicrobiota	HKSW3Nov	0.011878467	HK	SW3	Nov	SW	11	

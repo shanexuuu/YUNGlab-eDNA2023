@@ -1,0 +1,408 @@
+allGfishSid	allGfishS	Category	phylum	class	order	family	genus	Functional feeding group	Empirical trophic classification
+id1	Chthamalus	Benthic fauna	Arthropoda	Thecostraca	Balanomorpha	Chthamalidae	Chthamalus	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id2	Anthopleura	Benthic fauna	Cnidaria	Anthozoa	Actiniaria	Actiniidae	Anthopleura	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id3	Dendronephthya	Benthic fauna	Cnidaria	Anthozoa	Malacalcyonacea	Nephtheidae	Dendronephthya	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id4	Acropora	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Acroporidae	Acropora	Hard Coral	Hard Coral
+id5	Montipora	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Acroporidae	Montipora	Hard Coral	Hard Coral
+id6	Pavona	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Agariciidae	Pavona	Hard Coral	Hard Coral
+id7	Stylocoeniella	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Astrocoeniidae	Stylocoeniella	Hard Coral	Hard Coral
+id8	Solenosmilia	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Caryophylliidae	Solenosmilia	Hard Coral	Hard Coral
+id9	Duncanopsammia	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Dendrophylliidae	Duncanopsammia	Hard Coral	Hard Coral
+id10	Leptastrea	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Leptastreidae	Leptastrea	Hard Coral	Hard Coral
+id11	Cyphastrea	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Merulinidae	Cyphastrea	Hard Coral	Hard Coral
+id12	Dipsastraea	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Merulinidae	Dipsastraea	Hard Coral	Hard Coral
+id13	Favites	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Merulinidae	Favites	Hard Coral	Hard Coral
+id14	Goniastrea	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Merulinidae	Goniastrea	Hard Coral	Hard Coral
+id15	Paragoniastrea	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Merulinidae	Paragoniastrea	Hard Coral	Hard Coral
+id16	Platygyra	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Merulinidae	Platygyra	Hard Coral	Hard Coral
+id17	Oulastrea	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Oulastreidae	Oulastrea	Hard Coral	Hard Coral
+id18	Plesiastrea	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Plesiastreidae	Plesiastrea	Hard Coral	Hard Coral
+id19	Bernardpora	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Poritidae	Bernardpora	Hard Coral	Hard Coral
+id20	Goniopora	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Poritidae	Goniopora	Hard Coral	Hard Coral
+id21	Porites	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Poritidae	Porites	Hard Coral	Hard Coral
+id22	Pseudosiderastrea	Benthic fauna	Cnidaria	Anthozoa	Scleractinia	Siderastreidae	Pseudosiderastrea	Hard Coral	Hard Coral
+id23	Pachycerianthus	Benthic fauna	Cnidaria	Anthozoa	Spirularia	Cerianthidae	Pachycerianthus	Suspension feeder	The primary consumers/Herbivorous fish/detritivore
+id24	Muggiaea	Benthic fauna	Cnidaria	Hydrozoa	Siphonophorae	Diphyidae	Muggiaea	Predator	The secondary consumer groups/ predator
+id25	Cyanea	Benthic fauna	Cnidaria	Scyphozoa	Semaeostomeae	Cyaneidae	Cyanea	Predator	The secondary consumer groups/ predator
+id26	Pelagia	Benthic fauna	Cnidaria	Scyphozoa	Semaeostomeae	Pelagiidae	Pelagia	Predator	The secondary consumer groups/ predator
+id27	Clathrina	Benthic fauna	Porifera	Calcarea	Clathrinida	Clathrinidae	Clathrina	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id28	Chondrilla	Benthic fauna	Porifera	Demospongiae	Chondrillida	Chondrillidae	Chondrilla	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id29	Cliona	Benthic fauna	Porifera	Demospongiae	Clionaida	Clionaidae	Cliona	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id30	Ircinia	Benthic fauna	Porifera	Demospongiae	Dictyoceratida	Irciniidae	Ircinia	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id31	Mycale	Benthic fauna	Porifera	Demospongiae	Poecilosclerida	Mycalidae	Mycale	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id32	Tedania	Benthic fauna	Porifera	Demospongiae	Poecilosclerida	Tedaniidae	Tedania	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id33	Terpios	Benthic fauna	Porifera	Demospongiae	Suberitida	0	Terpios	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id34	Halichondria	Benthic fauna	Porifera	Demospongiae	Suberitida	Halichondriidae	Halichondria	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id35	Hymeniacidon	Benthic fauna	Porifera	Demospongiae	Suberitida	Halichondriidae	Hymeniacidon	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id36	Tethya	Benthic fauna	Porifera	Demospongiae	Tethyida	Tethyidae	Tethya	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id37	Timea	Benthic fauna	Porifera	Demospongiae	Tethyida	Timeidae	Timea	Suspension Feeder	The primary consumers/Herbivorous fish/detritivore
+id38	Siganus fuscescens	Bony fish	Chordata	Actinopteri	Acanthuriformes	Siganidae	Siganus	Herbivorous fish	The primary consumers/Herbivorous fish/detritivore
+id39	Siganus spp.1	Bony fish	Chordata	Actinopteri	Acanthuriformes	Siganidae	Siganus	Herbivorous fish	The primary consumers/Herbivorous fish/detritivore
+id40	Gymnothorax emmae	Bony fish	Chordata	Actinopteri	Anguilliformes	Muraenidae	Gymnothorax	Carnivorous fish	The secondary consumer groups/ predator
+id41	Gymnothorax spp.1	Bony fish	Chordata	Actinopteri	Anguilliformes	Muraenidae	Gymnothorax	Carnivorous fish	The secondary consumer groups/ predator
+id42	Atherinomorus pinguis	Bony fish	Chordata	Actinopteri	Atheriniformes	Atherinidae	Atherinomorus	Invertebrate eating fish	The secondary consumer groups/ predator
+id43	Doboatherina woodwardi	Bony fish	Chordata	Actinopteri	Atheriniformes	Atherinidae	Doboatherina	Invertebrate eating fish	The secondary consumer groups/ predator
+id44	Cirripectes sp. CBM:ZF:17314	Bony fish	Chordata	Actinopteri	Blenniiformes	Blenniidae	Cirripectes	Omnivorous fish	The secondary consumer groups/ predator
+id45	Enchelyurus kraussii	Bony fish	Chordata	Actinopteri	Blenniiformes	Blenniidae	Enchelyurus	Omnivorous fish	The secondary consumer groups/ predator
+id46	Entomacrodus stellifer stellifer	Bony fish	Chordata	Actinopteri	Blenniiformes	Blenniidae	Entomacrodus	Omnivorous fish	The secondary consumer groups/ predator
+id47	Entomacrodus thalassinus	Bony fish	Chordata	Actinopteri	Blenniiformes	Blenniidae	Entomacrodus	Omnivorous fish	The secondary consumer groups/ predator
+id48	Istiblennius dussumieri	Bony fish	Chordata	Actinopteri	Blenniiformes	Blenniidae	Istiblennius	Omnivorous fish	The secondary consumer groups/ predator
+id49	Parablennius yatabei	Bony fish	Chordata	Actinopteri	Blenniiformes	Blenniidae	Parablennius	Herbivorous fish	The primary consumers/Herbivorous fish/detritivore
+id50	Enneapterygius etheostoma	Bony fish	Chordata	Actinopteri	Blenniiformes	Tripterygiidae	Enneapterygius	Herbivorous fish	The primary consumers/Herbivorous fish/detritivore
+id51	Enneapterygius hsiojenae	Bony fish	Chordata	Actinopteri	Blenniiformes	Tripterygiidae	Enneapterygius	Omnivorous fish	The secondary consumer groups/ predator
+id52	Sphyraena jello	Bony fish	Chordata	Actinopteri	Carangaria incertae sedis	Sphyraenidae	Sphyraena	Carnivorous fish	The secondary consumer groups/ predator
+id53	Sphyraena spp.1	Bony fish	Chordata	Actinopteri	Carangaria incertae sedis	Sphyraenidae	Sphyraena	Carnivorous fish	The secondary consumer groups/ predator
+id54	Eleutheronema tetradactylum	Bony fish	Chordata	Actinopteri	Carangaria incertae sedis	Polynemidae	Eleutheronema	Carnivorous fish	The secondary consumer groups/ predator
+id55	Alectis ciliaris	Bony fish	Chordata	Actinopteri	Carangiformes	Carangidae	Alectis	Piscivorous fish	The tertiary consumer
+id56	Alepes djedaba	Bony fish	Chordata	Actinopteri	Carangiformes	Carangidae	Alepes	Carnivorous fish	The secondary consumer groups/ predator
+id57	Selaroides leptolepis	Bony fish	Chordata	Actinopteri	Carangiformes	Carangidae	Selaroides	Carnivorous fish	The secondary consumer groups/ predator
+id58	Seriola dumerili	Bony fish	Chordata	Actinopteri	Carangiformes	Carangidae	Seriola	Carnivorous fish	The secondary consumer groups/ predator
+id59	Trachinotus spp.1	Bony fish	Chordata	Actinopteri	Carangiformes	Carangidae	Trachinotus	Carnivorous fish	The secondary consumer groups/ predator
+id60	Trachurus spp.1	Bony fish	Chordata	Actinopteri	Carangiformes	Carangidae	Trachurus	Carnivorous fish	The secondary consumer groups/ predator
+id61	Chaetodon lineolatus	Bony fish	Chordata	Actinopteri	Chaetodontiformes	Chaetodontidae	Chaetodon	Corallivoroush fish	The secondary consumer groups/ predator
+id62	Chaetodon speculum	Bony fish	Chordata	Actinopteri	Chaetodontiformes	Chaetodontidae	Chaetodon	Corallivoroush fish	The secondary consumer groups/ predator
+id63	Chaetodon spp.1	Bony fish	Chordata	Actinopteri	Chaetodontiformes	Chaetodontidae	Chaetodon	Corallivoroush fish	The secondary consumer groups/ predator
+id64	Deveximentum indicium	Bony fish	Chordata	Actinopteri	Chaetodontiformes	Leiognathidae	Deveximentum	Herbivorous fish	The primary consumers/Herbivorous fish/detritivore
+id65	Equulites oblongus	Bony fish	Chordata	Actinopteri	Chaetodontiformes	Leiognathidae	Equulites	Carnivorous fish	The secondary consumer groups/ predator
+id66	Leiognathidae sp.2	Bony fish	Chordata	Actinopteri	Chaetodontiformes	Leiognathidae	Leiognathidae sp.2	Carnivorous fish	The secondary consumer groups/ predator
+id67	Nuchequula nuchalis	Bony fish	Chordata	Actinopteri	Chaetodontiformes	Leiognathidae	Nuchequula	Carnivorous fish	The secondary consumer groups/ predator
+id68	Photopectoralis bindus	Bony fish	Chordata	Actinopteri	Chaetodontiformes	Leiognathidae	Photopectoralis	Omnivorous fish	The secondary consumer groups/ predator
+id69	Paracheirodon axelrodi	Bony fish	Chordata	Actinopteri	Characiformes	Characidae	Paracheirodon	Invertebrate eating fish	The secondary consumer groups/ predator
+id70	Hilsa kelee	Bony fish	Chordata	Actinopteri	Clupeiformes	Clupeidae	Hilsa	Omnivorous fish	The secondary consumer groups/ predator
+id71	Konosirus punctatus	Bony fish	Chordata	Actinopteri	Clupeiformes	Clupeidae	Konosirus	Omnivorous fish	The secondary consumer groups/ predator
+id72	Nematalosa japonica	Bony fish	Chordata	Actinopteri	Clupeiformes	Clupeidae	Nematalosa	Omnivorous fish	The secondary consumer groups/ predator
+id73	Nematalosa nasus	Bony fish	Chordata	Actinopteri	Clupeiformes	Clupeidae	Nematalosa	Omnivorous fish	The secondary consumer groups/ predator
+id74	Sardinella lemuru	Bony fish	Chordata	Actinopteri	Clupeiformes	Clupeidae	Sardinella	Omnivorous fish	The secondary consumer groups/ predator
+id75	Sardinella spp.1	Bony fish	Chordata	Actinopteri	Clupeiformes	Clupeidae	Sardinella	Omnivorous fish	The secondary consumer groups/ predator
+id76	Sardinella spp.2	Bony fish	Chordata	Actinopteri	Clupeiformes	Clupeidae	Sardinella	Omnivorous fish	The secondary consumer groups/ predator
+id77	Sardinella spp.3	Bony fish	Chordata	Actinopteri	Clupeiformes	Clupeidae	Sardinella	Omnivorous fish	The secondary consumer groups/ predator
+id78	Spratelloides gracilis	Bony fish	Chordata	Actinopteri	Clupeiformes	Clupeidae	Spratelloides	Invertebrate eating fish	The secondary consumer groups/ predator
+id79	Etrumeus micropus	Bony fish	Chordata	Actinopteri	Clupeiformes	Dussumieriidae	Etrumeus	Invertebrate eating fish	The secondary consumer groups/ predator
+id80	Encrasicholina pseudoheteroloba	Bony fish	Chordata	Actinopteri	Clupeiformes	Engraulidae	Encrasicholina	Carnivorous fish	The secondary consumer groups/ predator
+id81	Stolephorus spp.1	Bony fish	Chordata	Actinopteri	Clupeiformes	Engraulidae	Stolephorus	Omnivorous fish	The secondary consumer groups/ predator
+id82	Leuciscidae sp.1	Bony fish	Chordata	Actinopteri	Cypriniformes	Leuciscidae	Leuciscidae sp.1	Unknown	Unknown
+id83	Elops spp.1	Bony fish	Chordata	Actinopteri	Elopiformes	Elopidae	Elops	Carnivorous fish	The secondary consumer groups/ predator
+id84	Drepane spp.1	Bony fish	Chordata	Actinopteri	Ephippiformes	Drepaneidae	Drepane	Omnivorous fish	The secondary consumer groups/ predator
+id85	Dendrophysa russelii	Bony fish	Chordata	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Dendrophysa	Invertebrate eating fish	The secondary consumer groups/ predator
+id86	Johnius belangerii	Bony fish	Chordata	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Johnius	Invertebrate eating fish	The secondary consumer groups/ predator
+id87	Johnius trewavasae	Bony fish	Chordata	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Johnius	Invertebrate eating fish	The secondary consumer groups/ predator
+id88	Protonibea diacanthus	Bony fish	Chordata	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Protonibea	Carnivorous fish	The secondary consumer groups/ predator
+id89	Sciaenidae sp.1	Bony fish	Chordata	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Sciaenidae sp.1	Unknown	Unknown
+id90	Sillago aeolus	Bony fish	Chordata	Actinopteri	Eupercaria incertae sedis	Sillaginidae	Sillago	Invertebrate eating fish	The secondary consumer groups/ predator
+id91	Sillago sihama	Bony fish	Chordata	Actinopteri	Eupercaria incertae sedis	Sillaginidae	Sillago	Carnivorous fish	The secondary consumer groups/ predator
+id92	Sillago sp. ZP0807085	Bony fish	Chordata	Actinopteri	Eupercaria incertae sedis	Sillaginidae	Sillago	Carnivorous fish	The secondary consumer groups/ predator
+id93	Gerres erythrourus	Bony fish	Chordata	Actinopteri	Gerreiformes	Gerreidae	Gerres	Omnivorous fish	The secondary consumer groups/ predator
+id94	Gerres filamentosus	Bony fish	Chordata	Actinopteri	Gerreiformes	Gerreidae	Gerres	Omnivorous fish	The secondary consumer groups/ predator
+id95	Gerres spp.1	Bony fish	Chordata	Actinopteri	Gerreiformes	Gerreidae	Gerres	Omnivorous fish	The secondary consumer groups/ predator
+id96	Gerres spp.2	Bony fish	Chordata	Actinopteri	Gerreiformes	Gerreidae	Gerres	Omnivorous fish	The secondary consumer groups/ predator
+id97	Gerres spp.3	Bony fish	Chordata	Actinopteri	Gerreiformes	Gerreidae	Gerres	Omnivorous fish	The secondary consumer groups/ predator
+id98	Asterropteryx semipunctata	Bony fish	Chordata	Actinopteri	Gobiiformes	Gobiidae	Asterropteryx	Invertebrate eating fish	The secondary consumer groups/ predator
+id99	Bathygobius cotticeps	Bony fish	Chordata	Actinopteri	Gobiiformes	Gobiidae	Bathygobius	Unknown	Unknown
+id100	Bathygobius hongkongensis	Bony fish	Chordata	Actinopteri	Gobiiformes	Gobiidae	Bathygobius	Unknown	Unknown
+id101	Cryptocentrus sericus	Bony fish	Chordata	Actinopteri	Gobiiformes	Gobiidae	Cryptocentrus	Unknown	Unknown
+id102	Istigobius campbelli	Bony fish	Chordata	Actinopteri	Gobiiformes	Gobiidae	Istigobius	Unknown	Unknown
+id103	Luciogobius martellii	Bony fish	Chordata	Actinopteri	Gobiiformes	Gobiidae	Luciogobius	Unknown	Unknown
+id104	Parioglossus philippinus	Bony fish	Chordata	Actinopteri	Gobiiformes	Gobiidae	Parioglossus	Unknown	Unknown
+id105	Ptereleotris spp.1	Bony fish	Chordata	Actinopteri	Gobiiformes	Gobiidae	Ptereleotris	Unknown	Unknown
+id106	Tridentiger trigonocephalus	Bony fish	Chordata	Actinopteri	Gobiiformes	Gobiidae	Tridentiger	Unknown	Unknown
+id107	Chanos chanos	Bony fish	Chordata	Actinopteri	Gonorynchiformes	Chanidae	Chanos	Omnivorous fish	The secondary consumer groups/ predator
+id108	Apogon unicolor	Bony fish	Chordata	Actinopteri	Kurtiformes	Apogonidae	Apogon	Invertebrate eating fish	The secondary consumer groups/ predator
+id109	Apogonichthyoides spp.1	Bony fish	Chordata	Actinopteri	Kurtiformes	Apogonidae	Apogonichthyoides	Invertebrate eating fish	The secondary consumer groups/ predator
+id110	Ostorhinchus cookii	Bony fish	Chordata	Actinopteri	Kurtiformes	Apogonidae	Ostorhinchus	Invertebrate eating fish	The secondary consumer groups/ predator
+id111	Ostorhinchus doederleini	Bony fish	Chordata	Actinopteri	Kurtiformes	Apogonidae	Ostorhinchus	Invertebrate eating fish	The secondary consumer groups/ predator
+id112	Ostorhinchus spp.1	Bony fish	Chordata	Actinopteri	Kurtiformes	Apogonidae	Ostorhinchus	Invertebrate eating fish	The secondary consumer groups/ predator
+id113	Taeniamia spp.1	Bony fish	Chordata	Actinopteri	Kurtiformes	Apogonidae	Taeniamia	Invertebrate eating fish	The secondary consumer groups/ predator
+id114	Labridae sp.1	Bony fish	Chordata	Actinopteri	Labriformes	Labridae	Labridae sp.1	Unknown	Unknown
+id115	Scarus ghobban	Bony fish	Chordata	Actinopteri	Labriformes	Labridae	Scarus	Herbivorous fish	The primary consumers/Herbivorous fish/detritivore
+id116	Stethojulis terina	Bony fish	Chordata	Actinopteri	Labriformes	Labridae	Stethojulis	Invertebrate eating fish	The secondary consumer groups/ predator
+id117	Thalassoma spp.1	Bony fish	Chordata	Actinopteri	Labriformes	Labridae	Thalassoma	Invertebrate eating fish	The secondary consumer groups/ predator
+id118	Diagramma spp.1	Bony fish	Chordata	Actinopteri	Lutjaniformes	Haemulidae	Diagramma	Carnivorous fish	The secondary consumer groups/ predator
+id119	Parapristipoma trilineatum	Bony fish	Chordata	Actinopteri	Lutjaniformes	Haemulidae	Parapristipoma	Carnivorous fish	The secondary consumer groups/ predator
+id120	Plectorhinchus gibbosus	Bony fish	Chordata	Actinopteri	Lutjaniformes	Haemulidae	Plectorhinchus	Carnivorous fish	The secondary consumer groups/ predator
+id121	Lutjanus argentimaculatus	Bony fish	Chordata	Actinopteri	Lutjaniformes	Lutjanidae	Lutjanus	Piscivorous fish	The tertiary consumer
+id122	Lutjanus fulviflamma	Bony fish	Chordata	Actinopteri	Lutjaniformes	Lutjanidae	Lutjanus	Piscivorous fish	The tertiary consumer
+id123	Lutjanus russellii	Bony fish	Chordata	Actinopteri	Lutjaniformes	Lutjanidae	Lutjanus	Piscivorous fish	The tertiary consumer
+id124	Lutjanus sebae	Bony fish	Chordata	Actinopteri	Lutjaniformes	Lutjanidae	Lutjanus	Piscivorous fish	The tertiary consumer
+id125	Crenimugil seheli str.1	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Crenimugil	Herbivorous fish	The primary consumers/Herbivorous fish/detritivore
+id126	Crenimugil seheli str.2	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Crenimugil	Herbivorous fish	The primary consumers/Herbivorous fish/detritivore
+id127	Moolgarda pedaraki	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Moolgarda	Omnivorous fish	The secondary consumer groups/ predator
+id128	Mugil cephalus str.1	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Mugil	Omnivorous fish	The secondary consumer groups/ predator
+id129	Mugil cephalus str.2	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Mugil	Omnivorous fish	The secondary consumer groups/ predator
+id130	Mugil cephalus str.3	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Mugil	Omnivorous fish	The secondary consumer groups/ predator
+id131	Mugilidae sp.1	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Mugilidae sp.1	Unknown	Unknown
+id132	Mugilidae sp.3	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Mugilidae sp.3	Unknown	Unknown
+id133	Oedalechilus labiosus	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Oedalechilus	Omnivorous fish	The secondary consumer groups/ predator
+id134	Planiliza macrolepis	Bony fish	Chordata	Actinopteri	Mugiliformes	Mugilidae	Planiliza	Omnivorous fish	The secondary consumer groups/ predator
+id135	Abudefduf bengalensis	Bony fish	Chordata	Actinopteri	Ovalentaria incertae sedis	Pomacentridae	Abudefduf	Omnivorous fish	The secondary consumer groups/ predator
+id136	Abudefduf sordidus	Bony fish	Chordata	Actinopteri	Ovalentaria incertae sedis	Pomacentridae	Abudefduf	Omnivorous fish	The secondary consumer groups/ predator
+id137	Abudefduf spp.1	Bony fish	Chordata	Actinopteri	Ovalentaria incertae sedis	Pomacentridae	Abudefduf	Omnivorous fish	The secondary consumer groups/ predator
+id138	Neopomacentrus bankieri	Bony fish	Chordata	Actinopteri	Ovalentaria incertae sedis	Pomacentridae	Neopomacentrus	Omnivorous fish	The secondary consumer groups/ predator
+id139	Neopomacentrus cyanomos	Bony fish	Chordata	Actinopteri	Ovalentaria incertae sedis	Pomacentridae	Neopomacentrus	Omnivorous fish	The secondary consumer groups/ predator
+id140	Plectroglyphidodon leucozona	Bony fish	Chordata	Actinopteri	Ovalentaria incertae sedis	Pomacentridae	Plectroglyphidodon	Herbivorous fish	The primary consumers/Herbivorous fish/detritivore
+id141	Paraploactis kagoshimensis	Bony fish	Chordata	Actinopteri	Perciformes	Aploactinidae	Paraploactis	Carnivorous fish	The secondary consumer groups/ predator
+id142	Inegocia japonica	Bony fish	Chordata	Actinopteri	Perciformes	Platycephalidae	Inegocia	Carnivorous fish	The secondary consumer groups/ predator
+id143	Parascorpaena aurita	Bony fish	Chordata	Actinopteri	Perciformes	Scorpaenidae	Parascorpaena	Carnivorous fish	The secondary consumer groups/ predator
+id144	Scorpaenopsis ramaraoi	Bony fish	Chordata	Actinopteri	Perciformes	Scorpaenidae	Scorpaenopsis	Carnivorous fish	The secondary consumer groups/ predator
+id145	Scorpaenopsis spp.1	Bony fish	Chordata	Actinopteri	Perciformes	Scorpaenidae	Scorpaenopsis	Carnivorous fish	The secondary consumer groups/ predator
+id146	Sebastiscus marmoratus	Bony fish	Chordata	Actinopteri	Perciformes	Sebastidae	Sebastiscus	Carnivorous fish	The secondary consumer groups/ predator
+id147	Cephalopholis boenak	Bony fish	Chordata	Actinopteri	Perciformes	Serranidae	Cephalopholis	Carnivorous fish	The secondary consumer groups/ predator
+id148	Epinephelus fuscoguttatus x Epinephelus polyphekadion	Bony fish	Chordata	Actinopteri	Perciformes	Serranidae	Epinephelus	Piscivorous fish	The tertiary consumer
+id149	Epinephelus quoyans	Bony fish	Chordata	Actinopteri	Perciformes	Serranidae	Epinephelus	Piscivorous fish	The tertiary consumer
+id150	Epinephelus spp.1	Bony fish	Chordata	Actinopteri	Perciformes	Serranidae	Epinephelus	Piscivorous fish	The tertiary consumer
+id151	Serranidae sp.1	Bony fish	Chordata	Actinopteri	Perciformes	Serranidae	Serranidae sp.1	Carnivorous fish	The secondary consumer groups/ predator
+id152	Dictyosoma rubrimaculatum	Bony fish	Chordata	Actinopteri	Perciformes	Stichaeidae	Dictyosoma	Carnivorous fish	The secondary consumer groups/ predator
+id153	Solea ovata	Bony fish	Chordata	Actinopteri	Pleuronectiformes	Soleidae	Solea	Invertebrate eating fish	The secondary consumer groups/ predator
+id154	Soleidae sp.1	Bony fish	Chordata	Actinopteri	Pleuronectiformes	Soleidae	Soleidae sp.1	Carnivorous fish	The secondary consumer groups/ predator
+id155	Rastrelliger kanagurta	Bony fish	Chordata	Actinopteri	Scombriformes	Scombridae	Rastrelliger	Carnivorous fish	The secondary consumer groups/ predator
+id156	Scomberomorus sinensis	Bony fish	Chordata	Actinopteri	Scombriformes	Scombridae	Scomberomorus	Carnivorous fish	The secondary consumer groups/ predator
+id157	Plotosus spp.1	Bony fish	Chordata	Actinopteri	Siluriformes	Plotosidae	Plotosus	Carnivorous fish	The secondary consumer groups/ predator
+id158	Lethrinidae sp.1	Bony fish	Chordata	Actinopteri	Spariformes	Lethrinidae	Lethrinidae sp.1	Carnivorous fish	The secondary consumer groups/ predator
+id159	Lethrinus nebulosus	Bony fish	Chordata	Actinopteri	Spariformes	Lethrinidae	Lethrinus	Carnivorous fish	The secondary consumer groups/ predator
+id160	Acanthopagrus pacificus	Bony fish	Chordata	Actinopteri	Spariformes	Sparidae	Acanthopagrus	Carnivorous fish	The secondary consumer groups/ predator
+id161	Rhabdosargus sarba	Bony fish	Chordata	Actinopteri	Spariformes	Sparidae	Rhabdosargus	Omnivorous fish	The secondary consumer groups/ predator
+id162	Sparidae sp.1	Bony fish	Chordata	Actinopteri	Spariformes	Sparidae	Sparidae sp.1	Omnivorous fish	The secondary consumer groups/ predator
+id163	Sparus aurata	Bony fish	Chordata	Actinopteri	Spariformes	Sparidae	Sparus	Invertebrate eating fish	The secondary consumer groups/ predator
+id164	Repomucenus curvicornis	Bony fish	Chordata	Actinopteri	Syngnathiformes	Callionymidae	Repomucenus	Omnivorous fish	The secondary consumer groups/ predator
+id165	Fistularia commersonii	Bony fish	Chordata	Actinopteri	Syngnathiformes	Fistulariidae	Fistularia	Carnivorous fish	The secondary consumer groups/ predator
+id166	Parupeneus biaculeatus	Bony fish	Chordata	Actinopteri	Syngnathiformes	Mullidae	Parupeneus	Invertebrate eating fish	The secondary consumer groups/ predator
+id167	Parupeneus indicus	Bony fish	Chordata	Actinopteri	Syngnathiformes	Mullidae	Parupeneus	Invertebrate eating fish	The secondary consumer groups/ predator
+id168	Parupeneus spp.1	Bony fish	Chordata	Actinopteri	Syngnathiformes	Mullidae	Parupeneus	Invertebrate eating fish	The secondary consumer groups/ predator
+id169	Upeneus sulphureus	Bony fish	Chordata	Actinopteri	Syngnathiformes	Mullidae	Upeneus	Carnivorous fish	The secondary consumer groups/ predator
+id170	Upeneus tragula	Bony fish	Chordata	Actinopteri	Syngnathiformes	Mullidae	Upeneus	Carnivorous fish	The secondary consumer groups/ predator
+id171	Monacanthus chinensis	Bony fish	Chordata	Actinopteri	Tetraodontiformes	Monacanthidae	Monacanthus	Omnivorous fish	The secondary consumer groups/ predator
+id172	Pervagor janthinosoma	Bony fish	Chordata	Actinopteri	Tetraodontiformes	Monacanthidae	Pervagor	Omnivorous fish	The secondary consumer groups/ predator
+id173	Arothron hispidus	Bony fish	Chordata	Actinopteri	Tetraodontiformes	Tetraodontidae	Arothron	Omnivorous fish	The secondary consumer groups/ predator
+id174	Chelonodontops patoca	Bony fish	Chordata	Actinopteri	Tetraodontiformes	Tetraodontidae	Chelonodontops	Omnivorous fish	The secondary consumer groups/ predator
+id175	Takifugu spp.1	Bony fish	Chordata	Actinopteri	Tetraodontiformes	Tetraodontidae	Takifugu	Omnivorous fish	The secondary consumer groups/ predator
+id176	Subgroup10	Prokaryote	Acidobacteriota	Thermoanaerobaculia	Thermoanaerobaculales	Thermoanaerobaculaceae	Subgroup10	Heterotrophic prokaryotes	Decomposer
+id177	Subgroup23	Prokaryote	Acidobacteriota	Thermoanaerobaculia	Thermoanaerobaculales	Thermoanaerobaculaceae	Subgroup23	Heterotrophic prokaryotes	Decomposer
+id178	CandidatusActinomarina	Prokaryote	Actinobacteriota	Acidimicrobiia	Actinomarinales	Actinomarinaceae	CandidatusActinomarina	Heterotrophic prokaryotes	Decomposer
+id179	uncultured Ilumatobacteraceae	Prokaryote	Actinobacteriota	Acidimicrobiia	Microtrichales	Ilumatobacteraceae	uncultured Ilumatobacteraceae	Heterotrophic prokaryotes	Decomposer
+id180	Sva0996marinegroup	Prokaryote	Actinobacteriota	Acidimicrobiia	Microtrichales	Microtrichaceae	Sva0996marinegroup	Heterotrophic prokaryotes	Decomposer
+id181	Draconibacterium	Prokaryote	Bacteroidota	Bacteroidia	Bacteroidales	Prolixibacteraceae	Draconibacterium	Heterotrophic prokaryotes	Decomposer
+id182	Roseimarinus	Prokaryote	Bacteroidota	Bacteroidia	Bacteroidales	Prolixibacteraceae	Roseimarinus	Heterotrophic prokaryotes	Decomposer
+id183	Aureispira	Prokaryote	Bacteroidota	Bacteroidia	Chitinophagales	Saprospiraceae	Aureispira	Heterotrophic prokaryotes	Decomposer
+id184	Lewinella	Prokaryote	Bacteroidota	Bacteroidia	Chitinophagales	Saprospiraceae	Lewinella	Heterotrophic prokaryotes	Decomposer
+id185	uncultured Saprospiraceae	Prokaryote	Bacteroidota	Bacteroidia	Chitinophagales	Saprospiraceae	uncultured Saprospiraceae	Heterotrophic prokaryotes	Decomposer
+id186	uncultured Chitinophagales	Prokaryote	Bacteroidota	Bacteroidia	Chitinophagales	uncultured Chitinophagales	uncultured Chitinophagales	Heterotrophic prokaryotes	Decomposer
+id187	Fabibacter	Prokaryote	Bacteroidota	Bacteroidia	Cytophagales	Cyclobacteriaceae	Fabibacter	Heterotrophic prokaryotes	Decomposer
+id188	Marinoscillum	Prokaryote	Bacteroidota	Bacteroidia	Cytophagales	Cyclobacteriaceae	Marinoscillum	Heterotrophic prokaryotes	Decomposer
+id189	uncultured Cyclobacteriaceae	Prokaryote	Bacteroidota	Bacteroidia	Cytophagales	Cyclobacteriaceae	uncultured Cyclobacteriaceae	Heterotrophic prokaryotes	Decomposer
+id190	Crocinitomix	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Crocinitomicaceae	Crocinitomix	Heterotrophic prokaryotes	Decomposer
+id191	Fluviicola	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Crocinitomicaceae	Fluviicola	Heterotrophic prokaryotes	Decomposer
+id192	Salinirepens	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Crocinitomicaceae	Salinirepens	Heterotrophic prokaryotes	Decomposer
+id193	uncultured Crocinitomicaceae	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Crocinitomicaceae	uncultured Crocinitomicaceae	Heterotrophic prokaryotes	Decomposer
+id194	NS10marinegroup	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	NS10marinegroup	Heterotrophic prokaryotes	Decomposer
+id195	Phaeocystidibacter	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	Phaeocystidibacter	Heterotrophic prokaryotes	Decomposer
+id196	uncultured Cryomorphaceae	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Cryomorphaceae	uncultured Cryomorphaceae	Heterotrophic prokaryotes	Decomposer
+id197	Aureimarina	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Aureimarina	Heterotrophic prokaryotes	Decomposer
+id198	Flavicella	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Flavicella	Heterotrophic prokaryotes	Decomposer
+id199	Formosa	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Formosa	Heterotrophic prokaryotes	Decomposer
+id200	Lutibacter	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Lutibacter	Heterotrophic prokaryotes	Decomposer
+id201	NS2bmarinegroup	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS2bmarinegroup	Heterotrophic prokaryotes	Decomposer
+id202	NS4marinegroup	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS4marinegroup	Heterotrophic prokaryotes	Decomposer
+id203	NS5marinegroup	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	NS5marinegroup	Heterotrophic prokaryotes	Decomposer
+id204	Polaribacter	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Polaribacter	Heterotrophic prokaryotes	Decomposer
+id205	Tenacibaculum	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	Tenacibaculum	Heterotrophic prokaryotes	Decomposer
+id206	uncultured Flavobacteriaceae	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae	uncultured Flavobacteriaceae	Heterotrophic prokaryotes	Decomposer
+id207	NS7marinegroup	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	NS7_marine_group	NS7marinegroup	Heterotrophic prokaryotes	Decomposer
+id208	NS9marinegroup	Prokaryote	Bacteroidota	Bacteroidia	Flavobacteriales	NS9_marine_group	NS9marinegroup	Heterotrophic prokaryotes	Decomposer
+id209	NS11-12marinegroup	Prokaryote	Bacteroidota	Bacteroidia	Sphingobacteriales	NS11-12_marine_group	NS11-12marinegroup	Heterotrophic prokaryotes	Decomposer
+id210	Balneola	Prokaryote	Bacteroidota	Rhodothermia	Balneolales	Balneolaceae	Balneola	Heterotrophic prokaryotes	Decomposer
+id211	uncultured Rhodothermaceae	Prokaryote	Bacteroidota	Rhodothermia	Rhodothermales	Rhodothermaceae	uncultured Rhodothermaceae	Heterotrophic prokaryotes	Decomposer
+id212	Bdellovibrio	Prokaryote	Bdellovibrionota	Bdellovibrionia	Bdellovibrionales	Bdellovibrionaceae	Bdellovibrio	Heterotrophic prokaryotes	Decomposer
+id213	OM27clade	Prokaryote	Bdellovibrionota	Bdellovibrionia	Bdellovibrionales	Bdellovibrionaceae	OM27clade	Heterotrophic prokaryotes	Decomposer
+id214	uncultured Oligoflexaceae	Prokaryote	Bdellovibrionota	Oligoflexia	Oligoflexales	Oligoflexaceae	uncultured Oligoflexaceae	Heterotrophic prokaryotes	Decomposer
+id215	CandidatusNitrosopelagicus	Prokaryote	Crenarchaeota	Nitrososphaeria	Nitrosopumilales	Nitrosopumilaceae	CandidatusNitrosopelagicus	Heterotrophic prokaryotes	Decomposer
+id216	CandidatusNitrosopumilus	Prokaryote	Crenarchaeota	Nitrososphaeria	Nitrosopumilales	Nitrosopumilaceae	CandidatusNitrosopumilus	Heterotrophic prokaryotes	Decomposer
+id217	CyanobiumPCC-6307	Prokaryote	Cyanobacteria	Cyanobacteriia	Synechococcales	Cyanobiaceae	CyanobiumPCC-6307	Autotrophic prokaryotes	Primary producer
+id218	SynechococcusCC9902	Prokaryote	Cyanobacteria	Cyanobacteriia	Synechococcales	Cyanobiaceae	SynechococcusCC9902	Autotrophic prokaryotes	Primary producer
+id219	SchizothrixLEGE07164	Prokaryote	Cyanobacteria	Cyanobacteriia	Synechococcales	Synechococcales_Incertae_Sedis	SchizothrixLEGE07164	Autotrophic prokaryotes	Primary producer
+id220	Dadabacteriales	Prokaryote	Dadabacteria	Dadabacteriia	Dadabacteriales	Dadabacteriales	Dadabacteriales	Heterotrophic prokaryotes	Decomposer
+id221	Bradymonadales	Prokaryote	Desulfobacterota	Desulfuromonadia	Bradymonadales	Bradymonadales	Bradymonadales	Heterotrophic prokaryotes	Decomposer
+id222	PB19	Prokaryote	Desulfobacterota	Desulfuromonadia	PB19	PB19	PB19	Heterotrophic prokaryotes	Decomposer
+id223	Acholeplasma	Prokaryote	Firmicutes	Bacilli	Acholeplasmatales	Acholeplasmataceae	Acholeplasma	Heterotrophic prokaryotes	Decomposer
+id224	Propionigenium	Prokaryote	Fusobacteriota	Fusobacteriia	Fusobacteriales	Fusobacteriaceae	Propionigenium	Heterotrophic prokaryotes	Decomposer
+id225	Psychrilyobacter	Prokaryote	Fusobacteriota	Fusobacteriia	Fusobacteriales	Fusobacteriaceae	Psychrilyobacter	Heterotrophic prokaryotes	Decomposer
+id226	BD2-11terrestrialgroup	Prokaryote	Gemmatimonadota	BD2-11_terrestrial_group	BD2-11_terrestrial_group	BD2-11_terrestrial_group	BD2-11terrestrialgroup	Heterotrophic prokaryotes	Decomposer
+id227	Marinimicrobia(SAR406clade)	Prokaryote	Marinimicrobia_(SAR406_clade)	Marinimicrobia_(SAR406_clade)	Marinimicrobia_(SAR406_clade)	Marinimicrobia_(SAR406_clade)	Marinimicrobia(SAR406clade)	Heterotrophic prokaryotes	Decomposer
+id228	P3OB-42	Prokaryote	Myxococcota	Myxococcia	Myxococcales	Myxococcaceae	P3OB-42	Heterotrophic prokaryotes	Decomposer
+id229	Blfdi19	Prokaryote	Myxococcota	Polyangia	Blfdi19	Blfdi19	Blfdi19	Heterotrophic prokaryotes	Decomposer
+id230	BIrii41	Prokaryote	Myxococcota	Polyangia	Polyangiales	BIrii41	BIrii41	Heterotrophic prokaryotes	Decomposer
+id231	PAUC34f	Prokaryote	PAUC34f	PAUC34f	PAUC34f	PAUC34f	PAUC34f	Heterotrophic prokaryotes	Decomposer
+id232	BD7-11	Prokaryote	Planctomycetota	BD7-11	BD7-11	BD7-11	BD7-11	Heterotrophic prokaryotes	Decomposer
+id233	OM190	Prokaryote	Planctomycetota	OM190	OM190	OM190	OM190	Heterotrophic prokaryotes	Decomposer
+id234	CL500-3	Prokaryote	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae	CL500-3	Heterotrophic prokaryotes	Decomposer
+id235	Phycisphaera	Prokaryote	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae	Phycisphaera	Heterotrophic prokaryotes	Decomposer
+id236	Pla3lineage	Prokaryote	Planctomycetota	Pla3_lineage	Pla3_lineage	Pla3_lineage	Pla3lineage	Heterotrophic prokaryotes	Decomposer
+id237	Blastopirellula	Prokaryote	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	Blastopirellula	Heterotrophic prokaryotes	Decomposer
+id238	Pirellula	Prokaryote	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	Pirellula	Heterotrophic prokaryotes	Decomposer
+id239	Rhodopirellula	Prokaryote	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	Rhodopirellula	Heterotrophic prokaryotes	Decomposer
+id240	Rubripirellula	Prokaryote	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	Rubripirellula	Heterotrophic prokaryotes	Decomposer
+id241	uncultured Pirellulaceae	Prokaryote	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae	uncultured Pirellulaceae	Heterotrophic prokaryotes	Decomposer
+id242	uncultured Gimesiaceae	Prokaryote	Planctomycetota	Planctomycetes	Planctomycetales	Gimesiaceae	uncultured Gimesiaceae	Heterotrophic prokaryotes	Decomposer
+id243	uncultured Rubinisphaeraceae	Prokaryote	Planctomycetota	Planctomycetes	Planctomycetales	Rubinisphaeraceae	uncultured Rubinisphaeraceae	Heterotrophic prokaryotes	Decomposer
+id244	Maricaulis	Prokaryote	Proteobacteria	Alphaproteobacteria	Caulobacterales	Hyphomonadaceae	Maricaulis	Heterotrophic prokaryotes	Decomposer
+id245	uncultured Hyphomonadaceae	Prokaryote	Proteobacteria	Alphaproteobacteria	Caulobacterales	Hyphomonadaceae	uncultured Hyphomonadaceae	Heterotrophic prokaryotes	Decomposer
+id246	uncultured Defluviicoccales	Prokaryote	Proteobacteria	Alphaproteobacteria	Defluviicoccales	uncultured Defluviicoccales	uncultured Defluviicoccales	Heterotrophic prokaryotes	Decomposer
+id247	PS1clade	Prokaryote	Proteobacteria	Alphaproteobacteria	Parvibaculales	PS1_clade	PS1clade	Heterotrophic prokaryotes	Decomposer
+id248	CandidatusPuniceispirillum	Prokaryote	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116_clade	CandidatusPuniceispirillum	Heterotrophic prokaryotes	Decomposer
+id249	SAR116clade	Prokaryote	Proteobacteria	Alphaproteobacteria	Puniceispirillales	SAR116_clade	SAR116clade	Heterotrophic prokaryotes	Decomposer
+id250	uncultured Puniceispirillales	Prokaryote	Proteobacteria	Alphaproteobacteria	Puniceispirillales	uncultured Puniceispirillales	uncultured Puniceispirillales	Heterotrophic prokaryotes	Decomposer
+id251	Stappiaceae	Prokaryote	Proteobacteria	Alphaproteobacteria	Rhizobiales	Stappiaceae	Stappiaceae	Heterotrophic prokaryotes	Decomposer
+id252	Aestuariicoccus	Prokaryote	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Aestuariicoccus	Heterotrophic prokaryotes	Decomposer
+id253	Amylibacter	Prokaryote	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Amylibacter	Heterotrophic prokaryotes	Decomposer
+id254	Ascidiaceihabitans	Prokaryote	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Ascidiaceihabitans	Heterotrophic prokaryotes	Decomposer
+id255	HIMB11	Prokaryote	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	HIMB11	Heterotrophic prokaryotes	Decomposer
+id256	Paracoccus	Prokaryote	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Paracoccus	Heterotrophic prokaryotes	Decomposer
+id257	uncultured Magnetospiraceae	Prokaryote	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Magnetospiraceae	uncultured Magnetospiraceae	Heterotrophic prokaryotes	Decomposer
+id258	S25-593	Prokaryote	Proteobacteria	Alphaproteobacteria	Rickettsiales	S25-593	S25-593	Heterotrophic prokaryotes	Decomposer
+id259	CladeIa	Prokaryote	Proteobacteria	Alphaproteobacteria	SAR11_clade	Clade_I	CladeIa	Heterotrophic prokaryotes	Decomposer
+id260	CladeII	Prokaryote	Proteobacteria	Alphaproteobacteria	SAR11_clade	Clade_II	CladeII	Heterotrophic prokaryotes	Decomposer
+id261	Sphingobium	Prokaryote	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingobium	Heterotrophic prokaryotes	Decomposer
+id262	OM75clade	Prokaryote	Proteobacteria	Alphaproteobacteria	Thalassobaculales	Nisaeaceae	OM75clade	Heterotrophic prokaryotes	Decomposer
+id263	uncultured Alphaproteobacteria	Prokaryote	Proteobacteria	Alphaproteobacteria	uncultured Alphaproteobacteria	uncultured Alphaproteobacteria	uncultured Alphaproteobacteria	Heterotrophic prokaryotes	Decomposer
+id264	Aquabacterium	Prokaryote	Proteobacteria	Gammaproteobacteria	Burkholderiales	Comamonadaceae	Aquabacterium	Heterotrophic prokaryotes	Decomposer
+id265	Comamonas	Prokaryote	Proteobacteria	Gammaproteobacteria	Burkholderiales	Comamonadaceae	Comamonas	Heterotrophic prokaryotes	Decomposer
+id266	OM43clade	Prokaryote	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae	OM43clade	Heterotrophic prokaryotes	Decomposer
+id267	MWH-UniP1aquaticgroup	Prokaryote	Proteobacteria	Gammaproteobacteria	Burkholderiales	MWH-UniP1_aquatic_group	MWH-UniP1aquaticgroup	Heterotrophic prokaryotes	Decomposer
+id268	IS-44	Prokaryote	Proteobacteria	Gammaproteobacteria	Burkholderiales	Nitrosomonadaceae	IS-44	Heterotrophic prokaryotes	Decomposer
+id269	mle1-7	Prokaryote	Proteobacteria	Gammaproteobacteria	Burkholderiales	Nitrosomonadaceae	mle1-7	Heterotrophic prokaryotes	Decomposer
+id270	Methyloversatilis	Prokaryote	Proteobacteria	Gammaproteobacteria	Burkholderiales	Rhodocyclaceae	Methyloversatilis	Heterotrophic prokaryotes	Decomposer
+id271	Aliiglaciecola	Prokaryote	Proteobacteria	Gammaproteobacteria	Enterobacterales	Alteromonadaceae	Aliiglaciecola	Heterotrophic prokaryotes	Decomposer
+id272	Glaciecola	Prokaryote	Proteobacteria	Gammaproteobacteria	Enterobacterales	Alteromonadaceae	Glaciecola	Heterotrophic prokaryotes	Decomposer
+id273	Rheinheimera	Prokaryote	Proteobacteria	Gammaproteobacteria	Enterobacterales	Alteromonadaceae	Rheinheimera	Heterotrophic prokaryotes	Decomposer
+id274	uncultured Alteromonadaceae	Prokaryote	Proteobacteria	Gammaproteobacteria	Enterobacterales	Alteromonadaceae	uncultured Alteromonadaceae	Heterotrophic prokaryotes	Decomposer
+id275	Thalassotalea	Prokaryote	Proteobacteria	Gammaproteobacteria	Enterobacterales	Colwelliaceae	Thalassotalea	Heterotrophic prokaryotes	Decomposer
+id276	Vibrio	Prokaryote	Proteobacteria	Gammaproteobacteria	Enterobacterales	Vibrionaceae	Vibrio	Heterotrophic prokaryotes	Decomposer
+id277	HOC36	Prokaryote	Proteobacteria	Gammaproteobacteria	HOC36	HOC36	HOC36	Heterotrophic prokaryotes	Decomposer
+id278	Cm1-21	Prokaryote	Proteobacteria	Gammaproteobacteria	Nitrosococcales	Nitrosococcaceae	Cm1-21	Heterotrophic prokaryotes	Decomposer
+id279	Alcanivorax	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Alcanivoracaceae1	Alcanivorax	Autotrophic prokaryotes	Primary producer
+id280	Aestuariicella	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Cellvibrionaceae	Aestuariicella	Heterotrophic prokaryotes	Decomposer
+id281	Halioglobus	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Halieaceae	Halioglobus	Heterotrophic prokaryotes	Decomposer
+id282	Luminiphilus	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Halieaceae	Luminiphilus	Heterotrophic prokaryotes	Decomposer
+id283	OM60(NOR5)clade	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Halieaceae	OM60(NOR5)clade	Heterotrophic prokaryotes	Decomposer
+id284	KI89Aclade	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	KI89A_clade	KI89Aclade	Heterotrophic prokaryotes	Decomposer
+id285	Litoricola	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Litoricolaceae	Litoricola	Heterotrophic prokaryotes	Decomposer
+id286	Acinetobacter	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Moraxellaceae	Acinetobacter	Heterotrophic prokaryotes	Decomposer
+id287	Marinobacterium	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Nitrincolaceae	Marinobacterium	Heterotrophic prokaryotes	Decomposer
+id288	uncultured Nitrincolaceae	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Nitrincolaceae	uncultured Nitrincolaceae	Heterotrophic prokaryotes	Decomposer
+id289	OM182clade	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	OM182_clade	OM182clade	Heterotrophic prokaryotes	Decomposer
+id290	SAR92clade	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Porticoccaceae	SAR92clade	Heterotrophic prokaryotes	Decomposer
+id291	Pseudohongiella	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudohongiellaceae	Pseudohongiella	Heterotrophic prokaryotes	Decomposer
+id292	Pseudomonas	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudomonadaceae	Pseudomonas	Heterotrophic prokaryotes	Decomposer
+id293	SAR86clade	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	SAR86_clade	SAR86clade	Heterotrophic prokaryotes	Decomposer
+id294	SUP05cluster	Prokaryote	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Thioglobaceae	SUP05cluster	Heterotrophic prokaryotes	Decomposer
+id295	Woeseia	Prokaryote	Proteobacteria	Gammaproteobacteria	Steroidobacterales	Woeseiaceae	Woeseia	Heterotrophic prokaryotes	Decomposer
+id296	uncultured Thiotrichaceae	Prokaryote	Proteobacteria	Gammaproteobacteria	Thiotrichales	Thiotrichaceae	uncultured Thiotrichaceae	Heterotrophic prokaryotes	Decomposer
+id297	UBA10353marinegroup	Prokaryote	Proteobacteria	Gammaproteobacteria	UBA10353_marine_group	UBA10353_marine_group	UBA10353marinegroup	Heterotrophic prokaryotes	Decomposer
+id298	SAR324clade(MarinegroupB)	Prokaryote	SAR324_clade(Marine_group_B)	SAR324_clade(Marine_group_B)	SAR324_clade(Marine_group_B)	SAR324_clade(Marine_group_B)	SAR324clade(MarinegroupB)	Heterotrophic prokaryotes	Decomposer
+id299	MarineGroupII	Prokaryote	Thermoplasmatota	Thermoplasmata	Marine_Group_II	Marine_Group_II	MarineGroupII	Heterotrophic prokaryotes	Decomposer
+id300	uncultured Kiritimatiellaceae	Prokaryote	Verrucomicrobiota	Kiritimatiellae	Kiritimatiellales	Kiritimatiellaceae	uncultured Kiritimatiellaceae	Heterotrophic prokaryotes	Decomposer
+id301	WCHB1-41	Prokaryote	Verrucomicrobiota	Kiritimatiellae	WCHB1-41	WCHB1-41	WCHB1-41	Heterotrophic prokaryotes	Decomposer
+id302	Lentisphaera	Prokaryote	Verrucomicrobiota	Lentisphaeria	Lentisphaerales	Lentisphaeraceae	Lentisphaera	Heterotrophic prokaryotes	Decomposer
+id303	Arctic97B-4marinegroup	Prokaryote	Verrucomicrobiota	Verrucomicrobiae	Arctic97B-4_marine_group	Arctic97B-4_marine_group	Arctic97B-4marinegroup	Heterotrophic prokaryotes	Decomposer
+id304	Coraliomargarita	Prokaryote	Verrucomicrobiota	Verrucomicrobiae	Opitutales	Puniceicoccaceae	Coraliomargarita	Heterotrophic prokaryotes	Decomposer
+id305	Lentimonas	Prokaryote	Verrucomicrobiota	Verrucomicrobiae	Opitutales	Puniceicoccaceae	Lentimonas	Heterotrophic prokaryotes	Decomposer
+id306	MB11C04marinegroup	Prokaryote	Verrucomicrobiota	Verrucomicrobiae	Opitutales	Puniceicoccaceae	MB11C04marinegroup	Heterotrophic prokaryotes	Decomposer
+id307	SCGCAAA164-E04	Prokaryote	Verrucomicrobiota	Verrucomicrobiae	Pedosphaerales	Pedosphaeraceae	SCGCAAA164-E04	Heterotrophic prokaryotes	Decomposer
+id308	DEV007	Prokaryote	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	DEV007	DEV007	Heterotrophic prokaryotes	Decomposer
+id309	Persicirhabdus	Prokaryote	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	Rubritaleaceae	Persicirhabdus	Heterotrophic prokaryotes	Decomposer
+id310	Roseibacillus	Prokaryote	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	Rubritaleaceae	Roseibacillus	Heterotrophic prokaryotes	Decomposer
+id311	Apusomonadidae_Group-2B_X	Protist	Apusomonada_X	Apusomonadidae	Apusomonadidae_Group-2	Apusomonadidae_Group-2B	Apusomonadidae_Group-2B_X	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id312	Bilabrum	Protist	Bigyra	Bicoecea	Anoecales	Anoecales_X	Bilabrum	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id313	MAST-12D	Protist	Bigyra	Opalozoa	Opalozoa_X	MAST-12	MAST-12D	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id314	MAST-4B	Protist	Bigyra	Sagenista	Sagenista_X	MAST-4	MAST-4B	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id315	Pterocystida_XXX	Protist	Centroplasthelida_X	Pterocystida	Pterocystida_X	Pterocystida_XX	Pterocystida_XXX	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id316	Bigelowiella	Protist	Cercozoa	Chlorarachniophyceae	Chlorarachnida	Chlorarachnida_X	Bigelowiella	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id317	Novel-clade-2_X	Protist	Cercozoa	Filosa-Imbricatea	Filosa-Imbricatea_X	Novel-clade-2	Novel-clade-2_X	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id318	Cryothecomonas	Protist	Cercozoa	Filosa-Thecofilosea	Cryomonadida	Cryothecomonas-lineage	Cryothecomonas	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id319	Bathycoccus	Protist	Chlorophyta_X	Mamiellophyceae	Mamiellales	Bathycoccaceae	Bathycoccus	Autotrophic protist	Primary producer
+id320	Ostreococcus	Protist	Chlorophyta_X	Mamiellophyceae	Mamiellales	Bathycoccaceae	Ostreococcus	Autotrophic protist	Primary producer
+id321	Micromonas	Protist	Chlorophyta_X	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	Autotrophic protist	Primary producer
+id322	Acrochaete	Protist	Chlorophyta_X	Ulvophyceae	Ulvales-relatives	Ulvales-relatives_X	Acrochaete	Endophytic green algae	The primary consumers/Herbivorous fish/detritivore
+id323	Ulva	Protist	Chlorophyta_X	Ulvophyceae	Ulvales-relatives	Ulvales-relatives_X	Ulva	Autotrophic protist	Primary producer
+id324	Cyclotrichium	Protist	Ciliophora	Cyclotrichium_like_organism	Cyclotrichium_like_organism_X	Cyclotrichium_like_organism_XX	Cyclotrichium	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id325	Pelagostrobilidium	Protist	Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae	Pelagostrobilidium	Mixotrophic protist	Both Primary producers and primary consumers
+id326	Tintinnopsis_07	Protist	Ciliophora	Spirotrichea	Choreotrichida-Tintinnina	TIN_07	Tintinnopsis_07	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id327	Amphorellopsis	Protist	Ciliophora	Spirotrichea	Choreotrichida-Tintinnina	Tintinnidae	Amphorellopsis	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id328	Oligotrichida_XX	Protist	Ciliophora	Spirotrichea	Oligotrichida	Oligotrichida_X	Oligotrichida_XX	Unknown	Unknown
+id329	Strombidiidae_X	Protist	Ciliophora	Spirotrichea	Oligotrichida	Strombidiidae	Strombidiidae_X	Mixotrophic protist	Both Primary producers and primary consumers
+id330	Strombidium	Protist	Ciliophora	Spirotrichea	Oligotrichida	Strombidiidae	Strombidium	Mixotrophic protist	Both Primary producers and primary consumers
+id331	Pseudotontonia	Protist	Ciliophora	Spirotrichea	Oligotrichida	Tontoniidae	Pseudotontonia	Mixotrophic protist	Both Primary producers and primary consumers
+id332	Spirotontonia	Protist	Ciliophora	Spirotrichea	Oligotrichida	Tontoniidae	Spirotontonia	Mixotrophic protist	Both Primary producers and primary consumers
+id333	Plagioselmis	Protist	Cryptophyta_X	Cryptophyceae	Cryptomonadales	Cryptomonadales_X	Plagioselmis	Mixotrophic protist	Both Primary producers and primary consumers
+id334	Proteomonas	Protist	Cryptophyta_X	Cryptophyceae	Cryptomonadales	Cryptomonadales_X	Proteomonas	Mixotrophic protist	Both Primary producers and primary consumers
+id335	Teleaulax	Protist	Cryptophyta_X	Cryptophyceae	Cryptomonadales	Cryptomonadales_X	Teleaulax	Mixotrophic protist	Both Primary producers and primary consumers
+id336	Chroomonas	Protist	Cryptophyta_X	Cryptophyceae	Cryptomonadales	Hemiselmidaceae	Chroomonas	Mixotrophic protist	Both Primary producers and primary consumers
+id337	Rhodomonas	Protist	Cryptophyta_X	Cryptophyceae	Pyrenomonadales	Pyrenomonadaceae	Rhodomonas	Mixotrophic protist	Both Primary producers and primary consumers
+id338	Plagioselmis:nucl	Protist	Cryptophyta_X:nucl	Cryptophyceae:nucl	Cryptomonadales:nucl	Cryptomonadales_X:nucl	Plagioselmis:nucl	Mixotrophic protist	Both Primary producers and primary consumers
+id339	Dinophyceae_XXX	Protist	Dinoflagellata	Dinophyceae	Dinophyceae_X	Dinophyceae_XX	Dinophyceae_XXX	Unknown	Unknown
+id340	Oodinium	Protist	Dinoflagellata	Dinophyceae	Dinophyceae_X	Oodiniaceae	Oodinium	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id341	Tripos	Protist	Dinoflagellata	Dinophyceae	Gonyaulacales	Ceratiaceae	Tripos	Mixotrophic protist	Both Primary producers and primary consumers
+id342	Gymnodinium	Protist	Dinoflagellata	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	Mixotrophic protist	Both Primary producers and primary consumers
+id343	Gyrodinium	Protist	Dinoflagellata	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id344	Levanderina	Protist	Dinoflagellata	Dinophyceae	Gymnodiniales	Gymnodiniales_X	Levanderina	Mixotrophic protist	Both Primary producers and primary consumers
+id345	Karlodinium	Protist	Dinoflagellata	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Mixotrophic protist	Both Primary producers and primary consumers
+id346	Takayama	Protist	Dinoflagellata	Dinophyceae	Gymnodiniales	Kareniaceae	Takayama	Mixotrophic protist	Both Primary producers and primary consumers
+id347	Warnowia	Protist	Dinoflagellata	Dinophyceae	Gymnodiniales	Warnowiaceae	Warnowia	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id348	Heterocapsa	Protist	Dinoflagellata	Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Mixotrophic protist	Both Primary producers and primary consumers
+id349	Protoperidinium	Protist	Dinoflagellata	Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id350	Prorocentrum	Protist	Dinoflagellata	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Mixotrophic protist	Both Primary producers and primary consumers
+id351	Pelagodinium	Protist	Dinoflagellata	Dinophyceae	Suessiales	Suessiaceae	Pelagodinium	Mixotrophic protist	Both Primary producers and primary consumers
+id352	Torodinium	Protist	Dinoflagellata	Dinophyceae	Torodiniales	Torodiniaceae	Torodinium	Autotrophic protist	Primary producer
+id353	Ellobiopsis	Protist	Dinoflagellata	Ellobiophyceae	Thalassomycetales	Thalassomycetaceae	Ellobiopsis	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id354	Noctiluca	Protist	Dinoflagellata	Noctilucophyceae	Noctilucales	Noctilucaceae	Noctiluca	Symbiosis protist	The primary consumers/Herbivorous fish/detritivore
+id355	Dino-Group-I-Clade-1_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-I	Dino-Group-I-Clade-1	Dino-Group-I-Clade-1_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id356	Dino-Group-I-Clade-4_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-I	Dino-Group-I-Clade-4	Dino-Group-I-Clade-4_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id357	Dino-Group-I-Clade-5_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-I	Dino-Group-I-Clade-5	Dino-Group-I-Clade-5_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id358	Dino-Group-II_XX	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II_X	Dino-Group-II_XX	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id359	Dino-Group-II-Clade-1_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-1	Dino-Group-II-Clade-1_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id360	Dino-Group-II-Clade-10-and-11_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-10-and-11	Dino-Group-II-Clade-10-and-11_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id361	Dino-Group-II-Clade-12_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-12	Dino-Group-II-Clade-12_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id362	Dino-Group-II-Clade-14_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-14	Dino-Group-II-Clade-14_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id363	Dino-Group-II-Clade-16_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-16	Dino-Group-II-Clade-16_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id364	Dino-Group-II-Clade-19_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-19	Dino-Group-II-Clade-19_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id365	Dino-Group-II-Clade-2_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-2	Dino-Group-II-Clade-2_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id366	Dino-Group-II-Clade-20_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-20	Dino-Group-II-Clade-20_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id367	Dino-Group-II-Clade-22_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-22	Dino-Group-II-Clade-22_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id368	Dino-Group-II-Clade-26_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-26	Dino-Group-II-Clade-26_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id369	Dino-Group-II-Clade-27_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-27	Dino-Group-II-Clade-27_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id370	Dino-Group-II-Clade-3_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-3	Dino-Group-II-Clade-3_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id371	Dino-Group-II-Clade-30_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-30	Dino-Group-II-Clade-30_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id372	Dino-Group-II-Clade-4_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-4	Dino-Group-II-Clade-4_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id373	Dino-Group-II-Clade-44_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-44	Dino-Group-II-Clade-44_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id374	Dino-Group-II-Clade-47_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-47	Dino-Group-II-Clade-47_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id375	Dino-Group-II-Clade-5_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-5	Dino-Group-II-Clade-5_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id376	Dino-Group-II-Clade-6_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-6	Dino-Group-II-Clade-6_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id377	Dino-Group-II-Clade-8_X	Protist	Dinoflagellata	Syndiniales	Dino-Group-II	Dino-Group-II-Clade-8	Dino-Group-II-Clade-8_X	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id378	Dino-Group-III_XX	Protist	Dinoflagellata	Syndiniales	Dino-Group-III	Dino-Group-III_X	Dino-Group-III_XX	Parasite protist	The primary consumers/Herbivorous fish/detritivore
+id379	Pseudo-nitzschia	Protist	Gyrista	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo-nitzschia	Autotrophic protist	Primary producer
+id380	Asterionellopsis	Protist	Gyrista	Bacillariophyceae	Rhaphoneidales	Asterionellopsidaceae	Asterionellopsis	Autotrophic protist	Primary producer
+id381	Guinardia	Protist	Gyrista	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Guinardia	Autotrophic protist	Primary producer
+id382	Rhizosolenia	Protist	Gyrista	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Rhizosolenia	Autotrophic protist	Primary producer
+id383	Bacteriastrum	Protist	Gyrista	Mediophyceae	Chaetocerotales	Chaetocerotaceae	Bacteriastrum	Autotrophic protist	Primary producer
+id384	Chaetoceros	Protist	Gyrista	Mediophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Autotrophic protist	Primary producer
+id385	Minutocellus	Protist	Gyrista	Mediophyceae	Cymatosirales	Cymatosiraceae	Minutocellus	Autotrophic protist	Primary producer
+id386	Cerataulina	Protist	Gyrista	Mediophyceae	Hemiaulales	Hemiaulaceae	Cerataulina	Autotrophic protist	Primary producer
+id387	Eucampia	Protist	Gyrista	Mediophyceae	Hemiaulales	Hemiaulaceae	Eucampia	Autotrophic protist	Primary producer
+id388	Ditylum	Protist	Gyrista	Mediophyceae	Lithodesmiales	Lithodesmiaceae	Ditylum	Autotrophic protist	Primary producer
+id389	Skeletonema	Protist	Gyrista	Mediophyceae	Thalassiosirales	Skeletonemaceae	Skeletonema	Autotrophic protist	Primary producer
+id390	Detonula	Protist	Gyrista	Mediophyceae	Thalassiosirales	Thalassiosiraceae	Detonula	Autotrophic protist	Primary producer
+id391	Minidiscus	Protist	Gyrista	Mediophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	Autotrophic protist	Primary producer
+id392	Thalassiosira	Protist	Gyrista	Mediophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Autotrophic protist	Primary producer
+id393	Pelagomonas	Protist	Gyrista	Pelagophyceae	Pelagomonadales	Pelagomonadaceae	Pelagomonas	Autotrophic protist	Primary producer
+id394	Phaeocystis	Protist	Haptophyta_X	Prymnesiophyceae	Phaeocystales	Phaeocystaceae	Phaeocystis	Mixotrophic protist	Both Primary producers and primary consumers
+id395	Chrysochromulina	Protist	Haptophyta_X	Prymnesiophyceae	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Mixotrophic protist	Both Primary producers and primary consumers
+id396	Haptolina	Protist	Haptophyta_X	Prymnesiophyceae	Prymnesiales	Prymnesiaceae	Haptolina	Mixotrophic protist	Both Primary producers and primary consumers
+id397	Prymnesium	Protist	Haptophyta_X	Prymnesiophyceae	Prymnesiales	Prymnesiaceae	Prymnesium	Mixotrophic protist	Both Primary producers and primary consumers
+id398	Prymnesiophyceae_Clade_B4_X	Protist	Haptophyta_X	Prymnesiophyceae	Prymnesiales	Prymnesiophyceae_Clade_B4	Prymnesiophyceae_Clade_B4_X	Mixotrophic protist	Both Primary producers and primary consumers
+id399	Prymnesiophyceae_Clade_D_XX	Protist	Haptophyta_X	Prymnesiophyceae	Prymnesiophyceae_Clade_D	Prymnesiophyceae_Clade_D_X	Prymnesiophyceae_Clade_D_XX	Mixotrophic protist	Both Primary producers and primary consumers
+id400	Prymnesiophyceae_Clade_E_XX	Protist	Haptophyta_X	Prymnesiophyceae	Prymnesiophyceae_Clade_E	Prymnesiophyceae_Clade_E_X	Prymnesiophyceae_Clade_E_XX	Mixotrophic protist	Both Primary producers and primary consumers
+id401	Picozoa_XXXXX	Protist	Picozoa_X	Picozoa_XX	Picozoa_XXX	Picozoa_XXXX	Picozoa_XXXXX	Heterotrophic protist	The primary consumers/Herbivorous fish/detritivore
+id402	RAD-B_X_Group-IVe_X	Protist	Radiolaria	RAD-B	RAD-B_X	RAD-B_X_Group-IVe	RAD-B_X_Group-IVe_X	Unknown	Unknown
+id403	Chondria	Protist	Rhodophyta_X	Florideophyceae	Ceramiales	Rhodomelaceae	Chondria	Autotrophic protist	Primary producer
+id404	Amphiroa	Protist	Rhodophyta_X	Florideophyceae	Corallinales	Corallinales_X	Amphiroa	Autotrophic protist	Primary producer
+id405	Corallina	Protist	Rhodophyta_X	Florideophyceae	Corallinales	Corallinales_X	Corallina	Autotrophic protist	Primary producer
+id406	Hydrolithon	Protist	Rhodophyta_X	Florideophyceae	Corallinales	Corallinales_X	Hydrolithon	Autotrophic protist	Primary producer
+id407	Peyssonnelia	Protist	Rhodophyta_X	Florideophyceae	Gigartinales	Gigartinales_X	Peyssonnelia	Autotrophic protist	Primary producer

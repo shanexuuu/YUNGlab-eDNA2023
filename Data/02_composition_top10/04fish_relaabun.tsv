@@ -1,0 +1,1178 @@
+id	PhylumID	SampleID	Abundance	Region	Site	Season	Site2	Month	Site2avgrela
+13	Acanthuriformes	HKBea1Feb	0.29561885	HK	Bea1	Feb	Bea	2	0.213763368
+57	Acanthuriformes	HKBea2Feb	0.13460024	HK	Bea2	Feb	Bea	2	
+101	Acanthuriformes	HKBea3Feb	0.211071014	HK	Bea3	Feb	Bea	2	
+20	Atheriniformes	HKBea1Feb	0.000994303	HK	Bea1	Feb	Bea	2	0.086853637
+64	Atheriniformes	HKBea2Feb	0.045695694	HK	Bea2	Feb	Bea	2	
+108	Atheriniformes	HKBea3Feb	0.213870914	HK	Bea3	Feb	Bea	2	
+19	Blenniiformes	HKBea1Feb	0.013754531	HK	Bea1	Feb	Bea	2	0.008683749
+63	Blenniiformes	HKBea2Feb	0.002673354	HK	Bea2	Feb	Bea	2	
+107	Blenniiformes	HKBea3Feb	0.009623362	HK	Bea3	Feb	Bea	2	
+12	Clupeiformes	HKBea1Feb	0.559709995	HK	Bea1	Feb	Bea	2	0.321290737
+56	Clupeiformes	HKBea2Feb	0.260911013	HK	Bea2	Feb	Bea	2	
+100	Clupeiformes	HKBea3Feb	0.143251203	HK	Bea3	Feb	Bea	2	
+16	Gobiiformes	HKBea1Feb	0.003148628	HK	Bea1	Feb	Bea	2	0.002335379
+60	Gobiiformes	HKBea2Feb	0.000165789	HK	Bea2	Feb	Bea	2	
+104	Gobiiformes	HKBea3Feb	0.003691721	HK	Bea3	Feb	Bea	2	
+18	Labriformes	HKBea1Feb	0.003107198	HK	Bea1	Feb	Bea	2	0.003524484
+62	Labriformes	HKBea2Feb	0.000186513	HK	Bea2	Feb	Bea	2	
+106	Labriformes	HKBea3Feb	0.007279741	HK	Bea3	Feb	Bea	2	
+15	Mugiliformes	HKBea1Feb	0.039150699	HK	Bea1	Feb	Bea	2	0.139605303
+59	Mugiliformes	HKBea2Feb	0.185849878	HK	Bea2	Feb	Bea	2	
+103	Mugiliformes	HKBea3Feb	0.193815331	HK	Bea3	Feb	Bea	2	
+22	others	HKBea1Feb	0.049383739	HK	Bea1	Feb	Bea	2	0.129211371
+66	others	HKBea2Feb	0.234737017	HK	Bea2	Feb	Bea	2	
+110	others	HKBea3Feb	0.103513357	HK	Bea3	Feb	Bea	2	
+21	Perciformes	HKBea1Feb	0.021481098	HK	Bea1	Feb	Bea	2	0.007858602
+65	Perciformes	HKBea2Feb	4.14E-05	HK	Bea2	Feb	Bea	2	
+109	Perciformes	HKBea3Feb	0.00205326	HK	Bea3	Feb	Bea	2	
+17	Syngnathiformes	HKBea1Feb	0.006980839	HK	Bea1	Feb	Bea	2	0.077515801
+61	Syngnathiformes	HKBea2Feb	0.13375057	HK	Bea2	Feb	Bea	2	
+105	Syngnathiformes	HKBea3Feb	0.091815995	HK	Bea3	Feb	Bea	2	
+14	Tetraodontiformes	HKBea1Feb	0.006670119	HK	Bea1	Feb	Bea	2	0.009357569
+58	Tetraodontiformes	HKBea2Feb	0.001388486	HK	Bea2	Feb	Bea	2	
+102	Tetraodontiformes	HKBea3Feb	0.020014103	HK	Bea3	Feb	Bea	2	
+794	Acanthuriformes	SKBlu1Feb	0.129312532	SK	Blu1	Feb	Blu	2	0.121054515
+838	Acanthuriformes	SKBlu2Feb	0.17390942	SK	Blu2	Feb	Blu	2	
+882	Acanthuriformes	SKBlu3Feb	0.059941593	SK	Blu3	Feb	Blu	2	
+801	Atheriniformes	SKBlu1Feb	0.085574159	SK	Blu1	Feb	Blu	2	0.118965614
+845	Atheriniformes	SKBlu2Feb	0.269738761	SK	Blu2	Feb	Blu	2	
+889	Atheriniformes	SKBlu3Feb	0.001583923	SK	Blu3	Feb	Blu	2	
+800	Blenniiformes	SKBlu1Feb	0.064117199	SK	Blu1	Feb	Blu	2	0.029560931
+844	Blenniiformes	SKBlu2Feb	0.005187284	SK	Blu2	Feb	Blu	2	
+888	Blenniiformes	SKBlu3Feb	0.01937831	SK	Blu3	Feb	Blu	2	
+793	Clupeiformes	SKBlu1Feb	0.105614747	SK	Blu1	Feb	Blu	2	0.084630001
+837	Clupeiformes	SKBlu2Feb	0.040914962	SK	Blu2	Feb	Blu	2	
+881	Clupeiformes	SKBlu3Feb	0.107360293	SK	Blu3	Feb	Blu	2	
+797	Gobiiformes	SKBlu1Feb	0.021795197	SK	Blu1	Feb	Blu	2	0.008991406
+841	Gobiiformes	SKBlu2Feb	0.00312487	SK	Blu2	Feb	Blu	2	
+885	Gobiiformes	SKBlu3Feb	0.00205415	SK	Blu3	Feb	Blu	2	
+799	Labriformes	SKBlu1Feb	0.055111618	SK	Blu1	Feb	Blu	2	0.020575917
+843	Labriformes	SKBlu2Feb	0.005353944	SK	Blu2	Feb	Blu	2	
+887	Labriformes	SKBlu3Feb	0.001262189	SK	Blu3	Feb	Blu	2	
+796	Mugiliformes	SKBlu1Feb	0.451801116	SK	Blu1	Feb	Blu	2	0.408990667
+840	Mugiliformes	SKBlu2Feb	0.460564143	SK	Blu2	Feb	Blu	2	
+884	Mugiliformes	SKBlu3Feb	0.314606742	SK	Blu3	Feb	Blu	2	
+803	others	SKBlu1Feb	0.011225266	SK	Blu1	Feb	Blu	2	0.177792261
+847	others	SKBlu2Feb	0.037644265	SK	Blu2	Feb	Blu	2	
+891	others	SKBlu3Feb	0.484507251	SK	Blu3	Feb	Blu	2	
+802	Perciformes	SKBlu1Feb	0.032576526	SK	Blu1	Feb	Blu	2	0.011306405
+846	Perciformes	SKBlu2Feb	0.000624974	SK	Blu2	Feb	Blu	2	
+890	Perciformes	SKBlu3Feb	0.000717715	SK	Blu3	Feb	Blu	2	
+798	Syngnathiformes	SKBlu1Feb	2.11E-05	SK	Blu1	Feb	Blu	2	7.04662E-06
+842	Syngnathiformes	SKBlu2Feb	0	SK	Blu2	Feb	Blu	2	
+886	Syngnathiformes	SKBlu3Feb	0	SK	Blu3	Feb	Blu	2	
+795	Tetraodontiformes	SKBlu1Feb	0.042850499	SK	Blu1	Feb	Blu	2	0.018125237
+839	Tetraodontiformes	SKBlu2Feb	0.002937378	SK	Blu2	Feb	Blu	2	
+883	Tetraodontiformes	SKBlu3Feb	0.008587833	SK	Blu3	Feb	Blu	2	
+409	Acanthuriformes	LTCC1Feb	0.14799128	LT	CC1	Feb	CC	2	0.133154031
+453	Acanthuriformes	LTCC2Feb	0.140106416	LT	CC2	Feb	CC	2	
+497	Acanthuriformes	LTCC3Feb	0.111364397	LT	CC3	Feb	CC	2	
+416	Atheriniformes	LTCC1Feb	0.003218104	LT	CC1	Feb	CC	2	0.004446555
+460	Atheriniformes	LTCC2Feb	0.000334041	LT	CC2	Feb	CC	2	
+504	Atheriniformes	LTCC3Feb	0.009787519	LT	CC3	Feb	CC	2	
+415	Blenniiformes	LTCC1Feb	0.085207101	LT	CC1	Feb	CC	2	0.090187476
+459	Blenniiformes	LTCC2Feb	0.14122784	LT	CC2	Feb	CC	2	
+503	Blenniiformes	LTCC3Feb	0.044127489	LT	CC3	Feb	CC	2	
+408	Clupeiformes	LTCC1Feb	0.564829233	LT	CC1	Feb	CC	2	0.582075379
+452	Clupeiformes	LTCC2Feb	0.557777195	LT	CC2	Feb	CC	2	
+496	Clupeiformes	LTCC3Feb	0.623619709	LT	CC3	Feb	CC	2	
+412	Gobiiformes	LTCC1Feb	0.003176581	LT	CC1	Feb	CC	2	0.005253659
+456	Gobiiformes	LTCC2Feb	0.00842261	LT	CC2	Feb	CC	2	
+500	Gobiiformes	LTCC3Feb	0.004161787	LT	CC3	Feb	CC	2	
+414	Labriformes	LTCC1Feb	0.005148967	LT	CC1	Feb	CC	2	0.00854797
+458	Labriformes	LTCC2Feb	0.000167021	LT	CC2	Feb	CC	2	
+502	Labriformes	LTCC3Feb	0.020327924	LT	CC3	Feb	CC	2	
+411	Mugiliformes	LTCC1Feb	0.082923285	LT	CC1	Feb	CC	2	0.068500526
+455	Mugiliformes	LTCC2Feb	0.072176756	LT	CC2	Feb	CC	2	
+499	Mugiliformes	LTCC3Feb	0.050401539	LT	CC3	Feb	CC	2	
+418	others	LTCC1Feb	0.058839406	LT	CC1	Feb	CC	2	0.082515062
+462	others	LTCC2Feb	0.062346401	LT	CC2	Feb	CC	2	
+506	others	LTCC3Feb	0.126359378	LT	CC3	Feb	CC	2	
+417	Perciformes	LTCC1Feb	0.026139313	LT	CC1	Feb	CC	2	0.011239326
+461	Perciformes	LTCC2Feb	0.000572642	LT	CC2	Feb	CC	2	
+505	Perciformes	LTCC3Feb	0.007006023	LT	CC3	Feb	CC	2	
+413	Syngnathiformes	LTCC1Feb	2.08E-05	LT	CC1	Feb	CC	2	8.25255E-05
+457	Syngnathiformes	LTCC2Feb	0.000143161	LT	CC2	Feb	CC	2	
+501	Syngnathiformes	LTCC3Feb	8.37E-05	LT	CC3	Feb	CC	2	
+410	Tetraodontiformes	LTCC1Feb	0.022505969	LT	CC1	Feb	CC	2	0.01399749
+454	Tetraodontiformes	LTCC2Feb	0.016725919	LT	CC2	Feb	CC	2	
+498	Tetraodontiformes	LTCC3Feb	0.002760582	LT	CC3	Feb	CC	2	
+541	Acanthuriformes	LTCMW1Feb	0.093528223	LT	CMW1	Feb	CMW	2	0.078322158
+585	Acanthuriformes	LTCMW2Feb	0.063271504	LT	CMW2	Feb	CMW	2	
+629	Acanthuriformes	LTCMW3Feb	0.078166747	LT	CMW3	Feb	CMW	2	
+548	Atheriniformes	LTCMW1Feb	0.000681487	LT	CMW1	Feb	CMW	2	0.002003971
+592	Atheriniformes	LTCMW2Feb	0.00332088	LT	CMW2	Feb	CMW	2	
+636	Atheriniformes	LTCMW3Feb	0.002009545	LT	CMW3	Feb	CMW	2	
+547	Blenniiformes	LTCMW1Feb	0.020938102	LT	CMW1	Feb	CMW	2	0.016882418
+591	Blenniiformes	LTCMW2Feb	0.016669944	LT	CMW2	Feb	CMW	2	
+635	Blenniiformes	LTCMW3Feb	0.013039209	LT	CMW3	Feb	CMW	2	
+540	Clupeiformes	LTCMW1Feb	0.424589933	LT	CMW1	Feb	CMW	2	0.536936473
+584	Clupeiformes	LTCMW2Feb	0.640536584	LT	CMW2	Feb	CMW	2	
+628	Clupeiformes	LTCMW3Feb	0.545682903	LT	CMW3	Feb	CMW	2	
+544	Gobiiformes	LTCMW1Feb	0.000211496	LT	CMW1	Feb	CMW	2	0.000635174
+588	Gobiiformes	LTCMW2Feb	0.000917612	LT	CMW2	Feb	CMW	2	
+632	Gobiiformes	LTCMW3Feb	0.000776415	LT	CMW3	Feb	CMW	2	
+546	Labriformes	LTCMW1Feb	0.000587489	LT	CMW1	Feb	CMW	2	0.006003347
+590	Labriformes	LTCMW2Feb	0.008105569	LT	CMW2	Feb	CMW	2	
+634	Labriformes	LTCMW3Feb	0.009316983	LT	CMW3	Feb	CMW	2	
+543	Mugiliformes	LTCMW1Feb	0.327137284	LT	CMW1	Feb	CMW	2	0.171440331
+587	Mugiliformes	LTCMW2Feb	0.121736471	LT	CMW2	Feb	CMW	2	
+631	Mugiliformes	LTCMW3Feb	0.065447238	LT	CMW3	Feb	CMW	2	
+550	others	LTCMW1Feb	0.129177046	LT	CMW1	Feb	CMW	2	0.173589211
+594	others	LTCMW2Feb	0.109523497	LT	CMW2	Feb	CMW	2	
+638	others	LTCMW3Feb	0.282067091	LT	CMW3	Feb	CMW	2	
+549	Perciformes	LTCMW1Feb	0.000634488	LT	CMW1	Feb	CMW	2	0.009992032
+593	Perciformes	LTCMW2Feb	0.028839221	LT	CMW2	Feb	CMW	2	
+637	Perciformes	LTCMW3Feb	0.000502386	LT	CMW3	Feb	CMW	2	
+545	Syngnathiformes	LTCMW1Feb	0.000610988	LT	CMW1	Feb	CMW	2	0.000947984
+589	Syngnathiformes	LTCMW2Feb	0.000109239	LT	CMW2	Feb	CMW	2	
+633	Syngnathiformes	LTCMW3Feb	0.002123724	LT	CMW3	Feb	CMW	2	
+542	Tetraodontiformes	LTCMW1Feb	0.001903464	LT	CMW1	Feb	CMW	2	0.0032469
+586	Tetraodontiformes	LTCMW2Feb	0.006969478	LT	CMW2	Feb	CMW	2	
+630	Tetraodontiformes	LTCMW3Feb	0.000867758	LT	CMW3	Feb	CMW	2	
+926	Acanthuriformes	SKLKW1Feb	0.210522717	SK	LKW1	Feb	LKW	2	0.241039807
+970	Acanthuriformes	SKLKW2Feb	0.233301897	SK	LKW2	Feb	LKW	2	
+1014	Acanthuriformes	SKLKW3Feb	0.279294807	SK	LKW3	Feb	LKW	2	
+933	Atheriniformes	SKLKW1Feb	0.019213018	SK	LKW1	Feb	LKW	2	0.009013093
+977	Atheriniformes	SKLKW2Feb	0.002011946	SK	LKW2	Feb	LKW	2	
+1021	Atheriniformes	SKLKW3Feb	0.005814316	SK	LKW3	Feb	LKW	2	
+932	Blenniiformes	SKLKW1Feb	0.202796486	SK	LKW1	Feb	LKW	2	0.135462192
+976	Blenniiformes	SKLKW2Feb	0.052687834	SK	LKW2	Feb	LKW	2	
+1020	Blenniiformes	SKLKW3Feb	0.150902257	SK	LKW3	Feb	LKW	2	
+925	Clupeiformes	SKLKW1Feb	0.139243103	SK	LKW1	Feb	LKW	2	0.147170393
+969	Clupeiformes	SKLKW2Feb	0.093492612	SK	LKW2	Feb	LKW	2	
+1013	Clupeiformes	SKLKW3Feb	0.208775464	SK	LKW3	Feb	LKW	2	
+929	Gobiiformes	SKLKW1Feb	0.00393149	SK	LKW1	Feb	LKW	2	0.024530231
+973	Gobiiformes	SKLKW2Feb	0.069181599	SK	LKW2	Feb	LKW	2	
+1017	Gobiiformes	SKLKW3Feb	0.000477605	SK	LKW3	Feb	LKW	2	
+931	Labriformes	SKLKW1Feb	0.002632389	SK	LKW1	Feb	LKW	2	0.003865643
+975	Labriformes	SKLKW2Feb	0.008383108	SK	LKW2	Feb	LKW	2	
+1019	Labriformes	SKLKW3Feb	0.000581432	SK	LKW3	Feb	LKW	2	
+928	Mugiliformes	SKLKW1Feb	0.38008957	SK	LKW1	Feb	LKW	2	0.371293624
+972	Mugiliformes	SKLKW2Feb	0.394089909	SK	LKW2	Feb	LKW	2	
+1016	Mugiliformes	SKLKW3Feb	0.339701393	SK	LKW3	Feb	LKW	2	
+935	others	SKLKW1Feb	0.028511846	SK	LKW1	Feb	LKW	2	0.022718607
+979	others	SKLKW2Feb	0.027454679	SK	LKW2	Feb	LKW	2	
+1023	others	SKLKW3Feb	0.012189298	SK	LKW3	Feb	LKW	2	
+934	Perciformes	SKLKW1Feb	0.002632389	SK	LKW1	Feb	LKW	2	0.003391241
+978	Perciformes	SKLKW2Feb	0.007167557	SK	LKW2	Feb	LKW	2	
+1022	Perciformes	SKLKW3Feb	0.000373777	SK	LKW3	Feb	LKW	2	
+930	Syngnathiformes	SKLKW1Feb	0.000239308	SK	LKW1	Feb	LKW	2	0.028029423
+974	Syngnathiformes	SKLKW2Feb	0.083516714	SK	LKW2	Feb	LKW	2	
+1018	Syngnathiformes	SKLKW3Feb	0.000332247	SK	LKW3	Feb	LKW	2	
+927	Tetraodontiformes	SKLKW1Feb	0.010187686	SK	LKW1	Feb	LKW	2	0.013485746
+971	Tetraodontiformes	SKLKW2Feb	0.028712145	SK	LKW2	Feb	LKW	2	
+1015	Tetraodontiformes	SKLKW3Feb	0.001557406	SK	LKW3	Feb	LKW	2	
+673	Acanthuriformes	LTPC1Feb	0.164350315	LT	PC1	Feb	PC	2	0.259654961
+750	Acanthuriformes	LTPC3Feb	0.354959607	LT	PC3	Feb	PC	2	
+680	Atheriniformes	LTPC1Feb	8.30E-05	LT	PC1	Feb	PC	2	0.002800294
+757	Atheriniformes	LTPC3Feb	0.005517615	LT	PC3	Feb	PC	2	
+679	Blenniiformes	LTPC1Feb	0.164702954	LT	PC1	Feb	PC	2	0.090711184
+756	Blenniiformes	LTPC3Feb	0.016719414	LT	PC3	Feb	PC	2	
+672	Clupeiformes	LTPC1Feb	0.032235314	LT	PC1	Feb	PC	2	0.057260324
+749	Clupeiformes	LTPC3Feb	0.082285334	LT	PC3	Feb	PC	2	
+676	Gobiiformes	LTPC1Feb	0.030575838	LT	PC1	Feb	PC	2	0.052537024
+753	Gobiiformes	LTPC3Feb	0.074498209	LT	PC3	Feb	PC	2	
+678	Labriformes	LTPC1Feb	0.032733156	LT	PC1	Feb	PC	2	0.017772008
+755	Labriformes	LTPC3Feb	0.00281086	LT	PC3	Feb	PC	2	
+675	Mugiliformes	LTPC1Feb	0.139416694	LT	PC1	Feb	PC	2	0.160280513
+752	Mugiliformes	LTPC3Feb	0.181144332	LT	PC3	Feb	PC	2	
+682	others	LTPC1Feb	0.294536177	LT	PC1	Feb	PC	2	0.252342212
+759	others	LTPC3Feb	0.210148247	LT	PC3	Feb	PC	2	
+681	Perciformes	LTPC1Feb	0.050240624	LT	PC1	Feb	PC	2	0.025724126
+758	Perciformes	LTPC3Feb	0.001207629	LT	PC3	Feb	PC	2	
+677	Syngnathiformes	LTPC1Feb	0	LT	PC1	Feb	PC	2	5.2053E-05
+754	Syngnathiformes	LTPC3Feb	0.000104106	LT	PC3	Feb	PC	2	
+674	Tetraodontiformes	LTPC1Feb	0.091125954	LT	PC1	Feb	PC	2	0.080865301
+751	Tetraodontiformes	LTPC3Feb	0.070604647	LT	PC3	Feb	PC	2	
+1058	Acanthuriformes	SKSha1Feb	0.058277603	SK	Sha1	Feb	Sha	2	0.061135295
+1102	Acanthuriformes	SKSha2Feb	0.097532632	SK	Sha2	Feb	Sha	2	
+1146	Acanthuriformes	SKSha3Feb	0.027595651	SK	Sha3	Feb	Sha	2	
+1065	Atheriniformes	SKSha1Feb	0.002183704	SK	Sha1	Feb	Sha	2	0.004006449
+1109	Atheriniformes	SKSha2Feb	0.005519932	SK	Sha2	Feb	Sha	2	
+1153	Atheriniformes	SKSha3Feb	0.004315711	SK	Sha3	Feb	Sha	2	
+1064	Blenniiformes	SKSha1Feb	0.001801556	SK	Sha1	Feb	Sha	2	0.008084438
+1108	Blenniiformes	SKSha2Feb	0.0121397	SK	Sha2	Feb	Sha	2	
+1152	Blenniiformes	SKSha3Feb	0.010312059	SK	Sha3	Feb	Sha	2	
+1057	Clupeiformes	SKSha1Feb	0.568964105	SK	Sha1	Feb	Sha	2	0.441306142
+1101	Clupeiformes	SKSha2Feb	0.396916309	SK	Sha2	Feb	Sha	2	
+1145	Clupeiformes	SKSha3Feb	0.358038011	SK	Sha3	Feb	Sha	2	
+1061	Gobiiformes	SKSha1Feb	0.000764296	SK	Sha1	Feb	Sha	2	0.001278488
+1105	Gobiiformes	SKSha2Feb	0.002573201	SK	Sha2	Feb	Sha	2	
+1149	Gobiiformes	SKSha3Feb	0.000497967	SK	Sha3	Feb	Sha	2	
+1063	Labriformes	SKSha1Feb	0.014903781	SK	Sha1	Feb	Sha	2	0.01343409
+1107	Labriformes	SKSha2Feb	0.015086431	SK	Sha2	Feb	Sha	2	
+1151	Labriformes	SKSha3Feb	0.010312059	SK	Sha3	Feb	Sha	2	
+1060	Mugiliformes	SKSha1Feb	0.001146445	SK	Sha1	Feb	Sha	2	0.026221639
+1104	Mugiliformes	SKSha2Feb	0.011475648	SK	Sha2	Feb	Sha	2	
+1148	Mugiliformes	SKSha3Feb	0.066042825	SK	Sha3	Feb	Sha	2	
+1067	others	SKSha1Feb	0.342159137	SK	Sha1	Feb	Sha	2	0.390598126
+1111	others	SKSha2Feb	0.442860404	SK	Sha2	Feb	Sha	2	
+1155	others	SKSha3Feb	0.386774836	SK	Sha3	Feb	Sha	2	
+1066	Perciformes	SKSha1Feb	0.001037259	SK	Sha1	Feb	Sha	2	0.024801665
+1110	Perciformes	SKSha2Feb	0.004482351	SK	Sha2	Feb	Sha	2	
+1154	Perciformes	SKSha3Feb	0.068885385	SK	Sha3	Feb	Sha	2	
+1062	Syngnathiformes	SKSha1Feb	0.000545926	SK	Sha1	Feb	Sha	2	0.016981543
+1106	Syngnathiformes	SKSha2Feb	0.002261927	SK	Sha2	Feb	Sha	2	
+1150	Syngnathiformes	SKSha3Feb	0.048136775	SK	Sha3	Feb	Sha	2	
+1059	Tetraodontiformes	SKSha1Feb	0.008216187	SK	Sha1	Feb	Sha	2	0.012152125
+1103	Tetraodontiformes	SKSha2Feb	0.009151466	SK	Sha2	Feb	Sha	2	
+1147	Tetraodontiformes	SKSha3Feb	0.019088721	SK	Sha3	Feb	Sha	2	
+145	Acanthuriformes	HKSta1Feb	0.303820225	HK	Sta1	Feb	Sta	2	0.250029164
+189	Acanthuriformes	HKSta2Feb	0.327160877	HK	Sta2	Feb	Sta	2	
+233	Acanthuriformes	HKSta3Feb	0.119106391	HK	Sta3	Feb	Sta	2	
+152	Atheriniformes	HKSta1Feb	0.029448903	HK	Sta1	Feb	Sta	2	0.016161936
+196	Atheriniformes	HKSta2Feb	0.017854554	HK	Sta2	Feb	Sta	2	
+240	Atheriniformes	HKSta3Feb	0.001182352	HK	Sta3	Feb	Sta	2	
+151	Blenniiformes	HKSta1Feb	0.038801498	HK	Sta1	Feb	Sta	2	0.048125117
+195	Blenniiformes	HKSta2Feb	0.105573852	HK	Sta2	Feb	Sta	2	
+239	Blenniiformes	HKSta3Feb	0	HK	Sta3	Feb	Sta	2	
+144	Clupeiformes	HKSta1Feb	0.252413055	HK	Sta1	Feb	Sta	2	0.109317835
+188	Clupeiformes	HKSta2Feb	0.075291535	HK	Sta2	Feb	Sta	2	
+232	Clupeiformes	HKSta3Feb	0.000248916	HK	Sta3	Feb	Sta	2	
+148	Gobiiformes	HKSta1Feb	0.001926164	HK	Sta1	Feb	Sta	2	0.007180439
+192	Gobiiformes	HKSta2Feb	0.019615154	HK	Sta2	Feb	Sta	2	
+236	Gobiiformes	HKSta3Feb	0	HK	Sta3	Feb	Sta	2	
+150	Labriformes	HKSta1Feb	0.000813269	HK	Sta1	Feb	Sta	2	0.010234014
+194	Labriformes	HKSta2Feb	0.029888772	HK	Sta2	Feb	Sta	2	
+238	Labriformes	HKSta3Feb	0	HK	Sta3	Feb	Sta	2	
+147	Mugiliformes	HKSta1Feb	0.002932049	HK	Sta1	Feb	Sta	2	0.071422107
+191	Mugiliformes	HKSta2Feb	0.211230556	HK	Sta2	Feb	Sta	2	
+235	Mugiliformes	HKSta3Feb	0.000103715	HK	Sta3	Feb	Sta	2	
+154	others	HKSta1Feb	0.062493312	HK	Sta1	Feb	Sta	2	0.034011691
+198	others	HKSta2Feb	0.02473125	HK	Sta2	Feb	Sta	2	
+242	others	HKSta3Feb	0.014810513	HK	Sta3	Feb	Sta	2	
+153	Perciformes	HKSta1Feb	0.042033173	HK	Sta1	Feb	Sta	2	0.014259613
+197	Perciformes	HKSta2Feb	0.000745666	HK	Sta2	Feb	Sta	2	
+241	Perciformes	HKSta3Feb	0	HK	Sta3	Feb	Sta	2	
+149	Syngnathiformes	HKSta1Feb	0.139218834	HK	Sta1	Feb	Sta	2	0.073929719
+193	Syngnathiformes	HKSta2Feb	0.019532302	HK	Sta2	Feb	Sta	2	
+237	Syngnathiformes	HKSta3Feb	0.063038022	HK	Sta3	Feb	Sta	2	
+146	Tetraodontiformes	HKSta1Feb	0.126099518	HK	Sta1	Feb	Sta	2	0.365328365
+190	Tetraodontiformes	HKSta2Feb	0.168375484	HK	Sta2	Feb	Sta	2	
+234	Tetraodontiformes	HKSta3Feb	0.801510091	HK	Sta3	Feb	Sta	2	
+277	Acanthuriformes	HKSW1Feb	0.254034433	HK	SW1	Feb	SW	2	0.356079949
+321	Acanthuriformes	HKSW2Feb	0.589910918	HK	SW2	Feb	SW	2	
+365	Acanthuriformes	HKSW3Feb	0.224294496	HK	SW3	Feb	SW	2	
+284	Atheriniformes	HKSW1Feb	0.021551545	HK	SW1	Feb	SW	2	0.007852776
+328	Atheriniformes	HKSW2Feb	0.001843795	HK	SW2	Feb	SW	2	
+372	Atheriniformes	HKSW3Feb	0.000162988	HK	SW3	Feb	SW	2	
+283	Blenniiformes	HKSW1Feb	0.004604854	HK	SW1	Feb	SW	2	0.049974214
+327	Blenniiformes	HKSW2Feb	0.142407292	HK	SW2	Feb	SW	2	
+371	Blenniiformes	HKSW3Feb	0.002910496	HK	SW3	Feb	SW	2	
+276	Clupeiformes	HKSW1Feb	0.510412777	HK	SW1	Feb	SW	2	0.290522181
+320	Clupeiformes	HKSW2Feb	0.081955666	HK	SW2	Feb	SW	2	
+364	Clupeiformes	HKSW3Feb	0.2791981	HK	SW3	Feb	SW	2	
+280	Gobiiformes	HKSW1Feb	0.155403443	HK	SW1	Feb	SW	2	0.072956365
+324	Gobiiformes	HKSW2Feb	0.063186244	HK	SW2	Feb	SW	2	
+368	Gobiiformes	HKSW3Feb	0.000279408	HK	SW3	Feb	SW	2	
+282	Labriformes	HKSW1Feb	0.003381041	HK	SW1	Feb	SW	2	0.010160201
+326	Labriformes	HKSW2Feb	0.002278848	HK	SW2	Feb	SW	2	
+370	Labriformes	HKSW3Feb	0.024820713	HK	SW3	Feb	SW	2	
+279	Mugiliformes	HKSW1Feb	0.027380212	HK	SW1	Feb	SW	2	0.05618088
+323	Mugiliformes	HKSW2Feb	0.072032318	HK	SW2	Feb	SW	2	
+367	Mugiliformes	HKSW3Feb	0.069130111	HK	SW3	Feb	SW	2	
+286	others	HKSW1Feb	0.018191247	HK	SW1	Feb	SW	2	0.106414431
+330	others	HKSW2Feb	0.016801326	HK	SW2	Feb	SW	2	
+374	others	HKSW3Feb	0.284250722	HK	SW3	Feb	SW	2	
+285	Perciformes	HKSW1Feb	0.000186683	HK	SW1	Feb	SW	2	0.000568784
+329	Perciformes	HKSW2Feb	0.001077274	HK	SW2	Feb	SW	2	
+373	Perciformes	HKSW3Feb	0.000442395	HK	SW3	Feb	SW	2	
+281	Syngnathiformes	HKSW1Feb	0.000933416	HK	SW1	Feb	SW	2	0.000773814
+325	Syngnathiformes	HKSW2Feb	0.001388026	HK	SW2	Feb	SW	2	
+369	Syngnathiformes	HKSW3Feb	0	HK	SW3	Feb	SW	2	
+278	Tetraodontiformes	HKSW1Feb	0.003920348	HK	SW1	Feb	SW	2	0.048516404
+322	Tetraodontiformes	HKSW2Feb	0.027118293	HK	SW2	Feb	SW	2	
+366	Tetraodontiformes	HKSW3Feb	0.114510571	HK	SW3	Feb	SW	2	
+24	Acanthuriformes	HKBea1May	0.020962185	HK	Bea1	May	Bea	5	0.033458613
+68	Acanthuriformes	HKBea2May	0.054170124	HK	Bea2	May	Bea	5	
+112	Acanthuriformes	HKBea3May	0.025243528	HK	Bea3	May	Bea	5	
+31	Atheriniformes	HKBea1May	0.301440372	HK	Bea1	May	Bea	5	0.101312793
+75	Atheriniformes	HKBea2May	0.001929461	HK	Bea2	May	Bea	5	
+119	Atheriniformes	HKBea3May	0.000568548	HK	Bea3	May	Bea	5	
+30	Blenniiformes	HKBea1May	0.114358059	HK	Bea1	May	Bea	5	0.127559187
+74	Blenniiformes	HKBea2May	0.268319502	HK	Bea2	May	Bea	5	
+118	Blenniiformes	HKBea3May	0	HK	Bea3	May	Bea	5	
+23	Clupeiformes	HKBea1May	0.045348885	HK	Bea1	May	Bea	5	0.123496627
+67	Clupeiformes	HKBea2May	0.299253112	HK	Bea2	May	Bea	5	
+111	Clupeiformes	HKBea3May	0.025887882	HK	Bea3	May	Bea	5	
+27	Gobiiformes	HKBea1May	0.001307542	HK	Bea1	May	Bea	5	0.204855488
+71	Gobiiformes	HKBea2May	0.002676349	HK	Bea2	May	Bea	5	
+115	Gobiiformes	HKBea3May	0.610582572	HK	Bea3	May	Bea	5	
+29	Labriformes	HKBea1May	0.348262837	HK	Bea1	May	Bea	5	0.193985166
+73	Labriformes	HKBea2May	0.014460581	HK	Bea2	May	Bea	5	
+117	Labriformes	HKBea3May	0.219232081	HK	Bea3	May	Bea	5	
+26	Mugiliformes	HKBea1May	0.003237724	HK	Bea1	May	Bea	5	0.004626697
+70	Mugiliformes	HKBea2May	0.008443983	HK	Bea2	May	Bea	5	
+114	Mugiliformes	HKBea3May	0.002198385	HK	Bea3	May	Bea	5	
+33	others	HKBea1May	0.162799386	HK	Bea1	May	Bea	5	0.09415866
+77	others	HKBea2May	0.025373444	HK	Bea2	May	Bea	5	
+121	others	HKBea3May	0.09430315	HK	Bea3	May	Bea	5	
+32	Perciformes	HKBea1May	0.000539621	HK	Bea1	May	Bea	5	0.00085069
+76	Perciformes	HKBea2May	0.002012448	HK	Bea2	May	Bea	5	
+120	Perciformes	HKBea3May	0	HK	Bea3	May	Bea	5	
+28	Syngnathiformes	HKBea1May	0.000435847	HK	Bea1	May	Bea	5	0.000515802
+72	Syngnathiformes	HKBea2May	0.000580913	HK	Bea2	May	Bea	5	
+116	Syngnathiformes	HKBea3May	0.000530645	HK	Bea3	May	Bea	5	
+25	Tetraodontiformes	HKBea1May	0.001307542	HK	Bea1	May	Bea	5	0.115180278
+69	Tetraodontiformes	HKBea2May	0.322780083	HK	Bea2	May	Bea	5	
+113	Tetraodontiformes	HKBea3May	0.021453209	HK	Bea3	May	Bea	5	
+805	Acanthuriformes	SKBlu1May	0.220435848	SK	Blu1	May	Blu	5	0.305734473
+849	Acanthuriformes	SKBlu2May	0.257806532	SK	Blu2	May	Blu	5	
+893	Acanthuriformes	SKBlu3May	0.438961039	SK	Blu3	May	Blu	5	
+812	Atheriniformes	SKBlu1May	0.034729636	SK	Blu1	May	Blu	5	0.032753848
+856	Atheriniformes	SKBlu2May	0.060351413	SK	Blu2	May	Blu	5	
+900	Atheriniformes	SKBlu3May	0.003180493	SK	Blu3	May	Blu	5	
+811	Blenniiformes	SKBlu1May	0.005589399	SK	Blu1	May	Blu	5	0.002033688
+855	Blenniiformes	SKBlu2May	0.000167112	SK	Blu2	May	Blu	5	
+899	Blenniiformes	SKBlu3May	0.000344553	SK	Blu3	May	Blu	5	
+804	Clupeiformes	SKBlu1May	0.618978836	SK	Blu1	May	Blu	5	0.404161874
+848	Clupeiformes	SKBlu2May	0.263345111	SK	Blu2	May	Blu	5	
+892	Clupeiformes	SKBlu3May	0.330161675	SK	Blu3	May	Blu	5	
+808	Gobiiformes	SKBlu1May	0.016496054	SK	Blu1	May	Blu	5	0.021399525
+852	Gobiiformes	SKBlu2May	0.045979756	SK	Blu2	May	Blu	5	
+896	Gobiiformes	SKBlu3May	0.001722767	SK	Blu3	May	Blu	5	
+810	Labriformes	SKBlu1May	0.012476711	SK	Blu1	May	Blu	5	0.019284012
+854	Labriformes	SKBlu2May	0.036072383	SK	Blu2	May	Blu	5	
+898	Labriformes	SKBlu3May	0.009302942	SK	Blu3	May	Blu	5	
+807	Mugiliformes	SKBlu1May	2.09E-05	SK	Blu1	May	Blu	5	0.055363211
+851	Mugiliformes	SKBlu2May	0.051040871	SK	Blu2	May	Blu	5	
+895	Mugiliformes	SKBlu3May	0.115027829	SK	Blu3	May	Blu	5	
+814	others	SKBlu1May	0.075383617	SK	Blu1	May	Blu	5	0.05130737
+858	others	SKBlu2May	0.07329068	SK	Blu2	May	Blu	5	
+902	others	SKBlu3May	0.005247813	SK	Blu3	May	Blu	5	
+813	Perciformes	SKBlu1May	0.001381649	SK	Blu1	May	Blu	5	0.054983885
+857	Perciformes	SKBlu2May	0.162218296	SK	Blu2	May	Blu	5	
+901	Perciformes	SKBlu3May	0.00135171	SK	Blu3	May	Blu	5	
+809	Syngnathiformes	SKBlu1May	0.004542695	SK	Blu1	May	Blu	5	0.043959619
+853	Syngnathiformes	SKBlu2May	0.041992934	SK	Blu2	May	Blu	5	
+897	Syngnathiformes	SKBlu3May	0.085343228	SK	Blu3	May	Blu	5	
+806	Tetraodontiformes	SKBlu1May	0.009964621	SK	Blu1	May	Blu	5	0.009018495
+850	Tetraodontiformes	SKBlu2May	0.007734912	SK	Blu2	May	Blu	5	
+894	Tetraodontiformes	SKBlu3May	0.00935595	SK	Blu3	May	Blu	5	
+420	Acanthuriformes	LTCC1May	0.146368993	LT	CC1	May	CC	5	0.276410234
+464	Acanthuriformes	LTCC2May	0.470614799	LT	CC2	May	CC	5	
+508	Acanthuriformes	LTCC3May	0.212246911	LT	CC3	May	CC	5	
+427	Atheriniformes	LTCC1May	0.000225739	LT	CC1	May	CC	5	0.006542309
+471	Atheriniformes	LTCC2May	0.019289078	LT	CC2	May	CC	5	
+515	Atheriniformes	LTCC3May	0.00011211	LT	CC3	May	CC	5	
+426	Blenniiformes	LTCC1May	0.005643468	LT	CC1	May	CC	5	0.029052406
+470	Blenniiformes	LTCC2May	0.002924543	LT	CC2	May	CC	5	
+514	Blenniiformes	LTCC3May	0.078589206	LT	CC3	May	CC	5	
+419	Clupeiformes	LTCC1May	0.408948283	LT	CC1	May	CC	5	0.351217497
+463	Clupeiformes	LTCC2May	0.224179085	LT	CC2	May	CC	5	
+507	Clupeiformes	LTCC3May	0.420525124	LT	CC3	May	CC	5	
+423	Gobiiformes	LTCC1May	0.00349895	LT	CC1	May	CC	5	0.002615922
+467	Gobiiformes	LTCC2May	0.001075199	LT	CC2	May	CC	5	
+511	Gobiiformes	LTCC3May	0.003273616	LT	CC3	May	CC	5	
+425	Labriformes	LTCC1May	0.086412786	LT	CC1	May	CC	5	0.060501208
+469	Labriformes	LTCC2May	0.007375868	LT	CC2	May	CC	5	
+513	Labriformes	LTCC3May	0.087714971	LT	CC3	May	CC	5	
+422	Mugiliformes	LTCC1May	0.060859162	LT	CC1	May	CC	5	0.022669222
+466	Mugiliformes	LTCC2May	0.006924284	LT	CC2	May	CC	5	
+510	Mugiliformes	LTCC3May	0.00022422	LT	CC3	May	CC	5	
+429	others	LTCC1May	0.278516445	LT	CC1	May	CC	5	0.169605976
+473	others	LTCC2May	0.080768983	LT	CC2	May	CC	5	
+517	others	LTCC3May	0.149532501	LT	CC3	May	CC	5	
+428	Perciformes	LTCC1May	0.002550848	LT	CC1	May	CC	5	0.058122879
+472	Perciformes	LTCC2May	0.171795368	LT	CC2	May	CC	5	
+516	Perciformes	LTCC3May	2.24E-05	LT	CC3	May	CC	5	
+424	Syngnathiformes	LTCC1May	0.002731439	LT	CC1	May	CC	5	0.008311704
+468	Syngnathiformes	LTCC2May	0.004064254	LT	CC2	May	CC	5	
+512	Syngnathiformes	LTCC3May	0.01813942	LT	CC3	May	CC	5	
+421	Tetraodontiformes	LTCC1May	0.004243888	LT	CC1	May	CC	5	0.014950642
+465	Tetraodontiformes	LTCC2May	0.010988538	LT	CC2	May	CC	5	
+509	Tetraodontiformes	LTCC3May	0.029619498	LT	CC3	May	CC	5	
+552	Acanthuriformes	LTCMW1May	0.133628219	LT	CMW1	May	CMW	5	0.126828827
+596	Acanthuriformes	LTCMW2May	0.084656201	LT	CMW2	May	CMW	5	
+640	Acanthuriformes	LTCMW3May	0.162202061	LT	CMW3	May	CMW	5	
+559	Atheriniformes	LTCMW1May	0.032061757	LT	CMW1	May	CMW	5	0.012785899
+603	Atheriniformes	LTCMW2May	0.004953874	LT	CMW2	May	CMW	5	
+647	Atheriniformes	LTCMW3May	0.001342066	LT	CMW3	May	CMW	5	
+558	Blenniiformes	LTCMW1May	0.006508142	LT	CMW1	May	CMW	5	0.005302219
+602	Blenniiformes	LTCMW2May	0.007331733	LT	CMW2	May	CMW	5	
+646	Blenniiformes	LTCMW3May	0.002066781	LT	CMW3	May	CMW	5	
+551	Clupeiformes	LTCMW1May	0.469093368	LT	CMW1	May	CMW	5	0.480652474
+595	Clupeiformes	LTCMW2May	0.431823686	LT	CMW2	May	CMW	5	
+639	Clupeiformes	LTCMW3May	0.541040369	LT	CMW3	May	CMW	5	
+555	Gobiiformes	LTCMW1May	0.003549896	LT	CMW1	May	CMW	5	0.003144027
+599	Gobiiformes	LTCMW2May	0.005372201	LT	CMW2	May	CMW	5	
+643	Gobiiformes	LTCMW3May	0.000509985	LT	CMW3	May	CMW	5	
+557	Labriformes	LTCMW1May	0.002253902	LT	CMW1	May	CMW	5	0.01682185
+601	Labriformes	LTCMW2May	0.047755345	LT	CMW2	May	CMW	5	
+645	Labriformes	LTCMW3May	0.000456302	LT	CMW3	May	CMW	5	
+554	Mugiliformes	LTCMW1May	0.013607934	LT	CMW1	May	CMW	5	0.008114152
+598	Mugiliformes	LTCMW2May	0.006869372	LT	CMW2	May	CMW	5	
+642	Mugiliformes	LTCMW3May	0.003865149	LT	CMW3	May	CMW	5	
+561	others	LTCMW1May	0.131656055	LT	CMW1	May	CMW	5	0.053876022
+605	others	LTCMW2May	0.023932715	LT	CMW2	May	CMW	5	
+649	others	LTCMW3May	0.006039296	LT	CMW3	May	CMW	5	
+560	Perciformes	LTCMW1May	0.006818054	LT	CMW1	May	CMW	5	0.006217728
+604	Perciformes	LTCMW2May	0.008828904	LT	CMW2	May	CMW	5	
+648	Perciformes	LTCMW3May	0.003006227	LT	CMW3	May	CMW	5	
+556	Syngnathiformes	LTCMW1May	0.053614695	LT	CMW1	May	CMW	5	0.049393711
+600	Syngnathiformes	LTCMW2May	0.09075497	LT	CMW2	May	CMW	5	
+644	Syngnathiformes	LTCMW3May	0.003811467	LT	CMW3	May	CMW	5	
+553	Tetraodontiformes	LTCMW1May	0.147207979	LT	CMW1	May	CMW	5	0.236863091
+597	Tetraodontiformes	LTCMW2May	0.287720998	LT	CMW2	May	CMW	5	
+641	Tetraodontiformes	LTCMW3May	0.275660296	LT	CMW3	May	CMW	5	
+937	Acanthuriformes	SKLKW1May	0.067995974	SK	LKW1	May	LKW	5	0.215580405
+981	Acanthuriformes	SKLKW2May	0.425402504	SK	LKW2	May	LKW	5	
+1025	Acanthuriformes	SKLKW3May	0.153342738	SK	LKW3	May	LKW	5	
+944	Atheriniformes	SKLKW1May	0.001153185	SK	LKW1	May	LKW	5	0.003113659
+988	Atheriniformes	SKLKW2May	0.006823409	SK	LKW2	May	LKW	5	
+1032	Atheriniformes	SKLKW3May	0.001364383	SK	LKW3	May	LKW	5	
+943	Blenniiformes	SKLKW1May	0.001509624	SK	LKW1	May	LKW	5	0.00540442
+987	Blenniiformes	SKLKW2May	0.002146691	SK	LKW2	May	LKW	5	
+1031	Blenniiformes	SKLKW3May	0.012556946	SK	LKW3	May	LKW	5	
+936	Clupeiformes	SKLKW1May	0.080639074	SK	LKW1	May	LKW	5	0.098875569
+980	Clupeiformes	SKLKW2May	0.131765909	SK	LKW2	May	LKW	5	
+1024	Clupeiformes	SKLKW3May	0.084221724	SK	LKW3	May	LKW	5	
+940	Gobiiformes	SKLKW1May	0.028934457	SK	LKW1	May	LKW	5	0.021825906
+984	Gobiiformes	SKLKW2May	0.012701252	SK	LKW2	May	LKW	5	
+1028	Gobiiformes	SKLKW3May	0.023842009	SK	LKW3	May	LKW	5	
+942	Labriformes	SKLKW1May	0.690799681	SK	LKW1	May	LKW	5	0.320975959
+986	Labriformes	SKLKW2May	0.11369793	SK	LKW2	May	LKW	5	
+1030	Labriformes	SKLKW3May	0.158430266	SK	LKW3	May	LKW	5	
+939	Mugiliformes	SKLKW1May	0.00398373	SK	LKW1	May	LKW	5	0.038662307
+983	Mugiliformes	SKLKW2May	0.011270125	SK	LKW2	May	LKW	5	
+1027	Mugiliformes	SKLKW3May	0.100733067	SK	LKW3	May	LKW	5	
+946	others	SKLKW1May	0.009791588	SK	LKW1	May	LKW	5	0.106137327
+990	others	SKLKW2May	0.223358037	SK	LKW2	May	LKW	5	
+1034	others	SKLKW3May	0.085262355	SK	LKW3	May	LKW	5	
+945	Perciformes	SKLKW1May	0.004633707	SK	LKW1	May	LKW	5	0.013690206
+989	Perciformes	SKLKW2May	0.007206747	SK	LKW2	May	LKW	5	
+1033	Perciformes	SKLKW3May	0.029230164	SK	LKW3	May	LKW	5	
+941	Syngnathiformes	SKLKW1May	0.035287458	SK	LKW1	May	LKW	5	0.060728334
+985	Syngnathiformes	SKLKW2May	0.021952466	SK	LKW2	May	LKW	5	
+1029	Syngnathiformes	SKLKW3May	0.124945078	SK	LKW3	May	LKW	5	
+938	Tetraodontiformes	SKLKW1May	0.075271523	SK	LKW1	May	LKW	5	0.115005908
+982	Tetraodontiformes	SKLKW2May	0.04367493	SK	LKW2	May	LKW	5	
+1026	Tetraodontiformes	SKLKW3May	0.226071272	SK	LKW3	May	LKW	5	
+684	Acanthuriformes	LTPC1May	0.436685914	LT	PC1	May	PC	5	0.34536804
+717	Acanthuriformes	LTPC2May	0.278821117	LT	PC2	May	PC	5	
+761	Acanthuriformes	LTPC3May	0.320597091	LT	PC3	May	PC	5	
+691	Atheriniformes	LTPC1May	0.00060427	LT	PC1	May	PC	5	0.020353297
+724	Atheriniformes	LTPC2May	0.056363343	LT	PC2	May	PC	5	
+768	Atheriniformes	LTPC3May	0.004092278	LT	PC3	May	PC	5	
+690	Blenniiformes	LTPC1May	0.080233651	LT	PC1	May	PC	5	0.060050312
+723	Blenniiformes	LTPC2May	0.065949259	LT	PC2	May	PC	5	
+767	Blenniiformes	LTPC3May	0.033968025	LT	PC3	May	PC	5	
+683	Clupeiformes	LTPC1May	0.2636856	LT	PC1	May	PC	5	0.247196847
+716	Clupeiformes	LTPC2May	0.291886536	LT	PC2	May	PC	5	
+760	Clupeiformes	LTPC3May	0.186018405	LT	PC3	May	PC	5	
+687	Gobiiformes	LTPC1May	0.202990018	LT	PC1	May	PC	5	0.07989524
+720	Gobiiformes	LTPC2May	0.0312464	LT	PC2	May	PC	5	
+764	Gobiiformes	LTPC3May	0.005449302	LT	PC3	May	PC	5	
+689	Labriformes	LTPC1May	0.003088492	LT	PC1	May	PC	5	0.041814918
+722	Labriformes	LTPC2May	0.004931216	LT	PC2	May	PC	5	
+766	Labriformes	LTPC3May	0.117425046	LT	PC3	May	PC	5	
+686	Mugiliformes	LTPC1May	0.000850454	LT	PC1	May	PC	5	0.047100838
+719	Mugiliformes	LTPC2May	0	LT	PC2	May	PC	5	
+763	Mugiliformes	LTPC3May	0.140452059	LT	PC3	May	PC	5	
+693	others	LTPC1May	0.009310237	LT	PC1	May	PC	5	0.021854437
+726	others	LTPC2May	0.044357905	LT	PC2	May	PC	5	
+770	others	LTPC3May	0.01189517	LT	PC3	May	PC	5	
+692	Perciformes	LTPC1May	2.24E-05	LT	PC1	May	PC	5	0.05967726
+725	Perciformes	LTPC2May	0.04447312	LT	PC2	May	PC	5	
+769	Perciformes	LTPC3May	0.134536279	LT	PC3	May	PC	5	
+688	Syngnathiformes	LTPC1May	0.000246184	LT	PC1	May	PC	5	0.019885873
+721	Syngnathiformes	LTPC2May	0.039564947	LT	PC2	May	PC	5	
+765	Syngnathiformes	LTPC3May	0.019846487	LT	PC3	May	PC	5	
+685	Tetraodontiformes	LTPC1May	0.002282798	LT	PC1	May	PC	5	0.056802938
+718	Tetraodontiformes	LTPC2May	0.142406157	LT	PC2	May	PC	5	
+762	Tetraodontiformes	LTPC3May	0.025719859	LT	PC3	May	PC	5	
+1069	Acanthuriformes	SKSha1May	0.182051973	SK	Sha1	May	Sha	5	0.284857114
+1113	Acanthuriformes	SKSha2May	0.151275755	SK	Sha2	May	Sha	5	
+1157	Acanthuriformes	SKSha3May	0.521243614	SK	Sha3	May	Sha	5	
+1076	Atheriniformes	SKSha1May	0.090217143	SK	Sha1	May	Sha	5	0.033022849
+1120	Atheriniformes	SKSha2May	0.001537312	SK	Sha2	May	Sha	5	
+1164	Atheriniformes	SKSha3May	0.007314091	SK	Sha3	May	Sha	5	
+1075	Blenniiformes	SKSha1May	0.00049775	SK	Sha1	May	Sha	5	0.002371115
+1119	Blenniiformes	SKSha2May	0.00096082	SK	Sha2	May	Sha	5	
+1163	Blenniiformes	SKSha3May	0.005654775	SK	Sha3	May	Sha	5	
+1068	Clupeiformes	SKSha1May	0.012837796	SK	Sha1	May	Sha	5	0.019430482
+1112	Clupeiformes	SKSha2May	0.003031921	SK	Sha2	May	Sha	5	
+1156	Clupeiformes	SKSha3May	0.042421728	SK	Sha3	May	Sha	5	
+1072	Gobiiformes	SKSha1May	0.023435718	SK	Sha1	May	Sha	5	0.037527828
+1116	Gobiiformes	SKSha2May	0.050197502	SK	Sha2	May	Sha	5	
+1160	Gobiiformes	SKSha3May	0.038950264	SK	Sha3	May	Sha	5	
+1074	Labriformes	SKSha1May	0.001638426	SK	Sha1	May	Sha	5	0.018860588
+1118	Labriformes	SKSha2May	0.000469734	SK	Sha2	May	Sha	5	
+1162	Labriformes	SKSha3May	0.054473604	SK	Sha3	May	Sha	5	
+1071	Mugiliformes	SKSha1May	0.495779497	SK	Sha1	May	Sha	5	0.184051547
+1115	Mugiliformes	SKSha2May	0.049279385	SK	Sha2	May	Sha	5	
+1159	Mugiliformes	SKSha3May	0.00709576	SK	Sha3	May	Sha	5	
+1078	others	SKSha1May	0.165024784	SK	Sha1	May	Sha	5	0.090510371
+1122	others	SKSha2May	0.034653571	SK	Sha2	May	Sha	5	
+1166	others	SKSha3May	0.071852758	SK	Sha3	May	Sha	5	
+1077	Perciformes	SKSha1May	0.028475434	SK	Sha1	May	Sha	5	0.282817007
+1121	Perciformes	SKSha2May	0.704238283	SK	Sha2	May	Sha	5	
+1165	Perciformes	SKSha3May	0.115737304	SK	Sha3	May	Sha	5	
+1073	Syngnathiformes	SKSha1May	0	SK	Sha1	May	Sha	5	0.044314309
+1117	Syngnathiformes	SKSha2May	0.003821928	SK	Sha2	May	Sha	5	
+1161	Syngnathiformes	SKSha3May	0.129120999	SK	Sha3	May	Sha	5	
+1070	Tetraodontiformes	SKSha1May	4.15E-05	SK	Sha1	May	Sha	5	0.00223679
+1114	Tetraodontiformes	SKSha2May	0.000533789	SK	Sha2	May	Sha	5	
+1158	Tetraodontiformes	SKSha3May	0.006135103	SK	Sha3	May	Sha	5	
+156	Acanthuriformes	HKSta1May	0.2056036	HK	Sta1	May	Sta	5	0.380498115
+200	Acanthuriformes	HKSta2May	0.799655008	HK	Sta2	May	Sta	5	
+244	Acanthuriformes	HKSta3May	0.136235737	HK	Sta3	May	Sta	5	
+163	Atheriniformes	HKSta1May	0.001368755	HK	Sta1	May	Sta	5	0.021241441
+207	Atheriniformes	HKSta2May	0.011596733	HK	Sta2	May	Sta	5	
+251	Atheriniformes	HKSta3May	0.050758835	HK	Sta3	May	Sta	5	
+162	Blenniiformes	HKSta1May	0.036189054	HK	Sta1	May	Sta	5	0.013252479
+206	Blenniiformes	HKSta2May	0.00232766	HK	Sta2	May	Sta	5	
+250	Blenniiformes	HKSta3May	0.001240722	HK	Sta3	May	Sta	5	
+155	Clupeiformes	HKSta1May	0.12407972	HK	Sta1	May	Sta	5	0.085222523
+199	Clupeiformes	HKSta2May	0.104890164	HK	Sta2	May	Sta	5	
+243	Clupeiformes	HKSta3May	0.026697685	HK	Sta3	May	Sta	5	
+159	Gobiiformes	HKSta1May	0.02965636	HK	Sta1	May	Sta	5	0.028383282
+203	Gobiiformes	HKSta2May	0.000436436	HK	Sta2	May	Sta	5	
+247	Gobiiformes	HKSta3May	0.055057051	HK	Sta3	May	Sta	5	
+161	Labriformes	HKSta1May	0.121860677	HK	Sta1	May	Sta	5	0.13515438
+205	Labriformes	HKSta2May	0.028035829	HK	Sta2	May	Sta	5	
+249	Labriformes	HKSta3May	0.255566633	HK	Sta3	May	Sta	5	
+158	Mugiliformes	HKSta1May	0.001555403	HK	Sta1	May	Sta	5	0.006460403
+202	Mugiliformes	HKSta2May	0.012552736	HK	Sta2	May	Sta	5	
+246	Mugiliformes	HKSta3May	0.00527307	HK	Sta3	May	Sta	5	
+165	others	HKSta1May	0.405566271	HK	Sta1	May	Sta	5	0.237746939
+209	others	HKSta2May	0.02284016	HK	Sta2	May	Sta	5	
+253	others	HKSta3May	0.284834386	HK	Sta3	May	Sta	5	
+164	Perciformes	HKSta1May	0.008813953	HK	Sta1	May	Sta	5	0.032471459
+208	Perciformes	HKSta2May	0.001683397	HK	Sta2	May	Sta	5	
+252	Perciformes	HKSta3May	0.086917027	HK	Sta3	May	Sta	5	
+160	Syngnathiformes	HKSta1May	0.061614716	HK	Sta1	May	Sta	5	0.025313366
+204	Syngnathiformes	HKSta2May	0.012885259	HK	Sta2	May	Sta	5	
+248	Syngnathiformes	HKSta3May	0.001440124	HK	Sta3	May	Sta	5	
+157	Tetraodontiformes	HKSta1May	0.003691491	HK	Sta1	May	Sta	5	0.034255613
+201	Tetraodontiformes	HKSta2May	0.003096619	HK	Sta2	May	Sta	5	
+245	Tetraodontiformes	HKSta3May	0.09597873	HK	Sta3	May	Sta	5	
+288	Acanthuriformes	HKSW1May	0.002651201	HK	SW1	May	SW	5	0.061177591
+332	Acanthuriformes	HKSW2May	0.017778936	HK	SW2	May	SW	5	
+376	Acanthuriformes	HKSW3May	0.163102636	HK	SW3	May	SW	5	
+295	Atheriniformes	HKSW1May	0	HK	SW1	May	SW	5	0.039578785
+339	Atheriniformes	HKSW2May	0.118222106	HK	SW2	May	SW	5	
+383	Atheriniformes	HKSW3May	0.000514249	HK	SW3	May	SW	5	
+294	Blenniiformes	HKSW1May	0	HK	SW1	May	SW	5	0.000263189
+338	Blenniiformes	HKSW2May	0.000703858	HK	SW2	May	SW	5	
+382	Blenniiformes	HKSW3May	8.57E-05	HK	SW3	May	SW	5	
+287	Clupeiformes	HKSW1May	0.98556338	HK	SW1	May	SW	5	0.460061126
+331	Clupeiformes	HKSW2May	0.176042753	HK	SW2	May	SW	5	
+375	Clupeiformes	HKSW3May	0.218577244	HK	SW3	May	SW	5	
+291	Gobiiformes	HKSW1May	0	HK	SW1	May	SW	5	0.04191227
+335	Gobiiformes	HKSW2May	0.084854015	HK	SW2	May	SW	5	
+379	Gobiiformes	HKSW3May	0.040882794	HK	SW3	May	SW	5	
+293	Labriformes	HKSW1May	0	HK	SW1	May	SW	5	0.01759457
+337	Labriformes	HKSW2May	0.000651721	HK	SW2	May	SW	5	
+381	Labriformes	HKSW3May	0.052131991	HK	SW3	May	SW	5	
+290	Mugiliformes	HKSW1May	0	HK	SW1	May	SW	5	0.055620299
+334	Mugiliformes	HKSW2May	0.16394682	HK	SW2	May	SW	5	
+378	Mugiliformes	HKSW3May	0.002914078	HK	SW3	May	SW	5	
+297	others	HKSW1May	0.008823529	HK	SW1	May	SW	5	0.197174074
+341	others	HKSW2May	0.314025026	HK	SW2	May	SW	5	
+385	others	HKSW3May	0.268673666	HK	SW3	May	SW	5	
+296	Perciformes	HKSW1May	0	HK	SW1	May	SW	5	3.16639E-05
+340	Perciformes	HKSW2May	5.21E-05	HK	SW2	May	SW	5	
+384	Perciformes	HKSW3May	4.29E-05	HK	SW3	May	SW	5	
+292	Syngnathiformes	HKSW1May	0.002920464	HK	SW1	May	SW	5	0.051078934
+336	Syngnathiformes	HKSW2May	0.11483316	HK	SW2	May	SW	5	
+380	Syngnathiformes	HKSW3May	0.03548318	HK	SW3	May	SW	5	
+289	Tetraodontiformes	HKSW1May	4.14E-05	HK	SW1	May	SW	5	0.075507498
+333	Tetraodontiformes	HKSW2May	0.008889468	HK	SW2	May	SW	5	
+377	Tetraodontiformes	HKSW3May	0.217591601	HK	SW3	May	SW	5	
+2	Acanthuriformes	HKBea1Aug	0.675543351	HK	Bea1	Aug	Bea	8	0.521372078
+46	Acanthuriformes	HKBea2Aug	0.402080592	HK	Bea2	Aug	Bea	8	
+90	Acanthuriformes	HKBea3Aug	0.486492291	HK	Bea3	Aug	Bea	8	
+9	Atheriniformes	HKBea1Aug	0.004789578	HK	Bea1	Aug	Bea	8	0.004366949
+53	Atheriniformes	HKBea2Aug	0.007645547	HK	Bea2	Aug	Bea	8	
+97	Atheriniformes	HKBea3Aug	0.000665722	HK	Bea3	Aug	Bea	8	
+8	Blenniiformes	HKBea1Aug	0.0016391	HK	Bea1	Aug	Bea	8	0.026713603
+52	Blenniiformes	HKBea2Aug	0.002673853	HK	Bea2	Aug	Bea	8	
+96	Blenniiformes	HKBea3Aug	0.075827857	HK	Bea3	Aug	Bea	8	
+1	Clupeiformes	HKBea1Aug	0.022968687	HK	Bea1	Aug	Bea	8	0.035857019
+45	Clupeiformes	HKBea2Aug	0.084602369	HK	Bea2	Aug	Bea	8	
+89	Clupeiformes	HKBea3Aug	0	HK	Bea3	Aug	Bea	8	
+5	Gobiiformes	HKBea1Aug	0.010813802	HK	Bea1	Aug	Bea	8	0.038179696
+49	Gobiiformes	HKBea2Aug	0.029830169	HK	Bea2	Aug	Bea	8	
+93	Gobiiformes	HKBea3Aug	0.073895117	HK	Bea3	Aug	Bea	8	
+7	Labriformes	HKBea1Aug	0.003299487	HK	Bea1	Aug	Bea	8	0.022949192
+51	Labriformes	HKBea2Aug	0.0373086	HK	Bea2	Aug	Bea	8	
+95	Labriformes	HKBea3Aug	0.028239488	HK	Bea3	Aug	Bea	8	
+4	Mugiliformes	HKBea1Aug	0.000808906	HK	Bea1	Aug	Bea	8	0.023900874
+48	Mugiliformes	HKBea2Aug	0.000584905	HK	Bea2	Aug	Bea	8	
+92	Mugiliformes	HKBea3Aug	0.070308809	HK	Bea3	Aug	Bea	8	
+11	others	HKBea1Aug	0.09655789	HK	Bea1	Aug	Bea	8	0.149484401
+55	others	HKBea2Aug	0.195128575	HK	Bea2	Aug	Bea	8	
+99	others	HKBea3Aug	0.15676674	HK	Bea3	Aug	Bea	8	
+10	Perciformes	HKBea1Aug	0.06869319	HK	Bea1	Aug	Bea	8	0.068980185
+54	Perciformes	HKBea2Aug	0.030937311	HK	Bea2	Aug	Bea	8	
+98	Perciformes	HKBea3Aug	0.107310055	HK	Bea3	Aug	Bea	8	
+6	Syngnathiformes	HKBea1Aug	0.095727697	HK	Bea1	Aug	Bea	8	0.094707283
+50	Syngnathiformes	HKBea2Aug	0.187921706	HK	Bea2	Aug	Bea	8	
+94	Syngnathiformes	HKBea3Aug	0.000472448	HK	Bea3	Aug	Bea	8	
+3	Tetraodontiformes	HKBea1Aug	0.019158312	HK	Bea1	Aug	Bea	8	0.01348872
+47	Tetraodontiformes	HKBea2Aug	0.021286374	HK	Bea2	Aug	Bea	8	
+91	Tetraodontiformes	HKBea3Aug	2.15E-05	HK	Bea3	Aug	Bea	8	
+783	Acanthuriformes	SKBlu1Aug	0.002423916	SK	Blu1	Aug	Blu	8	0.0925271
+827	Acanthuriformes	SKBlu2Aug	0.175669001	SK	Blu2	Aug	Blu	8	
+871	Acanthuriformes	SKBlu3Aug	0.099488383	SK	Blu3	Aug	Blu	8	
+790	Atheriniformes	SKBlu1Aug	0.000103586	SK	Blu1	Aug	Blu	8	0.012598885
+834	Atheriniformes	SKBlu2Aug	0.037693068	SK	Blu2	Aug	Blu	8	
+878	Atheriniformes	SKBlu3Aug	0	SK	Blu3	Aug	Blu	8	
+789	Blenniiformes	SKBlu1Aug	6.22E-05	SK	Blu1	Aug	Blu	8	0.001345049
+833	Blenniiformes	SKBlu2Aug	0.0039287	SK	Blu2	Aug	Blu	8	
+877	Blenniiformes	SKBlu3Aug	4.43E-05	SK	Blu3	Aug	Blu	8	
+782	Clupeiformes	SKBlu1Aug	0.722596283	SK	Blu1	Aug	Blu	8	0.578479759
+826	Clupeiformes	SKBlu2Aug	0.301275144	SK	Blu2	Aug	Blu	8	
+870	Clupeiformes	SKBlu3Aug	0.71156785	SK	Blu3	Aug	Blu	8	
+786	Gobiiformes	SKBlu1Aug	0.092813193	SK	Blu1	Aug	Blu	8	0.060114874
+830	Gobiiformes	SKBlu2Aug	0.08753143	SK	Blu2	Aug	Blu	8	
+874	Gobiiformes	SKBlu3Aug	0	SK	Blu3	Aug	Blu	8	
+788	Labriformes	SKBlu1Aug	0.000538648	SK	Blu1	Aug	Blu	8	0.022681242
+832	Labriformes	SKBlu2Aug	0.067416487	SK	Blu2	Aug	Blu	8	
+876	Labriformes	SKBlu3Aug	8.86E-05	SK	Blu3	Aug	Blu	8	
+785	Mugiliformes	SKBlu1Aug	0.000497214	SK	Blu1	Aug	Blu	8	0.014241708
+829	Mugiliformes	SKBlu2Aug	0.042227909	SK	Blu2	Aug	Blu	8	
+873	Mugiliformes	SKBlu3Aug	0	SK	Blu3	Aug	Blu	8	
+792	others	SKBlu1Aug	0.125546417	SK	Blu1	Aug	Blu	8	0.135351189
+836	others	SKBlu2Aug	0.193045079	SK	Blu2	Aug	Blu	8	
+880	others	SKBlu3Aug	0.087462072	SK	Blu3	Aug	Blu	8	
+791	Perciformes	SKBlu1Aug	0.054092689	SK	Blu1	Aug	Blu	8	0.018397374
+835	Perciformes	SKBlu2Aug	0.001055136	SK	Blu2	Aug	Blu	8	
+879	Perciformes	SKBlu3Aug	4.43E-05	SK	Blu3	Aug	Blu	8	
+787	Syngnathiformes	SKBlu1Aug	0.000994427	SK	Blu1	Aug	Blu	8	0.015492012
+831	Syngnathiformes	SKBlu2Aug	0.045370869	SK	Blu2	Aug	Blu	8	
+875	Syngnathiformes	SKBlu3Aug	0.00011074	SK	Blu3	Aug	Blu	8	
+784	Tetraodontiformes	SKBlu1Aug	0.000331476	SK	Blu1	Aug	Blu	8	0.048770808
+828	Tetraodontiformes	SKBlu2Aug	0.044787177	SK	Blu2	Aug	Blu	8	
+872	Tetraodontiformes	SKBlu3Aug	0.101193772	SK	Blu3	Aug	Blu	8	
+398	Acanthuriformes	LTCC1Aug	0.536413965	LT	CC1	Aug	CC	8	0.659183381
+442	Acanthuriformes	LTCC2Aug	0.721076233	LT	CC2	Aug	CC	8	
+486	Acanthuriformes	LTCC3Aug	0.720059944	LT	CC3	Aug	CC	8	
+405	Atheriniformes	LTCC1Aug	0.006530336	LT	CC1	Aug	CC	8	0.013477627
+449	Atheriniformes	LTCC2Aug	0.000333716	LT	CC2	Aug	CC	8	
+493	Atheriniformes	LTCC3Aug	0.033568829	LT	CC3	Aug	CC	8	
+404	Blenniiformes	LTCC1Aug	0.003050503	LT	CC1	Aug	CC	8	0.003898952
+448	Blenniiformes	LTCC2Aug	0.000104286	LT	CC2	Aug	CC	8	
+492	Blenniiformes	LTCC3Aug	0.008542068	LT	CC3	Aug	CC	8	
+397	Clupeiformes	LTCC1Aug	0.344864987	LT	CC1	Aug	CC	8	0.20556071
+441	Clupeiformes	LTCC2Aug	0.142851184	LT	CC2	Aug	CC	8	
+485	Clupeiformes	LTCC3Aug	0.12896596	LT	CC3	Aug	CC	8	
+401	Gobiiformes	LTCC1Aug	0.009648627	LT	CC1	Aug	CC	8	0.017208431
+445	Gobiiformes	LTCC2Aug	0.034226718	LT	CC2	Aug	CC	8	
+489	Gobiiformes	LTCC3Aug	0.007749946	LT	CC3	Aug	CC	8	
+403	Labriformes	LTCC1Aug	0.00969382	LT	CC1	Aug	CC	8	0.006073482
+447	Labriformes	LTCC2Aug	0.000584003	LT	CC2	Aug	CC	8	
+491	Labriformes	LTCC3Aug	0.007942625	LT	CC3	Aug	CC	8	
+400	Mugiliformes	LTCC1Aug	0.001175008	LT	CC1	Aug	CC	8	0.000463032
+444	Mugiliformes	LTCC2Aug	0	LT	CC2	Aug	CC	8	
+488	Mugiliformes	LTCC3Aug	0.000214087	LT	CC3	Aug	CC	8	
+407	others	LTCC1Aug	0.033035815	LT	CC1	Aug	CC	8	0.028052997
+451	others	LTCC2Aug	0.029179268	LT	CC2	Aug	CC	8	
+495	others	LTCC3Aug	0.021943909	LT	CC3	Aug	CC	8	
+406	Perciformes	LTCC1Aug	0.001333183	LT	CC1	Aug	CC	8	0.003110955
+450	Perciformes	LTCC2Aug	0.000271144	LT	CC2	Aug	CC	8	
+494	Perciformes	LTCC3Aug	0.007728538	LT	CC3	Aug	CC	8	
+402	Syngnathiformes	LTCC1Aug	0.012676534	LT	CC1	Aug	CC	8	0.006627112
+446	Syngnathiformes	LTCC2Aug	0.00037543	LT	CC2	Aug	CC	8	
+490	Syngnathiformes	LTCC3Aug	0.006829373	LT	CC3	Aug	CC	8	
+399	Tetraodontiformes	LTCC1Aug	0.041577223	LT	CC1	Aug	CC	8	0.056343321
+443	Tetraodontiformes	LTCC2Aug	0.070998019	LT	CC2	Aug	CC	8	
+487	Tetraodontiformes	LTCC3Aug	0.056454721	LT	CC3	Aug	CC	8	
+530	Acanthuriformes	LTCMW1Aug	0.280679961	LT	CMW1	Aug	CMW	8	0.372879325
+574	Acanthuriformes	LTCMW2Aug	0.178419292	LT	CMW2	Aug	CMW	8	
+618	Acanthuriformes	LTCMW3Aug	0.659538723	LT	CMW3	Aug	CMW	8	
+537	Atheriniformes	LTCMW1Aug	0.03955541	LT	CMW1	Aug	CMW	8	0.054876671
+581	Atheriniformes	LTCMW2Aug	0.071853547	LT	CMW2	Aug	CMW	8	
+625	Atheriniformes	LTCMW3Aug	0.053221056	LT	CMW3	Aug	CMW	8	
+536	Blenniiformes	LTCMW1Aug	0.000719189	LT	CMW1	Aug	CMW	8	0.001226741
+580	Blenniiformes	LTCMW2Aug	0.000492871	LT	CMW2	Aug	CMW	8	
+624	Blenniiformes	LTCMW3Aug	0.002468163	LT	CMW3	Aug	CMW	8	
+529	Clupeiformes	LTCMW1Aug	0.589735208	LT	CMW1	Aug	CMW	8	0.371267623
+573	Clupeiformes	LTCMW2Aug	0.434923429	LT	CMW2	Aug	CMW	8	
+617	Clupeiformes	LTCMW3Aug	0.089144232	LT	CMW3	Aug	CMW	8	
+533	Gobiiformes	LTCMW1Aug	0.010166721	LT	CMW1	Aug	CMW	8	0.011962527
+577	Gobiiformes	LTCMW2Aug	0.001267383	LT	CMW2	Aug	CMW	8	
+621	Gobiiformes	LTCMW3Aug	0.024453478	LT	CMW3	Aug	CMW	8	
+535	Labriformes	LTCMW1Aug	0.000817261	LT	CMW1	Aug	CMW	8	0.000957236
+579	Labriformes	LTCMW2Aug	0.001971484	LT	CMW2	Aug	CMW	8	
+623	Labriformes	LTCMW3Aug	8.30E-05	LT	CMW3	Aug	CMW	8	
+532	Mugiliformes	LTCMW1Aug	0.00228833	LT	CMW1	Aug	CMW	8	0.001910438
+576	Mugiliformes	LTCMW2Aug	0	LT	CMW2	Aug	CMW	8	
+620	Mugiliformes	LTCMW3Aug	0.003442983	LT	CMW3	Aug	CMW	8	
+539	others	LTCMW1Aug	0.051650866	LT	CMW1	Aug	CMW	8	0.062159231
+583	others	LTCMW2Aug	0.057173033	LT	CMW2	Aug	CMW	8	
+627	others	LTCMW3Aug	0.077653794	LT	CMW3	Aug	CMW	8	
+538	Perciformes	LTCMW1Aug	0.000621118	LT	CMW1	Aug	CMW	8	0.001031034
+582	Perciformes	LTCMW2Aug	0.00021123	LT	CMW2	Aug	CMW	8	
+626	Perciformes	LTCMW3Aug	0.002260754	LT	CMW3	Aug	CMW	8	
+534	Syngnathiformes	LTCMW1Aug	0.001046093	LT	CMW1	Aug	CMW	8	0.000665725
+578	Syngnathiformes	LTCMW2Aug	0.000598486	LT	CMW2	Aug	CMW	8	
+622	Syngnathiformes	LTCMW3Aug	0.000352595	LT	CMW3	Aug	CMW	8	
+531	Tetraodontiformes	LTCMW1Aug	0.022719843	LT	CMW1	Aug	CMW	8	0.121063449
+575	Tetraodontiformes	LTCMW2Aug	0.253089245	LT	CMW2	Aug	CMW	8	
+619	Tetraodontiformes	LTCMW3Aug	0.087381259	LT	CMW3	Aug	CMW	8	
+915	Acanthuriformes	SKLKW1Aug	0.056537322	SK	LKW1	Aug	LKW	8	0.173548212
+959	Acanthuriformes	SKLKW2Aug	0.135803237	SK	LKW2	Aug	LKW	8	
+1003	Acanthuriformes	SKLKW3Aug	0.328304077	SK	LKW3	Aug	LKW	8	
+922	Atheriniformes	SKLKW1Aug	0.000331476	SK	LKW1	Aug	LKW	8	0.000290094
+966	Atheriniformes	SKLKW2Aug	0.000207207	SK	LKW2	Aug	LKW	8	
+1010	Atheriniformes	SKLKW3Aug	0.000331599	SK	LKW3	Aug	LKW	8	
+921	Blenniiformes	SKLKW1Aug	4.14E-05	SK	LKW1	Aug	LKW	8	0.013178348
+965	Blenniiformes	SKLKW2Aug	0.039389984	SK	LKW2	Aug	LKW	8	
+1009	Blenniiformes	SKLKW3Aug	0.000103625	SK	LKW3	Aug	LKW	8	
+914	Clupeiformes	SKLKW1Aug	0.769665831	SK	LKW1	Aug	LKW	8	0.607814893
+958	Clupeiformes	SKLKW2Aug	0.511676095	SK	LKW2	Aug	LKW	8	
+1002	Clupeiformes	SKLKW3Aug	0.542102754	SK	LKW3	Aug	LKW	8	
+918	Gobiiformes	SKLKW1Aug	0.000849406	SK	LKW1	Aug	LKW	8	0.003571274
+962	Gobiiformes	SKLKW2Aug	0.003211703	SK	LKW2	Aug	LKW	8	
+1006	Gobiiformes	SKLKW3Aug	0.006652712	SK	LKW3	Aug	LKW	8	
+920	Labriformes	SKLKW1Aug	0.004164163	SK	LKW1	Aug	LKW	8	0.032639805
+964	Labriformes	SKLKW2Aug	0.021528771	SK	LKW2	Aug	LKW	8	
+1008	Labriformes	SKLKW3Aug	0.072226482	SK	LKW3	Aug	LKW	8	
+917	Mugiliformes	SKLKW1Aug	0.000642234	SK	LKW1	Aug	LKW	8	0.03137411
+961	Mugiliformes	SKLKW2Aug	0.049190858	SK	LKW2	Aug	LKW	8	
+1005	Mugiliformes	SKLKW3Aug	0.044289238	SK	LKW3	Aug	LKW	8	
+924	others	SKLKW1Aug	0.069734198	SK	LKW1	Aug	LKW	8	0.041230536
+968	others	SKLKW2Aug	0.050102567	SK	LKW2	Aug	LKW	8	
+1012	others	SKLKW3Aug	0.003854842	SK	LKW3	Aug	LKW	8	
+923	Perciformes	SKLKW1Aug	0.034597775	SK	LKW1	Aug	LKW	8	0.039028961
+967	Perciformes	SKLKW2Aug	0.081805184	SK	LKW2	Aug	LKW	8	
+1011	Perciformes	SKLKW3Aug	0.000683924	SK	LKW3	Aug	LKW	8	
+919	Syngnathiformes	SKLKW1Aug	0.063083967	SK	LKW1	Aug	LKW	8	0.056847172
+963	Syngnathiformes	SKLKW2Aug	0.106587099	SK	LKW2	Aug	LKW	8	
+1007	Syngnathiformes	SKLKW3Aug	0.000870448	SK	LKW3	Aug	LKW	8	
+916	Tetraodontiformes	SKLKW1Aug	0.000352193	SK	LKW1	Aug	LKW	8	0.000476596
+960	Tetraodontiformes	SKLKW2Aug	0.000497296	SK	LKW2	Aug	LKW	8	
+1004	Tetraodontiformes	SKLKW3Aug	0.000580299	SK	LKW3	Aug	LKW	8	
+662	Acanthuriformes	LTPC1Aug	0.315275532	LT	PC1	Aug	PC	8	0.492655569
+706	Acanthuriformes	LTPC2Aug	0.668282577	LT	PC2	Aug	PC	8	
+739	Acanthuriformes	LTPC3Aug	0.494408598	LT	PC3	Aug	PC	8	
+669	Atheriniformes	LTPC1Aug	0.021831074	LT	PC1	Aug	PC	8	0.010069725
+713	Atheriniformes	LTPC2Aug	0.0025896	LT	PC2	Aug	PC	8	
+746	Atheriniformes	LTPC3Aug	0.005788502	LT	PC3	Aug	PC	8	
+668	Blenniiformes	LTPC1Aug	0.022432309	LT	PC1	Aug	PC	8	0.008154633
+712	Blenniiformes	LTPC2Aug	0.001118707	LT	PC2	Aug	PC	8	
+745	Blenniiformes	LTPC3Aug	0.000912882	LT	PC3	Aug	PC	8	
+661	Clupeiformes	LTPC1Aug	0.08811212	LT	PC1	Aug	PC	8	0.110218525
+705	Clupeiformes	LTPC2Aug	0.065465092	LT	PC2	Aug	PC	8	
+738	Clupeiformes	LTPC3Aug	0.177078363	LT	PC3	Aug	PC	8	
+665	Gobiiformes	LTPC1Aug	0.225795082	LT	PC1	Aug	PC	8	0.134482062
+709	Gobiiformes	LTPC2Aug	0.118230785	LT	PC2	Aug	PC	8	
+742	Gobiiformes	LTPC3Aug	0.05942032	LT	PC3	Aug	PC	8	
+667	Labriformes	LTPC1Aug	0.000497574	LT	PC1	Aug	PC	8	0.000290281
+711	Labriformes	LTPC2Aug	0.000124301	LT	PC2	Aug	PC	8	
+744	Labriformes	LTPC3Aug	0.000248968	LT	PC3	Aug	PC	8	
+664	Mugiliformes	LTPC1Aug	0.030061782	LT	PC1	Aug	PC	8	0.010546183
+708	Mugiliformes	LTPC2Aug	2.07E-05	LT	PC2	Aug	PC	8	
+741	Mugiliformes	LTPC3Aug	0.001556049	LT	PC3	Aug	PC	8	
+671	others	LTPC1Aug	0.281523407	LT	PC1	Aug	PC	8	0.125376756
+715	others	LTPC2Aug	0.085125337	LT	PC2	Aug	PC	8	
+748	others	LTPC3Aug	0.009481525	LT	PC3	Aug	PC	8	
+670	Perciformes	LTPC1Aug	0.000103661	LT	PC1	Aug	PC	8	4.83751E-05
+714	Perciformes	LTPC2Aug	2.07E-05	LT	PC2	Aug	PC	8	
+747	Perciformes	LTPC3Aug	2.07E-05	LT	PC3	Aug	PC	8	
+666	Syngnathiformes	LTPC1Aug	0.000145126	LT	PC1	Aug	PC	8	0.000525177
+710	Syngnathiformes	LTPC2Aug	0.000787238	LT	PC2	Aug	PC	8	
+743	Syngnathiformes	LTPC3Aug	0.000643167	LT	PC3	Aug	PC	8	
+663	Tetraodontiformes	LTPC1Aug	0.014222333	LT	PC1	Aug	PC	8	0.107632714
+707	Tetraodontiformes	LTPC2Aug	0.058234929	LT	PC2	Aug	PC	8	
+740	Tetraodontiformes	LTPC3Aug	0.250440881	LT	PC3	Aug	PC	8	
+1047	Acanthuriformes	SKSha1Aug	0.02952506	SK	Sha1	Aug	Sha	8	0.029913076
+1091	Acanthuriformes	SKSha2Aug	0.000870088	SK	Sha2	Aug	Sha	8	
+1135	Acanthuriformes	SKSha3Aug	0.059344081	SK	Sha3	Aug	Sha	8	
+1054	Atheriniformes	SKSha1Aug	0.004755859	SK	Sha1	Aug	Sha	8	0.004421349
+1098	Atheriniformes	SKSha2Aug	0	SK	Sha2	Aug	Sha	8	
+1142	Atheriniformes	SKSha3Aug	0.008508188	SK	Sha3	Aug	Sha	8	
+1053	Blenniiformes	SKSha1Aug	0.014439734	SK	Sha1	Aug	Sha	8	0.00482015
+1097	Blenniiformes	SKSha2Aug	2.07E-05	SK	Sha2	Aug	Sha	8	
+1141	Blenniiformes	SKSha3Aug	0	SK	Sha3	Aug	Sha	8	
+1046	Clupeiformes	SKSha1Aug	0.904990424	SK	Sha1	Aug	Sha	8	0.866276929
+1090	Clupeiformes	SKSha2Aug	0.841209007	SK	Sha2	Aug	Sha	8	
+1134	Clupeiformes	SKSha3Aug	0.852631354	SK	Sha3	Aug	Sha	8	
+1050	Gobiiformes	SKSha1Aug	0.009812994	SK	Sha1	Aug	Sha	8	0.00676099
+1094	Gobiiformes	SKSha2Aug	0	SK	Sha2	Aug	Sha	8	
+1138	Gobiiformes	SKSha3Aug	0.010469976	SK	Sha3	Aug	Sha	8	
+1052	Labriformes	SKSha1Aug	0.007424304	SK	Sha1	Aug	Sha	8	0.002544025
+1096	Labriformes	SKSha2Aug	0.000186447	SK	Sha2	Aug	Sha	8	
+1140	Labriformes	SKSha3Aug	2.13E-05	SK	Sha3	Aug	Sha	8	
+1049	Mugiliformes	SKSha1Aug	4.30E-05	SK	Sha1	Aug	Sha	8	0.002729575
+1093	Mugiliformes	SKSha2Aug	0	SK	Sha2	Aug	Sha	8	
+1137	Mugiliformes	SKSha3Aug	0.008145684	SK	Sha3	Aug	Sha	8	
+1056	others	SKSha1Aug	0.013751103	SK	Sha1	Aug	Sha	8	0.061927872
+1100	others	SKSha2Aug	0.111536948	SK	Sha2	Aug	Sha	8	
+1144	others	SKSha3Aug	0.060495565	SK	Sha3	Aug	Sha	8	
+1055	Perciformes	SKSha1Aug	0.000172158	SK	Sha1	Aug	Sha	8	0.00517433
+1099	Perciformes	SKSha2Aug	0.015350832	SK	Sha2	Aug	Sha	8	
+1143	Perciformes	SKSha3Aug	0	SK	Sha3	Aug	Sha	8	
+1051	Syngnathiformes	SKSha1Aug	0.015085326	SK	Sha1	Aug	Sha	8	0.015289952
+1095	Syngnathiformes	SKSha2Aug	0.030784529	SK	Sha2	Aug	Sha	8	
+1139	Syngnathiformes	SKSha3Aug	0	SK	Sha3	Aug	Sha	8	
+1048	Tetraodontiformes	SKSha1Aug	0	SK	Sha1	Aug	Sha	8	0.000141754
+1092	Tetraodontiformes	SKSha2Aug	4.14E-05	SK	Sha2	Aug	Sha	8	
+1136	Tetraodontiformes	SKSha3Aug	0.000383828	SK	Sha3	Aug	Sha	8	
+134	Acanthuriformes	HKSta1Aug	0.736249328	HK	Sta1	Aug	Sta	8	0.7676634
+178	Acanthuriformes	HKSta2Aug	0.650180136	HK	Sta2	Aug	Sta	8	
+222	Acanthuriformes	HKSta3Aug	0.916560735	HK	Sta3	Aug	Sta	8	
+141	Atheriniformes	HKSta1Aug	0.080644815	HK	Sta1	Aug	Sta	8	0.035322311
+185	Atheriniformes	HKSta2Aug	0.022883957	HK	Sta2	Aug	Sta	8	
+229	Atheriniformes	HKSta3Aug	0.00243816	HK	Sta3	Aug	Sta	8	
+140	Blenniiformes	HKSta1Aug	0.071423966	HK	Sta1	Aug	Sta	8	0.030966298
+184	Blenniiformes	HKSta2Aug	0.019370191	HK	Sta2	Aug	Sta	8	
+228	Blenniiformes	HKSta3Aug	0.002104737	HK	Sta3	Aug	Sta	8	
+133	Clupeiformes	HKSta1Aug	0.005416443	HK	Sta1	Aug	Sta	8	0.045584334
+177	Clupeiformes	HKSta2Aug	0.108059423	HK	Sta2	Aug	Sta	8	
+221	Clupeiformes	HKSta3Aug	0.023277138	HK	Sta3	Aug	Sta	8	
+137	Gobiiformes	HKSta1Aug	0.050467491	HK	Sta1	Aug	Sta	8	0.01940531
+181	Gobiiformes	HKSta2Aug	0.003914068	HK	Sta2	Aug	Sta	8	
+225	Gobiiformes	HKSta3Aug	0.003834372	HK	Sta3	Aug	Sta	8	
+139	Labriformes	HKSta1Aug	0.000924234	HK	Sta1	Aug	Sta	8	0.00455557
+183	Labriformes	HKSta2Aug	0.011742205	HK	Sta2	Aug	Sta	8	
+227	Labriformes	HKSta3Aug	0.001000271	HK	Sta3	Aug	Sta	8	
+136	Mugiliformes	HKSta1Aug	0.000967222	HK	Sta1	Aug	Sta	8	0.003115029
+180	Mugiliformes	HKSta2Aug	0.006960815	HK	Sta2	Aug	Sta	8	
+224	Mugiliformes	HKSta3Aug	0.00141705	HK	Sta3	Aug	Sta	8	
+143	others	HKSta1Aug	0.038473939	HK	Sta1	Aug	Sta	8	0.045298841
+187	others	HKSta2Aug	0.069519192	HK	Sta2	Aug	Sta	8	
+231	others	HKSta3Aug	0.027903391	HK	Sta3	Aug	Sta	8	
+142	Perciformes	HKSta1Aug	0.009951639	HK	Sta1	Aug	Sta	8	0.014988408
+186	Perciformes	HKSta2Aug	0.019926166	HK	Sta2	Aug	Sta	8	
+230	Perciformes	HKSta3Aug	0.01508742	HK	Sta3	Aug	Sta	8	
+138	Syngnathiformes	HKSta1Aug	0.004062332	HK	Sta1	Aug	Sta	8	0.029902108
+182	Syngnathiformes	HKSta2Aug	0.08301828	HK	Sta2	Aug	Sta	8	
+226	Syngnathiformes	HKSta3Aug	0.002625711	HK	Sta3	Aug	Sta	8	
+135	Tetraodontiformes	HKSta1Aug	0.001418592	HK	Sta1	Aug	Sta	8	0.003198391
+179	Tetraodontiformes	HKSta2Aug	0.004425566	HK	Sta2	Aug	Sta	8	
+223	Tetraodontiformes	HKSta3Aug	0.003751016	HK	Sta3	Aug	Sta	8	
+266	Acanthuriformes	HKSW1Aug	0.421028048	HK	SW1	Aug	SW	8	0.379536619
+310	Acanthuriformes	HKSW2Aug	0.214994998	HK	SW2	Aug	SW	8	
+354	Acanthuriformes	HKSW3Aug	0.502586812	HK	SW3	Aug	SW	8	
+273	Atheriniformes	HKSW1Aug	0.011303393	HK	SW1	Aug	SW	8	0.006004112
+317	Atheriniformes	HKSW2Aug	0.001951838	HK	SW2	Aug	SW	8	
+361	Atheriniformes	HKSW3Aug	0.004757103	HK	SW3	Aug	SW	8	
+272	Blenniiformes	HKSW1Aug	0.075433803	HK	SW1	Aug	SW	8	0.040672653
+316	Blenniiformes	HKSW2Aug	0.044282333	HK	SW2	Aug	SW	8	
+360	Blenniiformes	HKSW3Aug	0.002301824	HK	SW3	Aug	SW	8	
+265	Clupeiformes	HKSW1Aug	0.084285014	HK	SW1	Aug	SW	8	0.135557844
+309	Clupeiformes	HKSW2Aug	0.220582136	HK	SW2	Aug	SW	8	
+353	Clupeiformes	HKSW3Aug	0.101806384	HK	SW3	Aug	SW	8	
+269	Gobiiformes	HKSW1Aug	0.072537892	HK	SW1	Aug	SW	8	0.126199016
+313	Gobiiformes	HKSW2Aug	0.2028936	HK	SW2	Aug	SW	8	
+357	Gobiiformes	HKSW3Aug	0.103165556	HK	SW3	Aug	SW	8	
+271	Labriformes	HKSW1Aug	0.030337	HK	SW1	Aug	SW	8	0.05464801
+315	Labriformes	HKSW2Aug	0.082440774	HK	SW2	Aug	SW	8	
+359	Labriformes	HKSW3Aug	0.051166257	HK	SW3	Aug	SW	8	
+268	Mugiliformes	HKSW1Aug	0.000747332	HK	SW1	Aug	SW	8	0.000264551
+312	Mugiliformes	HKSW2Aug	2.44E-05	HK	SW2	Aug	SW	8	
+356	Mugiliformes	HKSW3Aug	2.19E-05	HK	SW3	Aug	SW	8	
+275	others	HKSW1Aug	0.200425045	HK	SW1	Aug	SW	8	0.148185814
+319	others	HKSW2Aug	0.138116964	HK	SW2	Aug	SW	8	
+363	others	HKSW3Aug	0.106015433	HK	SW3	Aug	SW	8	
+274	Perciformes	HKSW1Aug	0.029496252	HK	SW1	Aug	SW	8	0.02658696
+318	Perciformes	HKSW2Aug	0.033888794	HK	SW2	Aug	SW	8	
+362	Perciformes	HKSW3Aug	0.016375833	HK	SW3	Aug	SW	8	
+270	Syngnathiformes	HKSW1Aug	0.04411593	HK	SW1	Aug	SW	8	0.039000368
+314	Syngnathiformes	HKSW2Aug	0.014199624	HK	SW2	Aug	SW	8	
+358	Syngnathiformes	HKSW3Aug	0.058685549	HK	SW3	Aug	SW	8	
+267	Tetraodontiformes	HKSW1Aug	0.030290292	HK	SW1	Aug	SW	8	0.043344053
+311	Tetraodontiformes	HKSW2Aug	0.046624539	HK	SW2	Aug	SW	8	
+355	Tetraodontiformes	HKSW3Aug	0.053117327	HK	SW3	Aug	SW	8	
+35	Acanthuriformes	HKBea1Nov	0.087270464	HK	Bea1	Nov	Bea	11	0.081607352
+79	Acanthuriformes	HKBea2Nov	0.006503863	HK	Bea2	Nov	Bea	11	
+123	Acanthuriformes	HKBea3Nov	0.15104773	HK	Bea3	Nov	Bea	11	
+42	Atheriniformes	HKBea1Nov	0	HK	Bea1	Nov	Bea	11	0.054609688
+86	Atheriniformes	HKBea2Nov	0	HK	Bea2	Nov	Bea	11	
+130	Atheriniformes	HKBea3Nov	0.163829065	HK	Bea3	Nov	Bea	11	
+41	Blenniiformes	HKBea1Nov	0	HK	Bea1	Nov	Bea	11	0.001050964
+85	Blenniiformes	HKBea2Nov	0	HK	Bea2	Nov	Bea	11	
+129	Blenniiformes	HKBea3Nov	0.003152891	HK	Bea3	Nov	Bea	11	
+34	Clupeiformes	HKBea1Nov	0.028509181	HK	Bea1	Nov	Bea	11	0.08322326
+78	Clupeiformes	HKBea2Nov	0.010232192	HK	Bea2	Nov	Bea	11	
+122	Clupeiformes	HKBea3Nov	0.210928405	HK	Bea3	Nov	Bea	11	
+38	Gobiiformes	HKBea1Nov	0	HK	Bea1	Nov	Bea	11	0.000452723
+82	Gobiiformes	HKBea2Nov	0	HK	Bea2	Nov	Bea	11	
+126	Gobiiformes	HKBea3Nov	0.001358168	HK	Bea3	Nov	Bea	11	
+40	Labriformes	HKBea1Nov	0	HK	Bea1	Nov	Bea	11	0.000525482
+84	Labriformes	HKBea2Nov	0	HK	Bea2	Nov	Bea	11	
+128	Labriformes	HKBea3Nov	0.001576445	HK	Bea3	Nov	Bea	11	
+37	Mugiliformes	HKBea1Nov	0	HK	Bea1	Nov	Bea	11	0
+81	Mugiliformes	HKBea2Nov	0	HK	Bea2	Nov	Bea	11	
+125	Mugiliformes	HKBea3Nov	0	HK	Bea3	Nov	Bea	11	
+44	others	HKBea1Nov	0.000414981	HK	Bea1	Nov	Bea	11	0.043512973
+88	others	HKBea2Nov	0.000103565	HK	Bea2	Nov	Bea	11	
+132	others	HKBea3Nov	0.130020373	HK	Bea3	Nov	Bea	11	
+43	Perciformes	HKBea1Nov	0	HK	Bea1	Nov	Bea	11	0.000582072
+87	Perciformes	HKBea2Nov	0	HK	Bea2	Nov	Bea	11	
+131	Perciformes	HKBea3Nov	0.001746217	HK	Bea3	Nov	Bea	11	
+39	Syngnathiformes	HKBea1Nov	0.847888785	HK	Bea1	Nov	Bea	11	0.320287155
+83	Syngnathiformes	HKBea2Nov	0.008927277	HK	Bea2	Nov	Bea	11	
+127	Syngnathiformes	HKBea3Nov	0.104045402	HK	Bea3	Nov	Bea	11	
+36	Tetraodontiformes	HKBea1Nov	0.035916589	HK	Bea1	Nov	Bea	11	0.414148332
+80	Tetraodontiformes	HKBea2Nov	0.974233103	HK	Bea2	Nov	Bea	11	
+124	Tetraodontiformes	HKBea3Nov	0.232295305	HK	Bea3	Nov	Bea	11	
+816	Acanthuriformes	SKBlu1Nov	0.614455577	SK	Blu1	Nov	Blu	11	0.429792755
+860	Acanthuriformes	SKBlu2Nov	0.359990848	SK	Blu2	Nov	Blu	11	
+904	Acanthuriformes	SKBlu3Nov	0.314931841	SK	Blu3	Nov	Blu	11	
+823	Atheriniformes	SKBlu1Nov	0.018895772	SK	Blu1	Nov	Blu	11	0.009807887
+867	Atheriniformes	SKBlu2Nov	0.009421993	SK	Blu2	Nov	Blu	11	
+911	Atheriniformes	SKBlu3Nov	0.001105895	SK	Blu3	Nov	Blu	11	
+822	Blenniiformes	SKBlu1Nov	0.000519686	SK	Blu1	Nov	Blu	11	0.000339621
+866	Blenniiformes	SKBlu2Nov	0.000499178	SK	Blu2	Nov	Blu	11	
+910	Blenniiformes	SKBlu3Nov	0	SK	Blu3	Nov	Blu	11	
+815	Clupeiformes	SKBlu1Nov	0.226541388	SK	Blu1	Nov	Blu	11	0.189203084
+859	Clupeiformes	SKBlu2Nov	0.24422305	SK	Blu2	Nov	Blu	11	
+903	Clupeiformes	SKBlu3Nov	0.096844814	SK	Blu3	Nov	Blu	11	
+819	Gobiiformes	SKBlu1Nov	0.000436536	SK	Blu1	Nov	Blu	11	0.00103294
+863	Gobiiformes	SKBlu2Nov	0.002662285	SK	Blu2	Nov	Blu	11	
+907	Gobiiformes	SKBlu3Nov	0	SK	Blu3	Nov	Blu	11	
+821	Labriformes	SKBlu1Nov	0.008460483	SK	Blu1	Nov	Blu	11	0.051792753
+865	Labriformes	SKBlu2Nov	0.145947295	SK	Blu2	Nov	Blu	11	
+909	Labriformes	SKBlu3Nov	0.000970479	SK	Blu3	Nov	Blu	11	
+818	Mugiliformes	SKBlu1Nov	0	SK	Blu1	Nov	Blu	11	0.000838897
+862	Mugiliformes	SKBlu2Nov	0.002516691	SK	Blu2	Nov	Blu	11	
+906	Mugiliformes	SKBlu3Nov	0	SK	Blu3	Nov	Blu	11	
+825	others	SKBlu1Nov	0.12792583	SK	Blu1	Nov	Blu	11	0.248626941
+869	others	SKBlu2Nov	0.032259406	SK	Blu2	Nov	Blu	11	
+913	others	SKBlu3Nov	0.585695585	SK	Blu3	Nov	Blu	11	
+824	Perciformes	SKBlu1Nov	0	SK	Blu1	Nov	Blu	11	0.000194125
+868	Perciformes	SKBlu2Nov	0.000582375	SK	Blu2	Nov	Blu	11	
+912	Perciformes	SKBlu3Nov	0	SK	Blu3	Nov	Blu	11	
+820	Syngnathiformes	SKBlu1Nov	0.000831497	SK	Blu1	Nov	Blu	11	0.036404173
+864	Syngnathiformes	SKBlu2Nov	0.108155328	SK	Blu2	Nov	Blu	11	
+908	Syngnathiformes	SKBlu3Nov	0.000225693	SK	Blu3	Nov	Blu	11	
+817	Tetraodontiformes	SKBlu1Nov	0.001933231	SK	Blu1	Nov	Blu	11	0.031966825
+861	Tetraodontiformes	SKBlu2Nov	0.09374155	SK	Blu2	Nov	Blu	11	
+905	Tetraodontiformes	SKBlu3Nov	0.000225693	SK	Blu3	Nov	Blu	11	
+431	Acanthuriformes	LTCC1Nov	0.994551655	LT	CC1	Nov	CC	11	0.668786745
+475	Acanthuriformes	LTCC2Nov	0.585637537	LT	CC2	Nov	CC	11	
+519	Acanthuriformes	LTCC3Nov	0.426171045	LT	CC3	Nov	CC	11	
+438	Atheriniformes	LTCC1Nov	0	LT	CC1	Nov	CC	11	0.037141181
+482	Atheriniformes	LTCC2Nov	0	LT	CC2	Nov	CC	11	
+526	Atheriniformes	LTCC3Nov	0.111423542	LT	CC3	Nov	CC	11	
+437	Blenniiformes	LTCC1Nov	0	LT	CC1	Nov	CC	11	0.0005416
+481	Blenniiformes	LTCC2Nov	0.00020743	LT	CC2	Nov	CC	11	
+525	Blenniiformes	LTCC3Nov	0.00141737	LT	CC3	Nov	CC	11	
+430	Clupeiformes	LTCC1Nov	0.001767593	LT	CC1	Nov	CC	11	0.214781378
+474	Clupeiformes	LTCC2Nov	0.34298575	LT	CC2	Nov	CC	11	
+518	Clupeiformes	LTCC3Nov	0.299590792	LT	CC3	Nov	CC	11	
+434	Gobiiformes	LTCC1Nov	0	LT	CC1	Nov	CC	11	0.001749132
+478	Gobiiformes	LTCC2Nov	0.000103715	LT	CC2	Nov	CC	11	
+522	Gobiiformes	LTCC3Nov	0.00514368	LT	CC3	Nov	CC	11	
+436	Labriformes	LTCC1Nov	0	LT	CC1	Nov	CC	11	4.1486E-05
+480	Labriformes	LTCC2Nov	0.000124458	LT	CC2	Nov	CC	11	
+524	Labriformes	LTCC3Nov	0	LT	CC3	Nov	CC	11	
+433	Mugiliformes	LTCC1Nov	0	LT	CC1	Nov	CC	11	0.00021125
+477	Mugiliformes	LTCC2Nov	6.22E-05	LT	CC2	Nov	CC	11	
+521	Mugiliformes	LTCC3Nov	0.00057152	LT	CC3	Nov	CC	11	
+440	others	LTCC1Nov	2.08E-05	LT	CC1	Nov	CC	11	0.013598066
+484	others	LTCC2Nov	0.002115788	LT	CC2	Nov	CC	11	
+528	others	LTCC3Nov	0.038657614	LT	CC3	Nov	CC	11	
+439	Perciformes	LTCC1Nov	0	LT	CC1	Nov	CC	11	0.001394471
+483	Perciformes	LTCC2Nov	0.002240246	LT	CC2	Nov	CC	11	
+527	Perciformes	LTCC3Nov	0.001943168	LT	CC3	Nov	CC	11	
+435	Syngnathiformes	LTCC1Nov	0.003431209	LT	CC1	Nov	CC	11	0.009110716
+479	Syngnathiformes	LTCC2Nov	0.000560061	LT	CC2	Nov	CC	11	
+523	Syngnathiformes	LTCC3Nov	0.023340877	LT	CC3	Nov	CC	11	
+432	Tetraodontiformes	LTCC1Nov	0.000228747	LT	CC1	Nov	CC	11	0.052643976
+476	Tetraodontiformes	LTCC2Nov	0.065962787	LT	CC2	Nov	CC	11	
+520	Tetraodontiformes	LTCC3Nov	0.091740393	LT	CC3	Nov	CC	11	
+563	Acanthuriformes	LTCMW1Nov	0.000632271	LT	CMW1	Nov	CMW	11	0.083632297
+607	Acanthuriformes	LTCMW2Nov	0.034325816	LT	CMW2	Nov	CMW	11	
+651	Acanthuriformes	LTCMW3Nov	0.215938803	LT	CMW3	Nov	CMW	11	
+570	Atheriniformes	LTCMW1Nov	2.53E-05	LT	CMW1	Nov	CMW	11	0.002061286
+614	Atheriniformes	LTCMW2Nov	0	LT	CMW2	Nov	CMW	11	
+658	Atheriniformes	LTCMW3Nov	0.006158567	LT	CMW3	Nov	CMW	11	
+569	Blenniiformes	LTCMW1Nov	5.06E-05	LT	CMW1	Nov	CMW	11	0.0098311
+613	Blenniiformes	LTCMW2Nov	0.022095655	LT	CMW2	Nov	CMW	11	
+657	Blenniiformes	LTCMW3Nov	0.007347062	LT	CMW3	Nov	CMW	11	
+562	Clupeiformes	LTCMW1Nov	0.864036419	LT	CMW1	Nov	CMW	11	0.556905945
+606	Clupeiformes	LTCMW2Nov	0.49248646	LT	CMW2	Nov	CMW	11	
+650	Clupeiformes	LTCMW3Nov	0.314194956	LT	CMW3	Nov	CMW	11	
+566	Gobiiformes	LTCMW1Nov	0.000354072	LT	CMW1	Nov	CMW	11	0.02671834
+610	Gobiiformes	LTCMW2Nov	0.03971624	LT	CMW2	Nov	CMW	11	
+654	Gobiiformes	LTCMW3Nov	0.040084707	LT	CMW3	Nov	CMW	11	
+568	Labriformes	LTCMW1Nov	0	LT	CMW1	Nov	CMW	11	0.006167194
+612	Labriformes	LTCMW2Nov	0.018307102	LT	CMW2	Nov	CMW	11	
+656	Labriformes	LTCMW3Nov	0.000194481	LT	CMW3	Nov	CMW	11	
+565	Mugiliformes	LTCMW1Nov	0.06825999	LT	CMW1	Nov	CMW	11	0.027652583
+609	Mugiliformes	LTCMW2Nov	0.014416843	LT	CMW2	Nov	CMW	11	
+653	Mugiliformes	LTCMW3Nov	0.000280917	LT	CMW3	Nov	CMW	11	
+572	others	LTCMW1Nov	0.066590794	LT	CMW1	Nov	CMW	11	0.176352161
+616	others	LTCMW2Nov	0.286201022	LT	CMW2	Nov	CMW	11	
+660	others	LTCMW3Nov	0.176264667	LT	CMW3	Nov	CMW	11	
+571	Perciformes	LTCMW1Nov	0	LT	CMW1	Nov	CMW	11	0.03199071
+615	Perciformes	LTCMW2Nov	0.063083221	LT	CMW2	Nov	CMW	11	
+659	Perciformes	LTCMW3Nov	0.032888908	LT	CMW3	Nov	CMW	11	
+567	Syngnathiformes	LTCMW1Nov	0	LT	CMW1	Nov	CMW	11	0.066178518
+611	Syngnathiformes	LTCMW2Nov	0.028731979	LT	CMW2	Nov	CMW	11	
+655	Syngnathiformes	LTCMW3Nov	0.169803574	LT	CMW3	Nov	CMW	11	
+564	Tetraodontiformes	LTCMW1Nov	5.06E-05	LT	CMW1	Nov	CMW	11	0.012509867
+608	Tetraodontiformes	LTCMW2Nov	0.000635663	LT	CMW2	Nov	CMW	11	
+652	Tetraodontiformes	LTCMW3Nov	0.036843356	LT	CMW3	Nov	CMW	11	
+948	Acanthuriformes	SKLKW1Nov	0.0162134	SK	LKW1	Nov	LKW	11	0.166240892
+992	Acanthuriformes	SKLKW2Nov	0.065756153	SK	LKW2	Nov	LKW	11	
+1036	Acanthuriformes	SKLKW3Nov	0.416753123	SK	LKW3	Nov	LKW	11	
+955	Atheriniformes	SKLKW1Nov	0.003834532	SK	LKW1	Nov	LKW	11	0.095540656
+999	Atheriniformes	SKLKW2Nov	0.211637502	SK	LKW2	Nov	LKW	11	
+1043	Atheriniformes	SKLKW3Nov	0.071149936	SK	LKW3	Nov	LKW	11	
+954	Blenniiformes	SKLKW1Nov	0.006564551	SK	LKW1	Nov	LKW	11	0.181984123
+998	Blenniiformes	SKLKW2Nov	0.382501067	SK	LKW2	Nov	LKW	11	
+1042	Blenniiformes	SKLKW3Nov	0.156886749	SK	LKW3	Nov	LKW	11	
+947	Clupeiformes	SKLKW1Nov	0.011566114	SK	LKW1	Nov	LKW	11	0.103383215
+991	Clupeiformes	SKLKW2Nov	0.078161901	SK	LKW2	Nov	LKW	11	
+1035	Clupeiformes	SKLKW3Nov	0.220421629	SK	LKW3	Nov	LKW	11	
+951	Gobiiformes	SKLKW1Nov	0.010211524	SK	LKW1	Nov	LKW	11	0.020808848
+995	Gobiiformes	SKLKW2Nov	0.001337317	SK	LKW2	Nov	LKW	11	
+1039	Gobiiformes	SKLKW3Nov	0.050877703	SK	LKW3	Nov	LKW	11	
+953	Labriformes	SKLKW1Nov	0	SK	LKW1	Nov	LKW	11	0.00010433
+997	Labriformes	SKLKW2Nov	0.000312989	SK	LKW2	Nov	LKW	11	
+1041	Labriformes	SKLKW3Nov	0	SK	LKW3	Nov	LKW	11	
+950	Mugiliformes	SKLKW1Nov	0	SK	LKW1	Nov	LKW	11	0.000206091
+994	Mugiliformes	SKLKW2Nov	0.000597525	SK	LKW2	Nov	LKW	11	
+1038	Mugiliformes	SKLKW3Nov	2.07E-05	SK	LKW3	Nov	LKW	11	
+957	others	SKLKW1Nov	0.94731687	SK	LKW1	Nov	LKW	11	0.40129503
+1001	others	SKLKW2Nov	0.254659269	SK	LKW2	Nov	LKW	11	
+1045	others	SKLKW3Nov	0.001908951	SK	LKW3	Nov	LKW	11	
+956	Perciformes	SKLKW1Nov	0.001917266	SK	LKW1	Nov	LKW	11	0.004402447
+1000	Perciformes	SKLKW2Nov	8.54E-05	SK	LKW2	Nov	LKW	11	
+1044	Perciformes	SKLKW3Nov	0.011204714	SK	LKW3	Nov	LKW	11	
+952	Syngnathiformes	SKLKW1Nov	0	SK	LKW1	Nov	LKW	11	0.000426803
+996	Syngnathiformes	SKLKW2Nov	0.00128041	SK	LKW2	Nov	LKW	11	
+1040	Syngnathiformes	SKLKW3Nov	0	SK	LKW3	Nov	LKW	11	
+949	Tetraodontiformes	SKLKW1Nov	0.002375742	SK	LKW1	Nov	LKW	11	0.025607565
+993	Tetraodontiformes	SKLKW2Nov	0.003670508	SK	LKW2	Nov	LKW	11	
+1037	Tetraodontiformes	SKLKW3Nov	0.070776445	SK	LKW3	Nov	LKW	11	
+695	Acanthuriformes	LTPC1Nov	0.816908735	LT	PC1	Nov	PC	11	0.492083837
+728	Acanthuriformes	LTPC2Nov	0.658928526	LT	PC2	Nov	PC	11	
+772	Acanthuriformes	LTPC3Nov	0.00041425	LT	PC3	Nov	PC	11	
+702	Atheriniformes	LTPC1Nov	0.003495776	LT	PC1	Nov	PC	11	0.00169074
+735	Atheriniformes	LTPC2Nov	0.001576445	LT	PC2	Nov	PC	11	
+779	Atheriniformes	LTPC3Nov	0	LT	PC3	Nov	PC	11	
+701	Blenniiformes	LTPC1Nov	0.093948978	LT	PC1	Nov	PC	11	0.031536689
+734	Blenniiformes	LTPC2Nov	0.00066109	LT	PC2	Nov	PC	11	
+778	Blenniiformes	LTPC3Nov	0	LT	PC3	Nov	PC	11	
+694	Clupeiformes	LTPC1Nov	0.012505722	LT	PC1	Nov	PC	11	0.396702204
+727	Clupeiformes	LTPC2Nov	0.178926492	LT	PC2	Nov	PC	11	
+771	Clupeiformes	LTPC3Nov	0.998674399	LT	PC3	Nov	PC	11	
+698	Gobiiformes	LTPC1Nov	0.059032835	LT	PC1	Nov	PC	11	0.019957304
+731	Gobiiformes	LTPC2Nov	0.000839075	LT	PC2	Nov	PC	11	
+775	Gobiiformes	LTPC3Nov	0	LT	PC3	Nov	PC	11	
+700	Labriformes	LTPC1Nov	0.000145657	LT	PC1	Nov	PC	11	4.85524E-05
+733	Labriformes	LTPC2Nov	0	LT	PC2	Nov	PC	11	
+777	Labriformes	LTPC3Nov	0	LT	PC3	Nov	PC	11	
+697	Mugiliformes	LTPC1Nov	2.08E-05	LT	PC1	Nov	PC	11	0.005558395
+730	Mugiliformes	LTPC2Nov	0.016654377	LT	PC2	Nov	PC	11	
+774	Mugiliformes	LTPC3Nov	0	LT	PC3	Nov	PC	11	
+704	others	LTPC1Nov	0.008198427	LT	PC1	Nov	PC	11	0.02028559
+737	others	LTPC2Nov	0.052658344	LT	PC2	Nov	PC	11	
+781	others	LTPC3Nov	0	LT	PC3	Nov	PC	11	
+703	Perciformes	LTPC1Nov	0.000894752	LT	PC1	Nov	PC	11	0.000357579
+736	Perciformes	LTPC2Nov	0.000177986	LT	PC2	Nov	PC	11	
+780	Perciformes	LTPC3Nov	0	LT	PC3	Nov	PC	11	
+699	Syngnathiformes	LTPC1Nov	0.001851929	LT	PC1	Nov	PC	11	0.000978899
+732	Syngnathiformes	LTPC2Nov	0.000711943	LT	PC2	Nov	PC	11	
+776	Syngnathiformes	LTPC3Nov	0.000372825	LT	PC3	Nov	PC	11	
+696	Tetraodontiformes	LTPC1Nov	0.002996379	LT	PC1	Nov	PC	11	0.030800209
+729	Tetraodontiformes	LTPC2Nov	0.088865722	LT	PC2	Nov	PC	11	
+773	Tetraodontiformes	LTPC3Nov	0.000538525	LT	PC3	Nov	PC	11	
+1080	Acanthuriformes	SKSha1Nov	0.000144988	SK	Sha1	Nov	Sha	11	0.196199846
+1124	Acanthuriformes	SKSha2Nov	0.000269263	SK	Sha2	Nov	Sha	11	
+1168	Acanthuriformes	SKSha3Nov	0.588185287	SK	Sha3	Nov	Sha	11	
+1087	Atheriniformes	SKSha1Nov	0	SK	Sha1	Nov	Sha	11	0.049148482
+1131	Atheriniformes	SKSha2Nov	2.07E-05	SK	Sha2	Nov	Sha	11	
+1175	Atheriniformes	SKSha3Nov	0.147424733	SK	Sha3	Nov	Sha	11	
+1086	Blenniiformes	SKSha1Nov	8.29E-05	SK	Sha1	Nov	Sha	11	2.76167E-05
+1130	Blenniiformes	SKSha2Nov	0	SK	Sha2	Nov	Sha	11	
+1174	Blenniiformes	SKSha3Nov	0	SK	Sha3	Nov	Sha	11	
+1079	Clupeiformes	SKSha1Nov	0.201408451	SK	Sha1	Nov	Sha	11	0.128877065
+1123	Clupeiformes	SKSha2Nov	0.001491301	SK	Sha2	Nov	Sha	11	
+1167	Clupeiformes	SKSha3Nov	0.183731442	SK	Sha3	Nov	Sha	11	
+1083	Gobiiformes	SKSha1Nov	0.324399337	SK	Sha1	Nov	Sha	11	0.224703121
+1127	Gobiiformes	SKSha2Nov	0.349710025	SK	Sha2	Nov	Sha	11	
+1171	Gobiiformes	SKSha3Nov	0	SK	Sha3	Nov	Sha	11	
+1085	Labriformes	SKSha1Nov	0.007373654	SK	Sha1	Nov	Sha	11	0.027643762
+1129	Labriformes	SKSha2Nov	0.000124275	SK	Sha2	Nov	Sha	11	
+1173	Labriformes	SKSha3Nov	0.075433358	SK	Sha3	Nov	Sha	11	
+1082	Mugiliformes	SKSha1Nov	2.07E-05	SK	Sha1	Nov	Sha	11	1.38083E-05
+1126	Mugiliformes	SKSha2Nov	2.07E-05	SK	Sha2	Nov	Sha	11	
+1170	Mugiliformes	SKSha3Nov	0	SK	Sha3	Nov	Sha	11	
+1089	others	SKSha1Nov	0.466072908	SK	Sha1	Nov	Sha	11	0.372688406
+1133	others	SKSha2Nov	0.648363712	SK	Sha2	Nov	Sha	11	
+1177	others	SKSha3Nov	0.003628597	SK	Sha3	Nov	Sha	11	
+1088	Perciformes	SKSha1Nov	0.000310688	SK	Sha1	Nov	Sha	11	0.000269441
+1132	Perciformes	SKSha2Nov	0	SK	Sha2	Nov	Sha	11	
+1176	Perciformes	SKSha3Nov	0.000497636	SK	Sha3	Nov	Sha	11	
+1084	Syngnathiformes	SKSha1Nov	0.000186413	SK	Sha1	Nov	Sha	11	0.000228016
+1128	Syngnathiformes	SKSha2Nov	0	SK	Sha2	Nov	Sha	11	
+1172	Syngnathiformes	SKSha3Nov	0.000497636	SK	Sha3	Nov	Sha	11	
+1081	Tetraodontiformes	SKSha1Nov	0	SK	Sha1	Nov	Sha	11	0.000200437
+1125	Tetraodontiformes	SKSha2Nov	0	SK	Sha2	Nov	Sha	11	
+1169	Tetraodontiformes	SKSha3Nov	0.00060131	SK	Sha3	Nov	Sha	11	
+167	Acanthuriformes	HKSta1Nov	0.078344065	HK	Sta1	Nov	Sta	11	0.179324819
+211	Acanthuriformes	HKSta2Nov	0.202678331	HK	Sta2	Nov	Sta	11	
+255	Acanthuriformes	HKSta3Nov	0.256952061	HK	Sta3	Nov	Sta	11	
+174	Atheriniformes	HKSta1Nov	0.023108188	HK	Sta1	Nov	Sta	11	0.010700463
+218	Atheriniformes	HKSta2Nov	0	HK	Sta2	Nov	Sta	11	
+262	Atheriniformes	HKSta3Nov	0.0089932	HK	Sta3	Nov	Sta	11	
+173	Blenniiformes	HKSta1Nov	0.055943737	HK	Sta1	Nov	Sta	11	0.019224712
+217	Blenniiformes	HKSta2Nov	0	HK	Sta2	Nov	Sta	11	
+261	Blenniiformes	HKSta3Nov	0.001730399	HK	Sta3	Nov	Sta	11	
+166	Clupeiformes	HKSta1Nov	0.285358725	HK	Sta1	Nov	Sta	11	0.302268616
+210	Clupeiformes	HKSta2Nov	0.448724061	HK	Sta2	Nov	Sta	11	
+254	Clupeiformes	HKSta3Nov	0.172723063	HK	Sta3	Nov	Sta	11	
+170	Gobiiformes	HKSta1Nov	0.003014112	HK	Sta1	Nov	Sta	11	0.002588872
+214	Gobiiformes	HKSta2Nov	0	HK	Sta2	Nov	Sta	11	
+258	Gobiiformes	HKSta3Nov	0.004752504	HK	Sta3	Nov	Sta	11	
+172	Labriformes	HKSta1Nov	0.001758232	HK	Sta1	Nov	Sta	11	0.000594201
+216	Labriformes	HKSta2Nov	0	HK	Sta2	Nov	Sta	11	
+260	Labriformes	HKSta3Nov	2.44E-05	HK	Sta3	Nov	Sta	11	
+169	Mugiliformes	HKSta1Nov	0	HK	Sta1	Nov	Sta	11	0.000211222
+213	Mugiliformes	HKSta2Nov	0	HK	Sta2	Nov	Sta	11	
+257	Mugiliformes	HKSta3Nov	0.000633667	HK	Sta3	Nov	Sta	11	
+176	others	HKSta1Nov	0.137507421	HK	Sta1	Nov	Sta	11	0.199862235
+220	others	HKSta2Nov	0.002694915	HK	Sta2	Nov	Sta	11	
+264	others	HKSta3Nov	0.459384368	HK	Sta3	Nov	Sta	11	
+175	Perciformes	HKSta1Nov	0.002466091	HK	Sta1	Nov	Sta	11	0.001788779
+219	Perciformes	HKSta2Nov	0	HK	Sta2	Nov	Sta	11	
+263	Perciformes	HKSta3Nov	0.002900246	HK	Sta3	Nov	Sta	11	
+171	Syngnathiformes	HKSta1Nov	0.125519478	HK	Sta1	Nov	Sta	11	0.048723982
+215	Syngnathiformes	HKSta2Nov	0.005078878	HK	Sta2	Nov	Sta	11	
+259	Syngnathiformes	HKSta3Nov	0.015573591	HK	Sta3	Nov	Sta	11	
+168	Tetraodontiformes	HKSta1Nov	0.286979952	HK	Sta1	Nov	Sta	11	0.234712098
+212	Tetraodontiformes	HKSta2Nov	0.340823815	HK	Sta2	Nov	Sta	11	
+256	Tetraodontiformes	HKSta3Nov	0.076332529	HK	Sta3	Nov	Sta	11	
+299	Acanthuriformes	HKSW1Nov	0.199183538	HK	SW1	Nov	SW	11	0.4220333
+343	Acanthuriformes	HKSW2Nov	0.456803298	HK	SW2	Nov	SW	11	
+387	Acanthuriformes	HKSW3Nov	0.610113065	HK	SW3	Nov	SW	11	
+306	Atheriniformes	HKSW1Nov	0.000145057	HK	SW1	Nov	SW	11	0.017032446
+350	Atheriniformes	HKSW2Nov	0.046031846	HK	SW2	Nov	SW	11	
+394	Atheriniformes	HKSW3Nov	0.004920436	HK	SW3	Nov	SW	11	
+305	Blenniiformes	HKSW1Nov	0	HK	SW1	Nov	SW	11	0.010497157
+349	Blenniiformes	HKSW2Nov	0.029313916	HK	SW2	Nov	SW	11	
+393	Blenniiformes	HKSW3Nov	0.002177554	HK	SW3	Nov	SW	11	
+298	Clupeiformes	HKSW1Nov	0.306069586	HK	SW1	Nov	SW	11	0.270083778
+342	Clupeiformes	HKSW2Nov	0.432720273	HK	SW2	Nov	SW	11	
+386	Clupeiformes	HKSW3Nov	0.071461474	HK	SW3	Nov	SW	11	
+302	Gobiiformes	HKSW1Nov	0.000186501	HK	SW1	Nov	SW	11	0.037624215
+346	Gobiiformes	HKSW2Nov	0.003326847	HK	SW2	Nov	SW	11	
+390	Gobiiformes	HKSW3Nov	0.109359296	HK	SW3	Nov	SW	11	
+304	Labriformes	HKSW1Nov	0.093872392	HK	SW1	Nov	SW	11	0.031604858
+348	Labriformes	HKSW2Nov	4.18E-05	HK	SW2	Nov	SW	11	
+392	Labriformes	HKSW3Nov	0.000900335	HK	SW3	Nov	SW	11	
+301	Mugiliformes	HKSW1Nov	0.000124334	HK	SW1	Nov	SW	11	0.000697392
+345	Mugiliformes	HKSW2Nov	0.000481242	HK	SW2	Nov	SW	11	
+389	Mugiliformes	HKSW3Nov	0.0014866	HK	SW3	Nov	SW	11	
+308	others	HKSW1Nov	0.188179953	HK	SW1	Nov	SW	11	0.122422287
+352	others	HKSW2Nov	0.02452242	HK	SW2	Nov	SW	11	
+396	others	HKSW3Nov	0.154564489	HK	SW3	Nov	SW	11	
+307	Perciformes	HKSW1Nov	4.14E-05	HK	SW1	Nov	SW	11	0.000704611
+351	Perciformes	HKSW2Nov	0.000690478	HK	SW2	Nov	SW	11	
+395	Perciformes	HKSW3Nov	0.00138191	HK	SW3	Nov	SW	11	
+303	Syngnathiformes	HKSW1Nov	6.22E-05	HK	SW1	Nov	SW	11	0.012143332
+347	Syngnathiformes	HKSW2Nov	0.002196974	HK	SW2	Nov	SW	11	
+391	Syngnathiformes	HKSW3Nov	0.034170854	HK	SW3	Nov	SW	11	
+300	Tetraodontiformes	HKSW1Nov	0.212135027	HK	SW1	Nov	SW	11	0.075156624
+344	Tetraodontiformes	HKSW2Nov	0.00387086	HK	SW2	Nov	SW	11	
+388	Tetraodontiformes	HKSW3Nov	0.009463987	HK	SW3	Nov	SW	11	

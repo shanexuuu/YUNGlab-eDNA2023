@@ -1,0 +1,395 @@
+#00 Remove Primer
+- https://github.com/allenlab/QIIME2_18Sv4_ASV_protocol
+- Use LULU otu in default setting
+- Reference: Holman, Luke E., et al. "Animals, protists and bacteria share marine biogeographic patterns." Nature Ecology & Evolution 5.6 (2021): 738-746.
+
+#00 18SV4 remove primer
+	mkdir -p 02_18SV4_noprimer
+	
+	cp 01_demultiplex/S*/*.gz 02_18SV4_noprimer/
+
+	conda activate qiime2-amplicon-2024.2 
+
+	# R remove primer
+	R
+#### DADA2 analysis of fastq files
+#### Paired-end 
+#--------------- DADA2 processing ---------------#
+# Load library and functions
+	library(dada2); packageVersion("dada2") #1.31.0
+	library(ShortRead); packageVersion("ShortRead") #1.60.0
+	library(tidyverse); packageVersion("tidyverse") #2.0.0
+	library(Biostrings); packageVersion("Biostrings") # 2.70.3
+# Load sequence reads
+
+	output_folder <- "02_18SV4_noprimer"
+
+	path <- "02_18SV4_noprimer"
+
+	fnFs <- sort(list.files(path, pattern="_R1_001.fastq.gz", full.names = T)) # Forward read files
+	fnRs <- sort(list.files(path, pattern="_R2_001.fastq.gz", full.names = T)) # Reverse read files
+# Get sample names, assuming files named as so: SAMPLENAME_XXX.fastq
+	sample_names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
+
+	View(sample_names) 
+
+# ------------------------ Primer removal check ---------------------------- #
+# Identify primers
+FWD <- "CCAGCASCYGCGGTAATTCC" # 18SV4_F
+REV <- "ACTTTCGTTCTTGATYRA" # 18SV4_R
+##ref https://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2009.04480.x
+
+allOrients <- function(primer) {
+    # Create all orientations of the input sequence
+    require(Biostrings)
+    dna <- DNAString(primer)  # The Biostrings works w/ DNAString objects rather than character vectors
+    orients <- c(Forward = dna, Complement = Biostrings::complement(dna), Reverse = Biostrings::reverse(dna),
+        RevComp = Biostrings::reverseComplement(dna))
+    return(sapply(orients, toString))  # Convert back to character vector
+}
+
+FWD_orients <- allOrients(FWD)
+REV_orients <- allOrients(REV)
+
+# Identify primers
+primerHits <- function(primer, fn) {
+    # Counts number of reads in which the primer is found
+    nhits <- vcountPattern(primer, sread(readFastq(fn)), fixed = FALSE)
+    return(sum(nhits > 0))
+}
+
+seq_id <- 1
+rbind(FWD.ForwardReads = sapply(FWD_orients, primerHits, fn = fnFs[[seq_id]]),
+      FWD.ReverseReads = sapply(FWD_orients, primerHits, fn = fnRs[[seq_id]]), 
+      REV.ForwardReads = sapply(REV_orients, primerHits, fn = fnFs[[seq_id]]), 
+      REV.ReverseReads = sapply(REV_orients, primerHits, fn = fnRs[[seq_id]]))
+
+# Remove Primer
+fnFs.filtN <- file.path(path, "filtN", basename(fnFs)) # Put N-filtered files in filtN/ subdirectory
+fnRs.filtN <- file.path(path, "filtN", basename(fnRs))
+filterAndTrim(fnFs, fnFs.filtN, fnRs, fnRs.filtN, maxN = 0, multithread = TRUE)
+
+	cutadapt <- "/usr/bin/cutadapt" # CHANGE ME to the cutadapt path on your machine
+	system2(cutadapt, args = "--version") # Run shell commands from R
+
+path.cut <- file.path(path, "cutadapt")
+if(!dir.exists(path.cut)) dir.create(path.cut)
+fnFs.cut <- file.path(path.cut, basename(fnFs))
+fnRs.cut <- file.path(path.cut, basename(fnRs))
+
+FWD.RC <- dada2:::rc(FWD)
+REV.RC <- dada2:::rc(REV)
+# Trim FWD and the reverse-complement of REV off of R1 (forward reads)
+R1.flags <- paste("-g", FWD, "-a", REV.RC) 
+# Trim REV and the reverse-complement of FWD off of R2 (reverse reads)
+R2.flags <- paste("-G", REV, "-A", FWD.RC) 
+# Run Cutadapt
+for(i in seq_along(fnFs)) {
+  system2(cutadapt, args = c(R1.flags, R2.flags, "-n", 2, # -n 2 required to remove FWD and REV from reads
+                             "-o", fnFs.cut[i], "-p", fnRs.cut[i], # output files
+                             fnFs.filtN[i], fnRs.filtN[i])) # input files
+}
+
+## check after primer cut
+rbind(FWD.ForwardReads = sapply(FWD_orients, primerHits, fn = fnFs.cut[[1]]), FWD.ReverseReads = sapply(FWD_orients,
+    primerHits, fn = fnRs.cut[[1]]), REV.ForwardReads = sapply(REV_orients, primerHits,
+    fn = fnFs.cut[[1]]), REV.ReverseReads = sapply(REV_orients, primerHits, fn = fnRs.cut[[1]]))
+
+	# Success! Primers are no longer detected in the cutadapted reads.
+
+# Save no primer seq
+
+	# Forward and reverse fastq filenames have the format:
+cutFs <- sort(list.files(path.cut, pattern = "_R1_001.fastq.gz", full.names = TRUE))
+cutRs <- sort(list.files(path.cut, pattern = "_R2_001.fastq.gz", full.names = TRUE))
+
+	# Extract sample names, assuming filenames have format:
+get.sample.name <- function(fname) strsplit(basename(fname), "_")[[1]][1]
+
+sample.names <- unname(sapply(cutFs, get.sample.name))
+
+head(sample.names)
+
+
+# Performing filtering and trimming after primer removed!
+filt_path <- file.path(path, "filtered_after_cut_primer") # Place filtered_after_cut_primer files in filtered/ subdirectory
+filtFs <- file.path(filt_path, paste0(sample_names, "_F_no_primer_filt.fastq.gz"))
+filtRs <- file.path(filt_path, paste0(sample_names, "_R_no_primer_filt.fastq.gz"))
+
+# Check quality after primer cut
+	plotQualityProfile(cutFs[1:2])
+	plotQualityProfile(cutRs[1:2])
+
+## 18SV4长度? trunc end of reads?
+## truncLen=c(forward,reverse) is based on quality result
+## 250bp-primer_length(F20/R18)~230 或者不trim设为0
+#no trim
+out <- filterAndTrim(cutFs, filtFs, cutRs, filtRs,
+                     truncLen=c(0, 0), # Truncate the end of reads
+                     minLen = 100, # Remove unexpectedly short reads
+                     maxN = 0, maxEE = c(2,2), truncQ = 2, rm.phix = T,
+                     compress=TRUE, multithread=TRUE)
+View(out)
+
+	plotQualityProfile(filtFs[1])
+	plotQualityProfile(filtRs[1])
+
+# Exclude 0 seq samples, rename filtFs and filtRs
+if(length(sample_names[out[,2]<1 | out[,1]<1]) > 0){
+  filtFs <- file.path(filt_path, paste0(sample_names[out[,2]>0 & out[,1]>0], "_F_filt.fastq.gz"))
+  filtRs <- file.path(filt_path, paste0(sample_names[out[,2]>0 & out[,1]>0], "_R_filt.fastq.gz"))
+}
+
+write.csv(out, paste0(output_folder, "/out_track.csv"))
+
+# Save workspace _skip
+# Save session info_skip
+	q()
+	n
+#-------------------------------------------#
+
+
+# 01 preprare reads without primer
+
+- use filt.N_noprimer/
+
+	mkdir -p 00_noprimer
+	
+	while read p;      
+	    do     
+	    cp /home/xwq/eDNA/formal_June24/05_redo_batch_Oct24/02_18SV4_noprimer/filtered_after_cut_primer/''"$p"'_F_no_primer_filt.fastq.gz' 00_noprimer/''"$p"'_5_R1.fastq.gz';
+	done < sample_name.txt
+
+	while read p;      
+	    do     
+	    cp /home/xwq/eDNA/formal_June24/05_redo_batch_Oct24/02_18SV4_noprimer/filtered_after_cut_primer/''"$p"'_R_no_primer_filt.fastq.gz' 00_noprimer/''"$p"'_5_R2.fastq.gz';
+	done < sample_name.txt
+
+	seqkit stat 00_noprimer/*R1.fastq.gz > 00_noprimer_stat.txt
+
+#2 Run sequence read file through quality trimming: running window of Q25, 10-nt wide, mean Q25
+
+	mkdir -p 02_trimmed
+
+	while read p; 
+	do
+	 sickle pe  -f 00_noprimer/''"$p"'_R1.fastq.gz'  -r 00_noprimer/''"$p"'_R2.fastq.gz'  -t sanger  -o 02_trimmed/''"$p"'_R1_paired.fastq'  -p 02_trimmed/''"$p"'_R2_paired.fastq' -s 02_trimmed/''"$p"'_nonparied.fastq' -q 25;
+	done < sample_name.txt
+
+	seqkit stat 02_trimmed/*R1_paired.fastq > 02_trimmed_stat.txt
+
+#3 usearch merge Mifish min 200 bp minovlen20 bp 
+##   -fastq_pctid  Minimum %id of alignment. Default 90. Consider decreasing if you have long overlaps.
+
+	mkdir -p 03_usearch_merge
+## min200 
+	while read p; 
+	do
+	 usearch -fastq_mergepairs 02_trimmed/''"$p"'_R1_paired.fastq'  -reverse 02_trimmed/''"$p"'_R2_paired.fastq'  -fastq_pctid 95  -fastqout 03_usearch_merge/''"$p"'_merge.fastq'  -fastq_minovlen 20 -fastq_minmergelen 200;
+	done < sample_name.txt
+
+	seqkit stat 03_usearch_merge/*fastq > 03_usearch_merge_stat.txt
+
+
+#4 Quality-filtering merged reads * 0 mismatches, fastq_maxee_rate 0.005
+	mkdir -p 04_quality_filt
+
+	while read p; 
+	do
+         usearch -fastq_filter 03_usearch_merge/''"$p"'_merge.fastq'  -fastq_maxee_rate 0.005  -fastaout 04_quality_filt/''"$p"'_merge.filt.fasta';
+	done < sample_name.txt
+
+	seqkit stat 04_quality_filt/*_merge.filt.fasta > 04_quality_filt_stat.txt
+
+#5 Add barcode labels onto sequence read identifiers
+	mkdir -p 05_final_label
+
+	while read p; 
+	do
+        python /media/SharedFolder/Script/fasta_number2.py 04_quality_filt/''"$p"'_merge.filt.fasta' "$p" > 05_final_label/''"$p"'_label.fasta'
+	done < sample_name.txt
+
+#6 Concatenate seq
+	cat 05_final_label/*_label.fasta > cat_labeled.fa
+
+#7 Dereplicate the sequences using usearch (64 bit), min= 2 reads  
+
+	usearch -fastx_uniques cat_labeled.fa -fastaout cat_label_derep.fasta -sizeout 
+
+	#if not, 改为 vsearch  
+	/SSD7TB_data/software/vsearch-2.29.0/bin/vsearch -fastx_uniques cat_labeled.fa -fastaout cat_label_derep.fasta -sizeout 
+
+#8 ZOTU (Unoise3 Denoising) 2737 个ZOTU
+	usearch  -unoise3 cat_label_derep.fasta -zotus cat_label_derep_zotus.fasta 
+
+#9 Assign reads to ZOTUs
+	usearch -otutab cat_labeled.fa -zotus cat_label_derep_zotus.fasta -otutabout cat_label_derep_zotus_otutab.txt -threads 180
+	
+## vsearch  Map reads back to centriods make ZOTU  id 0.985
+
+	vsearch-2.29.0/bin/vsearch --usearch_global cat_labeled.fa --db cat_label_derep_zotus.fasta --id 0.985 --otutabout cat_label_derep_zotus_otutab.txt --biomout cat_label_derep_zotus_otutab.biom  --threads 180 --log zotutab_log.txt
+
+#10 Try LULU OTU
+	#10 LULU OTU 
+- https://github.com/tobiasgf/lulu
+	conda activate R_amplicon
+##10.1 blastn
+	makeblastdb -in cat_label_derep_zotus.fasta -parse_seqids -dbtype nucl
+
+	blastn -db cat_label_derep_zotus.fasta -outfmt '6 qseqid sseqid pident' -out match_list.txt -qcov_hsp_perc 80 -perc_identity 84 -query cat_label_derep_zotus.fasta
+
+##10.2 input data in R
+	R
+	library("lulu")
+
+	otutab <- read.csv("cat_label_derep_zotus_otutab.txt",sep='\t',header=TRUE,as.is=TRUE, row.names = 1)
+
+	row_sums <- rowSums(otutab)
+
+	non_zero_rows <- which(row_sums != 0)
+
+	otutab_filtered <- otutab[non_zero_rows, ]
+
+	matchlist <- read.table("match_list.txt", header=FALSE,as.is=TRUE, stringsAsFactors=FALSE)
+
+	##save result
+	b <- data.frame(FilteredZOTU=rownames(otutab_filtered), otutab_filtered)  
+
+	write.table(b, "otutab_filtered.csv", row.names=F, col.names = T, sep=",")
+
+##10.3 run LULU
+
+	curated_result <- lulu(otutab_filtered, matchlist)
+
+	# ....Which is equivalent of running LULU with default settings for the options minimum_ratio_type, minimum_ratio, minimum_relative_cooccurence  
+
+	curated_result <- lulu(otutab_filtered, matchlist, minimum_ratio_type = "min", minimum_ratio = 1, minimum_match = 84, minimum_relative_cooccurence = 0.95)
+
+	## Number of OTUs retained
+	curated_result$curated_count
+
+	## Number of OTUs discarded 
+	curated_result$discarded_count
+
+	##save result
+	curated_result$curated_table
+
+	a <- data.frame(LULUOTU=rownames(curated_result$curated_table), curated_result$curated_table)  
+
+	write.table(a, "curated_otutab.csv", row.names=F, col.names = T, sep=",")
+
+	q()
+	n
+
+##10.4 extract luluotu.fasta
+
+	awk 'BEGIN{ FS=",";OFS="\t" }{ print $1}' curated_otutab.csv > luluotuID.txt
+
+	sed -i '1d' luluotuID.txt
+
+	sed 's/^["]*//g' luluotuID.txt > luluotuID2.txt
+
+	sed 's/["]*$//g' luluotuID2.txt >luluotuID_final.txt
+
+	wc -l luluotuID_final.txt
+
+	#seqkit extract
+	seqkit grep -f luluotuID_final.txt cat_label_derep_zotus.fasta > luluotu_seq.fa
+
+##11  LULUOTU for taxanomy annotation
+	qiime tools import \
+	  --type 'FeatureData[Sequence]' \
+	  --input-path luluotu_seq.fa \
+	  --output-path luluotu_seq.qza
+
+	##Convert OTU table from txt to biom format
+	sed '1s/"//g; s/"//g' curated_otutab.csv | tr ',' '\t' > luluotutab.txt
+
+	biom convert -i luluotutab.txt -o luluotu_forqiime.biom \
+	  --table-type="OTU table" --to-json
+
+	##Import otu table
+	qiime tools import \
+	  --input-path luluotu_forqiime.biom \
+	  --type 'FeatureTable[Frequency]' \
+	  --input-format BIOMV100Format \
+	  --output-path luluotu_forqiime.qza
+
+	#PR2 5.0 /media/backup2/PR2_v5.0_db_Oct2023/training-feature-classifiers/
+
+	##Assign taxonomy  
+	time qiime feature-classifier classify-sklearn --p-confidence 0.8 \
+	  --i-classifier /media/backup2/PR2_v5.0_db_Oct2023/training-feature-classifiers/pr2_version_5.0.0_SSU_mothur_18SV4primer_train_classifier.qza \
+	  --i-reads luluotu_seq.qza \
+	  --o-classification luluotu_taxonomy_PR5.0.qza \
+	  --p-n-jobs 100 
+
+	##export
+	qiime tools export \
+	  --input-path luluotu_taxonomy_PR5.0.qza \
+	  --output-path 07_luluotu_taxonomy_PR5
+
+	##Taxa plot  
+
+	qiime taxa barplot \
+	  --i-table luluotu_forqiime.qza \
+	  --i-taxonomy luluotu_taxonomy_PR5.0.qza \
+	  --m-metadata-file metadata.txt \
+	  --o-visualization 07_luluotu_taxonomy_PR5/taxa-bar-plots.qzv 
+
+	##rarefaction curve
+	time qiime diversity alpha-rarefaction \
+	     --i-table luluotu_forqiime.qza \
+	     --m-metadata-file metadata.txt \
+	     --p-max-depth 37246 \
+	     --o-visualization 07_luluotu_taxonomy_PR5/depth37246_alpha_rarefaction_curves.qzv
+
+	##rarefaction curve
+	time qiime diversity alpha-rarefaction \
+	     --i-table luluotu_forqiime.qza \
+	     --m-metadata-file metadata.txt \
+	     --p-max-depth 93983 \
+	     --o-visualization 07_luluotu_taxonomy_PR5/depth93983_alpha_rarefaction_curves.qzv
+
+# 12 LULUotu for downstream analysis
+
+	conda activate qiime2-amplicon-2024.2 
+
+	# filter out metazoa reads
+	qiime taxa filter-table \
+	  --i-table luluotu_forqiime.qza \
+	  --i-taxonomy luluotu_taxonomy_PR5.0.qza \
+	  --p-exclude metazoa \
+	  --o-filtered-table luluotu_otutab_no-metazoa.qza
+
+	#extract filtered otutab
+	qiime tools extract \
+	  --input-path luluotu_otutab_no-metazoa.qza \
+	  --output-path 09_LULUzotu_no_metazoa
+
+	biom convert -i 09_LULUzotu_no_metazoa/*/data/feature-table.biom -o 09_LULUzotu_no_metazoa/filt_otutab.tsv --table-type="OTU table" --to-tsv
+
+	#Keep ASVs >20 count
+- https://forum.qiime2.org/t/qiime-2-12-filtering-data-2019-7/12148
+
+	time qiime feature-table filter-features \
+	  --i-table luluotu_otutab_no-metazoa.qza \
+	  --p-min-frequency 20 \
+	  --o-filtered-table luluotu_otutab_no-metazoa_min20filt.qza
+
+	qiime tools extract \
+	  --input-path luluotu_otutab_no-metazoa_min20filt.qza \
+	  --output-path 09_LULUzotu_no_metazoa/otutab-no-metazoa_min20filt
+
+	biom convert -i 09_LULUzotu_no_metazoa/otutab-no-metazoa_min20filt/*/data/feature-table.biom -o 09_LULUzotu_no_metazoa/no_metazoa_min20filt_otutab.tsv --table-type="OTU table" --to-tsv
+
+#13 Final cat summarize taxanomy
+	cd 10_LULUresult/
+
+	nano tax_final.txt
+
+	python3 summarizeAbundance.py \
+      -i nometazoa_Protist_luluotutab.tsv \
+      -m tax_final.txt \
+      -c '5,6,7,8,9' -s '\t' -n raw \
+      -o Protist_18S_afterLULU

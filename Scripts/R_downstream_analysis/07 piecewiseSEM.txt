@@ -1,0 +1,652 @@
+#08 piecewiseSEM
+
+## R v4.4.1 2024-06-14
+## piecewiseSEM v2.3.0.1.
+
+# 00 prepare env
+	rm(list = ls()) 
+	setwd("07_piecewiseSEM")
+	
+library(lme4)
+library(car)
+library(multilevelTools)
+library(ggplot2)
+library(ggpmisc)
+library(reshape2)
+library(ggpubr)
+library(agricolae)
+library(ggthemes)
+library(ggsci)
+library(ggbreak)
+library(ggsignif)
+library(readxl)
+library(tidyverse)
+library(here)
+library(glmmTMB)
+library(sjPlot)
+library(performance)
+library(ggeffects)
+library(DHARMa)
+library(ggforce)
+library(ggdist)
+library(gghalves)
+library(inspectdf)
+library(emmeans)
+library(patchwork)
+library(ggtext)
+library(broom)
+library(effects)
+library(scico)
+library(piecewiseSEM) 
+library(lavaan)
+library(lavaanPlot)
+library(janitor)
+library(ggpmisc)
+library(MuMIn)
+library(bestNormalize)
+library(semPlot)
+library(nlme)
+
+# 01 input data
+
+	input <-read.delim("input.tsv", row.names = 1, header = TRUE, sep = "\t")
+
+# 02 check data 
+	input %>% inspect_num() %>% show_plot()
+
+# 03  bestNormalize
+	set.seed(12345)
+	
+	best<- bestNormalize(input$EukPhyto)
+	best
+	input$EukPhyto_Normed <- sqrt(input$EukPhyto)
+	input$Cyano_Normed <- (orderNorm(input$Cyano))$x.t
+	input$Cyano_Normed <- (orderNorm(input$Cyano))$x.t
+	input$HP_Normed <- (orderNorm(input$HP))$x.t
+	input$Both_Normed <- (orderNorm(input$Both))$x.t
+	input$PC_sum_Nutrient_Normed <- (orderNorm(input$PC_sum_Nutrient))$x.t
+	input$PC_sum_Phy_noTem_Normed <- sqrt(input$PC_sum_Phy_noTem+2.524781)
+	input$Consumer_Normed <- center_scale(input$Consumer)$x.t
+	input$The.tertiary.consumer_Normed <- asinh(input$The.tertiary.consumer)
+	input$The.secondary.consumer.groups..predator_Normed <- (boxcox(input$The.secondary.consumer.groups..predator))$x.t
+	input$The.primary.consumers.Herbivorous.fish.detritivore_Normed <- sqrt(input$The.primary.consumers.Herbivorous.fish.detritivore)
+	input$Primary.producer_Normed <- (orderNorm(input$Primary.producer))$x.t	
+	input$Hard.Coral_Normed <- (orderNorm(input$Hard.Coral))$x.t	
+	input$Decomposer_Normed <- (orderNorm(input$Decomposer))$x.t
+	input$Mixotroph_Normed <- (orderNorm(input$Mixotroph))$x.t
+	
+	input$FishRich_Normed <- center_scale(input$FishRich)$x.t
+	input$BenRich_Normed <- yeojohnson(input$BenRich)$x.t
+	input$ProtistRich_Normed <- log10(input$ProtistRich)
+	input$ProkRich_Normed <- center_scale(input$ProkRich)$x.t
+	input$Network_complexity_Normed <- yeojohnson(input$Network_complexity)$x.t
+	input$Allphyto_Normed <- (orderNorm(input$Allphyto))$x.t
+	input$pH_Normed <- sqrt(input$pH)
+	input$Tem_Normed <- (orderNorm(input$Temperature))$x.t
+	input$Salinity_Normed <- (orderNorm(input$Salinity))$x.t
+	input$Turbidity_Normed <- (orderNorm(input$Turbidity))$x.t
+	input$DO_Normed <- (orderNorm(input$DO))$x.t
+	input$TP_Normed <- sqrt(input$TP)
+	input$SiO3_Normed <- sqrt(input$SiO3)
+	input$NO3_Normed <- sqrt(input$NO3)
+	
+	input %>% inspect_num() %>% show_plot()
+	b <- data.frame(Sample = rownames(input), input)
+	write.table(b, "input_bestnormed.tsv", row.names = F, col.names = T, sep = "\t", quote = FALSE)
+
+#04 addGroup after bestNormed
+	a1 <-read.delim("forSEM_normed_addgroup.tsv", row.names = 1, header = TRUE, sep = "\t")
+
+#05 SEM MODELS -------------------------------------------------------------
+	set.seed(123456)
+## 5.1 Set factor 
+
+	ordered.region <- c("LT","HK","SK")
+	ordered.region <- factor(1:length(ordered.region),labels = ordered.region)
+	a1$Region<-factor(a1$Region,levels = levels(ordered.region))
+
+	ordered.season <- c("Feb","May","Aug","Nov")
+	ordered.season <- factor(1:length(ordered.season),labels = ordered.season)
+	a1$Season<-factor(a1$Season,levels = levels(ordered.season))
+
+	ordered.site2 <- c("CMW","CC","PC","SW","Sta","Bea","Sha","Blu","LKW")
+	ordered.site2 <- factor(1:length(ordered.site2),labels = ordered.site2)
+	a1$Site2<-factor(a1$Site2,levels = levels(ordered.site2))
+
+	a1$Site <- factor(a1$Site)
+
+## 5.2 Final model include Temperature NO3 Consumer Hard Coral Primary Decomposer_Normed Network_complexity 
+	LT<- filter(a1,Region=='LT') 
+	HK<- filter(a1,Region=='HK') 
+	SK<- filter(a1,Region=='SK') 
+
+s.LT3<- psem (lme(Tem_Normed ~ Month, random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = LT),
+				lme(NO3_Normed ~ Month,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = LT),		
+				Primary.producer_Normed %~~% Decomposer_Normed,
+            lme(Decomposer_Normed ~ Tem_Normed+NO3_Normed,random= ~ 1|Season,data = LT),
+            lme(Primary.producer_Normed~ Tem_Normed+NO3_Normed,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = LT),
+			lme(Hard.Coral_Normed ~  Decomposer_Normed +Primary.producer_Normed+Tem_Normed+NO3_Normed,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = LT),
+			lme(Consumer_Normed ~ Hard.Coral_Normed+Tem_Normed+NO3_Normed+Decomposer_Normed+Primary.producer_Normed,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = LT),
+			lme(Network_complexity_Normed ~ NO3_Normed+Tem_Normed+Consumer_Normed+Decomposer_Normed+Primary.producer_Normed+Hard.Coral_Normed,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = LT)
+)
+	summary(s.LT3) 
+	AIC(s.LT3)
+
+s.HK3<- psem (lme(Tem_Normed ~ Month, random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = HK),
+				lme(NO3_Normed ~ Month,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = HK),		
+				Primary.producer_Normed %~~% Decomposer_Normed,
+            lme(Decomposer_Normed ~ Tem_Normed+NO3_Normed,random= ~ 1|Season,data = HK),
+            lme(Primary.producer_Normed~ Tem_Normed+NO3_Normed,random= ~ 1|Season,data = HK),
+			lme(Hard.Coral_Normed ~  Decomposer_Normed +Primary.producer_Normed+Tem_Normed+NO3_Normed,random= ~ 1|Season,data = HK),
+			lme(Consumer_Normed ~ Hard.Coral_Normed+Tem_Normed+NO3_Normed+Decomposer_Normed+Primary.producer_Normed,random= ~ 1|Season,data = HK),
+			lme(Network_complexity_Normed ~ NO3_Normed+Tem_Normed+Consumer_Normed+Decomposer_Normed+Primary.producer_Normed+Hard.Coral_Normed,,random= ~ 1|Season,data = HK)
+)
+	summary(s.HK3) 
+	AIC(s.HK3)
+
+s.SK3<- psem (lme(Tem_Normed ~ Month, random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = SK),
+				lme(NO3_Normed ~ Month,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = SK),		
+				Primary.producer_Normed %~~% Decomposer_Normed,
+            lme(Decomposer_Normed ~ Tem_Normed+NO3_Normed,random= ~ 1|Season,data = SK),
+            lme(Primary.producer_Normed~ Tem_Normed+NO3_Normed,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = SK),
+			lme(Hard.Coral_Normed ~  Decomposer_Normed +Primary.producer_Normed+Tem_Normed+NO3_Normed,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = SK),
+			lme(Consumer_Normed ~ Hard.Coral_Normed+Tem_Normed+NO3_Normed+Decomposer_Normed+Primary.producer_Normed,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = SK),
+			lme(Network_complexity_Normed ~ NO3_Normed+Tem_Normed+Consumer_Normed+Decomposer_Normed+Primary.producer_Normed+Hard.Coral_Normed,random= ~ 1|Month/Site2,correlation=corCompSymm(form=~Month),data = SK)
+)
+	summary(s.SK3) 
+	AIC(s.SK3)
+
+#06 Calculate indirect & direct & total effects and plot
+
+library(ggplot2)
+library(reshape2)
+library(dplyr)
+
+## ----------   LT model ---------
+coefs_df <- coefs(s.LT3)
+print("=== origin coefs_df ===")
+print(coefs_df)
+
+
+if (nrow(coefs_df) == 0) {
+  stop("please check model")
+}
+
+coefs_df$effect <- coefs_df$Std.Estimate
+
+build_graph <- function(coefs_df) {
+  graph <- list()
+  for (i in 1:nrow(coefs_df)) {
+    from <- coefs_df$Predictor[i]
+    to <- coefs_df$Response[i]
+    effect <- coefs_df$effect[i]
+    if (!is.null(graph[[from]])) {
+      graph[[from]] <- rbind(graph[[from]], data.frame(to = to, effect = effect, stringsAsFactors = FALSE))
+    } else {
+      graph[[from]] <- data.frame(to = to, effect = effect, stringsAsFactors = FALSE)
+    }
+  }
+  return(graph)
+}
+
+graph <- build_graph(coefs_df)
+print("=== make graph ===")
+print(graph)
+
+find_all_paths <- function(graph, start, end, visited = character()) {
+  if (start == end) {
+    return(list(c(end)))
+  }
+  if (!start %in% names(graph)) {
+    return(list())
+  }
+  visited <- c(visited, start)
+  paths <- list()
+  for (i in 1:nrow(graph[[start]])) {
+    next_node <- graph[[start]]$to[i]
+    if (!(next_node %in% visited)) {
+      sub_paths <- find_all_paths(graph, next_node, end, visited)
+      for (sp in sub_paths) {
+        paths <- c(paths, list(c(start, sp)))
+      }
+    }
+  }
+  return(paths)
+}
+
+path_effect <- function(path, graph) {
+  eff <- 1
+  for (i in 1:(length(path)-1)) {
+    from <- path[i]
+    to <- path[i+1]
+    edge <- graph[[from]]
+    eff <- eff * edge$effect[edge$to == to]
+  }
+  return(eff)
+}
+
+compute_all_effects <- function(graph, variables) {
+  results <- data.frame(
+    predictor = character(),
+    outcome = character(),
+    direct_effect = numeric(),
+    indirect_effect = numeric(),
+    total_effect = numeric(),
+    stringsAsFactors = FALSE
+  )
+  
+  for (pred in variables) {
+    for (outc in variables) {
+      if (pred != outc) {
+        paths <- find_all_paths(graph, pred, outc)
+        # Debug print
+        # print(paste("Paths from", pred, "to", outc, ":"))
+        # print(paths)
+        
+        if (length(paths) > 0) {
+          direct_effect <- 0
+          indirect_effect <- 0
+          for (p in paths) {
+            eff <- path_effect(p, graph)
+            if (length(p) == 2) {
+              direct_effect <- direct_effect + eff
+            } else {
+              indirect_effect <- indirect_effect + eff
+            }
+          }
+          total_effect <- direct_effect + indirect_effect
+          results <- rbind(results, data.frame(
+            predictor = pred,
+            outcome = outc,
+            direct_effect = direct_effect,
+            indirect_effect = indirect_effect,
+            total_effect = total_effect,
+            stringsAsFactors = FALSE
+          ))
+        }
+      }
+    }
+  }
+  return(results)
+}
+
+all_vars <- unique(c(coefs_df$Response, coefs_df$Predictor))
+effects_df <- compute_all_effects(graph, all_vars)
+print("=== Total effects_df ===")
+
+print(effects_df)
+
+if (nrow(effects_df) == 0) {
+  stop("Check path")
+}
+
+metrics_to_show <- c("direct_effect", "indirect_effect", "total_effect")
+
+plot_df <- melt(effects_df, 
+                id.vars = c("predictor", "outcome"), 
+                measure.vars = metrics_to_show,
+                variable.name = "effect_type", 
+                value.name = "effect_size")
+
+plot_df$effect_type <- factor(plot_df$effect_type, levels = metrics_to_show)
+desired_order <- c("Network_complexity_Normed","Consumer_Normed","Hard.Coral_Normed","Primary.producer_Normed","Decomposer_Normed", "NO3_Normed", "Tem_Normed" )
+
+plot_df <- plot_df %>% filter(predictor %in% desired_order)
+
+plot_df$predictor <- factor(plot_df$predictor, levels = desired_order)
+
+plot_df_filtered <- plot_df %>% filter(outcome == "Network_complexity_Normed")
+plot_df_filtered
+
+p1 <- ggplot(plot_df_filtered, aes(x = predictor, y = effect_size, fill = effect_type)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.7), width = 0.7) +  # 调整柱子之间的间距
+  labs(x = "Predictor", y = "Standardized Effect Size", 
+       title = "Effects on network complexity: Direct, Indirect, and Total") +
+  scale_fill_manual(values = c("direct_effect" = "#008CB7", 
+                               "indirect_effect" = "#a6cee3", 
+                               "total_effect" = "#b2df8a")) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.title = element_blank()) +
+  geom_hline(yintercept = 0, linetype = "solid", color = "gray", size = 0.5) +
+  ylim(-0.5, 0.5) +
+  theme(axis.ticks.length.y = unit(-.1, "cm"),
+        axis.ticks.length.x = unit(0, "cm"),
+        axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+        axis.text.y = element_text(margin = margin(r = .2, unit = "cm")),
+        panel.background = element_rect(fill = "transparent", color = "transparent"),
+        text = element_text(family = "Arial", size = 20),
+        panel.grid = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank()) +
+  coord_flip() 
+
+print(p1) #save 8x6
+## ----------   LT model ---------
+
+## ----------   HK model ---------
+coefs_df <- coefs(s.HK3)
+print("=== origin coefs_df ===")
+print(coefs_df)
+
+
+if (nrow(coefs_df) == 0) {
+  stop("please check model")
+}
+
+coefs_df$effect <- coefs_df$Std.Estimate
+
+build_graph <- function(coefs_df) {
+  graph <- list()
+  for (i in 1:nrow(coefs_df)) {
+    from <- coefs_df$Predictor[i]
+    to <- coefs_df$Response[i]
+    effect <- coefs_df$effect[i]
+    if (!is.null(graph[[from]])) {
+      graph[[from]] <- rbind(graph[[from]], data.frame(to = to, effect = effect, stringsAsFactors = FALSE))
+    } else {
+      graph[[from]] <- data.frame(to = to, effect = effect, stringsAsFactors = FALSE)
+    }
+  }
+  return(graph)
+}
+
+graph <- build_graph(coefs_df)
+print("=== make graph ===")
+print(graph)
+
+find_all_paths <- function(graph, start, end, visited = character()) {
+  if (start == end) {
+    return(list(c(end)))
+  }
+  if (!start %in% names(graph)) {
+    return(list())
+  }
+  visited <- c(visited, start)
+  paths <- list()
+  for (i in 1:nrow(graph[[start]])) {
+    next_node <- graph[[start]]$to[i]
+    if (!(next_node %in% visited)) {
+      sub_paths <- find_all_paths(graph, next_node, end, visited)
+      for (sp in sub_paths) {
+        paths <- c(paths, list(c(start, sp)))
+      }
+    }
+  }
+  return(paths)
+}
+
+path_effect <- function(path, graph) {
+  eff <- 1
+  for (i in 1:(length(path)-1)) {
+    from <- path[i]
+    to <- path[i+1]
+    edge <- graph[[from]]
+    eff <- eff * edge$effect[edge$to == to]
+  }
+  return(eff)
+}
+
+compute_all_effects <- function(graph, variables) {
+  results <- data.frame(
+    predictor = character(),
+    outcome = character(),
+    direct_effect = numeric(),
+    indirect_effect = numeric(),
+    total_effect = numeric(),
+    stringsAsFactors = FALSE
+  )
+  
+  for (pred in variables) {
+    for (outc in variables) {
+      if (pred != outc) {
+        paths <- find_all_paths(graph, pred, outc)
+        # Debug print
+        # print(paste("Paths from", pred, "to", outc, ":"))
+        # print(paths)
+        
+        if (length(paths) > 0) {
+          direct_effect <- 0
+          indirect_effect <- 0
+          for (p in paths) {
+            eff <- path_effect(p, graph)
+            if (length(p) == 2) {
+              direct_effect <- direct_effect + eff
+            } else {
+              indirect_effect <- indirect_effect + eff
+            }
+          }
+          total_effect <- direct_effect + indirect_effect
+          results <- rbind(results, data.frame(
+            predictor = pred,
+            outcome = outc,
+            direct_effect = direct_effect,
+            indirect_effect = indirect_effect,
+            total_effect = total_effect,
+            stringsAsFactors = FALSE
+          ))
+        }
+      }
+    }
+  }
+  return(results)
+}
+
+all_vars <- unique(c(coefs_df$Response, coefs_df$Predictor))
+effects_df <- compute_all_effects(graph, all_vars)
+print("=== Total effects_df ===")
+
+print(effects_df)
+
+if (nrow(effects_df) == 0) {
+  stop("Check path")
+}
+
+metrics_to_show <- c("direct_effect", "indirect_effect", "total_effect")
+
+plot_df <- melt(effects_df, 
+                id.vars = c("predictor", "outcome"), 
+                measure.vars = metrics_to_show,
+                variable.name = "effect_type", 
+                value.name = "effect_size")
+
+plot_df$effect_type <- factor(plot_df$effect_type, levels = metrics_to_show)
+desired_order <- c("Network_complexity_Normed","Consumer_Normed","Hard.Coral_Normed","Primary.producer_Normed","Decomposer_Normed", "NO3_Normed", "Tem_Normed" )
+
+plot_df <- plot_df %>% filter(predictor %in% desired_order)
+
+plot_df$predictor <- factor(plot_df$predictor, levels = desired_order)
+
+plot_df_filtered <- plot_df %>% filter(outcome == "Network_complexity_Normed")
+plot_df_filtered
+
+p2 <- ggplot(plot_df_filtered, aes(x = predictor, y = effect_size, fill = effect_type)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.7), width = 0.7) +  # 调整柱子之间的间距
+  labs(x = "Predictor", y = "Standardized Effect Size", 
+       title = "Effects on network complexity: Direct, Indirect, and Total") +
+  scale_fill_manual(values = c("direct_effect" = "#008CB7", 
+                               "indirect_effect" = "#a6cee3", 
+                               "total_effect" = "#b2df8a")) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.title = element_blank()) +
+  geom_hline(yintercept = 0, linetype = "solid", color = "gray", size = 0.5) +
+  ylim(-0.5, 0.5) +
+  theme(axis.ticks.length.y = unit(-.1, "cm"),
+        axis.ticks.length.x = unit(0, "cm"),
+        axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+        axis.text.y = element_text(margin = margin(r = .2, unit = "cm")),
+        panel.background = element_rect(fill = "transparent", color = "transparent"),
+        text = element_text(family = "Arial", size = 20),
+        panel.grid = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank()) +
+  coord_flip() 
+
+print(p2) #save 8x6
+## ----------   HK model ---------
+
+## ----------   SK model ---------
+coefs_df <- coefs(s.SK3)
+print("=== origin coefs_df ===")
+print(coefs_df)
+
+
+if (nrow(coefs_df) == 0) {
+  stop("please check model")
+}
+
+coefs_df$effect <- coefs_df$Std.Estimate
+
+build_graph <- function(coefs_df) {
+  graph <- list()
+  for (i in 1:nrow(coefs_df)) {
+    from <- coefs_df$Predictor[i]
+    to <- coefs_df$Response[i]
+    effect <- coefs_df$effect[i]
+    if (!is.null(graph[[from]])) {
+      graph[[from]] <- rbind(graph[[from]], data.frame(to = to, effect = effect, stringsAsFactors = FALSE))
+    } else {
+      graph[[from]] <- data.frame(to = to, effect = effect, stringsAsFactors = FALSE)
+    }
+  }
+  return(graph)
+}
+
+graph <- build_graph(coefs_df)
+print("=== make graph ===")
+print(graph)
+
+find_all_paths <- function(graph, start, end, visited = character()) {
+  if (start == end) {
+    return(list(c(end)))
+  }
+  if (!start %in% names(graph)) {
+    return(list())
+  }
+  visited <- c(visited, start)
+  paths <- list()
+  for (i in 1:nrow(graph[[start]])) {
+    next_node <- graph[[start]]$to[i]
+    if (!(next_node %in% visited)) {
+      sub_paths <- find_all_paths(graph, next_node, end, visited)
+      for (sp in sub_paths) {
+        paths <- c(paths, list(c(start, sp)))
+      }
+    }
+  }
+  return(paths)
+}
+
+path_effect <- function(path, graph) {
+  eff <- 1
+  for (i in 1:(length(path)-1)) {
+    from <- path[i]
+    to <- path[i+1]
+    edge <- graph[[from]]
+    eff <- eff * edge$effect[edge$to == to]
+  }
+  return(eff)
+}
+
+compute_all_effects <- function(graph, variables) {
+  results <- data.frame(
+    predictor = character(),
+    outcome = character(),
+    direct_effect = numeric(),
+    indirect_effect = numeric(),
+    total_effect = numeric(),
+    stringsAsFactors = FALSE
+  )
+  
+  for (pred in variables) {
+    for (outc in variables) {
+      if (pred != outc) {
+        paths <- find_all_paths(graph, pred, outc)
+        # Debug print
+        # print(paste("Paths from", pred, "to", outc, ":"))
+        # print(paths)
+        
+        if (length(paths) > 0) {
+          direct_effect <- 0
+          indirect_effect <- 0
+          for (p in paths) {
+            eff <- path_effect(p, graph)
+            if (length(p) == 2) {
+              direct_effect <- direct_effect + eff
+            } else {
+              indirect_effect <- indirect_effect + eff
+            }
+          }
+          total_effect <- direct_effect + indirect_effect
+          results <- rbind(results, data.frame(
+            predictor = pred,
+            outcome = outc,
+            direct_effect = direct_effect,
+            indirect_effect = indirect_effect,
+            total_effect = total_effect,
+            stringsAsFactors = FALSE
+          ))
+        }
+      }
+    }
+  }
+  return(results)
+}
+
+all_vars <- unique(c(coefs_df$Response, coefs_df$Predictor))
+effects_df <- compute_all_effects(graph, all_vars)
+print("=== Total effects_df ===")
+
+print(effects_df)
+
+if (nrow(effects_df) == 0) {
+  stop("Check path")
+}
+
+metrics_to_show <- c("direct_effect", "indirect_effect", "total_effect")
+
+plot_df <- melt(effects_df, 
+                id.vars = c("predictor", "outcome"), 
+                measure.vars = metrics_to_show,
+                variable.name = "effect_type", 
+                value.name = "effect_size")
+
+plot_df$effect_type <- factor(plot_df$effect_type, levels = metrics_to_show)
+desired_order <- c("Network_complexity_Normed","Consumer_Normed","Hard.Coral_Normed","Primary.producer_Normed","Decomposer_Normed", "NO3_Normed", "Tem_Normed" )
+
+plot_df <- plot_df %>% filter(predictor %in% desired_order)
+
+plot_df$predictor <- factor(plot_df$predictor, levels = desired_order)
+
+plot_df_filtered <- plot_df %>% filter(outcome == "Network_complexity_Normed")
+plot_df_filtered
+
+p3 <- ggplot(plot_df_filtered, aes(x = predictor, y = effect_size, fill = effect_type)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.7), width = 0.7) +  # 调整柱子之间的间距
+  labs(x = "Predictor", y = "Standardized Effect Size", 
+       title = "Effects on network complexity: Direct, Indirect, and Total") +
+  scale_fill_manual(values = c("direct_effect" = "#008CB7", 
+                               "indirect_effect" = "#a6cee3", 
+                               "total_effect" = "#b2df8a")) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.title = element_blank()) +
+  geom_hline(yintercept = 0, linetype = "solid", color = "gray", size = 0.5) +
+  ylim(-0.5, 0.5) +
+  theme(axis.ticks.length.y = unit(-.1, "cm"),
+        axis.ticks.length.x = unit(0, "cm"),
+        axis.text.x = element_text(margin = margin(t = .1, unit = "cm")),
+        axis.text.y = element_text(margin = margin(r = .2, unit = "cm")),
+        panel.background = element_rect(fill = "transparent", color = "transparent"),
+        text = element_text(family = "Arial", size = 20),
+        panel.grid = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_blank()) +
+  coord_flip() 
+
+print(p3) #save 8x6
+## ----------   SK model ---------
+
+
+ggarrange(p1, p2, p3, ncol =1, nrow = 3, widths = c(1,1,1), heights = c(1,1,1), font.label = list(size = 10, familiy = "Arial"), common.legend = FALSE, legend = "right")+ theme(axis.text.y = element_text(size = 10))

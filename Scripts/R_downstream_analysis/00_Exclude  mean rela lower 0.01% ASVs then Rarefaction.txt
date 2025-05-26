@@ -1,0 +1,35 @@
+#0 Exclude ASVs < mean rela0.01% then Rarefaction
+
+## Rarefied_01prok 18557 
+## Rarefied_02protist 33936 
+## Rarefied_03ITS   17023 
+## Rarefied_03arco 17023 
+## Rarefiend_03ben (ITS+arco) 34046
+## Rarefied_04fish 48271
+
+# 00 prepare env
+	rm(list = ls()) 
+
+	setwd("00_rarefy")
+
+library(vegan)
+library(ggplot2)
+library(ggprism)
+library(ggpubr)
+
+# Rarefaction 01prok
+	df = read.delim("01prok_forrarefy.tsv", row.names=1,header = T, sep = "\t")
+
+##
+
+	colSums(df)
+
+	df_rareified <-as.data.frame(t(rrarefy(t(df), min(colSums(df)))))
+
+	colSums(df_rareified)
+
+	b <- data.frame(Sample = rownames(df_rareified), df_rareified)
+
+	write.table(b, "Rarefied_01prok.tsv", row.names = F, col.names = T, sep = "\t", quote = FALSE)
+
+# Others same code, just change names
